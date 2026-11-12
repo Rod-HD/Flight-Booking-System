@@ -90,6 +90,8 @@ tr[aria-selected='true'] .ma {
 .sanBay span {
   font-size: 13px;
   color: var(--muc-500);
+  /* giữ tên sân bay trên một dòng khi bảng ít dòng và cột bị co hẹp */
+  white-space: nowrap;
 }
 
 tr:hover .sanBay b {
@@ -105,6 +107,7 @@ tr:hover .sanBay b {
 .hai b {
   color: var(--muc-900);
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .hai small {

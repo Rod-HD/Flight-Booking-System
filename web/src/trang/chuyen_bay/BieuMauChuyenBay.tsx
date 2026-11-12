@@ -164,7 +164,9 @@ export function BieuMauChuyenBay({ cheDo, quyDinh, chiTiet }: ThuocTinhBieuMau) 
               : e.ma === 'DA_CO_VE_HOAC_PHIEU'
                 ? 'Không thể giảm số ghế'
                 : 'Không lưu được chuyến bay';
-        await baoLoi(tieuDe, e.thongBao);
+        // máy chủ chỉ báo ngắn "Mã chuyến bay đã tồn tại", trùng với tiêu đề nên ghi rõ mã và cách xử lý
+        const noiDung = e.ma === 'TRUNG_MA' ? `Chuyến bay ${yc.maChuyenBay} đã có trong lịch. Vui lòng nhập mã chuyến bay khác.` : e.thongBao;
+        await baoLoi(tieuDe, noiDung);
       } else if (!Object.keys(bang).length) {
         baoLoi('Lưu chuyến bay không thành công', e.thongBao);
       } else {

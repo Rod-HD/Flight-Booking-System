@@ -1,0 +1,259 @@
+/* Bảng lịch nổi của ô chọn ngày: thẻ trắng bo 16px, bóng nổi, mở bằng mờ dần và trượt 6px trong 200 ms */
+.bang {
+  position: fixed;
+  z-index: 1200;
+  width: 316px;
+  padding: 14px 14px 12px;
+  background: var(--nen-0);
+  border: 1px solid var(--vien);
+  border-radius: var(--bo-bang);
+  box-shadow: var(--bong-noi);
+  font-family: var(--font);
+  color: var(--muc-900);
+  animation: mo-lich var(--tg-mau) var(--cong-mem);
+}
+
+.lenTren {
+  animation-name: mo-lich-len;
+}
+
+@keyframes mo-lich {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes mo-lich-len {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bang {
+    animation: none;
+  }
+}
+
+.dauBang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.tieuDe {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.nutThang {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--vien);
+  border-radius: 999px;
+  background: var(--nen-0);
+  color: var(--muc-700);
+  cursor: pointer;
+  transition: var(--chuyen-mau);
+}
+
+.nutThang:not(:disabled):hover {
+  border-color: var(--do-200);
+  background: var(--do-50);
+  color: var(--do-500);
+}
+
+.nutThang:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.hangThu,
+.hangNgay {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.hangThu {
+  margin-bottom: 4px;
+}
+
+.hangThu span {
+  display: grid;
+  place-items: center;
+  height: 28px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muc-500);
+}
+
+.hangThu .chuNhat {
+  color: var(--do-500);
+}
+
+.luoi {
+  display: grid;
+  gap: 2px;
+}
+
+.ngay {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 38px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muc-900);
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+  transition: var(--chuyen-mau);
+}
+
+.ngay:not(:disabled):hover {
+  background: var(--do-50);
+  color: var(--do-500);
+}
+
+.ngay:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--do-500);
+}
+
+.ngoaiThang {
+  color: var(--muc-300);
+  font-weight: 500;
+}
+
+.homNay {
+  box-shadow: inset 0 0 0 1.5px var(--do-500);
+  color: var(--do-500);
+}
+
+.daChon,
+.daChon:not(:disabled):hover {
+  background: var(--gd-do);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 6px 14px rgba(236, 32, 41, 0.28);
+}
+
+.daChon:focus-visible {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--do-500);
+}
+
+.ngay:disabled {
+  color: var(--muc-300);
+  text-decoration: line-through;
+  text-decoration-color: rgba(138, 148, 158, 0.5);
+  cursor: not-allowed;
+}
+
+.hangGio {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--vien);
+}
+
+.nhanGio {
+  margin-right: auto;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muc-700);
+}
+
+.haiCham {
+  font-weight: 700;
+  color: var(--muc-500);
+}
+
+.oGio {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding-left: 4px;
+  border: 1px solid var(--vien);
+  border-radius: var(--bo-o);
+  background: var(--nen-1);
+  transition: var(--chuyen-mau);
+}
+
+.oGio:hover {
+  border-color: var(--muc-300);
+  background: var(--nen-0);
+}
+
+.oGio:focus-within {
+  border-color: var(--do-500);
+  background: var(--nen-0);
+  box-shadow: var(--vong-focus-o);
+}
+
+.oGio input {
+  width: 34px;
+  height: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--muc-900);
+  font-variant-numeric: tabular-nums;
+}
+
+.oGio input:focus-visible {
+  box-shadow: none;
+}
+
+.nutBuoc {
+  display: flex;
+  flex-direction: column;
+  padding-right: 2px;
+}
+
+.nutBuoc button {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 17px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muc-500);
+  cursor: pointer;
+  transition: var(--chuyen-mau);
+}
+
+.nutBuoc button:hover {
+  background: var(--do-50);
+  color: var(--do-500);
+}
+
+.chanBang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--vien);
+}
+
+.nutXong {
+  margin-left: auto;
+}

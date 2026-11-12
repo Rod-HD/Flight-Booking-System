@@ -152,41 +152,59 @@
   color: var(--do-500);
 }
 
-/* ô ngày giờ gốc */
-.ngay::-webkit-calendar-picker-indicator {
-  /* phủ lên icon bên trái: bấm icon là mở lịch */
-  opacity: 0;
+/* ô ngày giờ tự vẽ (ONgay): nút lịch ở đầu ô, chữ dd/mm/yyyy */
+.khungNgay {
+  padding-left: 4px;
+}
+
+.nutLich {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  margin-left: 2px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muc-500);
   cursor: pointer;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 44px;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  transition: var(--chuyen-mau), transform var(--tg-mau) var(--cong-mem);
 }
 
-.ngay::-webkit-datetime-edit-fields-wrapper {
-  padding: 0;
+.nutLich:hover,
+.dangMoLich .nutLich {
+  background: var(--do-50);
+  color: var(--do-500);
 }
 
-.ngay::-webkit-datetime-edit-text {
+.nutLich:active {
+  transform: scale(0.94);
+}
+
+.nutLich:disabled {
+  cursor: not-allowed;
+  background: transparent;
   color: var(--muc-400);
-  padding: 0 2px;
 }
 
-.ngay::-webkit-datetime-edit-day-field:focus,
-.ngay::-webkit-datetime-edit-month-field:focus,
-.ngay::-webkit-datetime-edit-year-field:focus,
-.ngay::-webkit-datetime-edit-hour-field:focus,
-.ngay::-webkit-datetime-edit-minute-field:focus {
-  background: var(--do-100);
-  color: var(--do-700);
-  border-radius: 4px;
+.khung:focus-within .nutLich {
+  color: var(--do-500);
 }
 
-.ngayTrong::-webkit-datetime-edit {
-  color: var(--muc-400);
+.khung.dangMoLich {
+  border-color: var(--do-500);
+  background: var(--nen-0);
+  box-shadow: var(--vong-focus-o);
+}
+
+.oNgay {
+  padding-left: 6px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+}
+
+.ngayTrong {
   font-weight: 400;
 }
 
@@ -349,4 +367,25 @@
 .phang .iconTrai {
   padding-left: 8px;
   color: var(--do-500);
+}
+
+.phang .khungNgay {
+  padding-left: 0;
+}
+
+.phang .nutLich {
+  width: 34px;
+  height: 34px;
+  margin-left: 2px;
+  color: var(--do-500);
+}
+
+.phang .oNgay {
+  padding-left: 4px;
+}
+
+.phang .khung.dangMoLich {
+  background: var(--nen-0);
+  border-color: var(--do-200);
+  box-shadow: none;
 }

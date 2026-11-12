@@ -18,7 +18,7 @@ export interface DuLieuBieuMau {
   giaVe: string;
   maSanBayDi: string | null;
   maSanBayDen: string | null;
-  /** dạng 2026-11-12T14:30 của ô datetime-local */
+  /** dạng 2026-11-12T14:30 của ô chọn ngày giờ (ONgay coGio) */
   ngayGioKhoiHanh: string;
   thoiGianBay: string;
   /** số ghế theo mã hạng vé */
