@@ -62,10 +62,24 @@ app.UseStatusCodePages(nguCanh =>
         ? PhanHoiLoi.ghi(phanHoi, phanHoi.StatusCode, MaLoi.KHONG_TIM_THAY, "Không tìm thấy đường dẫn.")
         : PhanHoiLoi.ghi(phanHoi, phanHoi.StatusCode, MaLoi.DU_LIEU_KHONG_HOP_LE, "Yêu cầu không hợp lệ.");
 });
+// giao diện đã dựng (npm run dung-may-chu) nằm trong wwwroot, được phục vụ cùng địa chỉ với API
+bool coGiaoDien = File.Exists(Path.Combine(app.Environment.WebRootPath ?? Path.Combine(app.Environment.ContentRootPath, "wwwroot"), "index.html"));
+if (coGiaoDien)
+{
+    app.UseDefaultFiles();
+    app.UseStaticFiles();
+}
 app.UseCors();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+if (coGiaoDien)
+{
+    // đường dẫn /api không khớp vẫn trả lỗi JSON; các đường dẫn còn lại là trang của giao diện
+    app.MapFallback("/api/{**duongDan}", (HttpContext nguCanh) =>
+        PhanHoiLoi.ghi(nguCanh.Response, StatusCodes.Status404NotFound, MaLoi.KHONG_TIM_THAY, "Không tìm thấy đường dẫn."));
+    app.MapFallbackToFile("index.html");
+}
 
 app.Run();
 

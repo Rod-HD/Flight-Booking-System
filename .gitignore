@@ -2,6 +2,8 @@
 bin/
 obj/
 *.user
+# giao dien da dung, chep vao may chu
+api/QuanLyBanVe.Api/wwwroot/
 # Node
 node_modules/
 dist/

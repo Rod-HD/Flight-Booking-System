@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
+    "dung-may-chu": "tsc --noEmit && vite build --outDir ../api/QuanLyBanVe.Api/wwwroot --emptyOutDir",
     "preview": "vite preview",
     "kiem-tra-kieu": "tsc --noEmit"
   },
