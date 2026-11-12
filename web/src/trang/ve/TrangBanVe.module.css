@@ -1,0 +1,144 @@
+/* Trang Bán vé: công tắc hai chế độ và phần bán từ phiếu đặt chỗ */
+.congTac {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin-bottom: 24px;
+}
+
+.congTacGoiY {
+  font-size: 14px;
+  color: var(--muc-500);
+}
+
+.vungCheDo {
+  animation: hien-dan-len var(--tg-vua) var(--cong-mem) both;
+}
+
+.tuPhieu {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mucKetQua {
+  min-width: 0;
+}
+
+.dem {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  padding: 0 12px;
+  border-radius: var(--bo-vien-thuoc);
+  background: var(--do-50);
+  color: var(--do-500);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.khungRong {
+  border: 1px solid var(--vien);
+  border-radius: var(--bo-bang);
+  background: var(--nen-0);
+}
+
+.maPhieu {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  padding: 0 10px;
+  border-radius: var(--bo-vien-thuoc);
+  background: var(--nen-1);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--muc-900);
+  letter-spacing: 0.02em;
+  transition: var(--chuyen-mau);
+}
+
+tr:hover .maPhieu,
+[aria-selected='true'] .maPhieu {
+  background: var(--do-500);
+  color: #fff;
+}
+
+.hai {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.hai b {
+  color: var(--muc-900);
+}
+
+.hai small {
+  font-size: 12px;
+  color: var(--muc-500);
+}
+
+.ten {
+  color: var(--muc-900);
+}
+
+.tomTat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chuDo {
+  color: var(--do-500) !important;
+}
+
+.chuMo {
+  color: var(--muc-400);
+}
+
+/* thanh dưới cùng: phiếu đang chọn và nút bán */
+.thanhChon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px 14px 24px;
+  border: 1px solid var(--vien);
+  border-radius: 20px;
+  background: var(--nen-0);
+  box-shadow: var(--bong-thanh);
+  transition: border-color var(--tg-mau) ease, box-shadow var(--tg-mau) ease;
+}
+
+.thanhChonCo {
+  border-color: var(--do-200);
+  box-shadow: var(--bong-noi);
+}
+
+.thanhChonChu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  min-width: 0;
+  font-size: 15px;
+}
+
+.thanhChonCo .maPhieu {
+  background: var(--do-500);
+  color: #fff;
+}
+
+.nutChan {
+  display: flex;
+  gap: 12px;
+  flex: none;
+}
+
+@media (max-width: 720px) {
+  .thanhChon {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

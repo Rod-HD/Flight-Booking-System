@@ -4,6 +4,7 @@ import { Headphones, LogOut } from 'lucide-react';
 import { MENU, mucDangO } from '@/dinh_tuyen';
 import { dungPhien } from '@/phien/NguCanhPhien';
 import { chuCaiDau, tenNhomQuyen } from '@/tien_ich/dinh_dang';
+import { ChuongThongBao } from './ChuongThongBao';
 import { Logo } from './Logo';
 import { Nut } from './Nut';
 import s from './DauTrang.module.css';
@@ -43,6 +44,7 @@ export function DauTrang({ trongSuot }: { trongSuot: boolean }) {
           </nav>
           <div className={s.phai}>
             <div className={s.cum}>
+              <ChuongThongBao lop={s.nutCum} />
               <Link to="/tro-giup" className={`${s.nutCum} ${oTroGiup ? s.dangO : ''}`} aria-current={oTroGiup ? 'page' : undefined} title="Trợ giúp (F1)">
                 <Headphones size={17} strokeWidth={2.2} />
                 <span className={s.chuTroGiup}>

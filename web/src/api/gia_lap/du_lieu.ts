@@ -292,6 +292,33 @@ export function taoCoSoDuLieu(bayGio = new Date()): CoSoDuLieuGia {
     });
   }
 
+  // hai chuyến sắp bay để thử bán vé khi hết chỗ: một chuyến hết Hạng 1, một chuyến hết cả hai hạng
+  const sapBay = db.chuyenBay.filter((c) => docIso(c.ngayGioKhoiHanh) > congNgay(homNay, 2));
+  const banHet = (cb: ChuyenBayGia | undefined, cacHang: string[]) => {
+    if (!cb) return;
+    for (const g of cb.gheTheoHang.filter((x) => cacHang.includes(x.maHangVe))) {
+      const tiLe = hangVe.find((h) => h.maHangVe === g.maHangVe)!.tiLeDonGia;
+      const daDung =
+        db.ve.filter((v) => v.maChuyenBay === cb.maChuyenBay && v.maHangVe === g.maHangVe && v.tinhTrang === 'DaBan').length +
+        db.phieu.filter((p) => p.maChuyenBay === cb.maChuyenBay && p.maHangVe === g.maHangVe && p.tinhTrang === 'ChoThanhToan').length;
+      for (let v = daDung; v < g.soLuongGhe; v += 1) {
+        db.demVe += 1;
+        db.ve.push({
+          ...taoKhach(),
+          maVe: maVeTuSo(db.demVe),
+          maChuyenBay: cb.maChuyenBay,
+          maHangVe: g.maHangVe,
+          giaTien: Math.round((cb.giaVe * tiLe) / 100),
+          ngayBan: sangIso(congPhut(bayGio, -nn.nguyen(60, 60 * 24 * 5))),
+          tinhTrang: 'DaBan',
+          maPhieuDat: null,
+        });
+      }
+    }
+  };
+  banHet(sapBay[1], ['H1']);
+  banHet(sapBay[4], ['H1', 'H2']);
+
   // nhật ký hủy tự động của các lần chạy trước
   const phieuDaHuy = db.phieu.filter((p) => p.tinhTrang === 'DaHuy').slice(0, 8);
   const moc = [-15, -60 * 3 - 15, -60 * 9 - 15, -60 * 20 - 15];

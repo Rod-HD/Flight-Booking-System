@@ -1,0 +1,256 @@
+/* Dùng chung cho Danh sách vé và Danh sách phiếu đặt chỗ */
+.trang {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.timKiem {
+  animation: hien-dan-len var(--tg-vua) var(--cong-mem) both;
+}
+
+.chuThich {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.boLoc {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--do-500);
+  font-size: 13px;
+  font-weight: 700;
+  transition: var(--chuyen-mau);
+}
+
+.boLoc:hover {
+  background: var(--do-50);
+}
+
+.tomTat {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.vien {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 12px;
+  border-radius: var(--bo-vien-thuoc);
+  background: var(--nen-1);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muc-700);
+  white-space: nowrap;
+}
+
+.vien b {
+  color: var(--muc-900);
+}
+
+.vienDo {
+  background: var(--do-50);
+  color: var(--do-700);
+}
+
+.vienDo b {
+  color: var(--do-500);
+}
+
+.bang {
+  animation: hien-dan-len var(--tg-vua) var(--cong-mem) 60ms both;
+}
+
+.bang table {
+  font-size: 14px;
+}
+
+.bang th,
+.bang td {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+/* bảng nhiều cột (phiếu đặt chỗ): thu gọn để đủ chỗ cột thao tác */
+.bangGon table {
+  font-size: 13px;
+}
+
+.bangGon th {
+  font-size: 12px !important;
+  letter-spacing: 0 !important;
+}
+
+.bangGon th,
+.bangGon td {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+.bangGon th:first-child,
+.bangGon td:first-child {
+  padding-left: 14px !important;
+}
+
+.bangGon .thaoTac > a,
+.bangGon .thaoTac > button:not([aria-label^='Sửa']):not([aria-label^='Phiếu']) {
+  padding: 0 12px;
+}
+
+.bangGon .ma {
+  padding: 0 8px;
+  font-size: 12px;
+}
+
+.stt {
+  color: var(--muc-400);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.ma {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  padding: 0 10px;
+  border-radius: var(--bo-vien-thuoc);
+  background: var(--nen-1);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--muc-900);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  transition: var(--chuyen-mau);
+}
+
+tr:hover .ma {
+  background: var(--do-50);
+  color: var(--do-500);
+}
+
+[aria-selected='true'] .ma {
+  background: var(--do-500);
+  color: #fff;
+}
+
+.cb {
+  font-weight: 700;
+  color: var(--muc-900);
+}
+
+.hai {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.hai b {
+  color: var(--muc-900);
+  white-space: nowrap;
+}
+
+.hai small {
+  font-size: 12px;
+  color: var(--muc-500);
+  white-space: nowrap;
+}
+
+.ten {
+  font-weight: 700;
+  color: var(--muc-900);
+}
+
+.so {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.tien {
+  font-weight: 700;
+  color: var(--muc-900);
+  white-space: nowrap;
+}
+
+.mo {
+  color: var(--muc-400);
+}
+
+.thaoTac {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.daHuy td {
+  color: var(--muc-400);
+}
+
+/* khối chỉ Quản lý: xóa phiếu đã hủy */
+.khoiQuanLy {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  padding: 22px 24px;
+  border: 1px solid var(--do-100);
+  border-radius: var(--bo-the);
+  background: var(--nen-hong);
+  scroll-margin-top: calc(var(--cao-thanh-tren) + 24px);
+}
+
+.khoiNoiBat {
+  animation: noi-bat 1.6s var(--cong-mem) 2;
+}
+
+@keyframes noi-bat {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(236, 32, 41, 0);
+  }
+  40% {
+    box-shadow: 0 0 0 8px rgba(236, 32, 41, 0.18);
+    border-color: var(--do-500);
+  }
+}
+
+.khoiChu {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+
+.khoiTieuDe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.khoiMoTa {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--muc-500);
+}
+
+.khoiNgay {
+  flex: 0 0 240px;
+}
+
+@media (max-width: 720px) {
+  .khoiNgay {
+    flex: 1 1 100%;
+  }
+}

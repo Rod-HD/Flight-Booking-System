@@ -1,0 +1,408 @@
+/* Trang thay đổi quy định: lưới thẻ tham số, hai thẻ danh sách sân bay và hạng vé */
+.muc + .muc {
+  margin-top: 48px;
+}
+
+.luoiThe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.the {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 236px;
+  padding: 22px 24px 22px;
+  border-radius: var(--bo-the);
+  border: 1px solid var(--vien);
+  background: var(--nen-1);
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  transition:
+    transform var(--tg-the) var(--cong-mem),
+    background-color var(--tg-the) var(--cong-mem),
+    box-shadow var(--tg-the) var(--cong-mem),
+    border-color var(--tg-mau) ease;
+  animation: hien-dan-len var(--tg-vua) var(--cong-mem) both;
+}
+
+.the::after {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(236, 32, 41, 0.1), rgba(236, 32, 41, 0) 70%);
+  opacity: 0;
+  transition: opacity var(--tg-the) var(--cong-mem);
+  pointer-events: none;
+}
+
+.the:hover,
+.the:focus-visible {
+  background: var(--nen-0);
+  border-color: transparent;
+  transform: translateY(-6px);
+  box-shadow: var(--bong-noi);
+}
+
+.the:focus-visible {
+  box-shadow:
+    var(--bong-noi),
+    0 0 0 3px var(--do-200);
+}
+
+.the:hover::after,
+.the:focus-visible::after {
+  opacity: 1;
+}
+
+.vuaDoi {
+  animation:
+    hien-dan-len var(--tg-vua) var(--cong-mem) both,
+    sang-len 1.6s ease 1;
+}
+
+@keyframes sang-len {
+  0%,
+  100% {
+    box-shadow: none;
+  }
+  30% {
+    box-shadow: 0 0 0 4px rgba(30, 158, 90, 0.25);
+  }
+}
+
+.dauThe {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.oIcon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: var(--gd-do);
+  color: #fff;
+  box-shadow:
+    0 8px 18px rgba(236, 32, 41, 0.28),
+    inset 0 2px 0 rgba(255, 255, 255, 0.3);
+  transition: transform var(--tg-the) var(--cong-mem);
+}
+
+.oIcon svg {
+  filter: drop-shadow(0 1px 1px rgba(111, 0, 0, 0.35));
+}
+
+.the:hover .oIcon,
+.the:focus-visible .oIcon {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+.nhanQd {
+  display: inline-flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 10px;
+  border-radius: var(--bo-vien-thuoc);
+  background: var(--gd-vang-nhan);
+  color: var(--muc-900);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.tieuDe {
+  font-size: var(--co-h3);
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--muc-900);
+  transition: color var(--tg-the) var(--cong-mem);
+}
+
+.the:hover .tieuDe,
+.the:focus-visible .tieuDe {
+  color: var(--do-500);
+}
+
+.giaTri {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.giaTri b {
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 700;
+  color: var(--muc-900);
+  font-variant-numeric: tabular-nums;
+}
+
+.giaTri span {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--muc-500);
+}
+
+.moTa {
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--muc-500);
+}
+
+.chanThe {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+/* hai thẻ danh sách */
+.haiCot {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.theDs {
+  padding: 22px 22px 18px;
+  border-radius: var(--bo-the);
+  border: 1px solid var(--vien);
+  background: var(--nen-0);
+  transition: box-shadow var(--tg-the) var(--cong-mem);
+}
+
+.theDs:hover {
+  box-shadow: var(--bong-thanh);
+}
+
+.dauDs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.dauDsTrai {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tieuDeDs {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: var(--muc-900);
+}
+
+.phuDs {
+  font-size: 13px;
+  color: var(--muc-500);
+}
+
+.thanhLoc {
+  margin-bottom: 14px;
+}
+
+.ma {
+  display: inline-grid;
+  place-items: center;
+  min-width: 48px;
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 8px;
+  background: var(--nen-1);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--muc-900);
+  letter-spacing: 0.02em;
+  transition: var(--chuyen-mau);
+}
+
+tr:hover .ma {
+  background: var(--do-100);
+  color: var(--do-500);
+}
+
+tr[aria-selected='true'] .ma {
+  background: var(--do-500);
+  color: #fff;
+}
+
+.ten {
+  font-weight: 600;
+  color: var(--muc-900);
+}
+
+.stt {
+  color: var(--muc-500);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.tiLe {
+  font-weight: 700;
+  color: var(--muc-900);
+  font-variant-numeric: tabular-nums;
+}
+
+.hanhDong {
+  display: inline-flex;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.ghiChuDs {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--muc-500);
+}
+
+.ghiChuDs svg {
+  flex: none;
+  margin-top: 1px;
+  color: var(--do-500);
+}
+
+/* hộp thoại cập nhật */
+.hienTai {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  background: var(--nen-1);
+  font-size: 14px;
+  color: var(--muc-500);
+}
+
+.hienTai b {
+  font-size: 22px;
+  color: var(--muc-900);
+  font-variant-numeric: tabular-nums;
+}
+
+.hienTai small {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muc-500);
+}
+
+.muiDoi {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.moi {
+  color: var(--do-500) !important;
+  animation: hien-dan-len var(--tg-mau) var(--cong-mem) both;
+}
+
+.donVi {
+  padding: 0 8px 0 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muc-500);
+}
+
+.oSoLon input {
+  font-size: 20px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.oMa input {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.oMa input::placeholder {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.cotO {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ghiChuKhoa {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.giaVi {
+  padding: 12px 16px;
+  border-radius: 14px;
+  background: var(--vang-50);
+  font-size: 14px;
+  color: var(--muc-700);
+}
+
+.giaVi b {
+  color: var(--muc-900);
+}
+
+.rung div:has(> input[aria-invalid='true']) {
+  animation: rung-nhe 360ms var(--cong-mem) 1;
+}
+
+@keyframes rung-nhe {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(4px);
+  }
+  60% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+}
+
+@media (max-width: 1100px) {
+  .luoiThe {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .haiCot {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .luoiThe {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,183 @@
+.goc {
+  position: relative;
+  display: inline-flex;
+}
+
+.nut {
+  position: relative;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.dangMo {
+  color: var(--do-500) !important;
+  background: var(--nen-0) !important;
+  box-shadow: var(--bong-nhe);
+}
+
+.lac {
+  transform-origin: 50% 0;
+  animation: lac-chuong 2.4s ease-in-out 3;
+}
+
+@keyframes lac-chuong {
+  0%,
+  60%,
+  100% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-12deg);
+  }
+  30% {
+    transform: rotate(8deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+}
+
+.cham {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  display: grid;
+  place-items: center;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: var(--do-500);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+.bang {
+  position: absolute;
+  z-index: 60;
+  top: calc(100% + 12px);
+  right: -8px;
+  width: 400px;
+  max-width: calc(100vw - 32px);
+  border: 1px solid var(--vien);
+  border-radius: 20px;
+  background: var(--nen-0);
+  box-shadow: var(--bong-hop-thoai);
+  color: var(--muc-700);
+  overflow: hidden;
+  transform-origin: top right;
+  animation: mo-bang var(--tg-mau) var(--cong-mem) both;
+}
+
+@keyframes mo-bang {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.97);
+  }
+}
+
+.dau {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 18px 12px;
+  border-bottom: 1px solid var(--vien);
+}
+
+.dau b {
+  display: block;
+  font-size: 16px;
+  color: var(--muc-900);
+}
+
+.dau span {
+  font-size: 13px;
+  color: var(--muc-500);
+}
+
+.dau .dem {
+  display: grid;
+  place-items: center;
+  min-width: 28px;
+  height: 24px;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: var(--do-50);
+  color: var(--do-500);
+  font-weight: 700;
+}
+
+.ds {
+  max-height: 360px;
+  overflow: auto;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+}
+
+.ds li {
+  display: flex;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  transition: var(--chuyen-mau);
+}
+
+.ds li:hover {
+  background: var(--nen-1);
+}
+
+.ds li:hover .noiDung {
+  color: var(--do-500);
+}
+
+.ds .moiNhat,
+.ds .moiNhat:hover {
+  background: var(--do-50);
+}
+
+.gio {
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  width: 72px;
+  line-height: 1.25;
+}
+
+.gio b {
+  font-size: 14px;
+  color: var(--muc-900);
+}
+
+.moiNhat .gio b {
+  color: var(--do-500);
+}
+
+.gio small {
+  font-size: 12px;
+  color: var(--muc-500);
+}
+
+.noiDung {
+  font-size: 14px;
+  line-height: 20px;
+  transition: color var(--tg-mau) ease;
+}
+
+.trong {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 28px 16px;
+  color: var(--muc-500);
+  font-size: 14px;
+}

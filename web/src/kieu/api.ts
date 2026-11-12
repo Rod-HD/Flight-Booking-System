@@ -133,6 +133,9 @@ export interface ChuyenBayChiTiet {
   giaVe: number;
   maSanBayDi: string;
   maSanBayDen: string;
+  /** máy chủ thật trả thêm */
+  tenSanBayDi?: string;
+  tenSanBayDen?: string;
   ngayGioKhoiHanh: string;
   thoiGianBay: number;
   gheTheoHang: GheTheoHang[];
@@ -201,6 +204,8 @@ export interface PhieuConHan {
   hoTen: string;
   giaTien: number;
   hanThanhToan: string;
+  /** máy chủ thật trả thêm */
+  thoiDiemDat?: string;
 }
 
 export interface TieuChiTimVe {
@@ -214,6 +219,9 @@ export interface TieuChiTimVe {
 export interface Ve extends HanhKhach {
   maVe: string;
   maChuyenBay: string;
+  /** máy chủ thật trả thêm */
+  maHangVe?: string;
+  ngayGioKhoiHanh?: string;
   tenHangVe: string;
   giaTien: number;
   ngayBan: string;
@@ -238,6 +246,9 @@ export interface TieuChiTimPhieu {
 export interface PhieuDat extends HanhKhach {
   maPhieuDat: string;
   maChuyenBay: string;
+  /** máy chủ thật trả thêm */
+  maHangVe?: string;
+  ngayGioKhoiHanh?: string;
   tenHangVe: string;
   giaTien: number;
   thoiDiemDat: string;

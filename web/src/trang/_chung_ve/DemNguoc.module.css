@@ -1,0 +1,35 @@
+.dem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--thanh-cong);
+  font-variant-numeric: tabular-nums;
+}
+
+.cham {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: nhip 1s ease-in-out infinite;
+}
+
+@keyframes nhip {
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.sapGap {
+  color: var(--canh-bao-chu);
+}
+
+.gap {
+  color: var(--do-500);
+}
+
+.het {
+  color: var(--muc-400);
+}
