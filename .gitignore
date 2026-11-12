@@ -1,0 +1,22 @@
+# .NET
+bin/
+obj/
+*.user
+# Node
+node_modules/
+dist/
+# may ca nhan
+.vs/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# bi mat va du lieu cuc bo
+*.env
+.env*
+appsettings.Development.json
+nhat_ky/
+*.bak
+# kiem thu
+test-results/
+playwright-report/

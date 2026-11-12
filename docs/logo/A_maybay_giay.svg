@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="a-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5333B"/><stop offset="1" stop-color="#D5141C"/>
+    </linearGradient>
+    <linearGradient id="a-y" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFE14A"/><stop offset="1" stop-color="#F9A51A"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="116" fill="url(#a-bg)"/>
+  <!-- vet bay cham cham: goi duong xe ve -->
+  <path d="M92 404 C150 400 196 372 226 330" fill="none" stroke="#FFFFFF" stroke-opacity=".85" stroke-width="14" stroke-linecap="round" stroke-dasharray="2 30"/>
+  <!-- may bay giay -->
+  <path d="M420 100 L96 236 L214 286 Z" fill="#FFFFFF"/>
+  <path d="M420 100 L214 286 L246 404 Z" fill="url(#a-y)"/>
+  <path d="M420 100 L246 404 L296 322 L384 372 Z" fill="#FFFFFF"/>
+  <path d="M246 404 L296 322 L262 304 Z" fill="#B3141B" fill-opacity=".35"/>
+</svg>
