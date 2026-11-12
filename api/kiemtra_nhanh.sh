@@ -66,6 +66,12 @@ NGAY_BAY=$(date -d '+10 days' '+%Y-%m-%d')
 THANG_BAY=$(date -d '+10 days' '+%-m')
 NAM_BAY=$(date -d '+10 days' '+%Y')
 HOM_NAY=$(date '+%Y-%m-%d')
+# các mốc tính theo hôm nay, khớp với dữ liệu mẫu (lịch của dữ liệu mẫu dịch theo ngày nạp)
+TU_NGAY=$(date -d '-2 days' '+%Y-%m-%d')
+DEN_NGAY=$(date -d '+18 days' '+%Y-%m-%d')
+THANG_NAY=$(date '+%-m')
+NAM_NAY=$(date '+%Y')
+MOC_XOA_PHIEU=$(date -d '-315 days' '+%Y-%m-%d')
 SO_GIAY_TO_1="0790$(date +%d%H%M%S)"
 SO_GIAY_TO_2="0791$(date +%d%H%M%S)"
 SO_GIAY_TO_3="0792$(date +%d%H%M%S)"
@@ -82,9 +88,9 @@ goi "Xem phiên hiện tại" 200 "$QL" GET /api/phien
 
 muc "UC03 Tra cứu chuyến bay (BM4)"
 goi "Quy định, sân bay, hạng vé" 200 "$NV" GET /api/quy-dinh
-goi "Tra cứu theo sân bay và ngày" 200 "$NV" GET "/api/chuyen-bay?sanBayDi=SGN&sanBayDen=HAN&tuNgay=2026-11-10&denNgay=2026-11-30"
+goi "Tra cứu theo sân bay và ngày" 200 "$NV" GET "/api/chuyen-bay?sanBayDi=SGN&sanBayDen=HAN&tuNgay=$TU_NGAY&denNgay=$DEN_NGAY"
 goi "Chuyến bay sắp khởi hành" 200 "$NV" GET "/api/chuyen-bay/sap-khoi-hanh?soLuong=3"
-tai "Xuất danh sách chuyến bay ra Excel" "$NV" "/api/chuyen-bay/xuat-excel?tuNgay=2026-11-10&denNgay=2026-11-30"
+tai "Xuất danh sách chuyến bay ra Excel" "$NV" "/api/chuyen-bay/xuat-excel?tuNgay=$TU_NGAY&denNgay=$DEN_NGAY"
 tai "Tải tập tin Excel mẫu" "$QL" /api/chuyen-bay/mau-excel
 
 muc "UC03 Thêm chuyến bay (BM1, QĐ1)"
@@ -125,16 +131,16 @@ goi "Hủy phiếu đặt chỗ" 204 "$NV" POST "/api/phieu-dat/$MA_PHIEU_2/huy"
 goi "Danh sách vé bán trong ngày" 200 "$NV" GET /api/ve
 goi "Xóa chuyến bay đã có vé" 409 "$QL" DELETE "/api/chuyen-bay/$MA_CB"
 goi "Đếm phiếu đã hủy trước hôm nay" 200 "$QL" GET "/api/phieu-dat/da-huy/dem?truocNgay=$HOM_NAY"
-goi "Nhân viên không được xóa phiếu đã hủy" 403 "$NV" DELETE "/api/phieu-dat/da-huy?truocNgay=2026-01-01"
-goi "Xóa phiếu đã hủy trước 01/01/2026" 200 "$QL" DELETE "/api/phieu-dat/da-huy?truocNgay=2026-01-01"
+goi "Nhân viên không được xóa phiếu đã hủy" 403 "$NV" DELETE "/api/phieu-dat/da-huy?truocNgay=$MOC_XOA_PHIEU"
+goi "Xóa phiếu đã hủy trước $MOC_XOA_PHIEU" 200 "$QL" DELETE "/api/phieu-dat/da-huy?truocNgay=$MOC_XOA_PHIEU"
 
 muc "UC07 Báo cáo doanh thu (BM5.1, BM5.2)"
-goi "Báo cáo tháng 11/2026" 200 "$QL" GET "/api/bao-cao/thang?thang=11&nam=2026"
+goi "Báo cáo tháng $THANG_NAY/$NAM_NAY" 200 "$QL" GET "/api/bao-cao/thang?thang=$THANG_NAY&nam=$NAM_NAY"
 goi "Báo cáo tháng của chuyến bay thử" 200 "$QL" GET "/api/bao-cao/thang?thang=$THANG_BAY&nam=$NAM_BAY"
-goi "Báo cáo năm 2026" 200 "$QL" GET "/api/bao-cao/nam?nam=2026"
-goi "Nhân viên không được xem báo cáo" 403 "$NV" GET "/api/bao-cao/nam?nam=2026"
-tai "Xuất báo cáo tháng ra PDF" "$QL" "/api/bao-cao/thang/xuat?thang=11&nam=2026&dinhDang=pdf"
-tai "Xuất báo cáo năm ra Excel" "$QL" "/api/bao-cao/nam/xuat?nam=2026&dinhDang=excel"
+goi "Báo cáo năm $NAM_NAY" 200 "$QL" GET "/api/bao-cao/nam?nam=$NAM_NAY"
+goi "Nhân viên không được xem báo cáo" 403 "$NV" GET "/api/bao-cao/nam?nam=$NAM_NAY"
+tai "Xuất báo cáo tháng ra PDF" "$QL" "/api/bao-cao/thang/xuat?thang=$THANG_NAY&nam=$NAM_NAY&dinhDang=pdf"
+tai "Xuất báo cáo năm ra Excel" "$QL" "/api/bao-cao/nam/xuat?nam=$NAM_NAY&dinhDang=excel"
 
 muc "UC08 Thay đổi quy định (QĐ6)"
 goi "Đọc quy định hiện hành" 200 "$QL" GET /api/quy-dinh

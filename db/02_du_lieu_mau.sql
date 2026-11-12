@@ -1,4 +1,6 @@
--- Dữ liệu mẫu cho QLBANVECHUYENBAY, quanh thời điểm tháng 11 năm 2026.
+-- Dữ liệu mẫu cho QLBANVECHUYENBAY. Lịch gốc được soạn quanh ngày 12/11/2026 (chuyến bay từ tháng 1 đến tháng 12 năm 2026);
+-- khi nạp, mọi mốc ngày được dịch theo số ngày lệch giữa ngày nạp và 12/11/2026, nên nạp vào ngày nào
+-- thì ngày đó cũng đóng vai trò "hôm nay" của lịch và các kịch bản minh họa vẫn đúng.
 -- Chạy sau 01_tao_csdl.sql. Chạy lại được nhiều lần: dữ liệu nghiệp vụ cũ bị xóa rồi nạp lại.
 -- Bảng TAIKHOAN không nạp ở đây: máy chủ tự tạo tài khoản ban đầu khi khởi động nếu bảng còn rỗng.
 -- Cách chạy: sqlcmd -S localhost\SQLEXPRESS -E -C -b -i 02_du_lieu_mau.sql
@@ -44,7 +46,11 @@ INSERT INTO HANGVE (MaHangVe, TenHangVe, TiLeDonGia) VALUES
 ('H1', N'Hạng 1', 105.00),
 ('H2', N'Hạng 2', 100.00);
 
--- Lịch 60 chuyến bay từ tháng 1 đến tháng 12 năm 2026.
+-- Số ngày lệch giữa ngày nạp và ngày gốc 12/11/2026 của lịch; cộng vào mọi mốc ngày cố định bên dưới.
+-- Nạp vào đúng ngày 12/11/2026 thì độ lệch bằng 0 và dữ liệu giữ nguyên như lịch gốc.
+DECLARE @Lech int = DATEDIFF(DAY, CAST('2026-11-12' AS date), CAST(SYSDATETIME() AS date));
+
+-- Lịch 60 chuyến bay, ghi theo ngày gốc (tháng 1 đến tháng 12 năm 2026) rồi dịch theo @Lech.
 -- GheH1, GheH2: số lượng ghế từng hạng; BanH1, BanH2: số vé Đã bán sẽ phát sinh cho từng hạng.
 CREATE TABLE #Lich (
     STT         int IDENTITY(1,1) PRIMARY KEY,
@@ -130,6 +136,9 @@ INSERT INTO #Lich (Ma, GiaVe, Di, Den, NgayGio, ThoiGianBay, GheH1, GheH2, BanH1
 -- CB238: chuyến bay chỉ có Hạng 2
 ('CB238', 2300000, 'HAN', 'SGN', '2026-12-31T21:15:00', 130,  0, 100,  0,  0);
 
+-- dịch toàn bộ lịch theo ngày nạp (giữ nguyên giờ khởi hành)
+UPDATE #Lich SET NgayGio = DATEADD(DAY, @Lech, NgayGio);
+
 INSERT INTO CHUYENBAY (MaChuyenBay, GiaVe, MaSanBayDi, MaSanBayDen, NgayGioKhoiHanh, ThoiGianBay)
 SELECT Ma, GiaVe, Di, Den, NgayGio, ThoiGianBay FROM #Lich;
 
@@ -197,9 +206,12 @@ INSERT INTO HANHKHACH (MaHanhKhach, HoTen, LoaiGiayTo, SoGiayTo, DienThoai) VALU
 ('HK00000405', N'Chen Wei',       N'Hộ chiếu', 'E12345678', '+8613812345678'),
 ('HK00000406', N'Emma Wilson',    N'Hộ chiếu', 'N1234567',  '+61412345678');
 
--- Thời điểm chạy script và mốc chia chuyến bay đã bán xong với chuyến bay đang mở bán
+-- Thời điểm chạy script và mốc chia chuyến bay đã bán xong với chuyến bay đang mở bán (đầu ngày nạp).
+-- @MoBanVe, @MoDatCho: ngày bắt đầu bán vé, đặt chỗ cho các chuyến đang mở bán (gốc 23/10 và 20/10/2026).
 DECLARE @HienTai datetime2(0) = SYSDATETIME();
-DECLARE @MocMoBan datetime2(0) = '2026-11-12T00:00:00';
+DECLARE @MocMoBan datetime2(0) = DATEADD(DAY, @Lech, CAST('2026-11-12T00:00:00' AS datetime2(0)));
+DECLARE @MoBanVe date = DATEADD(DAY, @Lech, CAST('2026-10-23' AS date));
+DECLARE @MoDatCho date = DATEADD(DAY, @Lech, CAST('2026-10-20' AS date));
 
 -- Vé: mỗi chuyến bay có BanH1 vé Hạng 1 và BanH2 vé Hạng 2 ở tình trạng Đã bán,
 -- thêm 1 hoặc 2 vé Hạng 2 Đã hủy ở một số chuyến bay (vé hủy không giữ chỗ, không tính doanh thu).
@@ -224,12 +236,12 @@ WHERE l.BanH2 > 0;
 UPDATE #Ve SET MaHanhKhach = 'HK' + RIGHT('00000000' + CAST((STT * 37 + k * 7) % 400 + 1 AS varchar(8)), 8);
 
 -- ngày bán: trong giờ làm việc; chuyến đã bay thì bán trước ngày khởi hành 1 đến 20 ngày,
--- chuyến đang mở bán thì bán từ 23/10 đến 11/11/2026
+-- chuyến đang mở bán thì bán trong 20 ngày từ @MoBanVe (gốc 23/10 đến 11/11/2026, tức đến hôm trước ngày nạp)
 UPDATE #Ve
 SET NgayBan = DATEADD(MINUTE, 480 + (k * 37 + STT * 11) % 540,
         CAST(CASE WHEN NgayGio < @MocMoBan
                   THEN DATEADD(DAY, -(1 + (k * 5 + STT) % 20), CAST(NgayGio AS date))
-                  ELSE DATEADD(DAY, (k * 5 + STT) % 20, CAST('2026-10-23' AS date)) END AS datetime2(0)));
+                  ELSE DATEADD(DAY, (k * 5 + STT) % 20, @MoBanVe) END AS datetime2(0)));
 
 -- Vé bán trong ngày chạy script, để danh sách vé bán trong ngày có số liệu (chỉ cho chuyến bay chưa khởi hành)
 INSERT INTO #Ve (STT, Ma, k, Hang, GiaTien, NgayGio, TinhTrang, MaHanhKhach, NgayBan)
@@ -273,7 +285,7 @@ SELECT l.Ma,
        DATEADD(MINUTE, 540 + (l.STT * 17 + s.n * 53) % 480,
            CAST(CASE WHEN l.NgayGio < @MocMoBan
                      THEN DATEADD(DAY, -(3 + (l.STT + s.n) % 10), CAST(l.NgayGio AS date))
-                     ELSE DATEADD(DAY, (l.STT * 3 + s.n) % 20, CAST('2026-10-20' AS date)) END AS datetime2(0))),
+                     ELSE DATEADD(DAY, (l.STT * 3 + s.n) % 20, @MoDatCho) END AS datetime2(0))),
        N'Đã hủy'
 FROM #Lich l JOIN #So s ON s.n <= CASE l.STT % 2 WHEN 0 THEN 2 ELSE 1 END;
 

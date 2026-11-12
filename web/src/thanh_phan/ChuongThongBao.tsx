@@ -40,7 +40,17 @@ export function ChuongThongBao({ lop }: { lop?: string }) {
   }, [mo, moiNhat]);
 
   return (
-    <div className={s.goc} ref={goc}>
+    <div
+      className={s.goc}
+      ref={goc}
+      onKeyDown={(e) => {
+        // Esc đóng bảng dù con trỏ đang ở nút chuông hay trong bảng
+        if (e.key === 'Escape' && mo) {
+          e.stopPropagation();
+          datMo(false);
+        }
+      }}
+    >
       <button
         type="button"
         className={`${lop ?? ''} ${s.nut} ${mo ? s.dangMo : ''}`}
@@ -58,12 +68,6 @@ export function ChuongThongBao({ lop }: { lop?: string }) {
           className={s.bang}
           role="dialog"
           aria-label="Danh sách thông báo"
-          onKeyDown={(e) => {
-            if (e.key === 'Escape') {
-              e.stopPropagation();
-              datMo(false);
-            }
-          }}
         >
           <div className={s.dau}>
             <div>
