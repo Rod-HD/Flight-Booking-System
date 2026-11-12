@@ -1,6 +1,6 @@
 # Hợp đồng API giữa `web/` và `api/`
 
-Máy chủ ASP.NET Core 8 chạy ở `http://localhost:5080`, mọi đường dẫn bắt đầu bằng `/api`. Giao diện Vite chạy ở `http://localhost:5173` và chuyển tiếp `/api` sang máy chủ.
+Máy chủ ASP.NET Core 10 chạy ở `http://localhost:5080`, mọi đường dẫn bắt đầu bằng `/api`. Giao diện Vite chạy ở `http://localhost:5173` và chuyển tiếp `/api` sang máy chủ.
 JSON dùng tên camelCase, tiếng Việt không dấu, khớp tên thuộc tính ở mục 3.2.12 của báo cáo (ví dụ `MaChuyenBay` thành `maChuyenBay`).
 Ngày giờ theo ISO 8601 giờ địa phương không kèm múi giờ (`2026-11-12T14:30:00`). Tiền là số nguyên VND.
 
@@ -89,3 +89,20 @@ Ngày giờ theo ISO 8601 giờ địa phương không kèm múi giờ (`2026-11
 | GET | `/api/thong-bao` | `[{thoiDiem, noiDung}]`: các dòng mới nhất của tập tin nhật ký hủy phiếu tự động (tối đa 20) |
 
 Dịch vụ nền `BoDinhThoi` gọi `XL_HuyPhieuDat.kichHoatDinhKy(thoiDiemHienTai)` ngay khi máy chủ khởi động và sau mỗi 15 phút.
+
+## Ghi chú theo máy chủ đã cài đặt
+- Đăng nhập thất bại: 401 `SAI_THONG_TIN_DANG_NHAP`; tài khoản bị khóa: 403 `TAI_KHOAN_BI_KHOA`.
+- Mã lỗi chung thêm: `DU_LIEU_KHONG_HOP_LE` (400), `CHUA_DANG_NHAP` (401), `KHONG_CO_QUYEN` (403), `KHONG_TIM_THAY` (404), `VI_PHAM_QD6` (409, phải còn ít nhất 2 sân bay và 1 hạng vé), `LOI_HE_THONG` (500, 503).
+- `chiTiet` luôn là một đối tượng (có thể rỗng); khóa là tên ô phẳng (`hoTen`, `soGiayTo`, `dienThoai`...) kể cả khi thân yêu cầu có `hanhKhach` lồng. Lỗi 409 gắn được vào ô cũng kèm `chiTiet`.
+- Sửa chuyến bay mà giảm số ghế dưới số đã bán và đã đặt, hoặc bỏ hạng đã có vé: 409 `DA_CO_VE_HOAC_PHIEU`.
+- Tên sân bay hoặc tên hạng vé trùng: 400 kèm `chiTiet`. Mã trùng: 409 `TRUNG_MA`.
+- Trường trả thêm: chi tiết chuyến bay có `tenSanBayDi`, `tenSanBayDen`; danh sách vé và phiếu có `maHangVe`, `ngayGioKhoiHanh`; phiếu còn hạn có mã và tên sân bay, `thoiDiemDat`, `tuyenBay` dạng `SGN - HAN`.
+- `gheTheoHang` ở chi tiết chuyến bay liệt kê mọi hạng vé, hạng không bán có `soLuongGhe` bằng 0.
+- `thong-tin-ban` luôn trả 200; khi không được phép thì `duocPhep` là false kèm `maLoi`, `thongBao`. Chuyến bay không tồn tại: 404.
+- `phieu-dat/con-han` không có phiếu thì trả mảng rỗng.
+- Tài khoản bị khóa hoặc bị đổi nhóm quyền thì phiên đang mở trả 401 ở yêu cầu kế tiếp.
+- Tra cứu: `maChuyenBay` lọc theo chứa; `maVe`, `maPhieuDat` theo tiền tố; `soGiayTo` khớp đúng. `GET /api/phieu-dat` không có tiêu chí thì trả mọi tình trạng. Danh sách vé và phiếu trả tối đa 1000 dòng mới nhất.
+- Ngày giờ nhận cả dạng không có giây (`2026-11-22T08:30`).
+- POST tạo mới trả 201 kèm thân nhỏ (`{maChuyenBay}`, `{tenDangNhap}`, `{maSanBay}`, `{maHangVe}`).
+- `mau-excel` chỉ Quản lý tải được.
+- `tiLe` trong báo cáo và `tiLeDonGia` của hạng vé là số phần trăm (ví dụ 12.35 và 105).

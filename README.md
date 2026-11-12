@@ -6,7 +6,7 @@
 
 | Thư mục | Nội dung |
 |---|---|
-| `api/` | Máy chủ ASP.NET Core 8 (C#) theo ba tầng: giao tiếp, xử lý nghiệp vụ (`XL_`), truy xuất dữ liệu (`DAL_`) và các lớp DTO |
+| `api/` | Máy chủ ASP.NET Core 10 (C#) theo ba tầng: giao tiếp, xử lý nghiệp vụ (`XL_`), truy xuất dữ liệu (`DAL_`) và các lớp DTO |
 | `web/` | Giao diện React + TypeScript (Vite) |
 | `db/` | Script tạo cơ sở dữ liệu SQL Server và dữ liệu mẫu |
 | `e2e/` | Kiểm thử giao diện và chụp ảnh màn hình bằng Playwright |
@@ -18,7 +18,7 @@ Hướng dẫn cài đặt và chạy sẽ được bổ sung khi mã nguồn ho
 
 ### Cần cài
 
-- .NET SDK 8.
+- .NET SDK 10.
 - SQL Server 2022 Express (hoặc bản SQL Server khác) và công cụ `sqlcmd` hay SQL Server Management Studio để chạy script.
 
 ### Tạo cơ sở dữ liệu
