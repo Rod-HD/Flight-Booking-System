@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { keepPreviousData, useQuery, useQueryClient } from '@tanstack/react-query';
 import { Hash, Pencil, PlaneTakeoff, Plus, RotateCcw, Search } from 'lucide-react';
-import { apiPhieuDat, khoaTruyVan } from '@/api/dich_vu';
+import { apiPhieuDat, khoaTruyVan, SO_KET_QUA_TOI_DA } from '@/api/dich_vu';
 import { thongBaoLoi } from '@/api/may_khach';
 import type { PhieuDat, TieuChiTimPhieu, TinhTrangPhieu } from '@/kieu/api';
 import { CHI_QUAN_LY } from '@/dinh_tuyen';
@@ -81,6 +81,7 @@ export function TrangDanhSachPhieuDat() {
     const cho = (data ?? []).filter((p) => p.tinhTrang === 'ChoThanhToan');
     return { tong: data?.length ?? 0, cho: cho.length, tien: cho.reduce((t, p) => t + p.giaTien, 0) };
   }, [data]);
+  const chamTran = thongKe.tong >= SO_KET_QUA_TOI_DA;
 
   const tim = () => {
     datChon(null);
@@ -226,12 +227,17 @@ export function TrangDanhSachPhieuDat() {
           <TieuDeMuc
             id="tieu-de-ket-qua-phieu"
             tieuDe={laMacDinh ? 'Phiếu đang chờ thanh toán' : 'Kết quả tìm kiếm'}
-            phu="Nhấp đúp một phiếu Chờ thanh toán để sửa thông tin hành khách."
+            phu={
+              <>
+                {chamTran && <b>Chỉ hiển thị {dinhDangSo(SO_KET_QUA_TOI_DA)} phiếu đầu tiên, hãy thu hẹp tiêu chí tìm kiếm. </b>}
+                Nhấp đúp một phiếu Chờ thanh toán để sửa thông tin hành khách.
+              </>
+            }
             phai={
               data && data.length > 0 ? (
                 <div className={s.tomTat}>
                   <span className={s.vien}>
-                    <b>{dinhDangSo(thongKe.tong)}</b> phiếu
+                    <b>{dinhDangSo(thongKe.tong)}</b> phiếu{chamTran && ' đầu tiên'}
                   </span>
                   <span className={s.vien}>
                     <b>{dinhDangSo(thongKe.cho)}</b> chờ thanh toán
@@ -255,6 +261,7 @@ export function TrangDanhSachPhieuDat() {
             onMoDong={sua}
             kichThuocTrang={10}
             donVi="phiếu"
+            soDongToiDa={SO_KET_QUA_TOI_DA}
             rong={{
               tieuDe: 'Không tìm thấy phiếu đặt chỗ',
               goiY: laMacDinh ? 'Hiện không có phiếu nào đang chờ thanh toán.' : 'Không có phiếu thỏa tiêu chí đã nhập. Hãy thử bỏ bớt tiêu chí hoặc chọn tình trạng Tất cả.',

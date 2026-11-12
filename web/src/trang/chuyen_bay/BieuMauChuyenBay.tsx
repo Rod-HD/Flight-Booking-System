@@ -459,14 +459,14 @@ export function BieuMauChuyenBay({ cheDo, quyDinh, chiTiet }: ThuocTinhBieuMau) 
                 </span>
               </div>
             ) : (
-              <table className={s.bangNhap}>
+              <table className={`${s.bangNhap} ${s.bangTg}`}>
                 <thead>
                   <tr>
                     <th style={{ width: 56 }}>STT</th>
                     <th>Sân bay trung gian</th>
-                    <th style={{ width: 150 }}>Thời gian dừng</th>
+                    <th style={{ width: 158 }}>Thời gian dừng</th>
                     <th>Ghi chú</th>
-                    <th style={{ width: 56 }} aria-label="Xóa dòng" />
+                    <th style={{ width: 60 }} aria-label="Xóa dòng" />
                   </tr>
                 </thead>
                 <tbody>

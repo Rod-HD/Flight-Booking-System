@@ -2,8 +2,6 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using QuanLyBanVe.Api.DTO;
-using QuanLyBanVe.Api.TienIch;
-using QuanLyBanVe.Api.TruyXuat;
 using QuanLyBanVe.Api.XuLy;
 
 namespace QuanLyBanVe.Api.GiaoTiep;
@@ -53,16 +51,13 @@ public static class XacThuc
     private static async Task kiemTraPhien(CookieValidatePrincipalContext nguCanh)
     {
         string? tenDangNhap = nguCanh.Principal?.Identity?.Name;
-        string? nhomQuyen = nguCanh.Principal?.FindFirstValue(ClaimTypes.Role);
-        var dalTaiKhoan = nguCanh.HttpContext.RequestServices.GetRequiredService<DAL_TaiKhoan>();
-        TaiKhoan? taiKhoan = tenDangNhap == null ? null : dalTaiKhoan.timTaiKhoan(tenDangNhap);
+        string? nhomQuyen = ChuyenDoi.nhomQuyenTuMa(nguCanh.Principal?.FindFirstValue(ClaimTypes.Role));
+        var xlDangNhap = nguCanh.HttpContext.RequestServices.GetRequiredService<XL_DangNhap>();
 
-        if (taiKhoan == null || taiKhoan.TrangThai != TaiKhoan.HOAT_DONG || ChuyenDoi.ma(taiKhoan.NhomQuyen) != nhomQuyen)
+        if (!xlDangNhap.tiepTucPhien(tenDangNhap, nhomQuyen))
         {
             nguCanh.RejectPrincipal();
             await nguCanh.HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return;
         }
-        nguCanh.HttpContext.RequestServices.GetRequiredService<PhienLamViec>().batDau(taiKhoan);
     }
 }

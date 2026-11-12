@@ -2,8 +2,8 @@
 import { useMemo, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { keepPreviousData, useQuery, useQueryClient } from '@tanstack/react-query';
-import { Hash, Pencil, PlaneTakeoff, Plus, RotateCcw, Search, XCircle } from 'lucide-react';
-import { apiVe, khoaTruyVan } from '@/api/dich_vu';
+import { Hash, Pencil, PlaneTakeoff, Plus, RotateCcw, Search, X, XCircle } from 'lucide-react';
+import { apiVe, khoaTruyVan, SO_KET_QUA_TOI_DA } from '@/api/dich_vu';
 import { thongBaoLoi } from '@/api/may_khach';
 import type { TieuChiTimVe, Ve } from '@/kieu/api';
 import { IconChongVe } from '@/icons3d';
@@ -18,8 +18,9 @@ import { ONhap } from '@/thanh_phan/ONhap';
 import { LOP_O_PHANG, ThanhTimKiem } from '@/thanh_phan/ThanhTimKiem';
 import { hienToast } from '@/thanh_phan/toast_kho';
 import { dinhDangSo, dinhDangTien, tenLoaiGiayTo } from '@/tien_ich/dinh_dang';
+import { dungBayGio } from '@/tien_ich/hook';
 import { dungPhimTat } from '@/tien_ich/phim_tat';
-import { dinhDangGio, dinhDangNgay, sangNgayIso } from '@/tien_ich/thoi_gian';
+import { dinhDangGio, dinhDangNgay, docIso, sangNgayIso } from '@/tien_ich/thoi_gian';
 import { dungLuaChonMoiChuyenBay } from '../_chung_ve/dung_chuyen_bay';
 import { lamMoiSauGhi } from '../_chung_ve/kiem_tra';
 import s from '../_chung_ve/DanhSach.module.css';
@@ -55,6 +56,7 @@ export function TrangDanhSachVe() {
   const [dangHuy, datDangHuy] = useState<string | null>(null);
   const [loiNgay, datLoiNgay] = useState<string | undefined>();
   const chuyenBay = dungLuaChonMoiChuyenBay();
+  const bayGio = dungBayGio();
 
   const { data, isPending, isFetching, error } = useQuery({
     queryKey: khoaTruyVan.ve(tieuChi),
@@ -66,6 +68,10 @@ export function TrangDanhSachVe() {
     const daBan = (data ?? []).filter((v) => v.tinhTrang === 'DaBan');
     return { tong: data?.length ?? 0, daBan: daBan.length, tien: daBan.reduce((t, v) => t + v.giaTien, 0) };
   }, [data]);
+  const chamTran = thongKe.tong >= SO_KET_QUA_TOI_DA;
+
+  // giống XL_BanVe.huyVe: không hủy vé của chuyến bay đã khởi hành
+  const daKhoiHanh = (v: Ve) => !!v.ngayGioKhoiHanh && docIso(v.ngayGioKhoiHanh) <= bayGio;
 
   const tim = () => {
     if (nhap.tuNgay && nhap.denNgay && nhap.tuNgay > nhap.denNgay) {
@@ -137,7 +143,7 @@ export function TrangDanhSachVe() {
           <Nut iconTrai={<Plus size={18} strokeWidth={2.6} />} den="/ban-ve" title="Bán vé (Ctrl+N)">
             Bán vé
           </Nut>
-          <Nut bienThe="lang" muiTen={false} den="/">
+          <Nut bienThe="lang" muiTen={false} iconTrai={<X size={18} />} den="/">
             Đóng
           </Nut>
         </>
@@ -211,12 +217,17 @@ export function TrangDanhSachVe() {
           <TieuDeMuc
             id="tieu-de-ket-qua-ve"
             tieuDe={laMacDinh ? 'Vé bán hôm nay' : 'Kết quả tìm kiếm'}
-            phu="Nhấp đúp một vé Đã bán để sửa thông tin hành khách."
+            phu={
+              <>
+                {chamTran && <b>Chỉ hiển thị {dinhDangSo(SO_KET_QUA_TOI_DA)} vé đầu tiên, hãy thu hẹp tiêu chí tìm kiếm. </b>}
+                Nhấp đúp một vé Đã bán để sửa thông tin hành khách.
+              </>
+            }
             phai={
               data && data.length > 0 ? (
                 <div className={s.tomTat}>
                   <span className={s.vien}>
-                    <b>{dinhDangSo(thongKe.tong)}</b> vé
+                    <b>{dinhDangSo(thongKe.tong)}</b> vé{chamTran && ' đầu tiên'}
                   </span>
                   <span className={s.vien}>
                     <b>{dinhDangSo(thongKe.daBan)}</b> đã bán
@@ -240,6 +251,7 @@ export function TrangDanhSachVe() {
             onMoDong={sua}
             kichThuocTrang={10}
             donVi="vé"
+            soDongToiDa={SO_KET_QUA_TOI_DA}
             rong={{
               tieuDe: 'Không tìm thấy vé',
               goiY: laMacDinh ? 'Hôm nay chưa bán vé nào. Bấm Bán vé để lập vé mới.' : 'Không có vé thỏa tiêu chí đã nhập. Hãy thử bỏ bớt tiêu chí hoặc xóa ô ngày.',
@@ -281,6 +293,7 @@ export function TrangDanhSachVe() {
                 canh: 'phai',
                 hien: (v) => {
                   const daBan = v.tinhTrang === 'DaBan';
+                  const huyDuoc = daBan && !daKhoiHanh(v);
                   return (
                     <span className={s.thaoTac} onDoubleClick={(e) => e.stopPropagation()}>
                       <NutTron nhan={daBan ? `Sửa vé ${v.maVe}` : 'Vé đã hủy, không sửa được'} kichThuoc="nho" disabled={!daBan} onClick={() => sua(v)}>
@@ -291,9 +304,9 @@ export function TrangDanhSachVe() {
                         kichThuoc="nho"
                         muiTen={false}
                         iconTrai={<XCircle size={15} />}
-                        disabled={!daBan}
+                        disabled={!huyDuoc}
                         dangXuLy={dangHuy === v.maVe}
-                        title={daBan ? `Hủy vé ${v.maVe}` : 'Vé đã hủy'}
+                        title={huyDuoc ? `Hủy vé ${v.maVe}` : daBan ? 'Chuyến bay đã khởi hành, không hủy được' : 'Vé đã hủy'}
                         onClick={(e) => {
                           e.stopPropagation();
                           huy(v);

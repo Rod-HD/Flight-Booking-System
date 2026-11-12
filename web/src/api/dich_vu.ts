@@ -91,6 +91,9 @@ export const apiChuyenBay = {
 };
 
 /* ---------- Vé (UC04) ---------- */
+/** Tra cứu vé và tra cứu phiếu đặt chỗ chỉ trả về tối đa bấy nhiêu dòng (SO_DONG_TOI_DA ở DAL_Ve, DAL_PhieuDatCho) */
+export const SO_KET_QUA_TOI_DA = 1000;
+
 export const apiVe = {
   ban: (yc: YeuCauBanVe) => goiApi<KetQuaBanVe>('POST', '/api/ve', { than: yc }),
   banTuPhieu: (maPhieuDat: string) => goiApi<KetQuaBanVe>('POST', '/api/ve/tu-phieu', { than: { maPhieuDat } }),

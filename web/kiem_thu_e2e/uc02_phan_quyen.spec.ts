@@ -61,6 +61,9 @@ test.describe('UC02 Phân quyền', () => {
     await expect(page.getByText(/đã tồn tại|đã có/i).first()).toBeVisible();
     // tài khoản nhanvien vẫn chỉ có một dòng
     await hopThoai(page, 'Thêm tài khoản').getByRole('button', { name: 'Hủy' }).click();
+    // biểu mẫu đang nhập dở nên được hỏi lại trước khi đóng
+    await bamTrongHopThoai(page, 'Hủy thông tin đang nhập?', 'Hủy thay đổi');
+    await expect(hopThoai(page, 'Thêm tài khoản')).toBeHidden();
     await page.getByRole('textbox', { name: 'Tìm tài khoản' }).fill('nhanvien');
     await expect(page.getByRole('table', { name: 'Danh sách tài khoản' }).getByRole('row').filter({ has: page.getByText('nhanvien', { exact: true }) })).toHaveCount(1);
   });

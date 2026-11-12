@@ -706,8 +706,13 @@ tr:hover .sanBay b {
   font-weight: 700;
 }
 
+/* bảng sân bay trung gian: chia cột theo bề rộng thẻ, ô nhập co theo cột để bảng không tràn ra ngoài thẻ */
+.bangTg {
+  table-layout: fixed;
+}
+
 .oTgSanBay {
-  min-width: 220px;
+  min-width: 0;
 }
 
 .oTgDung {

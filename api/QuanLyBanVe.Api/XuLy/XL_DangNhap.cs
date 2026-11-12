@@ -35,6 +35,19 @@ public class XL_DangNhap
         return taiKhoan;
     }
 
+    /// <summary>
+    /// Nạp lại phiên làm việc từ cookie ở mỗi yêu cầu: tài khoản phải còn tồn tại, đang hoạt động và giữ đúng
+    /// nhóm quyền ghi trong cookie. Trả về false khi phiên không còn hiệu lực.
+    /// </summary>
+    public bool tiepTucPhien(string? tenDN, string? nhomQuyen)
+    {
+        TaiKhoan? taiKhoan = tenDN == null ? null : dalTaiKhoan.timTaiKhoan(tenDN);
+        if (taiKhoan == null || taiKhoan.TrangThai != TaiKhoan.HOAT_DONG || taiKhoan.NhomQuyen != nhomQuyen) return false;
+
+        phien.batDau(taiKhoan);
+        return true;
+    }
+
     public void dangXuat()
     {
         phien.ketThuc();

@@ -1,5 +1,5 @@
 // Hộp thoại thêm, sửa tài khoản (MH_ThemSuaTaiKhoan)
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useQueryClient } from '@tanstack/react-query';
 import { AlertTriangle, Check, Eye, EyeOff, KeyRound, Lock, ShieldCheck, Ticket, User } from 'lucide-react';
 import { apiTaiKhoan, khoaTruyVan } from '@/api/dich_vu';
@@ -7,7 +7,7 @@ import { laLoiApi, thongBaoLoi } from '@/api/may_khach';
 import { IconKhienChia } from '@/icons3d';
 import type { NhomQuyen, TaiKhoan } from '@/kieu/api';
 import { HopThoai } from '@/thanh_phan/HopThoai';
-import { baoLoi } from '@/thanh_phan/hop_thoai_kho';
+import { baoLoi, hoiXacNhan } from '@/thanh_phan/hop_thoai_kho';
 import { Nut } from '@/thanh_phan/Nut';
 import { ONhap } from '@/thanh_phan/ONhap';
 import { hienToast } from '@/thanh_phan/toast_kho';
@@ -105,6 +105,7 @@ export function HopThoaiTaiKhoan({ cheDo, tenDangDangNhap, onDong }: { cheDo: Ch
   const [loiMayChu, datLoiMayChu] = useState<Record<string, string>>({});
   const [daGui, datDaGui] = useState(false);
   const [dangLuu, datDangLuu] = useState(false);
+  const dangHoiHuy = useRef(false);
 
   useEffect(() => {
     if (!cheDo) return;
@@ -121,6 +122,9 @@ export function HopThoaiTaiKhoan({ cheDo, tenDangDangNhap, onDong }: { cheDo: Ch
   const laSua = cd?.loai === 'sua';
   const laChinhMinh = laSua && cd.taiKhoan.tenDangNhap.toLowerCase() === tenDangDangNhap?.toLowerCase();
   const truongMk = laSua ? 'matKhauMoi' : 'matKhau';
+  const daDoi = laSua
+    ? nhom !== cd.taiKhoan.nhomQuyen || !!matKhau || !!nhapLai
+    : !!ten || !!matKhau || !!nhapLai || nhom !== 'NhanVien';
 
   const kiemTra = () => {
     const l: Record<string, string> = {};
@@ -175,12 +179,32 @@ export function HopThoaiTaiKhoan({ cheDo, tenDangDangNhap, onDong }: { cheDo: Ch
     }
   };
 
-  dungPhimTat({ 'ctrl+s': () => void luu(), esc: () => !dangLuu && onDong() }, { batTat: !!cheDo, keCaHopThoai: true });
+  // bấm Hủy, nút đóng, Esc hay bấm ra ngoài hộp thoại khi đang nhập dở thì hỏi lại, không đóng lặng lẽ
+  const huy = async () => {
+    if (dangLuu || dangHoiHuy.current) return;
+    if (daDoi) {
+      dangHoiHuy.current = true;
+      const dongY = await hoiXacNhan({
+        loai: 'xac-nhan',
+        tieuDe: 'Hủy thông tin đang nhập?',
+        noiDung: laSua
+          ? 'Các thay đổi chưa lưu sẽ bị bỏ. Tài khoản giữ nguyên như trước khi mở biểu mẫu.'
+          : 'Thông tin đã nhập sẽ không được lưu, tài khoản chưa được tạo.',
+        nutDongY: 'Hủy thay đổi',
+        nutHuy: 'Tiếp tục nhập',
+      });
+      dangHoiHuy.current = false;
+      if (!dongY) return;
+    }
+    onDong();
+  };
+
+  dungPhimTat({ 'ctrl+s': () => void luu(), esc: () => void huy() }, { batTat: !!cheDo, keCaHopThoai: true });
 
   return (
     <HopThoai
       mo={!!cheDo}
-      onDong={onDong}
+      onDong={() => void huy()}
       rong={580}
       icon={<IconKhienChia kichThuoc={56} />}
       tieuDe={laSua ? `Sửa tài khoản ${cd.taiKhoan.tenDangNhap}` : 'Thêm tài khoản'}
@@ -192,7 +216,7 @@ export function HopThoaiTaiKhoan({ cheDo, tenDangDangNhap, onDong }: { cheDo: Ch
       dongKhiBamNen={!dangLuu}
       chan={
         <>
-          <Nut bienThe="nguy-hiem" muiTen={false} onClick={onDong} disabled={dangLuu}>
+          <Nut bienThe="nguy-hiem" muiTen={false} onClick={() => void huy()} disabled={dangLuu}>
             Hủy
           </Nut>
           <Nut type="submit" form="form-tai-khoan" dangXuLy={dangLuu}>

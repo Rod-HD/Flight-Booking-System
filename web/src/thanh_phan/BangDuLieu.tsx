@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { thongBaoLoi } from '@/api/may_khach';
+import { dinhDangSo } from '@/tien_ich/dinh_dang';
 import { NutTron } from './Nut';
 import { KhungXuong, TrangThaiRong, type ThuocTinhTrangThaiRong } from './TrangThaiRong';
 import s from './BangDuLieu.module.css';
@@ -35,6 +36,8 @@ export interface ThuocTinhBang<T> {
   chieuCaoToiDa?: number;
   /** tên đơn vị trong dòng tóm tắt, ví dụ 'chuyến bay' */
   donVi?: string;
+  /** máy chủ chỉ trả tối đa bấy nhiêu dòng; đủ số này thì dòng tóm tắt ghi rõ là các dòng đầu tiên */
+  soDongToiDa?: number;
   soDongXuong?: number;
   nhan?: string;
   className?: string;
@@ -69,6 +72,7 @@ export function BangDuLieu<T>({
   rong,
   chieuCaoToiDa,
   donVi = 'dòng',
+  soDongToiDa,
   soDongXuong = 5,
   nhan,
   className,
@@ -104,6 +108,7 @@ export function BangDuLieu<T>({
   };
 
   const coDuLieu = !dangTai && !loi && tong > 0;
+  const chamTran = !!soDongToiDa && tong >= soDongToiDa;
 
   return (
     <div className={`${s.khung} ${className ?? ''}`}>
@@ -161,7 +166,8 @@ export function BangDuLieu<T>({
       {coDuLieu && kichThuocTrang && (
         <div className={s.chanBang}>
           <span className={s.tomTat}>
-            Hiển thị <b>{(trang - 1) * kichThuocTrang + 1}</b> đến <b>{Math.min(tong, trang * kichThuocTrang)}</b> trong <b>{tong}</b> {donVi}
+            Hiển thị <b>{(trang - 1) * kichThuocTrang + 1}</b> đến <b>{Math.min(tong, trang * kichThuocTrang)}</b> trong <b>{dinhDangSo(tong)}</b> {donVi}
+            {chamTran && ' đầu tiên'}
           </span>
           {soTrang > 1 && (
             <nav className={s.phanTrang} aria-label="Phân trang">
