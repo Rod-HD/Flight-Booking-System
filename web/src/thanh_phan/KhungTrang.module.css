@@ -1,0 +1,123 @@
+/* Khung trang nghiệp vụ: đường dẫn, tiêu đề có icon 3D, vùng nút bên phải */
+.khung {
+  width: 100%;
+  max-width: calc(var(--rong-trang) + var(--le-trang) * 2);
+  margin: 0 auto;
+  padding: 24px var(--le-trang) 56px;
+}
+
+.duongDan {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  color: var(--muc-500);
+}
+
+.duongDan a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 6px;
+  margin: 0 -6px;
+  border-radius: 6px;
+  transition: var(--chuyen-mau);
+}
+
+.duongDan a:hover {
+  color: var(--do-500);
+  background: var(--do-50);
+}
+
+.duongDan li[aria-current='page'] {
+  font-weight: 700;
+  color: var(--do-500);
+}
+
+.cach {
+  color: var(--muc-300);
+}
+
+.dau {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px 32px;
+  margin-bottom: 28px;
+}
+
+.tieuDeCum {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-width: 0;
+}
+
+.oIcon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 72px;
+  height: 72px;
+  border-radius: 22px;
+  background: var(--nen-1);
+}
+
+.tieuDe {
+  font-size: var(--co-h1);
+  line-height: 40px;
+  font-weight: 700;
+  color: var(--muc-900);
+}
+
+.moTa {
+  margin-top: 2px;
+  font-size: 15px;
+  color: var(--muc-500);
+}
+
+.nut {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* tiêu đề mục trong trang */
+.muc {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.mucTrai {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.vach {
+  width: 6px;
+  height: 26px;
+  border-radius: 6px;
+  background: var(--gd-do);
+}
+
+.mucTieuDe {
+  font-size: var(--co-h2);
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--muc-900);
+}
+
+.mucPhu {
+  font-size: 14px;
+  color: var(--muc-500);
+}

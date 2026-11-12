@@ -1,0 +1,153 @@
+.luoi {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 400px;
+  gap: 32px;
+  align-items: start;
+}
+
+.buoc {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: buoc;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buoc li {
+  counter-increment: buoc;
+  display: flex;
+  gap: 12px;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--muc-700);
+}
+
+.buoc li::before {
+  content: counter(buoc);
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--do-50);
+  color: var(--do-500);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.buoc b {
+  color: var(--muc-900);
+}
+
+.the {
+  position: sticky;
+  top: calc(var(--cao-thanh-tren) + 24px);
+  padding: 24px;
+  border-radius: var(--bo-the);
+  border: 1px solid var(--vien);
+  background: var(--nen-0);
+  box-shadow: var(--bong-thanh);
+}
+
+.dauThe {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.dauThe h2 {
+  font-size: 20px;
+}
+
+.dauThe p {
+  font-size: 14px;
+  color: var(--muc-500);
+}
+
+.phim {
+  display: flex;
+  flex-direction: column;
+}
+
+.dong {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 8px;
+  margin: 0 -8px;
+  border-radius: 12px;
+  border-bottom: 1px dashed var(--vien);
+  transition: var(--chuyen-mau);
+}
+
+.dong:last-child {
+  border-bottom: 0;
+}
+
+.dong:hover {
+  background: var(--do-50);
+  color: var(--do-500);
+}
+
+.cacPhim {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex: none;
+}
+
+.cong {
+  color: var(--muc-400);
+  font-size: 13px;
+}
+
+.phimNut {
+  min-width: 30px;
+  height: 30px;
+  padding: 0 8px;
+  border: 1px solid var(--vien);
+  border-bottom-width: 3px;
+  border-radius: 8px;
+  background: var(--nen-0);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  color: var(--muc-900);
+}
+
+.mucQD {
+  margin-top: 48px;
+}
+
+.luoiQD {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.hang {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(--muc-500);
+}
+
+@media (max-width: 1080px) {
+  .luoi {
+    grid-template-columns: 1fr;
+  }
+  .the {
+    position: static;
+  }
+  .luoiQD {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

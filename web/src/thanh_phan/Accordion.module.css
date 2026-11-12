@@ -1,0 +1,97 @@
+.ds {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.muc {
+  border: 1px solid var(--vien);
+  border-radius: 20px;
+  background: var(--nen-0);
+  transition: border-color var(--tg-mau) ease, box-shadow var(--tg-mau) ease;
+}
+
+.muc:hover {
+  border-color: var(--do-200);
+}
+
+.mo {
+  border-color: var(--do-500);
+  box-shadow: 0 12px 28px rgba(236, 32, 41, 0.1);
+}
+
+.dau {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 16px 20px;
+  border: 0;
+  border-radius: 20px;
+  background: transparent;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--muc-900);
+  transition: var(--chuyen-mau);
+}
+
+.dau:hover {
+  color: var(--do-500);
+}
+
+.mo .dau {
+  color: var(--do-500);
+  font-weight: 700;
+}
+
+.icon {
+  flex: none;
+  display: inline-flex;
+}
+
+.chu {
+  flex: 1;
+}
+
+.phu {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muc-500);
+}
+
+.mui {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--nen-1);
+  color: var(--muc-500);
+  transition: transform var(--tg-vua) var(--cong-mem), var(--chuyen-mau);
+}
+
+.mo .mui {
+  transform: rotate(180deg);
+  background: var(--do-500);
+  color: #fff;
+}
+
+.than {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--tg-vua) var(--cong-mem);
+}
+
+.mo .than {
+  grid-template-rows: 1fr;
+}
+
+.thanTrong {
+  overflow: hidden;
+}
+
+.noiDung {
+  padding: 0 20px 20px 20px;
+}

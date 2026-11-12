@@ -1,0 +1,43 @@
+.rong {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  padding: 40px 24px;
+}
+
+.hinh {
+  margin-bottom: 8px;
+  animation: lo-lung 3.2s ease-in-out infinite;
+}
+
+@keyframes lo-lung {
+  50% {
+    transform: translateY(-6px) rotate(-2deg);
+  }
+}
+
+.tieuDe {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--muc-900);
+}
+
+.goiY {
+  max-width: 420px;
+  font-size: 14px;
+  color: var(--muc-500);
+}
+
+.hanhDong {
+  margin-top: 12px;
+}
+
+.xuong {
+  display: block;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #eeeff1 0%, #f8f8f9 40%, #eeeff1 80%) #eeeff1;
+  background-size: 640px 100%;
+  animation: anh-xuong 1.3s linear infinite;
+}

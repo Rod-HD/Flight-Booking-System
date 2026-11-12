@@ -1,0 +1,223 @@
+/* Nút: viên thuốc, bốn biến thể và nút tròn icon */
+.nut {
+  --cao: 48px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: var(--cao);
+  padding: 0 24px;
+  border: 1px solid transparent;
+  border-radius: var(--bo-vien-thuoc);
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  transition: var(--chuyen-mau), transform var(--tg-nhanh) var(--cong-mem), filter var(--tg-mau) ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nut:focus-visible {
+  box-shadow: var(--vong-focus);
+}
+
+.nut:not(:disabled):not([aria-disabled='true']):active {
+  transform: scale(0.98);
+}
+
+.nut:disabled,
+.nut[aria-disabled='true'] {
+  cursor: not-allowed;
+  opacity: 0.48;
+  box-shadow: none;
+}
+
+.nho {
+  --cao: 36px;
+  padding: 0 16px;
+  font-size: 14px;
+  gap: 6px;
+}
+
+.lon {
+  --cao: 56px;
+  padding: 0 32px;
+  font-size: 18px;
+}
+
+.toanChieuRong {
+  width: 100%;
+}
+
+.icon {
+  display: inline-flex;
+  flex: none;
+}
+
+.muiTen {
+  display: inline-flex;
+  flex: none;
+  transition: transform var(--tg-the) var(--cong-mem);
+}
+
+.nut:not(:disabled):not([aria-disabled='true']):hover .muiTen,
+.nut:focus-visible .muiTen {
+  transform: translateX(4px);
+}
+
+/* chính: vàng gradient, chữ đậm tối */
+.chinh {
+  background: var(--gd-vang);
+  color: var(--muc-900);
+  box-shadow: 0 6px 16px rgba(245, 190, 0, 0.28);
+}
+
+.chinh:not(:disabled):not([aria-disabled='true']):hover {
+  background: var(--gd-vang-sang);
+  box-shadow: var(--bong-vang);
+  filter: saturate(1.08);
+}
+
+.chinh:focus-visible {
+  box-shadow: var(--vong-focus), var(--bong-vang);
+}
+
+/* phụ: viền đỏ, di chuột thì đổ đầy đỏ */
+.phu {
+  background: var(--nen-0);
+  border-color: var(--do-500);
+  color: var(--do-500);
+}
+
+.phu:not(:disabled):not([aria-disabled='true']):hover {
+  background: var(--do-500);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(236, 32, 41, 0.25);
+}
+
+/* nguy hiểm: đỏ đặc cho Xóa, Hủy, Khóa */
+.nguyHiem {
+  background: var(--gd-do);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(236, 32, 41, 0.22);
+}
+
+.nguyHiem:not(:disabled):not([aria-disabled='true']):hover {
+  background: var(--do-700);
+  box-shadow: 0 8px 22px rgba(179, 20, 27, 0.32);
+}
+
+/* lặng: viền xám cho Đóng, Thoát, Đăng xuất */
+.lang {
+  background: var(--nen-0);
+  border-color: var(--muc-300);
+  color: var(--muc-900);
+}
+
+.lang:not(:disabled):not([aria-disabled='true']):hover {
+  border-color: var(--do-200);
+  background: #fff6f6;
+  color: var(--do-500);
+}
+
+/* chữ: dạng liên kết đỏ */
+.chu {
+  height: auto;
+  padding: 4px 2px;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--do-500);
+}
+
+.chu:not(:disabled):not([aria-disabled='true']):hover {
+  color: var(--do-700);
+}
+
+/* vòng quay khi đang xử lý */
+.quay {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2.5px solid currentColor;
+  border-right-color: transparent;
+  animation: xoay-tron 700ms linear infinite;
+}
+
+/* nút tròn icon 40px */
+.tron {
+  --kt: 40px;
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: var(--kt);
+  height: var(--kt);
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--vien);
+  background: var(--nen-0);
+  color: var(--muc-900);
+  cursor: pointer;
+  transition: var(--chuyen-mau), transform var(--tg-nhanh) var(--cong-mem);
+}
+
+.tron:not(:disabled):hover {
+  color: var(--do-500);
+  border-color: var(--do-200);
+  background: #fff6f6;
+}
+
+.tron:not(:disabled):active {
+  transform: scale(0.94);
+}
+
+.tron:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.tronNho {
+  --kt: 32px;
+}
+
+.tronLon {
+  --kt: 48px;
+}
+
+.tronTrong {
+  border-color: transparent;
+  background: transparent;
+}
+
+.tronTrong:not(:disabled):hover {
+  background: var(--do-50);
+  border-color: transparent;
+}
+
+.tronToi {
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  backdrop-filter: blur(6px);
+}
+
+.tronToi:not(:disabled):hover {
+  background: #fff;
+  color: var(--do-500);
+  border-color: #fff;
+}
+
+.tronDo {
+  border-color: transparent;
+  background: var(--do-50);
+  color: var(--do-500);
+}
+
+.tronDo:not(:disabled):hover {
+  background: var(--do-500);
+  color: #fff;
+}

@@ -1,0 +1,352 @@
+/* Ô nhập: nhãn nhỏ phía trên, viền xám, focus viền đỏ phát sáng, lỗi chữ đỏ */
+.truong {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.nhan {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muc-900);
+  line-height: 20px;
+}
+
+.batBuoc .nhan {
+  font-weight: 700;
+}
+
+.sao {
+  color: var(--do-500);
+  margin-left: 2px;
+}
+
+.khung {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: var(--cao-o-nhap);
+  border: 1px solid var(--vien);
+  border-radius: var(--bo-o);
+  background: var(--nen-1);
+  transition: var(--chuyen-mau);
+}
+
+.khung:hover {
+  border-color: var(--muc-300);
+  background: var(--nen-0);
+}
+
+.khung:focus-within {
+  border-color: var(--do-500);
+  background: var(--nen-0);
+  box-shadow: var(--vong-focus-o);
+}
+
+.loi .khung {
+  border-color: var(--do-500);
+  background: #fff8f8;
+}
+
+.loi .khung:focus-within {
+  box-shadow: 0 0 0 4px rgba(236, 32, 41, 0.16);
+}
+
+.voHieu .khung {
+  background: var(--nen-2);
+  border-color: var(--vien);
+  cursor: not-allowed;
+}
+
+.chiDoc .khung {
+  background: var(--nen-0);
+  border-style: dashed;
+}
+
+.iconTrai {
+  display: inline-flex;
+  padding-left: 14px;
+  color: var(--muc-500);
+  transition: color var(--tg-mau) ease;
+  pointer-events: none;
+}
+
+.khung:focus-within .iconTrai {
+  color: var(--do-500);
+}
+
+.o {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0 14px;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--muc-900);
+}
+
+.o::placeholder {
+  color: var(--muc-400);
+  font-weight: 400;
+}
+
+.o:disabled {
+  cursor: not-allowed;
+  color: var(--muc-500);
+}
+
+.o:focus-visible {
+  box-shadow: none;
+}
+
+.ben {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding-right: 6px;
+  color: var(--muc-500);
+}
+
+.goiY {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--muc-500);
+}
+
+.chuLoi {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  color: var(--do-500);
+  animation: hien-dan-len var(--tg-mau) var(--cong-mem);
+}
+
+.chuLoi svg {
+  flex: none;
+  margin-top: 1px;
+}
+
+/* select gốc */
+.chon {
+  appearance: none;
+  cursor: pointer;
+  padding-right: 40px;
+}
+
+.mui {
+  position: absolute;
+  right: 14px;
+  pointer-events: none;
+  color: var(--muc-500);
+  transition: transform var(--tg-mau) var(--cong-mem), color var(--tg-mau) ease;
+}
+
+.khung:focus-within .mui {
+  color: var(--do-500);
+}
+
+/* ô ngày giờ gốc */
+.ngay::-webkit-calendar-picker-indicator {
+  /* phủ lên icon bên trái: bấm icon là mở lịch */
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.ngay::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+
+.ngay::-webkit-datetime-edit-text {
+  color: var(--muc-400);
+  padding: 0 2px;
+}
+
+.ngay::-webkit-datetime-edit-day-field:focus,
+.ngay::-webkit-datetime-edit-month-field:focus,
+.ngay::-webkit-datetime-edit-year-field:focus,
+.ngay::-webkit-datetime-edit-hour-field:focus,
+.ngay::-webkit-datetime-edit-minute-field:focus {
+  background: var(--do-100);
+  color: var(--do-700);
+  border-radius: 4px;
+}
+
+.ngayTrong::-webkit-datetime-edit {
+  color: var(--muc-400);
+  font-weight: 400;
+}
+
+/* combobox */
+.danhSach {
+  position: absolute;
+  z-index: 40;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  max-height: 288px;
+  overflow: auto;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: var(--nen-0);
+  border: 1px solid var(--vien);
+  border-radius: 16px;
+  box-shadow: var(--bong-noi);
+  transform-origin: top center;
+  animation: mo-danh-sach var(--tg-mau) var(--cong-mem);
+}
+
+@keyframes mo-danh-sach {
+  from {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.98);
+  }
+}
+
+.luaChon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--muc-900);
+  transition: var(--chuyen-mau);
+}
+
+.luaChon[data-sang='true'] {
+  background: var(--do-50);
+  color: var(--do-500);
+}
+
+.luaChon[aria-selected='true'] {
+  font-weight: 700;
+  color: var(--do-500);
+}
+
+.maLuaChon {
+  flex: none;
+  min-width: 44px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background: var(--nen-1);
+  font-weight: 700;
+  font-size: 13px;
+  text-align: center;
+  color: var(--muc-900);
+  transition: var(--chuyen-mau);
+}
+
+.luaChon[data-sang='true'] .maLuaChon,
+.luaChon[aria-selected='true'] .maLuaChon {
+  background: var(--do-500);
+  color: #fff;
+}
+
+.phuLuaChon {
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--muc-500);
+}
+
+.tich {
+  margin-left: auto;
+  color: var(--do-500);
+}
+
+.khongCo {
+  padding: 14px 12px;
+  color: var(--muc-500);
+  font-size: 14px;
+}
+
+.xoa {
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muc-400);
+  transition: var(--chuyen-mau);
+}
+
+.xoa:hover {
+  background: var(--do-50);
+  color: var(--do-500);
+}
+
+.muiCombo {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  color: var(--muc-500);
+  transition: transform var(--tg-mau) var(--cong-mem), color var(--tg-mau) ease;
+}
+
+.dangMo .muiCombo {
+  transform: rotate(180deg);
+  color: var(--do-500);
+}
+
+/* biến thể phẳng dùng trong thanh tìm kiếm nổi: không viền, nhãn xám nhỏ */
+.phang {
+  gap: 2px;
+}
+
+.phang .nhan {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muc-500);
+}
+
+.phang.batBuoc .nhan {
+  font-weight: 700;
+  color: var(--muc-700);
+}
+
+.phang .khung {
+  height: 44px;
+  border-color: transparent;
+  background: transparent;
+  border-radius: 10px;
+}
+
+.phang .khung:hover {
+  background: var(--do-50);
+  border-color: transparent;
+}
+
+.phang .khung:focus-within {
+  background: var(--nen-0);
+  border-color: var(--do-200);
+  box-shadow: none;
+}
+
+.phang .o {
+  padding: 0 8px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.phang .iconTrai {
+  padding-left: 8px;
+  color: var(--do-500);
+}

@@ -1,0 +1,247 @@
+/* Header 72px: trong suốt trên dải đỏ ở đầu trang chính, cuộn xuống thành thanh trắng bo góc dưới */
+.dauTrang {
+  padding: 0 16px;
+}
+
+.thanh {
+  height: var(--cao-dau-trang);
+  max-width: 1408px;
+  margin: 0 auto;
+  border-radius: 0 0 24px 24px;
+  background: var(--nen-0);
+  box-shadow: var(--bong-thanh);
+  color: var(--muc-900);
+  transition: background-color var(--tg-mau) ease, box-shadow var(--tg-mau) ease, color var(--tg-mau) ease;
+}
+
+.trongSuot {
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+}
+
+.trong {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  padding: 0 20px 0 24px;
+}
+
+.vachDung {
+  flex: none;
+  width: 1px;
+  height: 32px;
+  background: var(--vien);
+  transition: background-color var(--tg-mau) ease;
+}
+
+.trongSuot .vachDung {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex: 1;
+  min-width: 0;
+}
+
+.muc {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+  color: inherit;
+  transition: var(--chuyen-mau);
+}
+
+.muc::after {
+  content: '';
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -16px;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--do-500);
+  transform: scaleX(0);
+  transition: transform var(--tg-the) var(--cong-mem), background-color var(--tg-mau) ease;
+}
+
+.muc:hover {
+  color: var(--do-500);
+  background: var(--do-50);
+}
+
+.trongSuot .muc:hover {
+  color: var(--do-500);
+  background: #fff;
+}
+
+.dangO {
+  font-weight: 700;
+  color: var(--muc-900);
+}
+
+.trongSuot .dangO {
+  color: #fff;
+}
+
+.dangO::after {
+  transform: scaleX(1);
+}
+
+.trongSuot .dangO::after {
+  background: #fff;
+}
+
+.phai {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: none;
+}
+
+.cum {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  padding: 3px;
+  border: 1px solid var(--vien);
+  border-radius: var(--bo-vien-thuoc);
+  background: var(--nen-1);
+  transition: var(--chuyen-mau);
+}
+
+.trongSuot .cum {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(8px);
+}
+
+.nutCum {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: var(--bo-vien-thuoc);
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: inherit;
+  transition: var(--chuyen-mau);
+}
+
+.nutCum:hover {
+  color: var(--do-500);
+  background: var(--nen-0);
+}
+
+.nutCum.dangO {
+  color: var(--do-500);
+  background: var(--nen-0);
+  box-shadow: var(--bong-nhe);
+}
+
+.trongSuot .nutCum.dangO {
+  color: var(--do-500);
+}
+
+.phimNho {
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.7;
+}
+
+.nguoi {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 36px;
+  padding: 0 14px 0 4px;
+  border-left: 1px solid var(--vien);
+  margin-left: 2px;
+  padding-left: 10px;
+}
+
+.trongSuot .nguoi {
+  border-left-color: rgba(255, 255, 255, 0.35);
+}
+
+.anh {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--gd-do);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+.ten {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.tenDN {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.vaiTro {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.dangXuat {
+  height: 44px !important;
+}
+
+.trongSuot .dangXuat {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #fff;
+}
+
+.trongSuot .dangXuat:hover {
+  background: #fff;
+  border-color: #fff;
+  color: var(--do-500);
+}
+
+@media (max-width: 1240px) {
+  .ten {
+    display: none;
+  }
+  .nguoi {
+    padding-right: 4px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .menu {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .chuDangXuat,
+  .chuTroGiup {
+    display: none;
+  }
+}

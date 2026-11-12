@@ -1,0 +1,48 @@
+.o {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 22px;
+  border-radius: var(--bo-khung);
+  background: var(--nen-1);
+  border: 1px solid transparent;
+  transition: background-color var(--tg-mau) ease, box-shadow var(--tg-mau) ease, transform var(--tg-the) var(--cong-mem);
+}
+
+.o:hover {
+  background: var(--nen-0);
+  box-shadow: var(--bong-noi);
+  transform: translateY(-2px);
+}
+
+.icon {
+  flex: none;
+}
+
+.nhan {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muc-500);
+}
+
+.so {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 2px;
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 700;
+  color: var(--muc-900);
+  font-variant-numeric: tabular-nums;
+}
+
+.donVi {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--muc-500);
+}
+
+.nhanManh .so {
+  color: var(--do-500);
+}

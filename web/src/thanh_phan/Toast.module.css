@@ -1,0 +1,115 @@
+/* Toast: viên trắng ở góc phải dưới, trượt lên, tự ẩn sau 4 giây */
+.vung {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.toast {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 280px;
+  max-width: 440px;
+  padding: 10px 10px 10px 10px;
+  border-radius: var(--bo-vien-thuoc);
+  background: var(--nen-0);
+  box-shadow: var(--bong-noi), 0 0 0 1px rgba(31, 42, 51, 0.05);
+  pointer-events: auto;
+  overflow: hidden;
+  animation: toast-len var(--tg-vua) var(--cong-mem) both;
+}
+
+.dangAn {
+  animation: toast-xuong 220ms ease both;
+}
+
+@keyframes toast-len {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+  }
+}
+
+@keyframes toast-xuong {
+  to {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.thanhCong .icon {
+  background: var(--thanh-cong-50);
+  color: var(--thanh-cong);
+}
+
+.loi .icon {
+  background: var(--do-50);
+  color: var(--do-500);
+}
+
+.canhBao .icon {
+  background: var(--canh-bao-50);
+  color: var(--canh-bao-chu);
+}
+
+.thongTin .icon {
+  background: var(--do-50);
+  color: var(--do-500);
+}
+
+.noiDung {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--muc-900);
+  line-height: 20px;
+}
+
+.tienDo {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  bottom: 0;
+  height: 3px;
+  border-radius: 3px;
+  background: currentColor;
+  opacity: 0.35;
+  transform-origin: left;
+  animation: tien-do linear both;
+}
+
+.thanhCong .tienDo {
+  color: var(--thanh-cong);
+}
+
+.loi .tienDo,
+.thongTin .tienDo {
+  color: var(--do-500);
+}
+
+.canhBao .tienDo {
+  color: var(--canh-bao);
+}
+
+@keyframes tien-do {
+  to {
+    transform: scaleX(0);
+  }
+}

@@ -1,0 +1,49 @@
+.boCuc {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* dải đỏ mờ dần phía sau header ở đầu trang chính */
+.daiDo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 440px;
+  background: var(--gd-dau-trang);
+  pointer-events: none;
+}
+
+.dinh {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.noiDung {
+  position: relative;
+  flex: 1;
+  animation: hien-dan-len var(--tg-vua) var(--cong-mem) both;
+}
+
+.choTai {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  gap: 12px;
+  text-align: center;
+  color: var(--muc-500);
+  font-weight: 600;
+}
+
+.choTai img {
+  animation: bay-nhe 2.4s ease-in-out infinite;
+}
+
+@keyframes bay-nhe {
+  50% {
+    transform: translate(8px, -10px) rotate(-4deg);
+  }
+}

@@ -1,0 +1,115 @@
+/* Biến thiết kế dùng chung cho toàn bộ giao diện (theo DESIGN.md) */
+:root {
+  /* màu đỏ thương hiệu */
+  --do-500: #ec2029;
+  --do-600: #d91a21;
+  --do-700: #b3141b;
+  --do-900: #6f0000;
+  --do-50: rgba(236, 32, 41, 0.08);
+  --do-100: rgba(236, 32, 41, 0.14);
+  --do-200: rgba(236, 32, 41, 0.24);
+
+  /* màu vàng cho nút chính, nhãn */
+  --vang-300: #ffeb63;
+  --vang-400: #ffdd00;
+  --vang-500: #fbb612;
+  --vang-600: #f9a51a;
+  --vang-50: rgba(251, 182, 18, 0.14);
+
+  /* chữ */
+  --muc-900: #1f2a33;
+  --muc-700: #333333;
+  --muc-500: #6b7680;
+  --muc-400: #8a949e;
+  --muc-300: #c0c9d2;
+
+  /* nền và đường kẻ */
+  --vien: #e8e8e8;
+  --nen-0: #ffffff;
+  --nen-1: #f5f5f6;
+  --nen-2: #efeceb;
+  --nen-trang: #ffffff;
+  --nen-hong: #fff7f6;
+
+  /* trạng thái */
+  --thanh-cong: #1e9e5a;
+  --thanh-cong-50: rgba(30, 158, 90, 0.12);
+  --canh-bao: #f9a51a;
+  --canh-bao-chu: #b26b00;
+  --canh-bao-50: rgba(249, 165, 26, 0.16);
+  --trung-tinh: #8a949e;
+  --trung-tinh-50: rgba(138, 148, 158, 0.16);
+
+  /* dải màu */
+  --gd-dau-trang: linear-gradient(180deg, #f02823 0%, rgba(237, 39, 36, 0.86) 30%, rgba(231, 36, 37, 0.5) 62%, rgba(223, 32, 48, 0) 100%);
+  --gd-vang: linear-gradient(180deg, #ffeb63 0%, #f5d200 100%);
+  --gd-vang-sang: linear-gradient(180deg, #fff27f 0%, #ffdf1a 100%);
+  --gd-vang-nhan: linear-gradient(26.73deg, #f9a51a 13.7%, #fbb612 29.8%, #ffdd00 66.81%);
+  --gd-do: linear-gradient(180deg, #ec2029 0%, #d91a21 100%);
+  --gd-do-dam: linear-gradient(180deg, #d91a21 34.8%, #6f0000 182%);
+  --gd-bau-troi: linear-gradient(180deg, #2f8fe8 0%, #5cb2f5 38%, #a9dafb 72%, #e6f6ff 100%);
+
+  /* font */
+  --font: 'KoHo', 'Be Vietnam Pro', system-ui, sans-serif;
+  --co-hien-thi: 40px;
+  --co-h1: 32px;
+  --co-h2: 24px;
+  --co-h3: 18px;
+  --co-than: 16px;
+  --co-nho: 14px;
+  --co-chu-thich: 12px;
+
+  /* bo góc */
+  --bo-vien-thuoc: 999px;
+  --bo-the: 24px;
+  --bo-khung: 20px;
+  --bo-bang: 16px;
+  --bo-o: 12px;
+  --bo-nho: 8px;
+
+  /* đổ bóng */
+  --bong-noi: 0 18px 42px rgba(74, 84, 95, 0.18);
+  --bong-thanh: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --bong-hop-thoai: 0 24px 56px rgba(31, 42, 51, 0.28);
+  --bong-nhe: 0 2px 8px rgba(31, 42, 51, 0.06);
+  --bong-vang: 0 8px 20px rgba(245, 190, 0, 0.35);
+  --vong-focus: 0 0 0 3px #fff, 0 0 0 6px rgba(236, 32, 41, 0.45);
+  --vong-focus-o: 0 0 0 4px rgba(236, 32, 41, 0.12);
+
+  /* khoảng cách */
+  --k-1: 4px;
+  --k-2: 8px;
+  --k-3: 12px;
+  --k-4: 16px;
+  --k-5: 24px;
+  --k-6: 32px;
+  --k-7: 48px;
+  --k-8: 64px;
+  --rong-trang: 1280px;
+  --le-trang: 32px;
+
+  /* kích thước khung */
+  --cao-thanh-thong-bao: 44px;
+  --cao-dau-trang: 72px;
+  --cao-thanh-tren: calc(var(--cao-thanh-thong-bao) + var(--cao-dau-trang));
+  --cao-o-nhap: 48px;
+
+  /* chuyển động */
+  --cong-mem: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --tg-nhanh: 160ms;
+  --tg-mau: 200ms;
+  --tg-the: 220ms;
+  --tg-vua: 320ms;
+  --tg-truot: 420ms;
+  --tg-tu-chay: 5000ms;
+  --chuyen-mau: color var(--tg-mau) ease, background-color var(--tg-mau) ease, border-color var(--tg-mau) ease,
+    box-shadow var(--tg-mau) ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --tg-the: 0ms;
+    --tg-vua: 0ms;
+    --tg-truot: 0ms;
+  }
+}

@@ -1,0 +1,130 @@
+/* Tab có nền hoặc gạch chân trượt theo mục đang chọn */
+.tab {
+  position: relative;
+  display: inline-flex;
+  align-items: stretch;
+  gap: 4px;
+}
+
+.muc {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  background: transparent;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color var(--tg-mau) ease, background-color var(--tg-mau) ease;
+}
+
+.muc[aria-selected='true'] {
+  font-weight: 700;
+}
+
+.muc:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.nen {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  transition: transform var(--tg-vua) var(--cong-mem), width var(--tg-vua) var(--cong-mem);
+}
+
+/* kiểu viên thuốc: nền đỏ trượt */
+.vienThuoc {
+  padding: 4px;
+  border-radius: var(--bo-vien-thuoc);
+  background: var(--nen-1);
+  border: 1px solid var(--vien);
+}
+
+.vienThuoc .muc {
+  height: 40px;
+  padding: 0 20px;
+  border-radius: var(--bo-vien-thuoc);
+  color: var(--muc-700);
+}
+
+.vienThuoc .muc:hover:not([aria-selected='true']) {
+  color: var(--do-500);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.vienThuoc .muc[aria-selected='true'] {
+  color: #fff;
+}
+
+.vienThuoc .nen {
+  top: 4px;
+  bottom: 4px;
+  left: 0;
+  border-radius: var(--bo-vien-thuoc);
+  background: var(--gd-do);
+  box-shadow: 0 6px 14px rgba(236, 32, 41, 0.3);
+}
+
+/* kiểu gạch chân: dùng trên nền trắng */
+.gachChan {
+  gap: 8px;
+  border-bottom: 1px solid var(--vien);
+}
+
+.gachChan .muc {
+  height: 48px;
+  padding: 0 14px;
+  border-radius: 10px 10px 0 0;
+  color: var(--muc-500);
+}
+
+.gachChan .muc:hover:not([aria-selected='true']) {
+  color: var(--do-500);
+  background: var(--do-50);
+}
+
+.gachChan .muc[aria-selected='true'] {
+  color: var(--muc-900);
+}
+
+.gachChan .nen {
+  bottom: -1px;
+  left: 0;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--do-500);
+}
+
+/* kiểu dải đỏ: hàng tab trên thanh tìm kiếm */
+.daiDo {
+  gap: 4px;
+}
+
+.daiDo .muc {
+  height: 52px;
+  padding: 0 20px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 16px;
+  border-radius: 12px 12px 0 0;
+}
+
+.daiDo .muc:hover:not([aria-selected='true']) {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.daiDo .muc[aria-selected='true'] {
+  color: #fff;
+}
+
+.daiDo .nen {
+  bottom: 6px;
+  left: 0;
+  height: 3px;
+  border-radius: 3px;
+  background: #fff;
+}

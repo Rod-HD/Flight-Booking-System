@@ -1,0 +1,60 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--do-500);
+  text-decoration: none;
+  border-radius: 14px;
+  transition: color var(--tg-mau) ease;
+}
+
+.o {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(111, 0, 0, 0.14);
+  transition: transform var(--tg-the) var(--cong-mem), box-shadow var(--tg-mau) ease;
+}
+
+.o img {
+  width: 36px;
+  height: 36px;
+}
+
+.logo:hover .o {
+  transform: rotate(-6deg) scale(1.04);
+}
+
+.chu {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}
+
+.hangHai {
+  display: block;
+}
+
+.trang {
+  color: #fff;
+}
+
+.lon .o {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+}
+
+.lon .o img {
+  width: 46px;
+  height: 46px;
+}
+
+.lon .chu {
+  font-size: 22px;
+}

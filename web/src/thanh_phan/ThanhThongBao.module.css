@@ -1,0 +1,142 @@
+/* Thanh thông báo 44px trên cùng; khi cuộn đổi nền đỏ chữ trắng */
+.thanh {
+  height: var(--cao-thanh-thong-bao);
+  background: var(--nen-0);
+  border-bottom: 1px solid var(--vien);
+  color: var(--muc-900);
+  transition: background-color var(--tg-mau) ease, color var(--tg-mau) ease, border-color var(--tg-mau) ease;
+}
+
+.daCuon {
+  background: var(--do-500);
+  border-color: var(--do-500);
+  color: #fff;
+}
+
+.trong {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
+  max-width: 1376px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.chuong {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--do-50);
+  color: var(--do-500);
+  transition: var(--chuyen-mau);
+  animation: rung 4s ease-in-out infinite;
+  transform-origin: 50% 20%;
+}
+
+.daCuon .chuong {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+@keyframes rung {
+  0%,
+  86%,
+  100% {
+    transform: rotate(0);
+  }
+  89% {
+    transform: rotate(14deg);
+  }
+  92% {
+    transform: rotate(-12deg);
+  }
+  95% {
+    transform: rotate(6deg);
+  }
+}
+
+.the {
+  flex: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--do-500);
+  transition: color var(--tg-mau) ease;
+}
+
+.daCuon .the {
+  color: #fff;
+}
+
+.khungChu {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.dong {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  white-space: nowrap;
+  animation: chu-len var(--tg-vua) var(--cong-mem) both;
+}
+
+.dong span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes chu-len {
+  from {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+}
+
+.gio {
+  flex: none;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.dem {
+  flex: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muc-500);
+  font-variant-numeric: tabular-nums;
+  transition: color var(--tg-mau) ease;
+}
+
+.daCuon .dem {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.vach {
+  width: 1px;
+  height: 20px;
+  background: var(--vien);
+}
+
+.daCuon .vach {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.daCuon .nutTB {
+  color: #fff;
+}
+
+.daCuon .nutTB:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}

@@ -1,0 +1,128 @@
+/* Thẻ dọc lối tắt: nghỉ nền trắng viền đỏ 1px; di chuột hoặc là slide đang chọn: nền đỏ, chữ trắng */
+.the {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 320px;
+  padding: 22px 22px 0;
+  border: 1px solid var(--do-500);
+  border-radius: var(--bo-the);
+  background: var(--nen-0);
+  color: var(--muc-900);
+  text-decoration: none;
+  text-align: left;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 200ms ease, color 200ms ease, box-shadow 200ms ease;
+}
+
+.the::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(120% 70% at 100% 100%, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0) 60%);
+  opacity: 0;
+  transition: opacity 200ms ease;
+  pointer-events: none;
+}
+
+.the:hover,
+.the:focus-visible,
+.dangChon {
+  background: var(--do-500);
+  color: #fff;
+  box-shadow: 0 10px 22px rgba(236, 32, 41, 0.24);
+}
+
+.the:hover::before,
+.the:focus-visible::before,
+.dangChon::before {
+  opacity: 1;
+}
+
+.nhan {
+  align-self: flex-start;
+  height: 26px;
+  padding: 0 12px;
+  border-radius: var(--bo-vien-thuoc);
+  background: var(--gd-vang-nhan);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--muc-900);
+}
+
+.tieuDe {
+  margin-top: 14px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  transition: font-weight 200ms ease;
+}
+
+.the:hover .tieuDe,
+.the:focus-visible .tieuDe,
+.dangChon .tieuDe {
+  font-weight: 700;
+}
+
+.moTa {
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--muc-500);
+  transition: color 200ms ease;
+}
+
+.the:hover .moTa,
+.the:focus-visible .moTa,
+.dangChon .moTa {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.hinh {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex: 1;
+  margin-top: 8px;
+  padding-bottom: 14px;
+}
+
+.hinhTrong {
+  display: inline-flex;
+  transform-origin: 50% 90%;
+  transition: transform 200ms var(--cong-mem), filter 200ms ease;
+}
+
+.the:hover .hinhTrong,
+.the:focus-visible .hinhTrong,
+.dangChon .hinhTrong {
+  transform: scale(1.05);
+  /* viền trắng kiểu sticker quanh hình */
+  filter: drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff)
+    drop-shadow(0 12px 16px rgba(111, 0, 0, 0.35));
+}
+
+.muiTen {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--do-50);
+  color: var(--do-500);
+  transition: background-color 200ms ease, color 200ms ease, transform var(--tg-the) var(--cong-mem);
+}
+
+.the:hover .muiTen,
+.the:focus-visible .muiTen,
+.dangChon .muiTen {
+  background: #fff;
+  color: var(--do-500);
+  transform: translateX(3px);
+}

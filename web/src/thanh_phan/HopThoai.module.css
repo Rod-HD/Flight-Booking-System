@@ -1,0 +1,165 @@
+/* Hộp thoại: nền mờ, thẻ trắng phóng từ 0.96 lên 1 trong 200 ms */
+.nen {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(31, 42, 51, 0.42);
+  backdrop-filter: blur(6px);
+  animation: nen-hien var(--tg-mau) ease both;
+}
+
+.dangDong {
+  animation: nen-an 160ms ease both;
+}
+
+@keyframes nen-hien {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes nen-an {
+  to {
+    opacity: 0;
+  }
+}
+
+.the {
+  position: relative;
+  width: min(100%, var(--rong-hop-thoai, 480px));
+  max-height: calc(100vh - 48px);
+  overflow: auto;
+  padding: 28px;
+  border-radius: var(--bo-the);
+  background: var(--nen-0);
+  box-shadow: var(--bong-hop-thoai);
+  animation: the-hien var(--tg-mau) var(--cong-mem) both;
+  outline: none;
+}
+
+.dangDong .the {
+  animation: the-an 160ms ease both;
+}
+
+@keyframes the-hien {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(6px);
+  }
+}
+
+@keyframes the-an {
+  to {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+}
+
+.dau {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.vongIcon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  animation: nay 420ms var(--cong-mem) 80ms both;
+}
+
+@keyframes nay {
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+}
+
+.vongDo {
+  background: var(--do-50);
+  color: var(--do-500);
+  box-shadow: 0 0 0 8px rgba(236, 32, 41, 0.05);
+}
+
+.vongXanh {
+  background: var(--thanh-cong-50);
+  color: var(--thanh-cong);
+  box-shadow: 0 0 0 8px rgba(30, 158, 90, 0.05);
+}
+
+.vongVang {
+  background: var(--canh-bao-50);
+  color: var(--canh-bao-chu);
+  box-shadow: 0 0 0 8px rgba(249, 165, 26, 0.06);
+}
+
+.chu {
+  flex: 1;
+  min-width: 0;
+  padding-top: 4px;
+}
+
+.tieuDe {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: var(--muc-900);
+}
+
+.noiDung {
+  margin-top: 6px;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--muc-500);
+}
+
+.noiDung b {
+  color: var(--muc-900);
+}
+
+.than {
+  margin-top: 20px;
+}
+
+.chan {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.dong {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+/* hộp thoại chờ */
+.cho {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  --rong-hop-thoai: 380px;
+}
+
+.vongQuay {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid var(--do-100);
+  border-top-color: var(--do-500);
+  animation: xoay-tron 800ms linear infinite;
+}
+
+.choChu {
+  font-weight: 600;
+  color: var(--muc-900);
+}

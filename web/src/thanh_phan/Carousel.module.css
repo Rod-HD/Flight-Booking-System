@@ -1,0 +1,120 @@
+/* Carousel tự viết: trượt 420 ms, kéo bằng chuột, hàng điều khiển kiểu viên thuốc */
+.carousel {
+  position: relative;
+  outline: none;
+}
+
+.khungNhin {
+  overflow: hidden;
+  border-radius: var(--bo-carousel, 0);
+  touch-action: pan-y;
+  cursor: grab;
+}
+
+.dangKeo {
+  cursor: grabbing;
+}
+
+.dangKeo * {
+  user-select: none;
+}
+
+.ray {
+  display: flex;
+  gap: var(--khoang, 0px);
+  transition: transform var(--tg-truot) var(--cong-mem);
+  will-change: transform;
+}
+
+.dangKeo .ray {
+  transition: none;
+}
+
+.slide {
+  position: relative;
+  flex: 0 0 var(--rong-slide);
+  min-width: 0;
+}
+
+/* hàng điều khiển */
+.dieuKhien {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.trai {
+  justify-content: flex-start;
+}
+
+.phai {
+  justify-content: flex-end;
+}
+
+.dayCham {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: var(--bo-vien-thuoc);
+  background: var(--nen-1);
+}
+
+.cham {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--bo-vien-thuoc);
+  background: var(--muc-300);
+  cursor: pointer;
+  transition: width var(--tg-vua) var(--cong-mem), background-color var(--tg-mau) ease;
+}
+
+.cham::after {
+  /* vùng bấm rộng hơn chấm */
+  content: '';
+  position: absolute;
+  inset: -8px -4px;
+}
+
+.cham:hover {
+  background: var(--do-200);
+}
+
+.cham[aria-current='true'] {
+  width: 28px;
+  background: var(--do-500);
+}
+
+/* biến thể trên nền tối (ảnh) */
+.toi .dayCham {
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.toi .cham {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.toi .cham:hover {
+  background: #fff;
+}
+
+.toi .cham[aria-current='true'] {
+  background: var(--do-500);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.85);
+}
+
+/* lấp đầy khung cha theo chiều cao */
+.lapDay,
+.lapDay .khungNhin,
+.lapDay .ray,
+.lapDay .slide {
+  height: 100%;
+}

@@ -1,0 +1,40 @@
+.chan {
+  margin-top: auto;
+  border-top: 1px solid var(--vien);
+  background: var(--nen-0);
+}
+
+.trong {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  max-width: calc(var(--rong-trang) + var(--le-trang) * 2);
+  margin: 0 auto;
+  padding: 20px var(--le-trang);
+  font-size: 14px;
+  color: var(--muc-500);
+}
+
+.trai {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.lienKet {
+  display: flex;
+  gap: 4px;
+}
+
+.lienKet a {
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: var(--chuyen-mau);
+}
+
+.lienKet a:hover {
+  color: var(--do-500);
+  background: var(--do-50);
+}

@@ -1,0 +1,136 @@
+/* Kiểu nền cho toàn trang: reset nhẹ, chữ, lớp tiện ích và các keyframe dùng chung */
+@import '@fontsource/koho/400.css';
+@import '@fontsource/koho/500.css';
+@import '@fontsource/koho/600.css';
+@import '@fontsource/koho/700.css';
+@import './bien.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--cao-thanh-tren) + 16px);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: var(--co-than);
+  line-height: 1.5;
+  color: var(--muc-700);
+  background: var(--nen-trang);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--muc-900);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+kbd {
+  font-family: var(--font);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+svg {
+  display: block;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--vong-focus);
+}
+
+::selection {
+  background: rgba(236, 32, 41, 0.18);
+}
+
+/* lớp tiện ích */
+.an-cho-trinh-doc {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.chu-so {
+  font-variant-numeric: tabular-nums;
+}
+
+/* keyframe dùng chung */
+@keyframes hien-dan-len {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes xoay-tron {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes anh-xuong {
+  0% {
+    background-position: -320px 0;
+  }
+  100% {
+    background-position: 320px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
