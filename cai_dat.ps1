@@ -33,9 +33,21 @@ function KiemTraLenh($ten, $huongDan) {
     }
 }
 
+# Goi mot lenh ngoai (sqlcmd, npm, dotnet). Trong luc goi, dong canh bao lenh ghi ra stderr
+# khong bi PowerShell coi la loi dung script; ket qua xet theo ma thoat $LASTEXITCODE.
+function GoiLenh([string]$ten, [string[]]$thamSo) {
+    $cu = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    try {
+        & $ten @thamSo 2>&1 | ForEach-Object { "$_" }
+    } finally {
+        $ErrorActionPreference = $cu
+    }
+}
+
 # Chay sqlcmd bang tai khoan Windows dang dang nhap; tra ve cac dong ket qua.
 function ChaySql([string[]]$thamSo) {
-    $ketQua = & sqlcmd -S $MayChuSql -E -C -b @thamSo
+    $ketQua = GoiLenh "sqlcmd" (@("-S", $MayChuSql, "-E", "-C", "-b") + $thamSo)
     if ($LASTEXITCODE -ne 0) {
         $ketQua | ForEach-Object { Write-Host $_ }
         Dung "sqlcmd bao loi (ma $LASTEXITCODE)."
@@ -51,12 +63,12 @@ KiemTraLenh "dotnet" "Cai .NET SDK 10."
 KiemTraLenh "node" "Cai Node.js 22 (kem npm)."
 KiemTraLenh "npm" "Cai Node.js 22 (kem npm)."
 
-$banDotnet = (& dotnet --version)
+$banDotnet = "$(GoiLenh 'dotnet' @('--version') | Select-Object -Last 1)".Trim()
 if ($banDotnet -notmatch '^10\.') { Dung "Can .NET SDK 10, may dang co ban $banDotnet." }
-$banNode = (& node --version)
+$banNode = "$(GoiLenh 'node' @('--version') | Select-Object -Last 1)".Trim()
 if ($banNode -notmatch '^v(\d+)\.' -or [int]$Matches[1] -lt 22) { Dung "Can Node.js 22 tro len, may dang co ban $banNode." }
 
-& sqlcmd -S $MayChuSql -E -C -b -l 15 -Q "SELECT 1" | Out-Null
+GoiLenh "sqlcmd" @("-S", $MayChuSql, "-E", "-C", "-b", "-l", "15", "-Q", "SELECT 1") | Out-Null
 if ($LASTEXITCODE -ne 0) {
     Dung "Khong ket noi duoc SQL Server '$MayChuSql' bang tai khoan Windows hien tai. Kiem tra dich vu SQL Server dang chay; neu ten phien ban khac thi them tham so -MayChuSql."
 }
@@ -82,10 +94,10 @@ Buoc 3 "Dung giao dien"
 Push-Location (Join-Path $goc "web")
 try {
     if (-not (Test-Path "node_modules")) {
-        & npm ci
+        GoiLenh "npm" @("ci")
         if ($LASTEXITCODE -ne 0) { Dung "npm ci bao loi." }
     }
-    & npm run dung-may-chu
+    GoiLenh "npm" @("run", "dung-may-chu")
     if ($LASTEXITCODE -ne 0) { Dung "Dung giao dien bao loi." }
 } finally {
     Pop-Location
@@ -121,7 +133,7 @@ $moTrinhDuyet = Start-Job -ArgumentList $diaChi -ScriptBlock {
 
 Push-Location (Join-Path $goc "api\QuanLyBanVe.Api")
 try {
-    & dotnet run -c Release
+    GoiLenh "dotnet" @("run", "-c", "Release")
 } finally {
     Pop-Location
     Remove-Job $moTrinhDuyet -Force -ErrorAction SilentlyContinue
