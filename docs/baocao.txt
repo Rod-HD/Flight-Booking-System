@@ -154,175 +154,175 @@ CHƯƠNG 2. ĐẶC TẢ VÀ PHÂN TÍCH YÊU CẦU 35
 
 2.4.8. UC08 Thay đổi quy định 110
 
-2.4.9. Tổng hợp các lớp phân tích 116
+2.4.9. Tổng hợp các lớp phân tích 117
 
-2.5. Xây dựng biểu đồ thực thể liên kết (ERD) 122
+2.5. Xây dựng biểu đồ thực thể liên kết (ERD) 123
 
-2.5.1. Các thực thể và mối kết hợp 122
+2.5.1. Các thực thể và mối kết hợp 123
 
-2.5.2. Biểu đồ ERD 123
+2.5.2. Biểu đồ ERD 124
 
-CHƯƠNG 3. THIẾT KẾ HỆ THỐNG 125
+CHƯƠNG 3. THIẾT KẾ HỆ THỐNG 126
 
-3.1. Kiến trúc hệ thống 125
+3.1. Kiến trúc hệ thống 126
 
-3.1.1. Lựa chọn kiến trúc 125
+3.1.1. Lựa chọn kiến trúc 126
 
-3.1.2. Các thành phần trong hệ thống 128
+3.1.2. Các thành phần trong hệ thống 129
 
-3.1.3. Công nghệ và công cụ sử dụng 131
+3.1.3. Công nghệ và công cụ sử dụng 132
 
-3.2. Thiết kế dữ liệu 133
+3.2. Thiết kế dữ liệu 134
 
-3.2.1. Thuật toán thiết kế dữ liệu 134
+3.2.1. Thuật toán thiết kế dữ liệu 135
 
-3.2.2. Bước 1: Xét yêu cầu Nhận lịch chuyến bay (NV01) 137
+3.2.2. Bước 1: Xét yêu cầu Nhận lịch chuyến bay (NV01) 138
 
-3.2.3. Bước 2: Xét yêu cầu Bán vé (NV02) 142
+3.2.3. Bước 2: Xét yêu cầu Bán vé (NV02) 143
 
-3.2.4. Bước 3: Xét yêu cầu Ghi nhận đặt vé (NV03) 147
+3.2.4. Bước 3: Xét yêu cầu Ghi nhận đặt vé (NV03) 148
 
-3.2.5. Bước 4: Xét yêu cầu Tra cứu chuyến bay (NV04) 150
+3.2.5. Bước 4: Xét yêu cầu Tra cứu chuyến bay (NV04) 151
 
-3.2.6. Bước 5: Xét yêu cầu Lập báo cáo (NV05) 152
+3.2.6. Bước 5: Xét yêu cầu Lập báo cáo (NV05) 153
 
-3.2.7. Bước 6: Xét yêu cầu Thay đổi quy định (NV06) 153
+3.2.7. Bước 6: Xét yêu cầu Thay đổi quy định (NV06) 154
 
-3.2.8. Bước 7: Xét yêu cầu Đăng nhập và Phân quyền 156
+3.2.8. Bước 7: Xét yêu cầu Đăng nhập và Phân quyền 157
 
-3.2.9. Kiểm tra sơ đồ logic theo ba tính chất 157
+3.2.9. Kiểm tra sơ đồ logic theo ba tính chất 158
 
-3.2.10. Sơ đồ logic hoàn chỉnh 162
+3.2.10. Sơ đồ logic hoàn chỉnh 163
 
-3.2.11. Danh sách các bảng dữ liệu 163
+3.2.11. Danh sách các bảng dữ liệu 164
 
-3.2.12. Mô tả từng bảng dữ liệu 164
+3.2.12. Mô tả từng bảng dữ liệu 165
 
-3.3. Thiết kế lớp 173
+3.3. Thiết kế lớp 174
 
-3.3.1. Thiết kế chi tiết lớp 176
+3.3.1. Thiết kế chi tiết lớp 177
 
 3.3.2. Sơ đồ lớp chi tiết 194
 
-3.4. Thiết kế giao diện 217
+3.4. Thiết kế giao diện 218
 
-3.4.1. Sơ đồ liên kết các màn hình 218
+3.4.1. Sơ đồ liên kết các màn hình 219
 
-3.4.2. Danh sách các màn hình 220
+3.4.2. Danh sách các màn hình 221
 
-3.4.3. Mô tả các màn hình 223
+3.4.3. Mô tả các màn hình 224
 
-CHƯƠNG 4. CÀI ĐẶT CHƯƠNG TRÌNH 297
+CHƯƠNG 4. CÀI ĐẶT CHƯƠNG TRÌNH 298
 
-4.1. Môi trường và công cụ cài đặt 297
+4.1. Môi trường và công cụ cài đặt 298
 
-4.1.1. Môi trường phát triển và chạy thử 297
+4.1.1. Môi trường phát triển và chạy thử 298
 
-4.1.2. Thư viện và công cụ đã dùng 298
+4.1.2. Thư viện và công cụ đã dùng 299
 
-4.2. Tổ chức mã nguồn 301
+4.2. Tổ chức mã nguồn 302
 
-4.2.1. Cấu trúc thư mục 301
+4.2.1. Cấu trúc thư mục 302
 
-4.2.2. Ánh xạ từ thiết kế sang mã 302
+4.2.2. Ánh xạ từ thiết kế sang mã 303
 
-4.2.3. Thống kê mã nguồn 305
+4.2.3. Thống kê mã nguồn 306
 
-4.2.4. Một số điểm cài đặt đáng chú ý 307
+4.2.4. Một số điểm cài đặt đáng chú ý 308
 
-4.3. Kết quả cài đặt các chức năng 312
+4.3. Kết quả cài đặt các chức năng 313
 
-4.3.1. Đăng nhập và phân quyền 312
+4.3.1. Đăng nhập và phân quyền 313
 
-4.3.2. Quản lý chuyến bay 316
+4.3.2. Quản lý chuyến bay 317
 
-4.3.3. Bán vé 321
+4.3.3. Bán vé 322
 
-4.3.4. Đặt vé và tự động hủy phiếu 325
+4.3.4. Đặt vé và tự động hủy phiếu 326
 
-4.3.5. Báo cáo doanh thu 328
+4.3.5. Báo cáo doanh thu 329
 
-4.3.6. Thay đổi quy định 332
+4.3.6. Thay đổi quy định 333
 
-4.4. Mức độ hoàn thành 334
+4.4. Mức độ hoàn thành 335
 
-CHƯƠNG 5. KIỂM THỬ 339
+CHƯƠNG 5. KIỂM THỬ 340
 
-5.1. Phạm vi và môi trường kiểm thử 339
+5.1. Phạm vi và môi trường kiểm thử 340
 
-5.1.1. Các mức kiểm thử và công cụ 339
+5.1.1. Các mức kiểm thử và công cụ 340
 
-5.1.2. Môi trường và dữ liệu kiểm thử 341
+5.1.2. Môi trường và dữ liệu kiểm thử 342
 
-5.1.3. Tiêu chí đạt 343
+5.1.3. Tiêu chí đạt 344
 
-5.2. Kiểm thử chức năng 344
+5.2. Kiểm thử chức năng 345
 
-5.2.1. Kiểm thử tầng xử lý nghiệp vụ và truy xuất dữ liệu 344
+5.2.1. Kiểm thử tầng xử lý nghiệp vụ và truy xuất dữ liệu 345
 
-5.2.2. Kiểm thử phần giao tiếp (API) 350
+5.2.2. Kiểm thử phần giao tiếp (API) 351
 
-5.2.3. Kiểm thử giao diện theo use case 355
+5.2.3. Kiểm thử giao diện theo use case 356
 
-5.2.4. Đối chiếu yêu cầu với ca kiểm thử 370
+5.2.4. Đối chiếu yêu cầu với ca kiểm thử 371
 
-5.2.5. Nhận xét 375
+5.2.5. Nhận xét 376
 
-5.3. Kiểm thử yêu cầu phi chức năng 376
+5.3. Kiểm thử yêu cầu phi chức năng 377
 
-5.3.1. Môi trường và dữ liệu đo 377
+5.3.1. Môi trường và dữ liệu đo 378
 
-5.3.2. Hiệu quả 380
+5.3.2. Hiệu quả 381
 
-5.3.3. Tương thích 384
+5.3.3. Tương thích 385
 
-5.3.4. Bảo mật và an toàn 386
+5.3.4. Bảo mật và an toàn 387
 
-5.3.5. Tiện dụng 389
+5.3.5. Tiện dụng 390
 
-5.3.6. Công nghệ 398
+5.3.6. Công nghệ 400
 
-5.4. Tổng hợp kết quả kiểm thử 400
+5.4. Tổng hợp kết quả kiểm thử 403
 
-CHƯƠNG 6. HƯỚNG DẪN CÀI ĐẶT VÀ SỬ DỤNG 405
+CHƯƠNG 6. HƯỚNG DẪN CÀI ĐẶT VÀ SỬ DỤNG 408
 
-6.1. Hướng dẫn cài đặt 405
+6.1. Hướng dẫn cài đặt 408
 
-6.1.1. Yêu cầu hệ thống 406
+6.1.1. Yêu cầu hệ thống 409
 
-6.1.2. Cài đặt cơ sở dữ liệu 407
+6.1.2. Cài đặt cơ sở dữ liệu 410
 
-6.1.3. Cài đặt và chạy máy chủ ứng dụng 408
+6.1.3. Cài đặt và chạy máy chủ ứng dụng 411
 
-6.1.4. Cho các máy nhân viên trong mạng nội bộ truy cập 409
+6.1.4. Cho các máy nhân viên trong mạng nội bộ truy cập 413
 
-6.1.5. Tài khoản ban đầu và việc cần làm ngay sau khi cài 410
+6.1.5. Tài khoản ban đầu và việc cần làm ngay sau khi cài 413
 
-6.1.6. Sao lưu và phục hồi dữ liệu 411
+6.1.6. Sao lưu và phục hồi dữ liệu 414
 
-6.1.7. Nạp lại dữ liệu mẫu và một số lỗi thường gặp khi cài đặt 413
+6.1.7. Nạp lại dữ liệu mẫu và một số lỗi thường gặp khi cài đặt 416
 
-6.2. Hướng dẫn sử dụng 415
+6.2. Hướng dẫn sử dụng 418
 
-6.2.1. Đăng nhập, đăng xuất và bố cục chung của màn hình 415
+6.2.1. Đăng nhập, đăng xuất và bố cục chung của màn hình 418
 
-6.2.2. Hướng dẫn dành cho Nhân viên bán vé 423
+6.2.2. Hướng dẫn dành cho Nhân viên bán vé 426
 
-6.2.3. Hướng dẫn dành cho Quản lý 435
+6.2.3. Hướng dẫn dành cho Quản lý 438
 
-6.2.4. Ý nghĩa các thông báo thường gặp 451
+6.2.4. Ý nghĩa các thông báo thường gặp 454
 
-KẾT LUẬN 456
+KẾT LUẬN 459
 
-TÀI LIỆU THAM KHẢO 459
+TÀI LIỆU THAM KHẢO 462
 
-BẢNG PHÂN CÔNG CÔNG VIỆC 460
+BẢNG PHÂN CÔNG CÔNG VIỆC 463
 
 DANH MỤC CHỮ VIẾT TẮT
 
-  ---------------------------------------------------------------------------------------------------------
+  -----------------------------------------------------------------------------------------------------------
   STT    Chữ viết tắt    Ý nghĩa
-  ------ --------------- ----------------------------------------------------------------------------------
+  ------ --------------- ------------------------------------------------------------------------------------
   1      ADO.NET         ActiveX Data Objects for .NET (thư viện truy xuất dữ liệu của .NET)
 
   2      API             Application Programming Interface (giao diện lập trình ứng dụng)
@@ -361,36 +361,38 @@ DANH MỤC CHỮ VIẾT TẮT
 
   19     IP              Internet Protocol (giao thức Internet; địa chỉ IP là địa chỉ của máy trong mạng)
 
-  20     MSSV            Mã số sinh viên
+  20     KLM             Keystroke-Level Model (mô hình mức phím bấm, dùng để ước lượng thời gian thao tác)
 
-  21     NV              Yêu cầu nghiệp vụ (tiền tố mã yêu cầu)
+  21     MSSV            Mã số sinh viên
 
-  22     PBKDF2          Password-Based Key Derivation Function 2 (hàm băm mật khẩu có muối)
+  22     NV              Yêu cầu nghiệp vụ (tiền tố mã yêu cầu)
 
-  23     PDF             Portable Document Format (định dạng tài liệu di động)
+  23     PBKDF2          Password-Based Key Derivation Function 2 (hàm băm mật khẩu có muối)
 
-  24     QĐ              Quy định
+  24     PDF             Portable Document Format (định dạng tài liệu di động)
 
-  25     RAM             Random Access Memory (bộ nhớ truy cập ngẫu nhiên)
+  25     QĐ              Quy định
 
-  26     SDK             Software Development Kit (bộ công cụ phát triển phần mềm)
+  26     RAM             Random Access Memory (bộ nhớ truy cập ngẫu nhiên)
 
-  27     SQL             Structured Query Language (ngôn ngữ truy vấn có cấu trúc)
+  27     SDK             Software Development Kit (bộ công cụ phát triển phần mềm)
 
-  28     STT             Số thứ tự
+  28     SQL             Structured Query Language (ngôn ngữ truy vấn có cấu trúc)
 
-  29     TD              Yêu cầu tiện dụng (tiền tố mã yêu cầu)
+  29     STT             Số thứ tự
 
-  30     TH              Yêu cầu tiến hóa (tiền tố mã yêu cầu)
+  30     TD              Yêu cầu tiện dụng (tiền tố mã yêu cầu)
 
-  31     TT              Yêu cầu tương thích (tiền tố mã yêu cầu)
+  31     TH              Yêu cầu tiến hóa (tiền tố mã yêu cầu)
 
-  32     UC              Use case (ca sử dụng)
+  32     TT              Yêu cầu tương thích (tiền tố mã yêu cầu)
 
-  33     UML             Unified Modeling Language (ngôn ngữ mô hình hóa hợp nhất)
+  33     UC              Use case (ca sử dụng)
 
-  34     YC              Yêu cầu (cột Mã YC trong các bảng yêu cầu)
-  ---------------------------------------------------------------------------------------------------------
+  34     UML             Unified Modeling Language (ngôn ngữ mô hình hóa hợp nhất)
+
+  35     YC              Yêu cầu (cột Mã YC trong các bảng yêu cầu)
+  -----------------------------------------------------------------------------------------------------------
 
 DANH MỤC BẢNG
 
@@ -472,201 +474,201 @@ Bảng 2.10. Đặc tả use case UC08 Thay đổi quy định 110
 
 Bảng 2.11. Danh sách các lớp phân tích 117
 
-Bảng 2.12. Danh sách mối kết hợp 122
+Bảng 2.12. Danh sách mối kết hợp 123
 
-Bảng 3.1. Mô tả các thành phần trong hệ thống 129
+Bảng 3.1. Mô tả các thành phần trong hệ thống 130
 
-Bảng 3.2. Công nghệ và công cụ sử dụng 132
+Bảng 3.2. Công nghệ và công cụ sử dụng 133
 
-Bảng 3.3. Biểu mẫu 1 và quy định 1 137
+Bảng 3.3. Biểu mẫu 1 và quy định 1 138
 
-Bảng 3.4. Biểu mẫu 2 và quy định 2 142
+Bảng 3.4. Biểu mẫu 2 và quy định 2 143
 
-Bảng 3.5. Biểu mẫu 3 và quy định 3 147
+Bảng 3.5. Biểu mẫu 3 và quy định 3 148
 
-Bảng 3.6. Biểu mẫu 4 150
+Bảng 3.6. Biểu mẫu 4 151
 
-Bảng 3.7. Biểu mẫu 5.1 152
+Bảng 3.7. Biểu mẫu 5.1 153
 
-Bảng 3.8. Biểu mẫu 5.2 152
+Bảng 3.8. Biểu mẫu 5.2 153
 
-Bảng 3.9. Nơi lưu các giá trị thay đổi được theo QĐ6 154
+Bảng 3.9. Nơi lưu các giá trị thay đổi được theo QĐ6 155
 
-Bảng 3.10. Đối chiếu thông tin trên biểu mẫu với nơi lưu 157
+Bảng 3.10. Đối chiếu thông tin trên biểu mẫu với nơi lưu 158
 
-Bảng 3.11. Danh sách các bảng dữ liệu trong sơ đồ 163
+Bảng 3.11. Danh sách các bảng dữ liệu trong sơ đồ 164
 
-Bảng 3.12. Mô tả bảng SANBAY 165
+Bảng 3.12. Mô tả bảng SANBAY 166
 
-Bảng 3.13. Mô tả bảng CHUYENBAY 165
+Bảng 3.13. Mô tả bảng CHUYENBAY 166
 
-Bảng 3.14. Mô tả bảng CHITIETTRUNGGIAN 166
+Bảng 3.14. Mô tả bảng CHITIETTRUNGGIAN 167
 
-Bảng 3.15. Mô tả bảng HANGVE 167
+Bảng 3.15. Mô tả bảng HANGVE 168
 
-Bảng 3.16. Mô tả bảng GHETHEOHANG 167
+Bảng 3.16. Mô tả bảng GHETHEOHANG 168
 
-Bảng 3.17. Mô tả bảng HANHKHACH 168
+Bảng 3.17. Mô tả bảng HANHKHACH 169
 
-Bảng 3.18. Mô tả bảng VE 169
+Bảng 3.18. Mô tả bảng VE 170
 
-Bảng 3.19. Mô tả bảng PHIEUDATCHO 170
+Bảng 3.19. Mô tả bảng PHIEUDATCHO 171
 
-Bảng 3.20. Mô tả bảng THAMSOQUYDINH 172
+Bảng 3.20. Mô tả bảng THAMSOQUYDINH 173
 
-Bảng 3.21. Mô tả bảng TAIKHOAN 172
+Bảng 3.21. Mô tả bảng TAIKHOAN 173
 
-Bảng 3.22. Phân loại các lớp của phần mềm 174
+Bảng 3.22. Phân loại các lớp của phần mềm 175
 
-Bảng 3.23. Đổi kiểu dữ liệu từ SQL Server sang C# 176
+Bảng 3.23. Đổi kiểu dữ liệu từ SQL Server sang C# 177
 
-Bảng 3.24. Danh sách các lớp DTO 179
+Bảng 3.24. Danh sách các lớp DTO 180
 
-Bảng 3.25. Nơi hiện thực các phương thức của lớp thực thể 182
+Bảng 3.25. Nơi hiện thực các phương thức của lớp thực thể 183
 
-Bảng 3.26. Các lớp truy xuất dữ liệu và phương thức 185
+Bảng 3.26. Các lớp truy xuất dữ liệu và phương thức 186
 
 Bảng 3.27. Các lớp tiện ích và lớp hỗ trợ 190
 
-Bảng 3.28. Các lớp của phần giao tiếp 192
+Bảng 3.28. Các lớp của phần giao tiếp 193
 
-Bảng 3.29. Danh sách các màn hình 220
+Bảng 3.29. Danh sách các màn hình 221
 
-Bảng 3.30. Mô tả các đối tượng trên màn hình đăng nhập 224
+Bảng 3.30. Mô tả các đối tượng trên màn hình đăng nhập 225
 
-Bảng 3.31. Danh sách biến cố và xử lý trên màn hình đăng nhập 224
+Bảng 3.31. Danh sách biến cố và xử lý trên màn hình đăng nhập 225
 
-Bảng 3.32. Mô tả các đối tượng trên màn hình chính 228
+Bảng 3.32. Mô tả các đối tượng trên màn hình chính 229
 
-Bảng 3.33. Danh sách biến cố và xử lý trên màn hình chính 231
+Bảng 3.33. Danh sách biến cố và xử lý trên màn hình chính 232
 
-Bảng 3.34. Mô tả các đối tượng trên màn hình phân quyền 234
+Bảng 3.34. Mô tả các đối tượng trên màn hình phân quyền 235
 
-Bảng 3.35. Danh sách biến cố và xử lý trên màn hình phân quyền 235
+Bảng 3.35. Danh sách biến cố và xử lý trên màn hình phân quyền 236
 
-Bảng 3.36. Mô tả các đối tượng trên màn hình thêm, sửa tài khoản 238
+Bảng 3.36. Mô tả các đối tượng trên màn hình thêm, sửa tài khoản 239
 
-Bảng 3.37. Danh sách biến cố và xử lý trên màn hình thêm, sửa tài khoản 240
+Bảng 3.37. Danh sách biến cố và xử lý trên màn hình thêm, sửa tài khoản 241
 
-Bảng 3.38. Mô tả các đối tượng trên màn hình danh sách chuyến bay 243
+Bảng 3.38. Mô tả các đối tượng trên màn hình danh sách chuyến bay 244
 
-Bảng 3.39. Danh sách biến cố và xử lý trên màn hình danh sách chuyến bay 246
+Bảng 3.39. Danh sách biến cố và xử lý trên màn hình danh sách chuyến bay 247
 
-Bảng 3.40. Mô tả các đối tượng trên màn hình thêm, sửa chuyến bay 250
+Bảng 3.40. Mô tả các đối tượng trên màn hình thêm, sửa chuyến bay 251
 
-Bảng 3.41. Danh sách biến cố và xử lý trên màn hình thêm, sửa chuyến bay 252
+Bảng 3.41. Danh sách biến cố và xử lý trên màn hình thêm, sửa chuyến bay 253
 
-Bảng 3.42. Mô tả các đối tượng trên màn hình danh sách vé 255
+Bảng 3.42. Mô tả các đối tượng trên màn hình danh sách vé 256
 
-Bảng 3.43. Danh sách biến cố và xử lý trên màn hình danh sách vé 256
+Bảng 3.43. Danh sách biến cố và xử lý trên màn hình danh sách vé 257
 
-Bảng 3.44. Mô tả các đối tượng trên màn hình bán vé 260
+Bảng 3.44. Mô tả các đối tượng trên màn hình bán vé 261
 
-Bảng 3.45. Danh sách biến cố và xử lý trên màn hình bán vé 263
+Bảng 3.45. Danh sách biến cố và xử lý trên màn hình bán vé 264
 
-Bảng 3.46. Mô tả các đối tượng trên màn hình danh sách phiếu đặt chỗ 267
+Bảng 3.46. Mô tả các đối tượng trên màn hình danh sách phiếu đặt chỗ 268
 
-Bảng 3.47. Danh sách biến cố và xử lý trên màn hình danh sách phiếu đặt chỗ 269
+Bảng 3.47. Danh sách biến cố và xử lý trên màn hình danh sách phiếu đặt chỗ 270
 
-Bảng 3.48. Mô tả các đối tượng trên màn hình đặt vé 273
+Bảng 3.48. Mô tả các đối tượng trên màn hình đặt vé 274
 
-Bảng 3.49. Danh sách biến cố và xử lý trên màn hình đặt vé 275
+Bảng 3.49. Danh sách biến cố và xử lý trên màn hình đặt vé 276
 
-Bảng 3.50. Mô tả các đối tượng trên màn hình lập báo cáo doanh thu 279
+Bảng 3.50. Mô tả các đối tượng trên màn hình lập báo cáo doanh thu 280
 
-Bảng 3.51. Danh sách biến cố và xử lý trên màn hình lập báo cáo doanh thu 281
+Bảng 3.51. Danh sách biến cố và xử lý trên màn hình lập báo cáo doanh thu 282
 
-Bảng 3.52. Mô tả các đối tượng trên màn hình danh sách quy định 283
+Bảng 3.52. Mô tả các đối tượng trên màn hình danh sách quy định 284
 
-Bảng 3.53. Danh sách biến cố và xử lý trên màn hình danh sách quy định 285
+Bảng 3.53. Danh sách biến cố và xử lý trên màn hình danh sách quy định 286
 
-Bảng 3.54. Mô tả các đối tượng trên màn hình cập nhật quy định 288
+Bảng 3.54. Mô tả các đối tượng trên màn hình cập nhật quy định 289
 
-Bảng 3.55. Danh sách biến cố và xử lý trên màn hình cập nhật quy định 290
+Bảng 3.55. Danh sách biến cố và xử lý trên màn hình cập nhật quy định 291
 
-Bảng 3.56. Mô tả các đối tượng trên màn hình thông báo 294
+Bảng 3.56. Mô tả các đối tượng trên màn hình thông báo 295
 
-Bảng 3.57. Danh sách biến cố và xử lý trên màn hình thông báo 295
+Bảng 3.57. Danh sách biến cố và xử lý trên màn hình thông báo 296
 
-Bảng 4.1. Thư viện và công cụ đã dùng khi cài đặt 298
+Bảng 4.1. Thư viện và công cụ đã dùng khi cài đặt 299
 
-Bảng 4.2. Ánh xạ từ thiết kế sang mã nguồn 302
+Bảng 4.2. Ánh xạ từ thiết kế sang mã nguồn 303
 
-Bảng 4.3. Thống kê mã nguồn theo tầng 305
+Bảng 4.3. Thống kê mã nguồn theo tầng 306
 
-Bảng 4.4. Mức độ hoàn thành các chức năng 334
+Bảng 4.4. Mức độ hoàn thành các chức năng 335
 
-Bảng 5.1. Các mức kiểm thử và công cụ 340
+Bảng 5.1. Các mức kiểm thử và công cụ 341
 
-Bảng 5.2. Môi trường kiểm thử 341
+Bảng 5.2. Môi trường kiểm thử 342
 
-Bảng 5.3. Tổng hợp kiểm thử tầng xử lý nghiệp vụ và truy xuất dữ liệu 344
+Bảng 5.3. Tổng hợp kiểm thử tầng xử lý nghiệp vụ và truy xuất dữ liệu 345
 
-Bảng 5.4. Một số ca kiểm thử tiêu biểu ở tầng xử lý 347
+Bảng 5.4. Một số ca kiểm thử tiêu biểu ở tầng xử lý 348
 
-Bảng 5.5. Các ca kiểm thử phần giao tiếp trong lớp KiemThuGiaoTiep 351
+Bảng 5.5. Các ca kiểm thử phần giao tiếp trong lớp KiemThuGiaoTiep 352
 
-Bảng 5.6. Các nhóm bước của script kiểm tra nhanh phần giao tiếp 353
+Bảng 5.6. Các nhóm bước của script kiểm tra nhanh phần giao tiếp 354
 
-Bảng 5.7. Các ca kiểm thử giao diện của UC01 Đăng nhập 356
+Bảng 5.7. Các ca kiểm thử giao diện của UC01 Đăng nhập 357
 
-Bảng 5.8. Các ca kiểm thử giao diện của UC02 Phân quyền 357
+Bảng 5.8. Các ca kiểm thử giao diện của UC02 Phân quyền 358
 
-Bảng 5.9. Các ca kiểm thử giao diện của UC03 Quản lý chuyến bay 359
+Bảng 5.9. Các ca kiểm thử giao diện của UC03 Quản lý chuyến bay 360
 
-Bảng 5.10. Các ca kiểm thử giao diện của UC04 Quản lý bán vé 362
+Bảng 5.10. Các ca kiểm thử giao diện của UC04 Quản lý bán vé 363
 
-Bảng 5.11. Các ca kiểm thử giao diện của UC05 Quản lý đặt vé 364
+Bảng 5.11. Các ca kiểm thử giao diện của UC05 Quản lý đặt vé 365
 
-Bảng 5.12. Các ca kiểm thử giao diện của UC07 Lập báo cáo doanh thu 365
+Bảng 5.12. Các ca kiểm thử giao diện của UC07 Lập báo cáo doanh thu 366
 
-Bảng 5.13. Các ca kiểm thử giao diện của UC08 Thay đổi quy định 367
+Bảng 5.13. Các ca kiểm thử giao diện của UC08 Thay đổi quy định 368
 
-Bảng 5.14. Các ca kiểm thử giao diện của các chức năng chung 369
+Bảng 5.14. Các ca kiểm thử giao diện của các chức năng chung 370
 
-Bảng 5.15. Đối chiếu yêu cầu nghiệp vụ, quy định, biểu mẫu với ca kiểm thử 370
+Bảng 5.15. Đối chiếu yêu cầu nghiệp vụ, quy định, biểu mẫu với ca kiểm thử 371
 
-Bảng 5.16. Đối chiếu các yêu cầu tiến hóa, bảo mật, tương thích, an toàn với ca kiểm thử 372
+Bảng 5.16. Đối chiếu các yêu cầu tiến hóa, bảo mật, tương thích, an toàn với ca kiểm thử 373
 
-Bảng 5.17. Tổng hợp kết quả kiểm thử chức năng 375
+Bảng 5.17. Tổng hợp kết quả kiểm thử chức năng 376
 
-Bảng 5.18. Cấu hình máy đo so với cấu hình triển khai ở mục 1.2.3 377
+Bảng 5.18. Cấu hình máy đo so với cấu hình triển khai ở mục 1.2.3 378
 
-Bảng 5.19. Dữ liệu đo so với mức dung lượng lưu trữ ở Bảng 1.11 378
+Bảng 5.19. Dữ liệu đo so với mức dung lượng lưu trữ ở Bảng 1.11 379
 
-Bảng 5.20. Kết quả đo các yêu cầu hiệu quả trên dữ liệu lớn 380
+Bảng 5.20. Kết quả đo các yêu cầu hiệu quả trên dữ liệu lớn 381
 
-Bảng 5.21. Kết quả đo HQ04: hủy 1.000 phiếu đến hạn trong một lần kiểm tra 382
+Bảng 5.21. Kết quả đo HQ04: hủy 1.000 phiếu đến hạn trong một lần kiểm tra 383
 
-Bảng 5.22. Kết quả kiểm tra 20 yêu cầu gửi cùng lúc vào hạng vé còn 5 ghế 384
+Bảng 5.22. Kết quả kiểm tra 20 yêu cầu gửi cùng lúc vào hạng vé còn 5 ghế 385
 
-Bảng 5.23. Kết quả kiểm tra các yêu cầu tương thích và môi trường chạy 385
+Bảng 5.23. Kết quả kiểm tra các yêu cầu tương thích và môi trường chạy 386
 
-Bảng 5.24. Kết quả kiểm tra các yêu cầu bảo mật 386
+Bảng 5.24. Kết quả kiểm tra các yêu cầu bảo mật 387
 
-Bảng 5.25. Kết quả kiểm tra các yêu cầu an toàn 388
+Bảng 5.25. Kết quả kiểm tra các yêu cầu an toàn 389
 
-Bảng 5.26. Số thao tác để có kết quả tra cứu và báo cáo 390
+Bảng 5.26. Số thao tác để có kết quả tra cứu và báo cáo 391
 
-Bảng 5.27. Kết quả đánh giá các yêu cầu tiện dụng 393
+Bảng 5.27. Kết quả đánh giá các yêu cầu tiện dụng 394
 
-Bảng 5.28. Kết quả kiểm tra phím tắt 395
+Bảng 5.28. Kết quả kiểm tra phím tắt 398
 
-Bảng 5.29. Kết quả đánh giá các yêu cầu công nghệ 398
+Bảng 5.29. Kết quả đánh giá các yêu cầu công nghệ 401
 
-Bảng 5.30. Tổng hợp kết quả kiểm thử theo nhóm yêu cầu 400
+Bảng 5.30. Tổng hợp kết quả kiểm thử theo nhóm yêu cầu 403
 
-Bảng 5.31. Các lỗi đã phát hiện trong quá trình kiểm thử và đã sửa 402
+Bảng 5.31. Các lỗi đã phát hiện trong quá trình kiểm thử và đã sửa 405
 
-Bảng 6.1. Yêu cầu phần cứng và phần mềm 406
+Bảng 6.1. Yêu cầu phần cứng và phần mềm 409
 
-Bảng 6.2. Các tài khoản ban đầu 410
+Bảng 6.2. Các tài khoản ban đầu 413
 
-Bảng 6.3. Một số lỗi thường gặp khi cài đặt và cách xử lý 413
+Bảng 6.3. Một số lỗi thường gặp khi cài đặt và cách xử lý 417
 
-Bảng 6.4. Các phím tắt của phần mềm 421
+Bảng 6.4. Các phím tắt của phần mềm 424
 
-Bảng 6.5. Các thông báo thường gặp và cách xử lý 453
+Bảng 6.5. Các thông báo thường gặp và cách xử lý 456
 
 DANH MỤC HÌNH
 
@@ -742,7 +744,7 @@ Hình 2.24.2. Biểu đồ tuần tự của UC05.2, UC05.3, UC05.4 Tra cứu, s
 
 Hình 2.24.3. Biểu đồ tuần tự của UC05.5 Xóa phiếu đặt chỗ đã hủy 95
 
-Hình 2.25. Biểu đồ cộng tác của UC05.1 Lập phiếu đặt chỗ 97
+Hình 2.25. Biểu đồ cộng tác của UC05.1 Lập phiếu đặt chỗ 96
 
 Hình 2.26. Biểu đồ lớp phân tích của UC05 Quản lý đặt vé 98
 
@@ -770,231 +772,231 @@ Hình 2.37. Biểu đồ cộng tác của UC08 Thay đổi quy định 115
 
 Hình 2.38. Biểu đồ lớp phân tích của UC08 Thay đổi quy định 116
 
-Hình 2.39. Biểu đồ lớp thực thể 121
+Hình 2.39. Biểu đồ lớp thực thể 122
 
-Hình 2.40. Biểu đồ thực thể liên kết của hệ thống 124
+Hình 2.40. Biểu đồ thực thể liên kết của hệ thống 125
 
-Hình 3.1. Kiến trúc ba lớp của hệ thống 129
+Hình 3.1. Kiến trúc ba lớp của hệ thống 130
 
-Hình 3.2. Sơ đồ logic bước 1, thiết kế với tính đúng đắn 138
+Hình 3.2. Sơ đồ logic bước 1, thiết kế với tính đúng đắn 139
 
-Hình 3.3. Sơ đồ logic bước 1, thiết kế với tính tiến hóa 140
+Hình 3.3. Sơ đồ logic bước 1, thiết kế với tính tiến hóa 141
 
-Hình 3.4. Sơ đồ logic bước 1, thiết kế với tính hiệu quả 141
+Hình 3.4. Sơ đồ logic bước 1, thiết kế với tính hiệu quả 142
 
-Hình 3.5. Sơ đồ logic bước 2, thiết kế với tính đúng đắn 143
+Hình 3.5. Sơ đồ logic bước 2, thiết kế với tính đúng đắn 144
 
-Hình 3.6. Sơ đồ logic bước 2, thiết kế với tính tiến hóa 144
+Hình 3.6. Sơ đồ logic bước 2, thiết kế với tính tiến hóa 145
 
-Hình 3.7. Sơ đồ logic bước 2, thiết kế với tính hiệu quả 146
+Hình 3.7. Sơ đồ logic bước 2, thiết kế với tính hiệu quả 147
 
-Hình 3.8. Sơ đồ logic bước 3, thiết kế với tính đúng đắn 148
+Hình 3.8. Sơ đồ logic bước 3, thiết kế với tính đúng đắn 149
 
-Hình 3.9. Sơ đồ logic bước 3, thiết kế với tính tiến hóa 149
+Hình 3.9. Sơ đồ logic bước 3, thiết kế với tính tiến hóa 150
 
-Hình 3.10. Các hộp quy định có thể chọn và nơi lưu của từng quy định 154
+Hình 3.10. Các hộp quy định có thể chọn và nơi lưu của từng quy định 155
 
-Hình 3.11. Sơ đồ logic bước 6, các bảng THAMSOQUYDINH, HANGVE, SANBAY 155
+Hình 3.11. Sơ đồ logic bước 6, các bảng THAMSOQUYDINH, HANGVE, SANBAY 156
 
-Hình 3.12. Sơ đồ logic bước 7, bảng TAIKHOAN 156
+Hình 3.12. Sơ đồ logic bước 7, bảng TAIKHOAN 157
 
-Hình 3.13. Sơ đồ logic hoàn chỉnh của hệ thống 163
+Hình 3.13. Sơ đồ logic hoàn chỉnh của hệ thống 164
 
-Hình 3.14. Các lớp DTO SanBay, ChuyenBay, ChiTietTrungGian, HangVe, GheTheoHang 178
+Hình 3.14. Các lớp DTO SanBay, ChuyenBay, ChiTietTrungGian, HangVe, GheTheoHang 179
 
-Hình 3.15. Các lớp DTO HanhKhach, Ve, TaiKhoan, PhieuDatCho, ThamSoQuyDinh và các lớp TieuChiTim, ThongTinBan, ThongTinHang 179
+Hình 3.15. Các lớp DTO HanhKhach, Ve, TaiKhoan, PhieuDatCho, ThamSoQuyDinh và các lớp TieuChiTim, ThongTinBan, ThongTinHang 180
 
-Hình 3.16. Sơ đồ lớp chi tiết chức năng Đăng nhập 196
+Hình 3.16. Sơ đồ lớp chi tiết chức năng Đăng nhập 197
 
-Hình 3.17. Sơ đồ lớp chi tiết chức năng Phân quyền 198
+Hình 3.17. Sơ đồ lớp chi tiết chức năng Phân quyền 199
 
-Hình 3.18. Sơ đồ lớp chi tiết chức năng Quản lý chuyến bay: thêm, sửa, xóa chuyến bay 201
+Hình 3.18. Sơ đồ lớp chi tiết chức năng Quản lý chuyến bay: thêm, sửa, xóa chuyến bay 202
 
-Hình 3.19. Sơ đồ lớp chi tiết chức năng Quản lý chuyến bay: tra cứu chuyến bay 203
+Hình 3.19. Sơ đồ lớp chi tiết chức năng Quản lý chuyến bay: tra cứu chuyến bay 204
 
-Hình 3.20. Sơ đồ lớp chi tiết chức năng Quản lý bán vé: bán vé 205
+Hình 3.20. Sơ đồ lớp chi tiết chức năng Quản lý bán vé: bán vé 206
 
-Hình 3.21. Sơ đồ lớp chi tiết chức năng Quản lý bán vé: tra cứu, sửa, hủy vé 206
+Hình 3.21. Sơ đồ lớp chi tiết chức năng Quản lý bán vé: tra cứu, sửa, hủy vé 207
 
-Hình 3.22. Sơ đồ lớp chi tiết chức năng Quản lý đặt vé: lập phiếu đặt chỗ 208
+Hình 3.22. Sơ đồ lớp chi tiết chức năng Quản lý đặt vé: lập phiếu đặt chỗ 209
 
-Hình 3.23. Sơ đồ lớp chi tiết chức năng Quản lý đặt vé: tra cứu, sửa, hủy phiếu và xóa phiếu đã hủy 210
+Hình 3.23. Sơ đồ lớp chi tiết chức năng Quản lý đặt vé: tra cứu, sửa, hủy phiếu và xóa phiếu đã hủy 211
 
-Hình 3.24. Sơ đồ lớp chi tiết chức năng Tự động hủy phiếu đặt chỗ 212
+Hình 3.24. Sơ đồ lớp chi tiết chức năng Tự động hủy phiếu đặt chỗ 213
 
-Hình 3.25. Sơ đồ lớp chi tiết chức năng Lập báo cáo doanh thu 214
+Hình 3.25. Sơ đồ lớp chi tiết chức năng Lập báo cáo doanh thu 215
 
-Hình 3.26. Sơ đồ lớp chi tiết chức năng Thay đổi quy định 216
+Hình 3.26. Sơ đồ lớp chi tiết chức năng Thay đổi quy định 217
 
-Hình 3.27. Sơ đồ liên kết các màn hình 219
+Hình 3.27. Sơ đồ liên kết các màn hình 220
 
-Hình 3.28. Màn hình đăng nhập 223
+Hình 3.28. Màn hình đăng nhập 224
 
-Hình 3.29. Màn hình chính của Quản lý 226
+Hình 3.29. Màn hình chính của Quản lý 227
 
-Hình 3.30. Màn hình chính của Nhân viên bán vé, bảng thông báo đang mở 227
+Hình 3.30. Màn hình chính của Nhân viên bán vé, bảng thông báo đang mở 228
 
-Hình 3.31. Màn hình phân quyền 234
+Hình 3.31. Màn hình phân quyền 235
 
-Hình 3.32. Màn hình thêm tài khoản 237
+Hình 3.32. Màn hình thêm tài khoản 238
 
-Hình 3.33. Màn hình sửa tài khoản đang đăng nhập 238
+Hình 3.33. Màn hình sửa tài khoản đang đăng nhập 239
 
-Hình 3.34. Màn hình danh sách chuyến bay 242
+Hình 3.34. Màn hình danh sách chuyến bay 243
 
-Hình 3.35. Hộp thoại nhập lịch chuyến bay từ Excel 243
+Hình 3.35. Hộp thoại nhập lịch chuyến bay từ Excel 244
 
-Hình 3.36. Màn hình thêm chuyến bay 249
+Hình 3.36. Màn hình thêm chuyến bay 250
 
-Hình 3.37. Màn hình danh sách vé 254
+Hình 3.37. Màn hình danh sách vé 255
 
-Hình 3.38. Màn hình bán vé, cách bán trực tiếp 259
+Hình 3.38. Màn hình bán vé, cách bán trực tiếp 260
 
-Hình 3.39. Màn hình bán vé, cách bán từ phiếu đặt chỗ 260
+Hình 3.39. Màn hình bán vé, cách bán từ phiếu đặt chỗ 261
 
-Hình 3.40. Màn hình danh sách phiếu đặt chỗ 267
+Hình 3.40. Màn hình danh sách phiếu đặt chỗ 268
 
-Hình 3.41. Màn hình đặt vé, chế độ lập phiếu 272
+Hình 3.41. Màn hình đặt vé, chế độ lập phiếu 273
 
-Hình 3.42. Màn hình đặt vé, chế độ sửa phiếu 273
+Hình 3.42. Màn hình đặt vé, chế độ sửa phiếu 274
 
-Hình 3.43. Màn hình lập báo cáo doanh thu, báo cáo tháng 278
+Hình 3.43. Màn hình lập báo cáo doanh thu, báo cáo tháng 279
 
-Hình 3.44. Màn hình lập báo cáo doanh thu, báo cáo năm 279
+Hình 3.44. Màn hình lập báo cáo doanh thu, báo cáo năm 280
 
-Hình 3.45. Màn hình danh sách quy định 283
+Hình 3.45. Màn hình danh sách quy định 284
 
-Hình 3.46. Màn hình cập nhật quy định, dạng cập nhật tham số 287
+Hình 3.46. Màn hình cập nhật quy định, dạng cập nhật tham số 288
 
-Hình 3.47. Màn hình cập nhật quy định, dạng thêm sân bay 287
+Hình 3.47. Màn hình cập nhật quy định, dạng thêm sân bay 288
 
-Hình 3.48. Màn hình cập nhật quy định, dạng thêm hạng vé 288
+Hình 3.48. Màn hình cập nhật quy định, dạng thêm hạng vé 289
 
-Hình 3.49. Màn hình thông báo, hỏi xác nhận 292
+Hình 3.49. Màn hình thông báo, hỏi xác nhận 293
 
-Hình 3.50. Màn hình thông báo, báo lỗi 293
+Hình 3.50. Màn hình thông báo, báo lỗi 294
 
-Hình 3.51. Màn hình thông báo, báo thành công và thông báo nổi 294
+Hình 3.51. Màn hình thông báo, báo thành công và thông báo nổi 295
 
-Hình 4.1. Lỗi nghiệp vụ được hiển thị trong hộp thoại thông báo khi xóa chuyến bay đã có vé 310
+Hình 4.1. Lỗi nghiệp vụ được hiển thị trong hộp thoại thông báo khi xóa chuyến bay đã có vé 311
 
-Hình 4.2. Trạng thái rỗng dùng chung khi tra cứu không có kết quả 311
+Hình 4.2. Trạng thái rỗng dùng chung khi tra cứu không có kết quả 312
 
-Hình 4.3. Màn hình chính của Nhân viên bán vé chỉ hiện các chức năng được phép 313
+Hình 4.3. Màn hình chính của Nhân viên bán vé chỉ hiện các chức năng được phép 314
 
-Hình 4.4. Nhân viên bán vé mở đường dẫn của Quản lý thì bị chặn 314
+Hình 4.4. Nhân viên bán vé mở đường dẫn của Quản lý thì bị chặn 315
 
-Hình 4.5. Hỏi xác nhận trước khi khóa tài khoản banve04 315
+Hình 4.5. Hỏi xác nhận trước khi khóa tài khoản banve04 316
 
-Hình 4.6. Tài khoản banve04 ở trạng thái Đã khóa sau khi khóa 316
+Hình 4.6. Tài khoản banve04 ở trạng thái Đã khóa sau khi khóa 317
 
-Hình 4.7. Thêm chuyến bay CB247 vi phạm thời gian bay tối thiểu của QĐ1 317
+Hình 4.7. Thêm chuyến bay CB247 vi phạm thời gian bay tối thiểu của QĐ1 318
 
-Hình 4.8. Thời gian dừng 25 phút tại DAD vi phạm QĐ1 318
+Hình 4.8. Thời gian dừng 25 phút tại DAD vi phạm QĐ1 319
 
-Hình 4.9. Chuyến bay CB246 sau khi thêm thành công, tra cứu theo BM4 319
+Hình 4.9. Chuyến bay CB246 sau khi thêm thành công, tra cứu theo BM4 320
 
-Hình 4.10. Kết quả nhập lịch chuyến bay từ tập tin Excel 320
+Hình 4.10. Kết quả nhập lịch chuyến bay từ tập tin Excel 321
 
-Hình 4.11. Nội dung tập tin Excel danh sách chuyến bay 321
+Hình 4.11. Nội dung tập tin Excel danh sách chuyến bay 322
 
-Hình 4.12. Hạng vé hết chỗ bị khóa trên màn hình bán vé 322
+Hình 4.12. Hạng vé hết chỗ bị khóa trên màn hình bán vé 323
 
-Hình 4.13. Không bán vé cho chuyến bay đã khởi hành 323
+Hình 4.13. Không bán vé cho chuyến bay đã khởi hành 324
 
-Hình 4.14. Hỏi xác nhận trước khi bán vé 323
+Hình 4.14. Hỏi xác nhận trước khi bán vé 324
 
-Hình 4.15. Bán vé thành công, hiện mã vé VE00002810 324
+Hình 4.15. Bán vé thành công, hiện mã vé VE00002810 325
 
-Hình 4.16. Vé VE00002810 ở tình trạng Đã hủy sau khi hủy vé 325
+Hình 4.16. Vé VE00002810 ở tình trạng Đã hủy sau khi hủy vé 326
 
-Hình 4.17. Không đặt được vé vì quá thời hạn đặt vé của QĐ3 326
+Hình 4.17. Không đặt được vé vì quá thời hạn đặt vé của QĐ3 327
 
-Hình 4.18. Đặt vé thành công, hiện mã phiếu và hạn thanh toán 326
+Hình 4.18. Đặt vé thành công, hiện mã phiếu và hạn thanh toán 327
 
-Hình 4.19. Phiếu PD00000287 ở tình trạng Đã hủy 327
+Hình 4.19. Phiếu PD00000287 ở tình trạng Đã hủy 328
 
-Hình 4.20. Hỏi xác nhận xóa hẳn các phiếu đã hủy trước ngày 13/10/2026 328
+Hình 4.20. Hỏi xác nhận xóa hẳn các phiếu đã hủy trước ngày 13/10/2026 329
 
-Hình 4.21. Báo cáo tháng 3/2025 không có chuyến bay nào 329
+Hình 4.21. Báo cáo tháng 3/2025 không có chuyến bay nào 330
 
-Hình 4.22. Trang đầu tập tin PDF báo cáo doanh thu tháng 11/2026 330
+Hình 4.22. Trang đầu tập tin PDF báo cáo doanh thu tháng 11/2026 331
 
-Hình 4.23. Nội dung tập tin Excel báo cáo doanh thu tháng 11/2026 331
+Hình 4.23. Nội dung tập tin Excel báo cáo doanh thu tháng 11/2026 332
 
-Hình 4.24. Đổi thời gian bay tối thiểu từ 30 phút thành 45 phút 332
+Hình 4.24. Đổi thời gian bay tối thiểu từ 30 phút thành 45 phút 333
 
-Hình 4.25. Tham số mới 45 phút có hiệu lực ngay ở màn hình thêm chuyến bay 333
+Hình 4.25. Tham số mới 45 phút có hiệu lực ngay ở màn hình thêm chuyến bay 334
 
-Hình 4.26. Không xóa được sân bay đang được chuyến bay sử dụng 334
+Hình 4.26. Không xóa được sân bay đang được chuyến bay sử dụng 335
 
-Hình 5.1. Chọn sân bay từ danh sách ở biểu mẫu thêm chuyến bay (TD01) 391
+Hình 5.1. Chọn sân bay từ danh sách ở biểu mẫu thêm chuyến bay (TD01) 392
 
-Hình 5.2. Giá tiền tự tính và thông báo lỗi tại ô ở màn hình bán vé (TD02) 392
+Hình 5.2. Giá tiền tự tính và thông báo lỗi tại ô ở màn hình bán vé (TD02) 393
 
-Hình 5.3. Tra cứu chuyến bay theo sân bay đi và sân bay đến sau 3 thao tác (TD04) 393
+Hình 5.3. Tra cứu chuyến bay theo sân bay đi và sân bay đến sau 3 thao tác (TD04) 394
 
-Hình 6.1. Màn hình Đăng nhập 415
+Hình 6.1. Màn hình Đăng nhập 419
 
-Hình 6.2. Thông báo sai tên đăng nhập hoặc mật khẩu 416
+Hình 6.2. Thông báo sai tên đăng nhập hoặc mật khẩu 419
 
-Hình 6.3. Thông báo tài khoản đã bị khóa 416
+Hình 6.3. Thông báo tài khoản đã bị khóa 420
 
-Hình 6.4. Phần đầu trang chính của Quản lý 418
+Hình 6.4. Phần đầu trang chính của Quản lý 421
 
-Hình 6.5. Trang chính của Nhân viên bán vé 419
+Hình 6.5. Trang chính của Nhân viên bán vé 422
 
-Hình 6.6. Chuông thông báo đang mở 420
+Hình 6.6. Chuông thông báo đang mở 423
 
-Hình 6.7. Trang Trợ giúp 421
+Hình 6.7. Trang Trợ giúp 424
 
-Hình 6.8. Ô chọn ngày đang mở bảng lịch 423
+Hình 6.8. Ô chọn ngày đang mở bảng lịch 426
 
-Hình 6.9. Màn hình Danh sách chuyến bay 425
+Hình 6.9. Màn hình Danh sách chuyến bay 428
 
-Hình 6.10. Màn hình xem chi tiết chuyến bay 426
+Hình 6.10. Màn hình xem chi tiết chuyến bay 429
 
-Hình 6.11. Màn hình Bán vé ở chế độ bán trực tiếp 427
+Hình 6.11. Màn hình Bán vé ở chế độ bán trực tiếp 430
 
-Hình 6.12. Bán vé từ phiếu đặt chỗ 429
+Hình 6.12. Bán vé từ phiếu đặt chỗ 432
 
-Hình 6.13. Màn hình Danh sách vé 430
+Hình 6.13. Màn hình Danh sách vé 433
 
-Hình 6.14. Màn hình Đặt vé 432
+Hình 6.14. Màn hình Đặt vé 435
 
-Hình 6.15. Màn hình Danh sách phiếu đặt chỗ 434
+Hình 6.15. Màn hình Danh sách phiếu đặt chỗ 437
 
-Hình 6.16. Màn hình Sửa phiếu đặt chỗ 435
+Hình 6.16. Màn hình Sửa phiếu đặt chỗ 438
 
-Hình 6.17. Màn hình Thêm chuyến bay 437
+Hình 6.17. Màn hình Thêm chuyến bay 440
 
-Hình 6.18. Ô Ngày giờ khởi hành đang mở bảng lịch và giờ 438
+Hình 6.18. Ô Ngày giờ khởi hành đang mở bảng lịch và giờ 441
 
-Hình 6.19. Màn hình Sửa chuyến bay 440
+Hình 6.19. Màn hình Sửa chuyến bay 443
 
-Hình 6.20. Báo cáo doanh thu tháng 442
+Hình 6.20. Báo cáo doanh thu tháng 445
 
-Hình 6.21. Báo cáo doanh thu năm 443
+Hình 6.21. Báo cáo doanh thu năm 446
 
-Hình 6.22. Màn hình Thay đổi quy định 444
+Hình 6.22. Màn hình Thay đổi quy định 447
 
-Hình 6.23. Hộp thoại Cập nhật quy định 445
+Hình 6.23. Hộp thoại Cập nhật quy định 448
 
-Hình 6.24. Hộp thoại Thêm sân bay 446
+Hình 6.24. Hộp thoại Thêm sân bay 449
 
-Hình 6.25. Hộp thoại Thêm hạng vé 447
+Hình 6.25. Hộp thoại Thêm hạng vé 450
 
-Hình 6.26. Màn hình Phân quyền 448
+Hình 6.26. Màn hình Phân quyền 451
 
-Hình 6.27. Hộp thoại Thêm tài khoản 449
+Hình 6.27. Hộp thoại Thêm tài khoản 452
 
-Hình 6.28. Hộp thoại Sửa tài khoản 450
+Hình 6.28. Hộp thoại Sửa tài khoản 453
 
-Hình 6.29. Thông báo đã xóa phiếu đặt chỗ đã hủy 451
+Hình 6.29. Thông báo đã xóa phiếu đặt chỗ đã hủy 454
 
-Hình 6.30. Hộp thoại hỏi xác nhận khi hủy thao tác bán vé đang nhập dở 452
+Hình 6.30. Hộp thoại hỏi xác nhận khi hủy thao tác bán vé đang nhập dở 455
 
-Hình 6.31. Hộp thoại báo lỗi khi xóa hạng vé đang được sử dụng 452
+Hình 6.31. Hộp thoại báo lỗi khi xóa hạng vé đang được sử dụng 455
 
 CHƯƠNG 1. TỔNG QUAN ĐỀ TÀI
 
@@ -1032,7 +1034,7 @@ Người sử dụng phần mềm là nhân viên của phòng vé, gồm hai nh
 
 1.2. Danh sách yêu cầu phần mềm
 
-Yêu cầu phần mềm gồm yêu cầu chức năng (các dịch vụ hệ thống phải cung cấp) và yêu cầu phi chức năng (các tính chất, ràng buộc mà hệ thống phải thỏa) [10]. Trong tám loại yêu cầu dưới đây, yêu cầu nghiệp vụ là yêu cầu chức năng. Bảy loại còn lại là yêu cầu phi chức năng, gồm các yêu cầu chất lượng (tiến hóa, hiệu quả, tương thích, tiện dụng) và các yêu cầu hệ thống (bảo mật, công nghệ, an toàn). Yêu cầu nghiệp vụ và yêu cầu tiến hóa được xác định từ mô tả của đề tài. Các yêu cầu hiệu quả, tương thích, bảo mật, công nghệ, tiện dụng và an toàn do nhóm đề xuất, và được phát biểu ở dạng có thể đo lường hoặc kiểm tra được.
+Yêu cầu phần mềm gồm yêu cầu chức năng (các dịch vụ hệ thống phải cung cấp) và yêu cầu phi chức năng (các tính chất, ràng buộc mà hệ thống phải thỏa) [9]. Trong tám loại yêu cầu dưới đây, yêu cầu nghiệp vụ là yêu cầu chức năng. Bảy loại còn lại là yêu cầu phi chức năng, gồm các yêu cầu chất lượng (tiến hóa, hiệu quả, tương thích, tiện dụng) và các yêu cầu hệ thống (bảo mật, công nghệ, an toàn). Yêu cầu nghiệp vụ và yêu cầu tiến hóa được xác định từ mô tả của đề tài. Các yêu cầu hiệu quả, tương thích, bảo mật, công nghệ, tiện dụng và an toàn do nhóm đề xuất, và được phát biểu ở dạng có thể đo lường hoặc kiểm tra được.
 
 Để thuận tiện cho việc kiểm thử ở Chương 5, mỗi yêu cầu được gán một mã yêu cầu duy nhất, gồm tiền tố cho biết loại yêu cầu và số thứ tự: nghiệp vụ (NV), tiến hóa (TH), hiệu quả (HQ), tương thích (TT), bảo mật (BMT), công nghệ (CN), tiện dụng (TD) và an toàn (AT). Mã yêu cầu (Mã YC) được ghi ở cột Mã YC của các bảng danh sách yêu cầu, bảng trách nhiệm tương ứng dùng lại đúng mã đó. Khi kiểm thử, mỗi trường hợp kiểm thử ghi rõ mã yêu cầu mà nó kiểm tra, nhờ vậy có thể đối chiếu yêu cầu nào đã được kiểm tra và yêu cầu nào chưa. Ở Chương 2, bảng đặc tả của từng use case cũng liệt kê các mã yêu cầu mà use case đó đáp ứng.
 
@@ -1383,7 +1385,7 @@ Bảng 1.19. Danh sách yêu cầu tiện dụng
 
   TD03    Ghi nhận đặt vé        10 phút hướng dẫn   Lập xong một phiếu trong không quá 2 phút; nhập sai không quá 1 lần trên 100 phiếu                 Màn hình đặt vé bố trí giống màn hình bán vé
 
-  TD04    Tra cứu chuyến bay     5 phút hướng dẫn    Có kết quả sau không quá 3 thao tác                                                                Tra cứu theo một hoặc nhiều tiêu chí
+  TD04    Tra cứu chuyến bay     5 phút hướng dẫn    Có kết quả sau không quá 5 thao tác                                                                Tra cứu theo một hoặc nhiều tiêu chí
 
   TD05    Lập báo cáo            10 phút hướng dẫn   Có báo cáo sau không quá 3 thao tác                                                                Chọn tháng, năm từ danh sách
 
@@ -1603,7 +1605,7 @@ Hình 1.3. Biểu đồ phân cấp chức năng của hệ thống
 
 1.4.3. Quy trình phát triển phần mềm
 
-Nhóm chọn mô hình thác nước cải tiến (Hình 1.4) vì hai lý do. Thứ nhất, các yêu cầu nghiệp vụ đã rõ ràng ngay từ đầu nên ít có khả năng thay đổi lớn. Thứ hai, đồ án được thực hiện và đánh giá theo từng giai đoạn nối tiếp nhau, từ khảo sát hiện trạng, xác định yêu cầu, phân tích, thiết kế đến cài đặt, kiểm chứng và triển khai. Khác với mô hình thác nước cổ điển, mô hình cải tiến cho phép quay lại giai đoạn trước khi phát hiện sai sót [2], [10]. Ví dụ, nhóm cập nhật lại đặc tả khi thiết kế dữ liệu phát hiện thiếu thông tin.
+Nhóm chọn mô hình thác nước cải tiến (Hình 1.4) vì hai lý do. Thứ nhất, các yêu cầu nghiệp vụ đã rõ ràng ngay từ đầu nên ít có khả năng thay đổi lớn. Thứ hai, đồ án được thực hiện và đánh giá theo từng giai đoạn nối tiếp nhau, từ khảo sát hiện trạng, xác định yêu cầu, phân tích, thiết kế đến cài đặt, kiểm chứng và triển khai. Khác với mô hình thác nước cổ điển, mô hình cải tiến cho phép quay lại giai đoạn trước khi phát hiện sai sót [2], [9]. Ví dụ, nhóm cập nhật lại đặc tả khi thiết kế dữ liệu phát hiện thiếu thông tin.
 
 []
 
@@ -1705,7 +1707,7 @@ Bảng 1.28. Quản lý các rủi ro trong quá trình thực hiện đồ án
 
 CHƯƠNG 2. ĐẶC TẢ VÀ PHÂN TÍCH YÊU CẦU
 
-Chương này mô hình hóa các yêu cầu ở Chương 1 bằng ngôn ngữ mô hình hóa hợp nhất (UML) theo phương pháp phân tích hướng đối tượng: xác định tác nhân và use case, vẽ biểu đồ use case, đặc tả từng use case kèm biểu đồ hoạt động, biểu đồ tuần tự, biểu đồ cộng tác và biểu đồ lớp phân tích, xây dựng biểu đồ lớp thực thể và biểu đồ thực thể liên kết [3].
+Chương này mô hình hóa các yêu cầu ở Chương 1 bằng ngôn ngữ mô hình hóa hợp nhất (UML) theo phương pháp phân tích hướng đối tượng: xác định tác nhân và use case, vẽ biểu đồ use case, đặc tả từng use case kèm biểu đồ hoạt động, biểu đồ tuần tự, biểu đồ cộng tác và biểu đồ lớp phân tích, xây dựng biểu đồ lớp thực thể và biểu đồ thực thể liên kết [4].
 
 2.1. Các tác nhân của hệ thống
 
@@ -2271,7 +2273,7 @@ Hình 2.19. Biểu đồ hoạt động của UC04 Quản lý bán vé
 
 2.4.4.3. Biểu đồ tuần tự
 
-Biểu đồ tuần tự của UC04 được tách thành ba hình: hai hình cho hai dạng bán vé, vì hai dạng có các đối tượng tham gia và trình tự xử lý khác nhau, và một hình cho các thao tác tra cứu, sửa, hủy vé. Trong Hình 2.20.1 (UC04.1 Bán vé trực tiếp), khung loop thứ nhất bao các bước chọn chuyến bay và kiểm tra: XL_BanVe lấy thời điểm hiện tại từ Đồng hồ hệ thống (thông điệp 3, 4) và ngày khởi hành của chuyến bay (5, 6) để kiểm tra chuyến bay chưa khởi hành (giả định 13), rồi lấy tổng số ghế trống bằng tongSoGheTrong(maCB) của ChuyenBay (7, 8). Khi chuyến bay đã khởi hành hoặc đã hết chỗ, tức tất cả các hạng vé đều hết ghế (khung opt), màn hình thông báo để nhân viên chọn chuyến bay khác (9, 10); vòng lặp kết thúc khi chọn được chuyến bay chưa khởi hành và còn chỗ. Khung loop thứ hai bao các bước chọn hạng vé và kiểm tra số ghế trống của hạng bằng laySoGheTrong(maCB, maHang) (12 đến 17), lặp lại cho đến khi chọn được hạng vé còn chỗ. Sau đó XL_BanVe lấy giá vé từ ChuyenBay và gọi tinhGiaTien(maHang, giaVe) của HangVe để tính giá tiền (18 đến 22). Khi nhân viên xác nhận, XL_BanVe tìm hoặc thêm HanhKhach theo loại và số giấy tờ (CCCD/hộ chiếu) (25, 26), lấy thời điểm hiện tại từ Đồng hồ hệ thống (27, 28) làm ngày bán, tạo Ve (29, 30), sau đó lấy lại số ghế trống còn lại của hạng bằng laySoGheTrong(maCB, maHang) (31, 32); XL_BanVe chuyển mã vé do Ve cấp cho MH_BanVe để màn hình thông báo bán vé thành công kèm mã vé, nhân viên báo lại cho hành khách (33, 34).
+Biểu đồ tuần tự của UC04 được tách thành ba hình: hai hình cho hai dạng bán vé, vì hai dạng có các đối tượng tham gia và trình tự xử lý khác nhau, và một hình cho các thao tác tra cứu, sửa, hủy vé. Trong Hình 2.20.1 (UC04.1 Bán vé trực tiếp), khung loop thứ nhất bao các bước chọn chuyến bay và kiểm tra: XL_BanVe lấy thời điểm hiện tại từ Đồng hồ hệ thống (thông điệp 3, 4) và ngày khởi hành của chuyến bay (5, 6) để kiểm tra chuyến bay chưa khởi hành (giả định 13), rồi lấy tổng số ghế trống bằng tongSoGheTrong(maCB) của ChuyenBay (7, 8). Khi chuyến bay đã khởi hành hoặc đã hết chỗ, tức tất cả các hạng vé đều hết ghế (khung opt), màn hình thông báo để nhân viên chọn chuyến bay khác (9, 10); vòng lặp kết thúc khi chọn được chuyến bay chưa khởi hành và còn chỗ. Khung loop thứ hai bao các bước chọn hạng vé và kiểm tra số ghế trống của hạng bằng laySoGheTrong(maCB, maHang) (12 đến 17), lặp lại cho đến khi chọn được hạng vé còn chỗ. Sau đó XL_BanVe lấy giá vé từ ChuyenBay và gọi tinhGiaTien(maHang, giaVe) của HangVe để tính giá tiền (18 đến 22). Khi nhân viên xác nhận, XL_BanVe tìm hoặc thêm HanhKhach theo loại và số giấy tờ (CCCD/hộ chiếu) (25, 26), lấy thời điểm hiện tại từ Đồng hồ hệ thống (27, 28) làm ngày bán và tạo Ve (29, 30); XL_BanVe chuyển mã vé do Ve cấp cho MH_BanVe để màn hình thông báo bán vé thành công kèm mã vé, nhân viên báo lại cho hành khách (31, 32).
 
 []
 
@@ -2295,7 +2297,7 @@ Tương ứng với hai biểu đồ tuần tự bán vé, nhóm vẽ hai biểu
 
 Cách đánh số trên hai biểu đồ được giữ đúng như trong biểu đồ tuần tự tương ứng để tiện đối chiếu:
 
-Hình 2.21.1 đánh số từ 1 đến 34 theo Hình 2.20.1. Dấu * sau số thứ tự, từ 1* đến 10* và từ 12* đến 17*, đánh dấu các thông điệp nằm trong hai khung loop, được lặp lại cho đến khi chọn được chuyến bay chưa khởi hành, còn chỗ và hạng vé còn chỗ. Phần trong ngoặc vuông đứng trước thông điệp, ví dụ [hạng vé hết chỗ], là điều kiện để thông điệp đó được gửi. Liên kết giữa XL_BanVe và Đồng hồ hệ thống mang bốn thông điệp: 3* và 4* để kiểm tra chuyến bay chưa khởi hành, 27 và 28 để lấy ngày bán.
+Hình 2.21.1 đánh số từ 1 đến 32 theo Hình 2.20.1. Dấu * sau số thứ tự, từ 1* đến 10* và từ 12* đến 17*, đánh dấu các thông điệp nằm trong hai khung loop, được lặp lại cho đến khi chọn được chuyến bay chưa khởi hành, còn chỗ và hạng vé còn chỗ. Phần trong ngoặc vuông đứng trước thông điệp, ví dụ [hạng vé hết chỗ], là điều kiện để thông điệp đó được gửi. Liên kết giữa XL_BanVe và Đồng hồ hệ thống mang bốn thông điệp: 3* và 4* để kiểm tra chuyến bay chưa khởi hành, 27 và 28 để lấy ngày bán.
 
 Hình 2.21.2 đánh số từ 1 đến 25 theo Hình 2.20.2. Các điều kiện [nhập CCCD/hộ chiếu], [nhập mã phiếu đặt], [có phiếu còn hạn] và [không có phiếu còn hạn] ứng với các nhánh của hai khung alt. Liên kết với Đồng hồ hệ thống mang hai thông điệp 3 và 4, liên kết với ThamSoQuyDinh mang hai thông điệp 5 và 6, dùng để kiểm tra phiếu còn hạn. Biểu đồ không có liên kết đến ChuyenBay và HangVe vì khi bán từ phiếu, hệ thống không kiểm tra lại chỗ trống và không tính lại giá tiền (giả định 5).
 
@@ -2433,7 +2435,7 @@ Hình 2.23. Biểu đồ hoạt động của UC05 Quản lý đặt vé
 
 Biểu đồ tuần tự của UC05 được tách thành ba hình: Hình 2.24.1 cho thao tác lập phiếu đặt chỗ, Hình 2.24.2 cho các thao tác tra cứu, sửa, hủy phiếu của nhân viên và Hình 2.24.3 cho thao tác xóa phiếu đã hủy, chỉ dành cho Quản lý.
 
-Trong Hình 2.24.1, khung loop thứ nhất bao các bước chọn chuyến bay và kiểm tra: XL_DatVe lấy thời điểm hiện tại từ Đồng hồ hệ thống (thông điệp 3, 4), đọc hai tham số của QĐ3 từ ThamSoQuyDinh là thời gian chậm nhất khi đặt vé (5, 6) và thời gian hủy đặt vé (7, 8), lấy ngày khởi hành (9, 10) và tổng số ghế trống (11, 12) từ ChuyenBay để kiểm tra QĐ3 và còn chỗ; khi quá thời hạn đặt hoặc chuyến bay đã hết chỗ (khung opt), màn hình thông báo để nhân viên chọn chuyến bay khác (13, 14). Khung loop thứ hai bao các bước chọn hạng vé và kiểm tra chỗ trống bằng laySoGheTrong(maCB, maHang) của ChuyenBay (16 đến 21), lặp lại cho đến khi chọn được hạng vé còn chỗ. Giá tiền được tính bằng tinhGiaTien(maHang, giaVe) của HangVe (22 đến 26). Khi nhân viên xác nhận, XL_DatVe tìm hoặc thêm HanhKhach theo loại và số giấy tờ (29, 30), lưu phiếu với tình trạng Chờ thanh toán kèm thời điểm đặt (chính là thời điểm hiện tại đã lấy ở thông điệp 4) (31, 32) rồi lấy lại số ghế trống còn lại của hạng vé bằng laySoGheTrong(maCB, maHang) (33, 34). XL_DatVe chuyển mã phiếu đặt do PhieuDatCho cấp cùng hạn thanh toán cho MH_DatVe để màn hình thông báo cho nhân viên báo lại hành khách (35, 36); hạn thanh toán là thời điểm sớm hơn giữa 24 giờ kể từ lúc đặt và mốc hủy đặt vé theo QĐ3, được XL_DatVe tính từ thời điểm đặt, ngày khởi hành và thời gian hủy đặt vé đã đọc (giả định 7).
+Trong Hình 2.24.1, khung loop thứ nhất bao các bước chọn chuyến bay và kiểm tra: XL_DatVe lấy thời điểm hiện tại từ Đồng hồ hệ thống (thông điệp 3, 4), đọc hai tham số của QĐ3 từ ThamSoQuyDinh là thời gian chậm nhất khi đặt vé (5, 6) và thời gian hủy đặt vé (7, 8), lấy ngày khởi hành (9, 10) và tổng số ghế trống (11, 12) từ ChuyenBay để kiểm tra QĐ3 và còn chỗ; khi quá thời hạn đặt hoặc chuyến bay đã hết chỗ (khung opt), màn hình thông báo để nhân viên chọn chuyến bay khác (13, 14). Khung loop thứ hai bao các bước chọn hạng vé và kiểm tra chỗ trống bằng laySoGheTrong(maCB, maHang) của ChuyenBay (16 đến 21), lặp lại cho đến khi chọn được hạng vé còn chỗ. Giá tiền được tính bằng tinhGiaTien(maHang, giaVe) của HangVe (22 đến 26). Khi nhân viên xác nhận, XL_DatVe tìm hoặc thêm HanhKhach theo loại và số giấy tờ (29, 30), lưu phiếu với tình trạng Chờ thanh toán kèm thời điểm đặt (chính là thời điểm hiện tại đã lấy ở thông điệp 4) (31, 32). XL_DatVe chuyển mã phiếu đặt do PhieuDatCho cấp cùng hạn thanh toán cho MH_DatVe để màn hình thông báo cho nhân viên báo lại hành khách (33, 34); hạn thanh toán là thời điểm sớm hơn giữa 24 giờ kể từ lúc đặt và mốc hủy đặt vé theo QĐ3, được XL_DatVe tính từ thời điểm đặt, ngày khởi hành và thời gian hủy đặt vé đã đọc (giả định 7).
 
 []
 
@@ -2453,7 +2455,7 @@ Hình 2.24.3. Biểu đồ tuần tự của UC05.5 Xóa phiếu đặt chỗ đ
 
 2.4.5.4. Biểu đồ cộng tác
 
-Trong các use case con của UC05, biểu đồ cộng tác được vẽ cho luồng tiêu biểu UC05.1 Lập phiếu đặt chỗ, đánh số theo Hình 2.24.1 (Hình 2.25). Dấu * sau số thứ tự, từ 1* đến 14* và từ 16* đến 21*, đánh dấu các thông điệp trong hai khung loop, được lặp lại cho đến khi chọn được chuyến bay còn hạn đặt và còn chỗ, và hạng vé còn chỗ. Khi kiểm tra chuyến bay, XL_DatVe lấy thời điểm hiện tại từ Đồng hồ hệ thống (3*, 4*), đọc thời gian chậm nhất khi đặt vé và thời gian hủy đặt vé từ ThamSoQuyDinh (5* đến 8*) rồi lấy ngày khởi hành và tổng số ghế trống từ ChuyenBay (9* đến 12*). Liên kết giữa XL_DatVe và ChuyenBay còn mang các thông điệp kiểm tra chỗ trống của hạng (18*, 19*), lấy giá vé (22, 23) và lấy lại số ghế trống sau khi lập phiếu (33, 34); HangVe tính giá tiền (24, 25). Khi nhân viên xác nhận (27, 28), XL_DatVe tìm hoặc thêm HanhKhach theo loại và số giấy tờ (29, 30) và tạo PhieuDatCho ở tình trạng Chờ thanh toán (31, 32); thông điệp cuối báo cho nhân viên mã phiếu đặt và hạn thanh toán (35, 36). Các thao tác tra cứu, sửa, hủy phiếu và xóa phiếu đã hủy có trình tự ngắn, đã thể hiện ở Hình 2.24.2 và Hình 2.24.3, nên không vẽ thêm biểu đồ cộng tác.
+Trong các use case con của UC05, biểu đồ cộng tác được vẽ cho luồng tiêu biểu UC05.1 Lập phiếu đặt chỗ, đánh số theo Hình 2.24.1 (Hình 2.25). Dấu * sau số thứ tự, từ 1* đến 14* và từ 16* đến 21*, đánh dấu các thông điệp trong hai khung loop, được lặp lại cho đến khi chọn được chuyến bay còn hạn đặt và còn chỗ, và hạng vé còn chỗ. Khi kiểm tra chuyến bay, XL_DatVe lấy thời điểm hiện tại từ Đồng hồ hệ thống (3*, 4*), đọc thời gian chậm nhất khi đặt vé và thời gian hủy đặt vé từ ThamSoQuyDinh (5* đến 8*) rồi lấy ngày khởi hành và tổng số ghế trống từ ChuyenBay (9* đến 12*). Liên kết giữa XL_DatVe và ChuyenBay còn mang các thông điệp kiểm tra chỗ trống của hạng (18*, 19*) và lấy giá vé (22, 23); HangVe tính giá tiền (24, 25). Khi nhân viên xác nhận (27, 28), XL_DatVe tìm hoặc thêm HanhKhach theo loại và số giấy tờ (29, 30) và tạo PhieuDatCho ở tình trạng Chờ thanh toán (31, 32); thông điệp cuối báo cho nhân viên mã phiếu đặt và hạn thanh toán (33, 34). Các thao tác tra cứu, sửa, hủy phiếu và xóa phiếu đã hủy có trình tự ngắn, đã thể hiện ở Hình 2.24.2 và Hình 2.24.3, nên không vẽ thêm biểu đồ cộng tác.
 
 []
 
@@ -2650,19 +2652,19 @@ Bảng 2.10. Đặc tả use case UC08 Thay đổi quy định
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Luồng sự kiện chính   | 1. Quản lý chọn chức năng Thay đổi quy định.                                                                                                                                                                                  |
 |                       |                                                                                                                                                                                                                               |
-|                       | 2. Quản lý chọn một mục trong danh sách quy định: một tham số của QĐ1 hoặc QĐ3, danh sách sân bay hoặc danh sách hạng vé.                                                                                                     |
+|                       | 2. Quản lý chọn một thay đổi trên danh sách quy định: sửa một tham số của QĐ1 hoặc QĐ3, hoặc thêm, sửa tên, xóa một sân bay, một hạng vé.                                                                                     |
 |                       |                                                                                                                                                                                                                               |
-|                       | 3. Hệ thống hiển thị các giá trị hiện hành.                                                                                                                                                                                   |
+|                       | 3. Hệ thống hiển thị giá trị hiện hành của mục được chọn.                                                                                                                                                                     |
 |                       |                                                                                                                                                                                                                               |
-|                       | 4. Quản lý nhập giá trị mới hoặc thêm, sửa, xóa sân bay, hạng vé.                                                                                                                                                             |
+|                       | 4. Quản lý nhập giá trị mới của tham số, hoặc nhập mã, tên của sân bay, hạng vé; khi xóa thì không phải nhập.                                                                                                                 |
 |                       |                                                                                                                                                                                                                               |
-|                       | 5. Quản lý chọn Lưu.                                                                                                                                                                                                          |
+|                       | 5. Quản lý chọn Lưu; khi xóa thì xác nhận xóa.                                                                                                                                                                                |
 |                       |                                                                                                                                                                                                                               |
 |                       | 6. Hệ thống kiểm tra tính hợp lệ của giá trị mới.                                                                                                                                                                             |
 |                       |                                                                                                                                                                                                                               |
-|                       | 7. Hệ thống lưu giá trị mới.                                                                                                                                                                                                  |
+|                       | 7. Hệ thống lưu ngay thay đổi đó.                                                                                                                                                                                             |
 |                       |                                                                                                                                                                                                                               |
-|                       | 8. Hệ thống thông báo cập nhật thành công.                                                                                                                                                                                    |
+|                       | 8. Hệ thống thông báo cập nhật thành công và hiển thị lại danh sách quy định; Quản lý có thể quay lại bước 2 để thực hiện thay đổi khác.                                                                                      |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Luồng thay thế        | 5a. Quản lý chọn Hủy: hệ thống giữ nguyên giá trị cũ, hiển thị lại các giá trị đó và quay lại bước 4.                                                                                                                         |
 |                       |                                                                                                                                                                                                                               |
@@ -2670,14 +2672,14 @@ Bảng 2.10. Đặc tả use case UC08 Thay đổi quy định
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Luồng ngoại lệ        | 6a. Giá trị không hợp lệ (ví dụ số âm, thời gian dừng tối thiểu lớn hơn tối đa): hệ thống thông báo và quay lại bước 4.                                                                                                       |
 |                       |                                                                                                                                                                                                                               |
-|                       | 6b. Có sân bay hoặc hạng vé bị xóa đang được chuyến bay sử dụng: hệ thống thông báo không thể xóa vì đang được chuyến bay sử dụng, không lưu và quay lại bước 4 (AT02).                                                       |
+|                       | 6b. Sân bay hoặc hạng vé cần xóa đang được chuyến bay sử dụng: hệ thống thông báo không thể xóa vì đang được chuyến bay sử dụng, không xóa và quay lại bước 2 (AT02).                                                         |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Yêu cầu phi chức năng | Lưu giá trị mới trong không quá 5 giây, giá trị mới có hiệu lực từ thao tác kế tiếp trên mọi máy (HQ07); hiển thị giá trị hiện hành trước khi sửa (TD06); không cho xóa sân bay, hạng vé đang được chuyến bay sử dụng (AT02). |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 2.4.8.2. Biểu đồ hoạt động
 
-Hình 2.35 mô tả chung cho ba use case con UC08.1, UC08.2, UC08.3; các use case con chỉ khác nhau ở mục được chọn và cách kiểm tra. Quản lý chọn một mục trong danh sách quy định (một tham số của QĐ1 hoặc QĐ3, danh sách sân bay hoặc danh sách hạng vé), hệ thống hiển thị các giá trị hiện hành để Quản lý nhập giá trị mới hoặc thêm, sửa, xóa sân bay, hạng vé. Khi Quản lý chọn Lưu, hệ thống kiểm tra tính hợp lệ của giá trị mới và kiểm tra sân bay, hạng vé bị xóa không đang được chuyến bay nào sử dụng (AT02); nếu không hợp lệ, hệ thống thông báo và luồng quay thẳng về hoạt động nhập giá trị; nếu hợp lệ, hệ thống lưu giá trị mới, áp dụng cho các nghiệp vụ phát sinh sau đó và thông báo cập nhật thành công. Khi Quản lý chọn Hủy hoặc đóng màn hình, hệ thống giữ nguyên giá trị cũ; nếu Quản lý đã chọn Hủy, hệ thống hiển thị lại các giá trị hiện hành để Quản lý nhập lại, còn nếu Quản lý đóng màn hình thì use case kết thúc.
+Hình 2.35 mô tả chung cho ba use case con UC08.1, UC08.2, UC08.3; các use case con chỉ khác nhau ở mục được chọn và cách kiểm tra. Mỗi lượt thực hiện ứng với một thay đổi (sửa một tham số, hoặc thêm, sửa tên, xóa một sân bay, một hạng vé) và thay đổi đó được lưu ngay khi Quản lý chọn Lưu. Quản lý chọn một mục trong danh sách quy định (một tham số của QĐ1 hoặc QĐ3, danh sách sân bay hoặc danh sách hạng vé), hệ thống hiển thị các giá trị hiện hành để Quản lý nhập giá trị mới hoặc thêm, sửa, xóa sân bay, hạng vé. Khi Quản lý chọn Lưu, hệ thống kiểm tra tính hợp lệ của giá trị mới và kiểm tra sân bay, hạng vé bị xóa không đang được chuyến bay nào sử dụng (AT02); nếu không hợp lệ, hệ thống thông báo và luồng quay thẳng về hoạt động nhập giá trị; nếu hợp lệ, hệ thống lưu giá trị mới, áp dụng cho các nghiệp vụ phát sinh sau đó và thông báo cập nhật thành công. Khi Quản lý chọn Hủy hoặc đóng màn hình, hệ thống giữ nguyên giá trị cũ; nếu Quản lý đã chọn Hủy, hệ thống hiển thị lại các giá trị hiện hành để Quản lý nhập lại, còn nếu Quản lý đóng màn hình thì use case kết thúc.
 
 []
 
@@ -2685,7 +2687,7 @@ Hình 2.35. Biểu đồ hoạt động của UC08 Thay đổi quy định
 
 2.4.8.3. Biểu đồ tuần tự
 
-Hình 2.36 cho thấy các tham số quy định được lưu trong thực thể ThamSoQuyDinh, còn danh sách sân bay và hạng vé được lưu trong các thực thể SanBay, HangVe; cách lưu này đáp ứng yêu cầu tiến hóa. Quản lý chọn một mục trong danh sách quy định trên màn hình MH_ThayDoiQD (một tham số của QĐ1 hoặc QĐ3, danh sách sân bay hoặc danh sách hạng vé), màn hình MH_CapNhatQD hiển thị giá trị hiện hành (thông điệp 10 đến 12), sau đó Quản lý nhập giá trị mới hoặc thêm, sửa, xóa sân bay, hạng vé. Khung alt ngoài cùng tách ba lựa chọn của Quản lý: chọn Lưu (14 đến 30), chọn Hủy (31, 32) và đóng màn hình (33, 34). Khi lưu, XL_ThayDoiQD kiểm tra giá trị mới (16) và kiểm tra các sân bay, hạng vé cần xóa chưa được chuyến bay nào sử dụng (17, 18). Nếu hợp lệ, ba khung opt cho biết chỉ phần nào thay đổi mới được ghi: thayDoiQuyDinh(maQD, giaTriMoi) của ThamSoQuyDinh, trong đó maQD là mã của tham số cần đổi (ví dụ thời gian bay tối thiểu) và giaTriMoi là giá trị mới, chỉ được gọi khi có thay đổi tham số (19, 20); danh sách sân bay và hạng vé được cập nhật khi có thay đổi (21 đến 24). Giá trị không hợp lệ (27, 28) hoặc xóa sân bay, hạng vé đang được sử dụng (29, 30) đều được thông báo và không lưu. Ở nhánh Hủy và nhánh đóng màn hình, màn hình không gọi đến XL_ThayDoiQD và giá trị cũ được giữ nguyên.
+Hình 2.36 cho thấy các tham số quy định được lưu trong thực thể ThamSoQuyDinh, còn danh sách sân bay và hạng vé được lưu trong các thực thể SanBay, HangVe; cách lưu này đáp ứng yêu cầu tiến hóa. Khi Quản lý mở chức năng, XL_ThayDoiQD đọc các tham số, danh sách sân bay và danh sách hạng vé để màn hình MH_ThayDoiQD hiển thị giá trị hiện hành (thông điệp 1 đến 9). Mỗi thay đổi được thực hiện và lưu riêng, nên khung alt ngoài cùng tách ba loại thay đổi. Khi sửa một tham số của QĐ1 hoặc QĐ3 (10 đến 24), màn hình MH_CapNhatQD hiển thị giá trị hiện hành để Quản lý nhập giá trị mới (11 đến 13). Nếu Quản lý chọn Lưu, XL_ThayDoiQD nhận capNhatThamSo(maQD, giaTriMoi), trong đó maQD là mã của tham số cần đổi (ví dụ thời gian bay tối thiểu) và giaTriMoi là giá trị mới, kiểm tra giá trị mới bằng kiemTraHopLe (16) rồi ghi bằng thayDoiQuyDinh(maQD, giaTriMoi) của ThamSoQuyDinh (17, 18); giá trị không hợp lệ được thông báo và không lưu (21, 22). Nếu Quản lý chọn Hủy hoặc đóng màn hình cập nhật, màn hình không gọi đến XL_ThayDoiQD và giá trị cũ được giữ nguyên (23, 24). Khi thêm một sân bay (25 đến 36), XL_ThayDoiQD nhận themSanBay(maSanBay, tenSanBay), tìm sân bay có mã này bằng laySanBay (29, 30) và chỉ gọi them(sanBay) của SanBay khi mã, tên hợp lệ và chưa có (31, 32). Khi xóa một sân bay (37 đến 46), XL_ThayDoiQD nhận xoaSanBay(maSanBay), hỏi ChuyenBay bằng kiemTraDangSuDung xem sân bay có đang được chuyến bay nào sử dụng hay không (39, 40) rồi mới gọi xoa(maSanBay) (41, 42); sân bay đang được sử dụng thì không bị xóa và hệ thống thông báo (45, 46). Sửa tên sân bay (suaSanBay) có cùng trình tự với thêm sân bay; thêm, sửa tên, xóa hạng vé (themHangVe, suaHangVe, xoaHangVe) có cùng trình tự với sân bay, chỉ thay thực thể SanBay bằng HangVe. Các trình tự này được ghi chú trên hình và không vẽ lặp lại.
 
 []
 
@@ -2693,7 +2695,7 @@ Hình 2.36. Biểu đồ tuần tự của UC08 Thay đổi quy định
 
 2.4.8.4. Biểu đồ cộng tác
 
-Hình 2.37 là biểu đồ cộng tác tương ứng với Hình 2.36. Quản lý làm việc với hai lớp biên: MH_ThayDoiQD hiển thị danh sách quy định cùng giá trị hiện hành (1, 9, 10), MH_CapNhatQD là màn hình cập nhật được mở từ danh sách bằng moFormCapNhat(maQD) (11). Khi nạp danh sách, XL_ThayDoiQD đọc tham số từ ThamSoQuyDinh (3, 4), danh sách sân bay từ SanBay (5, 6) và danh sách hạng vé từ HangVe (7, 8). Khi Quản lý chọn Lưu (14, 15), XL_ThayDoiQD tự kiểm tra giá trị mới bằng thông điệp tự gọi 16 kiemTraHopLe(giaTriMoi) và hỏi ChuyenBay xem các sân bay, hạng vé bị xóa có đang được dùng hay không (17, 18). Ba thông điệp ghi 19, 21, 23 chỉ được gửi khi có thay đổi tương ứng ở tham số, sân bay hoặc hạng vé, như điều kiện ghi trước mỗi thông điệp. Kết quả trả về MH_CapNhatQD và Quản lý theo ba điều kiện của khung alt (25 đến 30); hai trường hợp chọn Hủy và đóng màn hình không gọi tầng xử lý (31 đến 34).
+Hình 2.37 là biểu đồ cộng tác vẽ cho luồng tiêu biểu sửa một tham số, đánh số theo các thông điệp 1 đến 24 của Hình 2.36. Quản lý làm việc với hai lớp biên: MH_ThayDoiQD hiển thị danh sách quy định cùng giá trị hiện hành (1, 9, 10), MH_CapNhatQD là màn hình cập nhật được mở từ danh sách bằng moFormCapNhat(maQD) (11). Khi nạp danh sách, XL_ThayDoiQD đọc tham số từ ThamSoQuyDinh (3, 4), danh sách sân bay từ SanBay (5, 6) và danh sách hạng vé từ HangVe (7, 8). Khi Quản lý chọn Lưu (14, 15), XL_ThayDoiQD tự kiểm tra giá trị mới bằng thông điệp tự gọi 16 kiemTraHopLe(maQD, giaTriMoi) và chỉ gửi thông điệp ghi 17 thayDoiQuyDinh(maQD, giaTriMoi) tới ThamSoQuyDinh khi giá trị hợp lệ, như điều kiện ghi trước thông điệp. Kết quả trả về MH_CapNhatQD và Quản lý theo hai điều kiện giá trị hợp lệ, không hợp lệ (19 đến 22); trường hợp chọn Hủy hoặc đóng màn hình cập nhật không gọi tầng xử lý (23, 24). Thêm, sửa tên, xóa sân bay và hạng vé có trình tự ngắn, đã thể hiện ở Hình 2.36, nên không vẽ thêm biểu đồ cộng tác.
 
 []
 
@@ -2701,7 +2703,7 @@ Hình 2.37. Biểu đồ cộng tác của UC08 Thay đổi quy định
 
 2.4.8.5. Biểu đồ lớp phân tích
 
-Hình 2.38 có hai lớp biên: MH_ThayDoiQD là màn hình danh sách quy định, hiển thị sáu tham số trên các thẻ crdThamSo cùng hai bảng tblSanBay, tblHangVe có các nút thêm, sửa, xóa trên từng dòng; MH_CapNhatQD là hộp thoại cập nhật quy định, nơi Quản lý xem tên tham số (lblTenThamSo), giá trị hiện hành (lblGiaTriHienTai) rồi nhập giá trị mới của tham số (txtGiaTriMoi), hoặc nhập mã, tên khi thêm, sửa một sân bay, một hạng vé. XL_ThayDoiQD kiểm tra giá trị mới, kiểm tra sân bay, hạng vé cần xóa có đang được ChuyenBay sử dụng hay không, rồi lưu tham số vào ThamSoQuyDinh bằng thayDoiQuyDinh(maQD, giaTriMoi) và cập nhật SanBay, HangVe.
+Hình 2.38 có hai lớp biên: MH_ThayDoiQD là màn hình danh sách quy định, hiển thị sáu tham số trên các thẻ crdThamSo cùng hai bảng tblSanBay, tblHangVe có các nút thêm, sửa, xóa trên từng dòng; MH_CapNhatQD là hộp thoại cập nhật quy định, nơi Quản lý xem tên tham số (lblTenThamSo), giá trị hiện hành (lblGiaTriHienTai) rồi nhập giá trị mới của tham số (txtGiaTriMoi), hoặc nhập mã, tên khi thêm, sửa một sân bay, một hạng vé. XL_ThayDoiQD có bảy phương thức ứng với bảy loại thay đổi: capNhatThamSo kiểm tra giá trị mới bằng kiemTraHopLe rồi lưu tham số vào ThamSoQuyDinh bằng thayDoiQuyDinh(maQD, giaTriMoi); themSanBay, suaSanBay, themHangVe, suaHangVe ghi vào SanBay, HangVe bằng them, sua, suaTen; xoaSanBay, xoaHangVe hỏi ChuyenBay bằng kiemTraDangSuDung trước khi gọi xoa.
 
 []
 
@@ -2791,7 +2793,7 @@ Bảng 2.12. Danh sách mối kết hợp
 
 2.5.2. Biểu đồ ERD
 
-Hình 2.40 trình bày ERD của hệ thống: kiểu thực thể là hình chữ nhật, mối kết hợp là hình thoi, thuộc tính là hình elip nối với kiểu thực thể hoặc mối kết hợp chứa nó, thuộc tính khóa được gạch dưới [4]. Vé và phiếu đặt chỗ chỉ phát sinh khi có đủ hành khách, chuyến bay và hạng vé nên được vẽ thành hai mối kết hợp ba ngôi mua và dat nối HANHKHACH, CHUYENBAY và HANGVE, không vẽ thành kiểu thực thể. Mối kết hợp mua mang thuộc tính MaVe (khóa), NgayBan, GiaTien và TinhTrang (để lưu vết vé đã hủy); mối kết hợp dat mang thuộc tính MaPhieuDat (khóa), ThoiDiemDat, GiaTien và TinhTrang. Vé lập từ phiếu đặt chỗ lưu mã phiếu trong thuộc tính MaPhieuDat của mua, vé bán trực tiếp để trống thuộc tính này, và một phiếu chỉ được chuyển thành nhiều nhất một vé. Bản số (0,n) ở cả ba kiểu thực thể vì một hành khách có thể mua hoặc đặt nhiều lần, còn một chuyến bay hoặc một hạng vé có thể có nhiều vé, nhiều phiếu hoặc chưa có. THAMSOQUYDINH và TAIKHOAN là hai kiểu thực thể độc lập: THAMSOQUYDINH lưu các giá trị quy định thay đổi được, TAIKHOAN lưu thông tin đăng nhập và nhóm quyền. ERD này sẽ được chuyển thành sơ đồ logic và chuẩn hóa ở phần thiết kế dữ liệu (Chương 3).
+Hình 2.40 trình bày ERD của hệ thống: kiểu thực thể là hình chữ nhật, mối kết hợp là hình thoi, thuộc tính là hình elip nối với kiểu thực thể hoặc mối kết hợp chứa nó, thuộc tính khóa được gạch dưới [6]. Vé và phiếu đặt chỗ chỉ phát sinh khi có đủ hành khách, chuyến bay và hạng vé nên được vẽ thành hai mối kết hợp ba ngôi mua và dat nối HANHKHACH, CHUYENBAY và HANGVE, không vẽ thành kiểu thực thể. Mối kết hợp mua mang thuộc tính MaVe (khóa), NgayBan, GiaTien và TinhTrang (để lưu vết vé đã hủy); mối kết hợp dat mang thuộc tính MaPhieuDat (khóa), ThoiDiemDat, GiaTien và TinhTrang. Vé lập từ phiếu đặt chỗ lưu mã phiếu trong thuộc tính MaPhieuDat của mua, vé bán trực tiếp để trống thuộc tính này, và một phiếu chỉ được chuyển thành nhiều nhất một vé. Bản số (0,n) ở cả ba kiểu thực thể vì một hành khách có thể mua hoặc đặt nhiều lần, còn một chuyến bay hoặc một hạng vé có thể có nhiều vé, nhiều phiếu hoặc chưa có. THAMSOQUYDINH và TAIKHOAN là hai kiểu thực thể độc lập: THAMSOQUYDINH lưu các giá trị quy định thay đổi được, TAIKHOAN lưu thông tin đăng nhập và nhóm quyền. ERD này sẽ được chuyển thành sơ đồ logic và chuẩn hóa ở phần thiết kế dữ liệu (Chương 3).
 
 []
 
@@ -2876,11 +2878,11 @@ Bảng 3.2. Công nghệ và công cụ sử dụng
   ----- ----------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1     Ngôn ngữ lập trình            C# cho máy chủ, TypeScript cho giao diện                                                                                                        C# hướng đối tượng, ánh xạ trực tiếp các lớp điều khiển, thực thể đã phân tích. TypeScript có kiểu dữ liệu nên màn hình dùng đúng tên trường mà máy chủ trả về.
 
-  2     Nền tảng máy chủ              ASP.NET Core trên .NET 10 (bản hỗ trợ dài hạn)                                                                                                  Chạy phần giao tiếp, tầng xử lý và tầng truy xuất dữ liệu trên máy chủ dùng Windows 10 trở lên (CN05); có sẵn cơ chế phiên đăng nhập và dịch vụ chạy nền cho việc hủy phiếu định kỳ [6].
+  2     Nền tảng máy chủ              ASP.NET Core trên .NET 10 (bản hỗ trợ dài hạn)                                                                                                  Chạy phần giao tiếp, tầng xử lý và tầng truy xuất dữ liệu trên máy chủ dùng Windows 10 trở lên (CN05); có sẵn cơ chế phiên đăng nhập và dịch vụ chạy nền cho việc hủy phiếu định kỳ [7].
 
-  3     Giao diện                     React 18, Vite, React Router, TanStack Query; màn hình viết bằng ngôn ngữ đánh dấu siêu văn bản (HTML) và ngôn ngữ định dạng trang HTML (CSS)   Giao diện web chạy trên trình duyệt Chrome, Edge (CN05). Màn hình được ghép từ các thành phần dùng lại (nút, ô nhập, bảng, hộp thoại) nên 14 màn hình thống nhất một kiểu [5].
+  3     Giao diện                     React 18, Vite, React Router, TanStack Query; màn hình viết bằng ngôn ngữ đánh dấu siêu văn bản (HTML) và ngôn ngữ định dạng trang HTML (CSS)   Giao diện web chạy trên trình duyệt Chrome, Edge (CN05). Màn hình được ghép từ các thành phần dùng lại (nút, ô nhập, bảng, hộp thoại) nên 14 màn hình thống nhất một kiểu.
 
-  4     Hệ quản trị cơ sở dữ liệu     Microsoft SQL Server Express (bản 2022 trở lên)                                                                                                 Hệ quản trị cơ sở dữ liệu quan hệ miễn phí; giới hạn 50 GB mỗi cơ sở dữ liệu [7], đủ cho 20.000 chuyến bay, 2.000.000 vé và 2.000.000 phiếu (HQ01 đến HQ03).
+  4     Hệ quản trị cơ sở dữ liệu     Microsoft SQL Server Express (bản 2022 trở lên)                                                                                                 Hệ quản trị cơ sở dữ liệu quan hệ miễn phí; giới hạn 50 GB mỗi cơ sở dữ liệu [8], đủ cho 20.000 chuyến bay, 2.000.000 vé và 2.000.000 phiếu (HQ01 đến HQ03).
 
   5     Truy xuất dữ liệu             ADO.NET (Microsoft.Data.SqlClient)                                                                                                              Câu lệnh có tham số, chống chèn mã SQL; hỗ trợ giao dịch; chỉ được dùng trong tầng DAL.
 
@@ -2892,7 +2894,7 @@ Bảng 3.2. Công nghệ và công cụ sử dụng
 
   9     Môi trường phát triển         Visual Studio Code, SQL Server Management Studio, Node.js 22                                                                                    Viết mã máy chủ và giao diện, tạo bảng và kiểm tra truy vấn; Node.js dùng để dựng giao diện.
 
-  10    Kiểm thử                      xUnit, Playwright                                                                                                                               xUnit kiểm thử đơn vị cho tầng xử lý (kiểm tra QĐ1, QĐ2, QĐ3, công thức tính) mà không cần mở giao diện (CN06); Playwright chạy các luồng sử dụng trên giao diện bằng trình duyệt [9].
+  10    Kiểm thử                      xUnit, Playwright                                                                                                                               xUnit kiểm thử đơn vị cho tầng xử lý (kiểm tra QĐ1, QĐ2, QĐ3, công thức tính) mà không cần mở giao diện (CN06); Playwright chạy các luồng sử dụng trên giao diện bằng trình duyệt.
 
   11    Triển khai                    Bản phát hành của máy chủ ứng dụng kèm giao diện đã dựng                                                                                        Cài một lần trên máy chủ trong mạng nội bộ; máy nhân viên chỉ cần trình duyệt, không phải cài đặt phần mềm.
 
@@ -3359,7 +3361,7 @@ Về độ dài các thuộc tính tình trạng: mỗi thuộc tính được k
 
 Về an toàn: các khóa ngoại đều không xóa lan truyền, nên không xóa được sân bay, hạng vé đang được chuyến bay sử dụng và chuyến bay đã có vé hoặc phiếu (AT02). Vé, phiếu bị hủy chỉ được chuyển TinhTrang sang Đã hủy, không bị xóa (AT03). Khi Quản lý xác nhận hủy thật sự (AT04), chỉ các phiếu Đã hủy chưa được chuyển thành vé bị xóa, vì các phiếu đã chuyển thành vé vẫn được VE tham chiếu qua MaPhieuDat.
 
-Về dạng chuẩn: mọi thuộc tính đều chứa giá trị nguyên tố, nhóm lặp sân bay trung gian và nhóm cột số ghế theo hạng đã được tách thành bảng riêng, nên các bảng đạt dạng chuẩn 1 [4]. Hai bảng có khóa chính gồm hai thuộc tính là CHITIETTRUNGGIAN và GHETHEOHANG; các thuộc tính không khóa của chúng (MaSanBay, ThoiGianDung, GhiChu; SoLuongGhe) phụ thuộc vào cả bộ khóa chứ không chỉ một phần, nên đạt dạng chuẩn 2. Không có thuộc tính không khóa nào phụ thuộc vào một thuộc tính không khóa khác: thông tin hành khách đã tách khỏi VE và PHIEUDATCHO, tên sân bay, tên hạng vé đã tách khỏi CHUYENBAY, VE, PHIEUDATCHO, nên các bảng đạt dạng chuẩn 3. Trong HANHKHACH, bộ (LoaiGiayTo, SoGiayTo) cũng xác định duy nhất một dòng nhưng bản thân bộ này là khóa ứng viên; ngoài ra không có thuộc tính khóa nào phụ thuộc vào thuộc tính không khóa, nên các bảng có khóa đều đạt dạng chuẩn Boyce Codd. THAMSOQUYDINH chỉ có một dòng nên không phát sinh dữ liệu lặp. GiaTien trong VE, PHIEUDATCHO là số tiền tại thời điểm lập, không phải giá trị suy ra từ giá vé hiện hành, nên không phải dữ liệu dư thừa.
+Về dạng chuẩn: mọi thuộc tính đều chứa giá trị nguyên tố, nhóm lặp sân bay trung gian và nhóm cột số ghế theo hạng đã được tách thành bảng riêng, nên các bảng đạt dạng chuẩn 1 [6]. Hai bảng có khóa chính gồm hai thuộc tính là CHITIETTRUNGGIAN và GHETHEOHANG; các thuộc tính không khóa của chúng (MaSanBay, ThoiGianDung, GhiChu; SoLuongGhe) phụ thuộc vào cả bộ khóa chứ không chỉ một phần, nên đạt dạng chuẩn 2. Không có thuộc tính không khóa nào phụ thuộc vào một thuộc tính không khóa khác: thông tin hành khách đã tách khỏi VE và PHIEUDATCHO, tên sân bay, tên hạng vé đã tách khỏi CHUYENBAY, VE, PHIEUDATCHO, nên các bảng đạt dạng chuẩn 3. Trong HANHKHACH, bộ (LoaiGiayTo, SoGiayTo) cũng xác định duy nhất một dòng nhưng bản thân bộ này là khóa ứng viên; ngoài ra không có thuộc tính khóa nào phụ thuộc vào thuộc tính không khóa, nên các bảng có khóa đều đạt dạng chuẩn Boyce Codd. THAMSOQUYDINH chỉ có một dòng nên không phát sinh dữ liệu lặp. GiaTien trong VE, PHIEUDATCHO là số tiền tại thời điểm lập, không phải giá trị suy ra từ giá vé hiện hành, nên không phải dữ liệu dư thừa.
 
 3.2.10. Sơ đồ logic hoàn chỉnh
 
@@ -3401,7 +3403,7 @@ Bảng 3.11. Danh sách các bảng dữ liệu trong sơ đồ
 
 3.2.12. Mô tả từng bảng dữ liệu
 
-Kiểu dữ liệu được ghi theo SQL Server: char(n), varchar(n) là chuỗi có độ dài cố định, thay đổi không dấu; nvarchar(n) là chuỗi tiếng Việt có dấu; int, tinyint là số nguyên; decimal(p,s) là số thực chính xác dùng cho tiền và tỉ lệ; datetime2(0) là ngày giờ chính xác đến giây [8]. Số tiền tính bằng đồng, thời gian bay và thời gian dừng tính bằng phút. Các ràng buộc ghi là kiểm tra theo tham số, các ràng buộc phải đối chiếu với bảng khác (ví dụ sân bay trung gian khác sân bay đi, sân bay đến; số ghế không nhỏ hơn số vé và phiếu đã có) và ràng buộc không cho sửa khóa được kiểm tra ở tầng xử lý, vì cần đọc thêm dữ liệu hoặc giá trị tham số có thể thay đổi; các ràng buộc còn lại (khóa chính, khóa ngoại, không rỗng, không trùng, miền giá trị, mặc định) được khai báo trực tiếp trên bảng.
+Kiểu dữ liệu được ghi theo SQL Server: char(n), varchar(n) là chuỗi có độ dài cố định, thay đổi không dấu; nvarchar(n) là chuỗi tiếng Việt có dấu; int, tinyint là số nguyên; decimal(p,s) là số thực chính xác dùng cho tiền và tỉ lệ; datetime2(0) là ngày giờ chính xác đến giây. Số tiền tính bằng đồng, thời gian bay và thời gian dừng tính bằng phút. Các ràng buộc ghi là kiểm tra theo tham số, các ràng buộc phải đối chiếu với bảng khác (ví dụ sân bay trung gian khác sân bay đi, sân bay đến; số ghế không nhỏ hơn số vé và phiếu đã có) và ràng buộc không cho sửa khóa được kiểm tra ở tầng xử lý, vì cần đọc thêm dữ liệu hoặc giá trị tham số có thể thay đổi; các ràng buộc còn lại (khóa chính, khóa ngoại, không rỗng, không trùng, miền giá trị, mặc định) được khai báo trực tiếp trên bảng.
 
 3.2.12.1. Bảng SANBAY
 
@@ -3714,44 +3716,40 @@ Bảng 3.25. Nơi hiện thực các phương thức của lớp thực thể
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   STT   Lớp ở Chương 2                  Phương thức ở Chương 2 (thông điệp ở biểu đồ tuần tự hoặc phương thức ở Hình 2.39)                                                                                                                                                  Nơi hiện thực
   ----- ------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------
-  1     SanBay                          layDanhSachSanBay                                                                                                                                                                                                                   DAL_SanBay.layDanhSachSanBay
+  1     SanBay                          layDanhSachSanBay, laySanBay, them, sua, xoa                                                                                                                                                                                        DAL_SanBay, cùng tên
 
-  2     SanBay                          themSuaXoaSanBay                                                                                                                                                                                                                    Ba phương thức them, sua, xoa của DAL_SanBay, mỗi lần một sân bay
+  2     ChuyenBay                       kiemTraMaChuyenBay, themChuyenBay, layThongTin, laySoGheDaBanVaDat, capNhat, kiemTraCoVeHoacPhieu, xoa, layGiaVe, layNgayKhoiHanh, layChuyenBayDenHanHuy, layChuyenBayKhoiHanhTrongThang, demChuyenBayKhoiHanh, kiemTraDangSuDung   DAL_ChuyenBay, cùng tên; kiemTraCoVeHoacPhieu hỏi DAL_Ve.kiemTraCoVe và DAL_PhieuDatCho.kiemTraCoPhieu
 
-  3     ChuyenBay                       kiemTraMaChuyenBay, themChuyenBay, layThongTin, laySoGheDaBanVaDat, capNhat, kiemTraCoVeHoacPhieu, xoa, layGiaVe, layNgayKhoiHanh, layChuyenBayDenHanHuy, layChuyenBayKhoiHanhTrongThang, demChuyenBayKhoiHanh, kiemTraDangSuDung   DAL_ChuyenBay, cùng tên; kiemTraCoVeHoacPhieu hỏi DAL_Ve.kiemTraCoVe và DAL_PhieuDatCho.kiemTraCoPhieu
+  3     ChuyenBay                       timChuyenBay                                                                                                                                                                                                                        DAL_ChuyenBay.timChuyenBay, trả về DataTable đã gộp số ghế đặt và số ghế trống
 
-  4     ChuyenBay                       timChuyenBay                                                                                                                                                                                                                        DAL_ChuyenBay.timChuyenBay, trả về DataTable đã gộp số ghế đặt và số ghế trống
+  4     ChuyenBay                       laySoGheTrong, tongSoGheTrong, tinhSoGheDat                                                                                                                                                                                         DAL_ChuyenBay, đếm qua DAL_GheTheoHang, DAL_Ve, DAL_PhieuDatCho
 
-  5     ChuyenBay                       laySoGheTrong, tongSoGheTrong, tinhSoGheDat                                                                                                                                                                                         DAL_ChuyenBay, đếm qua DAL_GheTheoHang, DAL_Ve, DAL_PhieuDatCho
+  5     ChiTietTrungGian, GheTheoHang   Không có thông điệp riêng; được lưu, đọc cùng chuyến bay                                                                                                                                                                            DAL_ChiTietTrungGian, DAL_GheTheoHang, do DAL_ChuyenBay gọi
 
-  6     ChiTietTrungGian, GheTheoHang   Không có thông điệp riêng; được lưu, đọc cùng chuyến bay                                                                                                                                                                            DAL_ChiTietTrungGian, DAL_GheTheoHang, do DAL_ChuyenBay gọi
+  6     HangVe                          layDanhSachHangVe, them, suaTen, xoa                                                                                                                                                                                                DAL_HangVe, cùng tên
 
-  7     HangVe                          layDanhSachHangVe                                                                                                                                                                                                                   DAL_HangVe.layDanhSachHangVe
+  7     HangVe                          tinhGiaTien(maHang, giaVe)                                                                                                                                                                                                          DTO HangVe: tinhGiaTien(giaVe), đối tượng lấy bằng DAL_HangVe.layHangVe(maHang)
 
-  8     HangVe                          themSuaXoaHangVe                                                                                                                                                                                                                    Ba phương thức them, suaTen, xoa của DAL_HangVe, mỗi lần một hạng vé
+  8     HanhKhach                       timHanhKhach, timHoacThemHanhKhach, capNhat                                                                                                                                                                                         DAL_HanhKhach, cùng tên
 
-  9     HangVe                          tinhGiaTien(maHang, giaVe)                                                                                                                                                                                                          DTO HangVe: tinhGiaTien(giaVe), đối tượng lấy bằng DAL_HangVe.layHangVe(maHang)
+  9     Ve                              themVe, timVe, layVe, huy, demVeDaBan, tongDoanhThu                                                                                                                                                                                 DAL_Ve, cùng tên
 
-  10    HanhKhach                       timHanhKhach, timHoacThemHanhKhach, capNhat                                                                                                                                                                                         DAL_HanhKhach, cùng tên
+  10    Ve                              tongHopVe(maCB)                                                                                                                                                                                                                     DAL_Ve.tongHopVe(thang, nam), một lần gọi trả về số vé và doanh thu của mọi chuyến bay khởi hành trong tháng
 
-  11    Ve                              themVe, timVe, layVe, huy, demVeDaBan, tongDoanhThu                                                                                                                                                                                 DAL_Ve, cùng tên
+  11    PhieuDatCho                     themPhieuDat, timPhieu, layPhieuConHan, timPhieuConHan, layThongTinPhieu, huy, layPhieuQuaHan, layPhieuChoThanhToan, demPhieuChoThanhToan, demPhieuDaHuy, xoaPhieuDaHuy                                                             DAL_PhieuDatCho, cùng tên
 
-  12    Ve                              tongHopVe(maCB)                                                                                                                                                                                                                     DAL_Ve.tongHopVe(thang, nam), một lần gọi trả về số vé và doanh thu của mọi chuyến bay khởi hành trong tháng
+  12    PhieuDatCho                     conHan                                                                                                                                                                                                                              DTO PhieuDatCho: conHan, hanThanhToan, mocHuyDatVe
 
-  13    PhieuDatCho                     themPhieuDat, timPhieu, layPhieuConHan, timPhieuConHan, layThongTinPhieu, huy, layPhieuQuaHan, layPhieuChoThanhToan, demPhieuChoThanhToan, demPhieuDaHuy, xoaPhieuDaHuy                                                             DAL_PhieuDatCho, cùng tên
+  13    ThamSoQuyDinh                   layThamSoQuyDinh, layThamSoNhanLich, layThoiGianDatVeChamNhat, layThoiGianHuyDatVe, thayDoiQuyDinh                                                                                                                                  DAL_ThamSoQuyDinh, cùng tên
 
-  14    PhieuDatCho                     conHan                                                                                                                                                                                                                              DTO PhieuDatCho: conHan, hanThanhToan, mocHuyDatVe
+  14    TaiKhoan                        timTaiKhoan, layNhomQuyen, layDanhSach, kiemTraTrungTen, them, capNhat, khoa, moKhoa                                                                                                                                                DAL_TaiKhoan, cùng tên
 
-  15    ThamSoQuyDinh                   layThamSoQuyDinh, layThamSoNhanLich, layThoiGianDatVeChamNhat, layThoiGianHuyDatVe, thayDoiQuyDinh                                                                                                                                  DAL_ThamSoQuyDinh, cùng tên
+  15    NhatKy (Hình 2.39)              ghiNhatKy                                                                                                                                                                                                                           TienIch_NhatKy.ghiNhatKy
 
-  16    TaiKhoan                        timTaiKhoan, layNhomQuyen, layDanhSach, kiemTraTrungTen, them, capNhat, khoa, moKhoa                                                                                                                                                DAL_TaiKhoan, cùng tên
-
-  17    NhatKy (Hình 2.39)              ghiNhatKy                                                                                                                                                                                                                           TienIch_NhatKy.ghiNhatKy
-
-  18    Đồng hồ hệ thống                layThoiDiemHienTai                                                                                                                                                                                                                  DongHoHeThong.layThoiDiemHienTai; ở UC06, vai trò tác nhân Đồng hồ hệ thống (gửi kichHoatDinhKy kèm thời điểm hiện tại) do lớp BoDinhThoi đảm nhận
+  16    Đồng hồ hệ thống                layThoiDiemHienTai                                                                                                                                                                                                                  DongHoHeThong.layThoiDiemHienTai; ở UC06, vai trò tác nhân Đồng hồ hệ thống (gửi kichHoatDinhKy kèm thời điểm hiện tại) do lớp BoDinhThoi đảm nhận
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Với các lớp điều khiển, phần lớn thông điệp ở Chương 2 trở thành phương thức cùng tên của lớp XL_. Các chỗ mã tách hoặc đổi tên gồm: thông điệp layThongTinChuyenBay(maCB) ở Hình 2.16.2 được hiện thực bằng XL_ChuyenBay.layThongTin; nhapExcel(tapTin) ở Hình 2.16.4 được hiện thực bằng ChuyenBayController.nhapExcel nhận tập tin và XL_ChuyenBay.nhapTuExcel đọc nội dung; xuatTapTin(duLieuBaoCao, dinhDang) ở Hình 2.32 được hiện thực bằng hai phương thức xuatTapTinThang, xuatTapTinNam của XL_BaoCao; tinhTiLe(dsDoanhThu) trở thành tinhTiLe(doanhThu, tongDoanhThu) gọi cho từng dòng; capNhat(maQD, giaTriMoi, dsThayDoi) ở Hình 2.36 được hiện thực bằng bảy phương thức capNhatThamSo, themSanBay, suaSanBay, xoaSanBay, themHangVe, suaHangVe, xoaHangVe của XL_ThayDoiQD. Hai thông điệp kiemTraChuyenBay(maCB), kiemTraChoTrong(maCB, maHang) ở Hình 2.20.1 và Hình 2.24.1 vẫn là phương thức của XL_BanVe, XL_DatVe với đúng chữ ký đó, nhưng màn hình gửi một yêu cầu duy nhất khi chọn chuyến bay và nhận kết quả của cả hai bước cho mọi hạng vé qua layThongTinBan (XL_BanVe) hoặc layThongTinDat (XL_DatVe).
+Với các lớp điều khiển, phần lớn thông điệp ở Chương 2 trở thành phương thức cùng tên của lớp XL_. Các chỗ mã tách hoặc đổi tên gồm: thông điệp layThongTinChuyenBay(maCB) ở Hình 2.16.2 được hiện thực bằng XL_ChuyenBay.layThongTin; nhapExcel(tapTin) ở Hình 2.16.4 được hiện thực bằng ChuyenBayController.nhapExcel nhận tập tin và XL_ChuyenBay.nhapTuExcel đọc nội dung; xuatTapTin(duLieuBaoCao, dinhDang) ở Hình 2.32 được hiện thực bằng hai phương thức xuatTapTinThang, xuatTapTinNam của XL_BaoCao; tinhTiLe(dsDoanhThu) trở thành tinhTiLe(doanhThu, tongDoanhThu) gọi cho từng dòng. Hai thông điệp kiemTraChuyenBay(maCB), kiemTraChoTrong(maCB, maHang) ở Hình 2.20.1 và Hình 2.24.1 vẫn là phương thức của XL_BanVe, XL_DatVe với đúng chữ ký đó, nhưng màn hình gửi một yêu cầu duy nhất khi chọn chuyến bay và nhận kết quả của cả hai bước cho mọi hạng vé qua layThongTinBan (XL_BanVe) hoặc layThongTinDat (XL_DatVe).
 
 3.3.1.3. Các lớp truy xuất dữ liệu
 
@@ -3883,7 +3881,7 @@ Hình 3.19. Sơ đồ lớp chi tiết chức năng Quản lý chuyến bay: tra
 
 Hình 3.20 là sơ đồ lớp chi tiết cho bán vé trực tiếp và bán vé từ phiếu đặt chỗ (UC04.1, UC04.2), ứng với Hình 2.20.1, 2.20.2. Khi nhân viên chọn chuyến bay, MH_BanVe gọi VeController.layThongTinBan; phương thức này gọi XL_BanVe.layThongTinBan. XL_BanVe đọc chuyến bay bằng DAL_ChuyenBay.layThongTin, tính số ghế trống (laySoGheTrong) và giá tiền (layHangVe rồi tinhGiaTien) của từng hạng vé bằng phương thức internal layThongTinHang, rồi gọi kiemTraChuyenBay: so ngày khởi hành (layNgayKhoiHanh) với thời điểm hiện tại của DongHoHeThong và kiểm tra tổng số ghế trống (tongSoGheTrong). Kết quả là một đối tượng ThongTinBan; MH_BanVe gọi hienThiGiaTien khi nhân viên chọn hạng vé trên rdoHangVe (hạng đã hết chỗ bị tắt) mà không phải gửi thêm yêu cầu. Phương thức kiemTraChoTrong vẫn có trong XL_BanVe với đúng chữ ký ở Hình 2.20.1 và cho cùng kết quả với phần của một hạng vé trong ThongTinBan. Để tạo danh sách hạng vé, layThongTinHang còn dùng DAL_HangVe.layDanhSachHangVe và DAL_GheTheoHang.layTheoChuyenBay; lớp DAL_GheTheoHang không được vẽ trên Hình 3.20 để hình gọn.
 
-Khi nhân viên xác nhận bán vé, VeController.banVe đổi thông tin hành khách thành đối tượng HanhKhach rồi gọi XL_BanVe.banVe(maCB, maHang, hanhKhach). XL_BanVe kiểm tra thông tin hành khách bằng KiemTraHanhKhach.chuanHoaVaKiemTra (giả định 9, 10) và đọc hạng vé bằng layHangVe; trong một giao dịch, nó khóa dòng số ghế và đếm lại bằng laySoGheTrong(maCB, maHang, khoaDong: true), kiểm tra chuyến bay chưa khởi hành, gọi timHoacThemHanhKhach, tạo đối tượng Ve với GiaTien tính bằng tinhGiaTien, NgayBan là thời điểm hiện tại, TinhTrang Đã bán và gọi themVe. Khác với Hình 2.20.1, màn hình không gửi giá tiền: giá được tính lại trên máy chủ, và số ghế trống được đếm trước khi ghi trong cùng giao dịch thay vì đọc lại sau khi ghi. Khi bán từ phiếu, VeController.timPhieuConHan gọi timPhieuDat(loaiGiayTo, soGiayTo, maPhieuDat): XL_BanVe đọc thời gian hủy đặt vé bằng layThoiGianHuyDatVe, tìm theo mã phiếu (timPhieuConHan) hoặc theo giấy tờ (timHanhKhach rồi layPhieuConHan; loại giấy tờ để trống thì tìm ở cả Căn cước và Hộ chiếu), rồi ghép tên sân bay (DAL_SanBay.layDanhSachSanBay, không vẽ trên hình), tên hạng vé, họ tên (layHanhKhach) và hạn thanh toán thành bảng kết quả. Tham số tieuChi của thông điệp timPhieuDat ở Hình 2.20.2 vì vậy được tách thành ba tham số. VeController.banVeTuPhieu gọi banVeTuPhieu(maPhieuDat): trong một giao dịch, XL_BanVe đọc lại phiếu bằng layThongTinPhieu(maPhieuDat, khoaDong: true) và kiểm tra conHan của DTO vì phiếu có thể vừa bị UC06 hủy (bước kiểm tra lại này được thêm ở bước thiết kế để bảo đảm giả định 5; Hình 2.20.2 chỉ đọc phiếu bằng layThongTinPhieu), rồi thêm vé với GiaTien và MaPhieuDat của phiếu và gọi huy cho phiếu.
+Khi nhân viên xác nhận bán vé, VeController.banVe đổi thông tin hành khách thành đối tượng HanhKhach rồi gọi XL_BanVe.banVe(maCB, maHang, hanhKhach). XL_BanVe kiểm tra thông tin hành khách bằng KiemTraHanhKhach.chuanHoaVaKiemTra (giả định 9, 10) và đọc hạng vé bằng layHangVe; trong một giao dịch, nó khóa dòng số ghế và đếm lại bằng laySoGheTrong(maCB, maHang, khoaDong: true), kiểm tra chuyến bay chưa khởi hành, gọi timHoacThemHanhKhach, tạo đối tượng Ve với GiaTien tính bằng tinhGiaTien, NgayBan là thời điểm hiện tại, TinhTrang Đã bán và gọi themVe. Khác với Hình 2.20.1, màn hình không gửi giá tiền: giá được tính lại trên máy chủ; việc khóa dòng số ghế và đếm lại trước khi ghi được thêm ở bước thiết kế để hai máy bán cùng lúc không bán quá số ghế. Khi bán từ phiếu, VeController.timPhieuConHan gọi timPhieuDat(loaiGiayTo, soGiayTo, maPhieuDat): XL_BanVe đọc thời gian hủy đặt vé bằng layThoiGianHuyDatVe, tìm theo mã phiếu (timPhieuConHan) hoặc theo giấy tờ (timHanhKhach rồi layPhieuConHan; loại giấy tờ để trống thì tìm ở cả Căn cước và Hộ chiếu), rồi ghép tên sân bay (DAL_SanBay.layDanhSachSanBay, không vẽ trên hình), tên hạng vé, họ tên (layHanhKhach) và hạn thanh toán thành bảng kết quả. Tham số tieuChi của thông điệp timPhieuDat ở Hình 2.20.2 vì vậy được tách thành ba tham số. VeController.banVeTuPhieu gọi banVeTuPhieu(maPhieuDat): trong một giao dịch, XL_BanVe đọc lại phiếu bằng layThongTinPhieu(maPhieuDat, khoaDong: true) và kiểm tra conHan của DTO vì phiếu có thể vừa bị UC06 hủy (bước kiểm tra lại này được thêm ở bước thiết kế để bảo đảm giả định 5; Hình 2.20.2 chỉ đọc phiếu bằng layThongTinPhieu), rồi thêm vé với GiaTien và MaPhieuDat của phiếu và gọi huy cho phiếu.
 
 []
 
@@ -3897,7 +3895,7 @@ Hình 3.21. Sơ đồ lớp chi tiết chức năng Quản lý bán vé: tra c�
 
 3.3.2.5. Chức năng Quản lý đặt vé (UC05)
 
-Hình 3.22 là sơ đồ lớp chi tiết cho lập phiếu đặt chỗ (UC05.1), ứng với Hình 2.24.1. Khi nhân viên chọn chuyến bay, MH_DatVe gọi VeController.layThongTinBan với mục đích đặt vé; phương thức này gọi XL_DatVe.layThongTinDat. Ngoài số ghế trống và giá tiền từng hạng như khi bán vé, layThongTinDat gọi kiemTraChuyenBay; phương thức này kiểm tra thời hạn đặt vé theo QĐ3 bằng phương thức private kiemTraThoiHanDatVe (đọc layThoiGianDatVeChamNhat) và tổng số ghế trống. layThongTinDat còn đọc layThoiGianHuyDatVe để tính hạn thanh toán dự kiến bằng hanThanhToan của DTO. PhieuDatController.datVe gọi XL_DatVe.datVe(maCB, maHang, hanhKhach, out hanThanhToan): trong một giao dịch, XL_DatVe khóa dòng số ghế và đếm lại bằng laySoGheTrong, kiểm tra lại thời hạn đặt vé, gọi timHoacThemHanhKhach, tạo đối tượng PhieuDatCho với ThoiDiemDat là thời điểm hiện tại, TinhTrang Chờ thanh toán, gọi themPhieuDat để nhận mã phiếu, rồi tính hạn thanh toán bằng hanThanhToan và trả về qua tham số out để màn hình thông báo. Tương tự UC04, giá tiền được tính lại trên máy chủ, số ghế trống được đếm trước khi ghi trong cùng giao dịch thay vì đọc lại sau khi ghi (thông điệp 33, 34 ở Hình 2.24.1), layThongTinDat dùng thêm DAL_GheTheoHang.layTheoChuyenBay (không vẽ trên hình), và thời gian hủy đặt vé được đọc trong layThongTinDat, datVe thay vì trong kiemTraChuyenBay như ở Hình 2.24.1.
+Hình 3.22 là sơ đồ lớp chi tiết cho lập phiếu đặt chỗ (UC05.1), ứng với Hình 2.24.1. Khi nhân viên chọn chuyến bay, MH_DatVe gọi VeController.layThongTinBan với mục đích đặt vé; phương thức này gọi XL_DatVe.layThongTinDat. Ngoài số ghế trống và giá tiền từng hạng như khi bán vé, layThongTinDat gọi kiemTraChuyenBay; phương thức này kiểm tra thời hạn đặt vé theo QĐ3 bằng phương thức private kiemTraThoiHanDatVe (đọc layThoiGianDatVeChamNhat) và tổng số ghế trống. layThongTinDat còn đọc layThoiGianHuyDatVe để tính hạn thanh toán dự kiến bằng hanThanhToan của DTO. PhieuDatController.datVe gọi XL_DatVe.datVe(maCB, maHang, hanhKhach, out hanThanhToan): trong một giao dịch, XL_DatVe khóa dòng số ghế và đếm lại bằng laySoGheTrong, kiểm tra lại thời hạn đặt vé, gọi timHoacThemHanhKhach, tạo đối tượng PhieuDatCho với ThoiDiemDat là thời điểm hiện tại, TinhTrang Chờ thanh toán, gọi themPhieuDat để nhận mã phiếu, rồi tính hạn thanh toán bằng hanThanhToan và trả về qua tham số out để màn hình thông báo. Tương tự UC04, giá tiền được tính lại trên máy chủ, việc khóa dòng số ghế và đếm lại trước khi ghi được thêm ở bước thiết kế, layThongTinDat dùng thêm DAL_GheTheoHang.layTheoChuyenBay (không vẽ trên hình), và thời gian hủy đặt vé được đọc trong layThongTinDat, datVe thay vì trong kiemTraChuyenBay như ở Hình 2.24.1.
 
 []
 
@@ -3927,7 +3925,7 @@ Hình 3.25. Sơ đồ lớp chi tiết chức năng Lập báo cáo doanh thu
 
 3.3.2.8. Chức năng Thay đổi quy định (UC08)
 
-Hình 3.26 là sơ đồ lớp chi tiết của chức năng Thay đổi quy định, ứng với Hình 2.36. MH_ThayDoiQD gọi QuyDinhController.layQuyDinh; phương thức này gọi XL_ThayDoiQD.layDanhSachQuyDinh, trả về đối tượng ThamSoQuyDinh cùng danh sách sân bay, hạng vé (tham số out) để MH_ThayDoiQD hiển thị trên sáu thẻ crdThamSo và hai bảng tblSanBay, tblHangVe. Khi Quản lý chọn btnThayDoi của một thẻ tham số hoặc nút thêm, sửa sân bay, hạng vé, hộp thoại MH_CapNhatQD được mở bằng moFormCapNhat(maQD) ở một trong ba dạng: cập nhật tham số, thêm hoặc sửa sân bay, thêm hoặc sửa hạng vé. Nút xóa sân bay, hạng vé (btnXoaSanBay, btnXoaHangVe) nằm trên từng dòng của hai bảng ở MH_ThayDoiQD. Thông điệp capNhat(maQD, giaTriMoi, dsThayDoi) ở Hình 2.36 được hiện thực bằng bảy phương thức của XL_ThayDoiQD, mỗi phương thức ứng với một phương thức của QuyDinhController, và mỗi thay đổi được ghi ngay khi Quản lý chọn btnLuu trên MH_CapNhatQD hoặc đồng ý xóa trên MH_ThayDoiQD:
+Hình 3.26 là sơ đồ lớp chi tiết của chức năng Thay đổi quy định, ứng với Hình 2.36. MH_ThayDoiQD gọi QuyDinhController.layQuyDinh; phương thức này gọi XL_ThayDoiQD.layDanhSachQuyDinh, trả về đối tượng ThamSoQuyDinh cùng danh sách sân bay, hạng vé (tham số out) để MH_ThayDoiQD hiển thị trên sáu thẻ crdThamSo và hai bảng tblSanBay, tblHangVe. Khi Quản lý chọn btnThayDoi của một thẻ tham số hoặc nút thêm, sửa sân bay, hạng vé, hộp thoại MH_CapNhatQD được mở bằng moFormCapNhat(maQD) ở một trong ba dạng: cập nhật tham số, thêm hoặc sửa sân bay, thêm hoặc sửa hạng vé. Nút xóa sân bay, hạng vé (btnXoaSanBay, btnXoaHangVe) nằm trên từng dòng của hai bảng ở MH_ThayDoiQD. Bảy thông điệp capNhatThamSo, themSanBay, suaSanBay, xoaSanBay, themHangVe, suaHangVe, xoaHangVe ở Hình 2.36 là bảy phương thức cùng tên của XL_ThayDoiQD, mỗi phương thức ứng với một phương thức của QuyDinhController; như ở Hình 2.36, mỗi thay đổi được ghi ngay khi Quản lý chọn btnLuu trên MH_CapNhatQD hoặc đồng ý xóa trên MH_ThayDoiQD:
 
 -   Sửa tham số (suaThamSo gọi capNhatThamSo): trong một giao dịch, XL_ThayDoiQD đọc sáu tham số kèm khóa bằng layThamSoQuyDinh(khoaDong: true), kiểm tra giá trị mới bằng kiemTraHopLe (miền giá trị ở Bảng 1.9, thời gian dừng tối thiểu không lớn hơn tối đa, thời gian hủy đặt vé nhỏ hơn thời gian chậm nhất khi đặt vé) rồi ghi bằng thayDoiQuyDinh.
 
@@ -3935,7 +3933,7 @@ Hình 3.26 là sơ đồ lớp chi tiết của chức năng Thay đổi quy đ�
 
 -   Hạng vé (themHangVe, suaHangVe, xoaHangVe): làm tương tự với DAL_HangVe.them, suaTen, xoa; tỉ lệ đơn giá chỉ được nhập khi thêm và không sửa sau khi lưu (giả định 11); danh sách luôn còn ít nhất một hạng vé.
 
-Như vậy hai thông điệp themSuaXoaSanBay, themSuaXoaHangVe ở Hình 2.36 được hiện thực bằng ba phương thức them, sua, xoa của DAL_SanBay và ba phương thức them, suaTen, xoa của DAL_HangVe, mỗi lần một mục; kiemTraDangSuDung chỉ được gọi khi xóa.
+So với Hình 2.36, bước thiết kế thêm việc khóa dòng tham số khi sửa, khóa bảng khi đếm số sân bay, số hạng vé trước khi xóa và quy tắc giữ ít nhất hai sân bay, một hạng vé; kiemTraDangSuDung chỉ được gọi khi xóa, đúng như ở Hình 2.36.
 
 []
 
@@ -6263,31 +6261,31 @@ Như vậy cả chín yêu cầu bảo mật và ba yêu cầu AT02 đến AT04 
 
 5.3.5. Tiện dụng
 
-Các yêu cầu tiện dụng ở Bảng 1.19 gồm hai loại chỉ tiêu. Loại thứ nhất là số thao tác và các trợ giúp phần mềm phải có (chọn từ danh sách, tự tính giá, bố trí giống nhau, hiển thị giá trị hiện hành); loại này kiểm được trên giao diện thật bằng Playwright và được trình bày ở mục này. Loại thứ hai là số phút hướng dẫn, thời gian thao tác và tỉ lệ nhập sai của người dùng thật; loại này cần một nhóm nhân viên phòng vé thật được hướng dẫn, làm việc trong một khoảng thời gian và được quan sát, nên chưa đo được trong phạm vi đồ án.
+Các yêu cầu tiện dụng ở Bảng 1.19 gồm hai loại chỉ tiêu. Loại thứ nhất là số thao tác và các trợ giúp phần mềm phải có (chọn từ danh sách, tự tính giá, bố trí giống nhau, hiển thị giá trị hiện hành); loại này kiểm được trên giao diện thật bằng Playwright và được trình bày ở mục này. Loại thứ hai là số phút hướng dẫn, thời gian thao tác và tỉ lệ nhập sai của người dùng thật; loại này cần một nhóm nhân viên phòng vé thật được hướng dẫn, làm việc trong một khoảng thời gian và được quan sát, nên chưa đo được trong phạm vi đồ án. Với loại thứ hai, nhóm vẫn kết luận là chưa kiểm được và ghi kèm trong ngoặc một ước lượng có căn cứ để thấy khoảng cách tới ngưỡng.
 
-Đếm số thao tác. Một lần chọn trong danh sách được tính là 1 thao tác dù gồm bấm vào ô, gõ để lọc và bấm lựa chọn; lần bấm thực đơn để mở trang không được tính. Kết quả đếm cho TD04 và TD05 được trình bày trong Bảng 5.26.
+Đếm số thao tác. Một lần chọn trong danh sách được tính là 1 thao tác dù gồm bấm vào ô, gõ để lọc và bấm lựa chọn; lần bấm thực đơn để mở trang không được tính. Kết quả đếm được trình bày trong Bảng 5.26; các lượt tra cứu được so với ngưỡng 5 thao tác của TD04, các lượt lập báo cáo được so với ngưỡng 3 thao tác của TD05.
 
 Bảng 5.26. Số thao tác để có kết quả tra cứu và báo cáo
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  STT   Lượt                                                                      Các thao tác                                                              Số thao tác   So với ngưỡng 3 thao tác
-  ----- ------------------------------------------------------------------------- ------------------------------------------------------------------------- ------------- --------------------------
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  STT   Lượt                                                                      Các thao tác                                                              Số thao tác   So với ngưỡng
+  ----- ------------------------------------------------------------------------- ------------------------------------------------------------------------- ------------- ---------------
   1     Tra cứu theo mã chuyến bay (chuyến sắp bay)                               Nhập mã, bấm Tìm                                                          2             Đạt
 
   2     Tra cứu theo sân bay đi và sân bay đến (từ hôm nay, mặc định của trang)   Chọn sân bay đi, chọn sân bay đến, bấm Tìm                                3             Đạt
 
   3     Tra cứu theo mã một chuyến bay đã bay                                     Xóa ô Từ ngày (mặc định là hôm nay), nhập mã, bấm Tìm                     3             Đạt
 
-  4     Tra cứu theo sân bay đi, sân bay đến và khoảng ngày                       Chọn sân bay đi, chọn sân bay đến, nhập Từ ngày, nhập Đến ngày, bấm Tìm   5             Vượt
+  4     Tra cứu theo sân bay đi, sân bay đến và khoảng ngày                       Chọn sân bay đi, chọn sân bay đến, nhập Từ ngày, nhập Đến ngày, bấm Tìm   5             Đạt
 
   5     Báo cáo tháng hiện tại                                                    Bấm Lập báo cáo (tháng, năm hiện tại đã chọn sẵn)                         1             Đạt
 
   6     Báo cáo một tháng của năm khác                                            Chọn tháng, chọn năm, bấm Lập báo cáo                                     3             Đạt
 
   7     Báo cáo năm hiện tại; năm khác                                            Bấm thẻ Báo cáo năm, (chọn năm), bấm Lập báo cáo                          2; 3          Đạt
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Theo Bảng 5.26, tra cứu theo một hoặc hai tiêu chí cho kết quả sau không quá 3 thao tác; khi dùng đủ bốn tiêu chí sân bay đi, sân bay đến, từ ngày, đến ngày thì cần 5 thao tác, vượt mức của TD04. Vì vậy TD04 được ghi là đạt một phần. Lập báo cáo luôn có kết quả sau 1 đến 3 thao tác, đạt TD05.
+Theo Bảng 5.26, tra cứu theo một hoặc hai tiêu chí cho kết quả sau 2 đến 3 thao tác; khi dùng đủ bốn tiêu chí sân bay đi, sân bay đến, từ ngày, đến ngày thì cần 5 thao tác, bằng đúng mức không quá 5 thao tác của TD04. Ô mã chuyến bay không dùng kèm các tiêu chí khác vì mã đã xác định duy nhất một chuyến bay. Vì vậy TD04 đạt về số thao tác. Lập báo cáo luôn có kết quả sau 1 đến 3 thao tác, đạt TD05.
 
 Các trợ giúp có sẵn. Nhóm dùng Playwright mở từng màn hình và kiểm tra các trợ giúp mà Bảng 1.19, Bảng 1.20 yêu cầu. Ở biểu mẫu thêm chuyến bay, ô Sân bay đi mở danh sách 10 sân bay để chọn và cho gõ mã hoặc tên để lọc, như trong Hình 5.1; các ô số ghế phía dưới biểu mẫu được sinh theo danh sách hạng vé (Số lượng ghế Hạng 1, Số lượng ghế Hạng 2).
 
@@ -6307,27 +6305,41 @@ Hình 5.2. Giá tiền tự tính và thông báo lỗi tại ô ở màn hình 
 
 Hình 5.3. Tra cứu chuyến bay theo sân bay đi và sân bay đến sau 3 thao tác (TD04)
 
-Kết quả đánh giá từng yêu cầu tiện dụng, gồm cả phần đã kiểm và phần chưa kiểm được, được trình bày trong Bảng 5.27. Thời gian ghi trong bảng là thời gian Playwright tự điền ô và bấm nút (trung vị của 10 lần), chỉ là cận dưới, không phải thời gian của người dùng thật.
+Kết quả đánh giá từng yêu cầu tiện dụng, gồm cả phần đã kiểm và phần chưa kiểm được, được trình bày trong Bảng 5.27. Thời gian ghi trong bảng là thời gian Playwright tự điền ô và bấm nút (trung vị của 10 lần), chỉ là cận dưới, không phải thời gian của người dùng thật. Các ước lượng ghi trong ngoặc ở cột Phần chưa kiểm được được giải thích ngay sau bảng.
 
 Bảng 5.27. Kết quả đánh giá các yêu cầu tiện dụng
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  STT   Mã     Phần đã kiểm và kết quả                                                                                                                                                                              Phần chưa kiểm được                                                                                        Kết luận
-  ----- ------ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------
-  1     TD01   Chọn sân bay từ danh sách 10 sân bay; ô số ghế sinh theo danh sách hạng vé; máy thao tác thêm một chuyến bay có 2 sân bay trung gian trong 2,09 giây                                                 15 phút hướng dẫn; tỉ lệ nhập sai không quá 1 trên 100 chuyến bay                                          Đạt phần trợ giúp; phần còn lại chưa kiểm được
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  STT   Mã     Phần đã kiểm và kết quả                                                                                                                                                                              Phần chưa kiểm được                                                                                                                                                                                                                  Kết luận
+  ----- ------ ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ------------------------------------------------------------------
+  1     TD01   Chọn sân bay từ danh sách 10 sân bay; ô số ghế sinh theo danh sách hạng vé; máy thao tác thêm một chuyến bay có 2 sân bay trung gian trong 2,09 giây                                                 15 phút hướng dẫn; tỉ lệ nhập sai không quá 1 trên 100 chuyến bay (ước lượng khi chưa tính các kiểm tra của phần mềm: khoảng 5 trên 100)                                                                                             Đạt phần trợ giúp; phần còn lại chưa kiểm được
 
-  2     TD02   Giá tiền tự tính theo hạng vé, không có ô nhập giá; lỗi hiện tại ô; bán từ phiếu chỉ cần tìm phiếu theo CCCD hoặc mã phiếu rồi chọn phiếu (ca KT-UC04-05); máy thao tác bán một vé trong 1,12 giây   10 phút hướng dẫn; thời gian bán một vé của người dùng thật (ngưỡng 2 phút); tỉ lệ nhập sai                Đạt phần trợ giúp; phần còn lại chưa kiểm được
+  2     TD02   Giá tiền tự tính theo hạng vé, không có ô nhập giá; lỗi hiện tại ô; bán từ phiếu chỉ cần tìm phiếu theo CCCD hoặc mã phiếu rồi chọn phiếu (ca KT-UC04-05); máy thao tác bán một vé trong 1,12 giây   10 phút hướng dẫn; thời gian bán một vé của người dùng thật, ngưỡng 2 phút (ước lượng theo KLM: 32 đến 44 giây); tỉ lệ nhập sai không quá 1 trên 100 lần (ước lượng khi chưa tính các kiểm tra của phần mềm: khoảng 3 trên 100)      Đạt phần trợ giúp; phần còn lại chưa kiểm được
 
-  3     TD03   Màn hình đặt vé có cùng các ô, cùng thứ tự với màn hình bán vé: Chuyến bay, Hành khách, CCCD/Hộ chiếu, Điện thoại, Hạng vé, Giá tiền; máy thao tác lập một phiếu trong 1,14 giây                     10 phút hướng dẫn; thời gian lập một phiếu của người dùng thật (ngưỡng 2 phút); tỉ lệ nhập sai             Đạt phần bố trí; phần còn lại chưa kiểm được
+  3     TD03   Màn hình đặt vé có cùng các ô, cùng thứ tự với màn hình bán vé: Chuyến bay, Hành khách, CCCD/Hộ chiếu, Điện thoại, Hạng vé, Giá tiền; máy thao tác lập một phiếu trong 1,14 giây                     10 phút hướng dẫn; thời gian lập một phiếu của người dùng thật, ngưỡng 2 phút (ước lượng theo KLM: 32 đến 44 giây); tỉ lệ nhập sai không quá 1 trên 100 lần (ước lượng khi chưa tính các kiểm tra của phần mềm: khoảng 3 trên 100)   Đạt phần bố trí; phần còn lại chưa kiểm được
 
-  4     TD04   Tra cứu theo một hoặc nhiều tiêu chí; 2 đến 3 thao tác với một hoặc hai tiêu chí, 5 thao tác khi dùng đủ bốn tiêu chí (Bảng 5.26)                                                                    5 phút hướng dẫn                                                                                           Đạt một phần
+  4     TD04   Tra cứu theo một hoặc nhiều tiêu chí; 2 đến 3 thao tác với một hoặc hai tiêu chí, 5 thao tác khi dùng đủ bốn tiêu chí (Bảng 5.26)                                                                    5 phút hướng dẫn                                                                                                                                                                                                                     Đạt phần thao tác; phút hướng dẫn chưa kiểm được
 
-  5     TD05   Tháng, năm chọn từ danh sách, mặc định là tháng, năm hiện tại; có báo cáo sau 1 đến 3 thao tác                                                                                                       10 phút hướng dẫn                                                                                          Đạt phần thao tác; phút hướng dẫn chưa kiểm được
+  5     TD05   Tháng, năm chọn từ danh sách, mặc định là tháng, năm hiện tại; có báo cáo sau 1 đến 3 thao tác                                                                                                       10 phút hướng dẫn                                                                                                                                                                                                                    Đạt phần thao tác; phút hướng dẫn chưa kiểm được
 
-  6     TD06   Nút của mỗi tham số ghi giá trị hiện hành (Thời gian bay tối thiểu: 30 phút); hộp thoại cập nhật hiện Giá trị hiện tại 30 phút trước ô giá trị mới; máy thao tác đổi một quy định trong 0,63 giây    15 phút hướng dẫn; thời gian của người dùng thật (ngưỡng 1 phút); tỉ lệ nhập sai không quá 1 trên 20 lần   Đạt phần hiển thị giá trị hiện hành; phần còn lại chưa kiểm được
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  6     TD06   Nút của mỗi tham số ghi giá trị hiện hành (Thời gian bay tối thiểu: 30 phút); hộp thoại cập nhật hiện Giá trị hiện tại 30 phút trước ô giá trị mới; máy thao tác đổi một quy định trong 0,63 giây    15 phút hướng dẫn; thời gian của người dùng thật, ngưỡng 1 phút (ước lượng theo KLM: khoảng 10 giây); tỉ lệ nhập sai không quá 1 trên 20 lần (ước lượng: khoảng 1 trên 100)                                                          Đạt phần hiển thị giá trị hiện hành; phần còn lại chưa kiểm được
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Thời gian máy thao tác ở Bảng 5.27 thấp hơn ngưỡng 1 đến 2 phút hàng chục lần, cho thấy phần mềm không làm chậm người dùng; tuy vậy thời gian thật phụ thuộc chủ yếu vào tốc độ hỏi khách và gõ phím của nhân viên. Việc đo số phút hướng dẫn, thời gian và tỉ lệ nhập sai của người dùng thật cần được làm trong giai đoạn triển khai, khi có nhân viên phòng vé dùng thử.
+Thời gian máy thao tác ở Bảng 5.27 thấp hơn ngưỡng 1 đến 2 phút hàng chục lần, cho thấy phần mềm không làm chậm người dùng; tuy vậy thời gian thật phụ thuộc chủ yếu vào tốc độ hỏi khách và gõ phím của nhân viên.
+
+Ước lượng thời gian thao tác. Để có con số gần với người dùng thật hơn thời gian của máy, nhóm ước lượng bằng mô hình mức phím bấm (Keystroke-Level Model, viết tắt KLM) [5]. Mô hình cộng thời gian chuẩn của từng thao tác cơ bản của một người đã quen phần mềm: gõ một phím hoặc bấm nút chuột 0,28 giây (người gõ ở mức trung bình), đưa chuột tới một đối tượng 1,1 giây, chuyển tay giữa bàn phím và chuột 0,4 giây, suy nghĩ trước một bước 1,35 giây. Các thao tác được đếm trên màn hình thật:
+
+-   Bán một vé (TD02): bấm mục Bán vé; bấm ô chuyến bay, gõ 5 ký tự mã rồi nhấn Enter; nhấn Tab và gõ lần lượt họ tên 18 ký tự, số CCCD 12 chữ số, số điện thoại 10 chữ số; bấm chọn hạng vé; bấm Bán vé rồi bấm xác nhận. Tổng cộng 8 bước suy nghĩ, 5 lần đưa chuột, 2 lần chuyển tay và 54 lần gõ phím hoặc bấm chuột, tức 8 x 1,35 + 5 x 1,1 + 2 x 0,4 + 54 x 0,28, khoảng 32 giây. Nếu mỗi phím mất 0,5 giây (người gõ chậm) thì khoảng 44 giây. Cả hai đều dưới ngưỡng 2 phút.
+
+-   Lập một phiếu đặt chỗ (TD03): màn hình đặt vé có cùng các ô, cùng thứ tự với màn hình bán vé nên ước lượng giống trên, 32 đến 44 giây.
+
+-   Đổi một quy định (TD06): bấm mục Quy định; bấm thẻ của tham số; gõ giá trị mới 2 chữ số; bấm Lưu. Tổng cộng 3 bước suy nghĩ, 3 lần đưa chuột, 2 lần chuyển tay và 5 lần gõ phím hoặc bấm chuột, khoảng 10 giây, dưới ngưỡng 1 phút.
+
+Các con số trên là ước lượng cho người đã quen phần mềm, chưa tính thời gian hỏi và đọc giấy tờ của hành khách; bản thân mô hình có sai số khoảng 20% [5]. Chúng cho thấy ngưỡng 1 đến 2 phút còn cách xa, nhưng không thay được việc đo với nhân viên phòng vé.
+
+Ước lượng tỉ lệ nhập sai. Nghiên cứu về nhập liệu bằng tay ghi nhận khi nhập một lần và không kiểm tra lại thì khoảng 1% số mục nhập bị sai [3]. Phần mềm giảm số ô phải gõ tay: sân bay, hạng vé, ngày giờ, tháng, năm được chọn từ danh sách và giá tiền tự tính. Một lần bán vé hoặc đặt vé còn ba ô gõ tay (họ tên, số giấy tờ, điện thoại), một chuyến bay còn khoảng năm ô (mã chuyến bay, thời gian bay, giá vé, số ghế từng hạng), một lần đổi quy định còn một ô. Nếu lấy mức 1% cho mỗi ô gõ tay và chưa tính các kiểm tra của phần mềm thì cứ 100 lần bán vé hoặc đặt vé có khoảng 3 lần sai ít nhất một ô, 100 chuyến bay có khoảng 5 lần và 100 lần đổi quy định có khoảng 1 lần. Kiểm tra tại ô chặn được lỗi thiếu, thừa ký tự và giá trị ngoài miền (CCCD đúng 12 chữ số, miền giá trị ở Bảng 1.9), hộp xác nhận hiện lại thông tin trước khi lưu; lỗi gõ nhầm thành một giá trị hợp lệ khác thì phần mềm không phát hiện được, và nhóm chưa có số đo mức giảm nhờ các kiểm tra này. Như vậy TD06 nhiều khả năng đạt (ngưỡng 1 trên 20), còn với ngưỡng 1 trên 100 của TD01 đến TD03 thì chỉ đo với người dùng thật mới kết luận được.
+
+Số phút hướng dẫn không ước lượng được bằng mô hình. Cách đo nhóm đề xuất cho giai đoạn triển khai là cho khoảng 5 người chưa dùng phần mềm đọc phần hướng dẫn ở mục 6.2 đúng số phút quy định rồi tự làm một lượt từng chức năng, ghi lại thời gian và số lần nhập sai.
 
 Phím tắt. Phần mềm có các phím tắt khai báo ở web/src/tien_ich/phim_tat.ts và trên từng trang, được liệt kê trong bảng Phím tắt của trang Trợ giúp (xem thêm Bảng 6.4). Để kiểm các phím tắt chưa có ca riêng ở mục 5.2.3, nhóm viết thêm script Playwright do_phim_tat.cjs chạy trên máy chủ đo: đăng nhập bằng nhanvien qua biểu mẫu đăng nhập và bằng quanly, nhấn từng phím trên đúng trang có phím đó rồi kiểm tra trang được mở, ô đang có con trỏ, hộp thoại và câu thông báo. Phím Ctrl+S chỉ được thử trên biểu mẫu còn trống để chứng minh phím tắt gọi đúng thao tác lưu và hiện lỗi tại ô mà không ghi dữ liệu nào. Script chạy 24 lượt và cả 24 lượt đều Đạt; kết quả được gộp theo phím trong Bảng 5.28.
 
@@ -6384,13 +6396,13 @@ Bảng 5.29. Kết quả đánh giá các yêu cầu công nghệ
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   STT   Mã     Cách kiểm tra                                                                                                               Chứng cứ, kết quả quan sát                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Kết luận
   ----- ------ --------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------
-  1     CN01   Cần ghi lại thời gian xác định vị trí của các lỗi thật trong một thời gian dài                                              Chỉ có chứng cứ gián tiếp: lỗi trả về luôn có mã lỗi, câu thông báo tiếng Việt và ô bị lỗi; nhật ký máy chủ có dấu thời gian; mã tách tầng nên lỗi quy định nằm ở lớp XL_, lỗi câu lệnh nằm ở lớp DAL_. Nhóm chưa ghi thời gian định vị từng lỗi nên không có số đo trung bình                                                                                                                                                                                                                                                                                                        Chưa kiểm được
+  1     CN01   Cần ghi lại thời gian xác định vị trí của các lỗi thật trong một thời gian dài                                              Chỉ có chứng cứ gián tiếp: lỗi trả về luôn có mã lỗi, câu thông báo tiếng Việt và ô bị lỗi; nhật ký máy chủ có dấu thời gian; mã tách tầng nên lỗi quy định nằm ở lớp XL_, lỗi câu lệnh nằm ở lớp DAL_. Nhóm chưa ghi thời gian định vị từng lỗi nên không có số đo trung bình và không có cơ sở để ước lượng bằng số                                                                                                                                                                                                                                                                 Chưa kiểm được
 
   2     CN02   Tìm câu lệnh SQL, tham chiếu thư viện SqlClient và tham chiếu Microsoft.AspNetCore theo từng thư mục mã nguồn của máy chủ   Cả 77 câu lệnh SQL nằm trong thư mục TruyXuat (10 lớp DAL_); các thư mục XuLy, GiaoTiep, TienIch, DTO không có câu SQL nào và không tham chiếu SqlClient; các lớp XL_, DAL_ không tham chiếu Microsoft.AspNetCore. Lần kiểm tra đầu phát hiện lớp XacThuc ở tầng giao tiếp gọi thẳng DAL_TaiKhoan; nhóm đã sửa (Bảng 5.31), sau khi sửa tầng giao tiếp không còn gọi lớp DAL_ nào. Vế thêm chức năng mới mà không phải sửa chức năng cũ chưa thử bằng một chức năng thật                                                                                                              Đạt phần tách tầng; vế còn lại chưa kiểm được
 
-  3     CN03   Cần ghép các thành phần đăng nhập, phân quyền, quy định, báo cáo vào một phần mềm khác                                      Chưa thử vì đồ án không xây dựng phần mềm bán vé tàu hoặc xe khách để ghép                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Chưa kiểm được
+  3     CN03   Cần ghép các thành phần đăng nhập, phân quyền, quy định, báo cáo vào một phần mềm khác                                      Chưa thử vì đồ án không xây dựng phần mềm bán vé tàu hoặc xe khách để ghép (ước lượng theo số dòng mã: các lớp đăng nhập, phân quyền, phiên làm việc, kết nối cơ sở dữ liệu, xử lý lỗi, nhật ký và bộ định thời không chứa nghiệp vụ chuyến bay, khoảng 1.400 trên 5.524 dòng C#, cùng 2.903 dòng thành phần giao diện dùng chung, dùng lại được nguyên; phần quy định và báo cáo phải đổi tên tham số, tên cột)                                                                                                                                                                      Chưa kiểm được
 
-  4     CN04   Cần chuyển thật sang một hệ quản trị CSDL quan hệ khác                                                                      Chứng cứ gián tiếp: mọi câu lệnh SQL gom trong 13 tập tin của thư mục TruyXuat, tổng 1.452 dòng, nên phần phải viết lại khi đổi hệ quản trị có giới hạn rõ; nhóm chưa thử chuyển nên không có số ngày làm việc                                                                                                                                                                                                                                                                                                                                                                        Chưa kiểm được
+  4     CN04   Cần chuyển thật sang một hệ quản trị CSDL quan hệ khác                                                                      Chứng cứ gián tiếp: mọi câu lệnh SQL gom trong 13 tập tin của thư mục TruyXuat, tổng 1.452 dòng, nên phần phải viết lại khi đổi hệ quản trị có giới hạn rõ; nhóm chưa thử chuyển nên không có số ngày làm việc (ước lượng: có 29 chỗ dùng cú pháp riêng của SQL Server, gồm 8 gợi ý khóa UPDLOCK, HOLDLOCK, 7 hàm ISNULL, 6 hàm DATEADD, 5 mệnh đề TOP, 3 mệnh đề OUTPUT; cộng lớp KetNoiCSDL 214 dòng phải đổi thư viện kết nối, hai script cơ sở dữ liệu 600 dòng và việc chạy lại 117 ca kiểm thử; khoảng 12 giờ làm việc, tức 1,5 ngày, so với ngưỡng 2 ngày)                     Chưa kiểm được
 
   5     CN05   Chạy phần mềm trên môi trường đo                                                                                            Chạy được trên Ubuntu 24.04, SQL Server 2022 Express trong Docker, trình duyệt Chromium 153; chưa thử trên Windows 10, Chrome, Edge (mục 5.3.3)                                                                                                                                                                                                                                                                                                                                                                                                                                       Chưa kiểm được trên nền tảng đích
 
@@ -6405,9 +6417,9 @@ Kết quả kiểm thử của mục 5.2 và mục 5.3 được tổng hợp the
 
 Bảng 5.30. Tổng hợp kết quả kiểm thử theo nhóm yêu cầu
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   STT   Nhóm yêu cầu                                          Số yêu cầu                Cách kiểm                                                                                                                   Kết quả
-  ----- ----------------------------------------------------- ------------------------- --------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ----- ----------------------------------------------------- ------------------------- --------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1     Nghiệp vụ NV01 đến NV06 và biểu mẫu BM1 đến BM5.2     6 yêu cầu, 6 biểu mẫu     xUnit tầng xử lý và phần giao tiếp, script kiểm tra nhanh, Playwright (Bảng 5.15)                                           Đạt cả 6 yêu cầu và 6 biểu mẫu
 
   2     Quy định QĐ1, QĐ2, QĐ3, QĐ6 và giả định ở mục 1.3.4   4 quy định, 13 giả định   Ba mức như trên, ca ở biên của quy định, đồng hồ giả (Bảng 5.4, Bảng 5.15)                                                  Đạt; riêng vế 10 sân bay của QĐ1 chưa có ca tự động, vế hủy phiếu vào ngày khởi hành của QĐ3 mới kiểm ở tầng xử lý
@@ -6422,10 +6434,10 @@ Bảng 5.30. Tổng hợp kết quả kiểm thử theo nhóm yêu cầu
 
   7     An toàn AT01 đến AT04                                 4                         Ca tự động cho AT02 đến AT04; đo sao lưu, phục hồi thật cho AT01 (Bảng 5.25)                                                AT02 đến AT04 đạt; AT01 đạt một phần (phục hồi 13,7 giây, chưa có ca tự động, lịch sao lưu tự động chưa chạy thử)
 
-  8     Tiện dụng TD01 đến TD06                               6                         Đếm thao tác, kiểm các trợ giúp và phím tắt bằng Playwright (Bảng 5.26 đến Bảng 5.28)                                       Đạt một phần: các trợ giúp đều có, TD05 đạt phần thao tác, TD04 vượt khi dùng đủ bốn tiêu chí; số phút hướng dẫn, thời gian và tỉ lệ nhập sai của người dùng thật chưa kiểm được
+  8     Tiện dụng TD01 đến TD06                               6                         Đếm thao tác, kiểm các trợ giúp và phím tắt bằng Playwright (Bảng 5.26 đến Bảng 5.28)                                       Đạt một phần: các trợ giúp đều có, TD04 và TD05 đạt phần thao tác; số phút hướng dẫn, thời gian và tỉ lệ nhập sai của người dùng thật chưa kiểm được, mới có ước lượng (mục 5.3.5)
 
-  9     Công nghệ CN01 đến CN06                               6                         Tìm kiếm, đếm trong mã nguồn; kết quả chạy kiểm thử (Bảng 5.29)                                                             Đạt một phần: CN02 (tách tầng), CN06 (kiểm thử tự động) có chứng cứ; CN05 chưa kiểm trên nền tảng đích; CN01, CN03, CN04 chưa kiểm được
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  9     Công nghệ CN01 đến CN06                               6                         Tìm kiếm, đếm trong mã nguồn; kết quả chạy kiểm thử (Bảng 5.29)                                                             Đạt một phần: CN02 (tách tầng), CN06 (kiểm thử tự động) có chứng cứ; CN05 chưa kiểm trên nền tảng đích; CN01, CN03, CN04 chưa kiểm được (CN03, CN04 mới có ước lượng)
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Ba điểm chưa có ca kiểm thử tự động mà mục 5.2.4 đã nêu được xử lý như sau. Thứ nhất, vế có 10 sân bay của QĐ1: danh sách ban đầu do script dữ liệu nạp sẵn theo giả định 11 và được quan sát thấy đủ 10 sân bay ở ô chọn sân bay khi kiểm TD01, nhưng chưa có ca tự động kiểm riêng; việc Quản lý thay đổi danh sách theo TH01 đã có ca kiểm. Thứ hai, vế hủy phiếu vào ngày khởi hành của QĐ3 chỉ được kiểm ở tầng xử lý bằng đồng hồ giả (ca HuyPhieuDenNgayKhoiHanh, HuyTheoThamSoThoiGianHuy), chưa có ca ở mức giao diện và script vì việc hủy chạy nền, và mới đo với 0 phiếu trên dữ liệu lớn. Thứ ba, AT01 không có ca tự động vì sao lưu, phục hồi thực hiện ngoài phần mềm; thay vào đó nhóm đo thật một lượt sao lưu và phục hồi ở mục 5.3.4.
 
@@ -6459,19 +6471,17 @@ Sau khi sửa các lỗi ở Bảng 5.31, nhóm chạy lại toàn bộ 117 ca k
 
 Các điểm còn tồn tại. Sau khi kiểm thử, phần mềm còn các điểm sau, nhóm ghi nhận để xử lý ở giai đoạn triển khai hoặc phiên bản sau:
 
--   TD04 chưa đạt khi dùng đủ bốn tiêu chí: tra cứu theo sân bay đi, sân bay đến và khoảng ngày cần 5 thao tác. Có thể giảm bằng cách cho chọn nhanh khoảng ngày (ví dụ tuần này, tháng này) trong một thao tác.
-
 -   Tra cứu chuyến bay không tiêu chí trả toàn bộ danh sách trong một lần, chưa phân trang ở máy chủ: với hơn 20.000 chuyến bay mất khoảng 1,5 giây ở máy chủ và 1,9 giây trên giao diện, vẫn dưới ngưỡng 10 giây nhưng tăng theo số chuyến bay.
 
 -   Việc tự động hủy phiếu cập nhật từng phiếu bằng một câu lệnh riêng nên thời gian tăng theo số phiếu, khoảng 2 mili giây mỗi phiếu trên máy đo; nhánh hủy theo mốc QĐ3 chưa được đo với 1.000 phiếu.
 
 -   Các chỉ tiêu hiệu quả chưa được đo trên máy Windows 10 cấu hình tối thiểu ở mục 1.2.3 và qua mạng nội bộ thật; giao diện chưa chạy thử trên Chrome, Edge trên Windows (CN05).
 
--   Các chỉ tiêu cần người dùng thật của TD01 đến TD06 (số phút hướng dẫn, thời gian thao tác, tỉ lệ nhập sai) chưa đo được trong phạm vi đồ án.
+-   Các chỉ tiêu cần người dùng thật của TD01 đến TD06 (số phút hướng dẫn, thời gian thao tác, tỉ lệ nhập sai) chưa đo được trong phạm vi đồ án; thời gian thao tác và tỉ lệ nhập sai mới có ước lượng ở mục 5.3.5.
 
 -   Lịch sao lưu tự động hằng ngày bằng Task Scheduler của Windows (AT01) mới được hướng dẫn cài đặt, chưa chạy thử trên Windows.
 
--   CN01, CN03, CN04 chưa có cách kiểm trong phạm vi đồ án; vế thêm chức năng mới không phải sửa chức năng cũ của CN02 chưa được thử bằng một chức năng thật.
+-   CN01, CN03, CN04 chưa có cách kiểm trong phạm vi đồ án (CN03, CN04 mới có ước lượng ở Bảng 5.29); vế thêm chức năng mới không phải sửa chức năng cũ của CN02 chưa được thử bằng một chức năng thật.
 
 Ngoài các điểm trên, mọi yêu cầu nghiệp vụ, quy định, biểu mẫu, tiến hóa, tương thích, bảo mật và ba trong bốn yêu cầu an toàn đều đạt; các chỉ tiêu hiệu quả đạt trên dữ liệu lớn với khoảng cách xa so với ngưỡng. Nhóm đánh giá phần mềm đủ điều kiện để cài đặt theo hướng dẫn ở Chương 6; các phép đo trên cấu hình thật và việc dùng thử với nhân viên phòng vé cần được thực hiện khi triển khai tại phòng vé.
 
@@ -6578,6 +6588,16 @@ Các bước dựng giao diện và chạy máy chủ:
 -   3. Giữ cửa sổ PowerShell này mở trong suốt thời gian phòng vé làm việc; bấm Ctrl+C trong cửa sổ để dừng máy chủ. Ở lần chạy đầu, khi bảng TAIKHOAN còn rỗng, máy chủ tự tạo các tài khoản ban đầu (mục 6.1.5). Ngay khi khởi động và sau mỗi 15 phút, máy chủ tự hủy các phiếu đặt chỗ quá hạn (UC06, giả định 7), nên máy chủ phải luôn chạy thì việc tự hủy mới đúng hạn.
 
 -   4. Mở trình duyệt trên máy chủ tại địa chỉ http://localhost:5080. Màn hình Đăng nhập hiện ra là cài đặt thành công.
+
+Cài nhanh bằng một lệnh. Sau khi đã cài ba phần mềm ở mục 6.1.1, người cài có thể thay các bước ở mục 6.1.2 và mục 6.1.3 bằng script cai_dat.ps1 đặt ở thư mục gốc của mã nguồn, chạy qua tập tin cai_dat.cmd để không phải đổi chính sách thực thi script của PowerShell:
+
+  .\cai_dat.cmd
+
+  .\cai_dat.cmd -NapLaiDuLieu
+
+  .\cai_dat.cmd -MayChuSql "localhost"
+
+Lệnh thứ nhất kiểm tra đã có sqlcmd, .NET SDK 10 và Node.js 22; nếu máy chưa có cơ sở dữ liệu QLBANVECHUYENBAY thì tạo và nạp dữ liệu mẫu, nếu đã có thì giữ nguyên dữ liệu; sau đó dựng giao diện, chạy máy chủ ứng dụng và mở trình duyệt tại địa chỉ http://localhost:5080. Lệnh thứ hai thêm tham số -NapLaiDuLieu để xóa cơ sở dữ liệu hiện có và nạp lại dữ liệu mẫu, chỉ dùng khi chạy thử. Lệnh thứ ba dùng khi SQL Server không mang tên phiên bản SQLEXPRESS. Tham số -KhongChay chỉ cài đặt mà không chạy máy chủ.
 
 6.1.4. Cho các máy nhân viên trong mạng nội bộ truy cập
 
@@ -6837,7 +6857,7 @@ Hình 6.8. Ô chọn ngày đang mở bảng lịch
 
 6.2.2.1. Tra cứu chuyến bay
 
-Chức năng tra cứu chuyến bay (BM4) cho kết quả sau không quá 3 thao tác (TD04). Màn hình Danh sách chuyến bay được trình bày trong Hình 6.9.
+Chức năng tra cứu chuyến bay (BM4) cho kết quả sau không quá 5 thao tác (TD04). Màn hình Danh sách chuyến bay được trình bày trong Hình 6.9.
 
 -   1. Chọn Chuyến bay trên menu hoặc nhấn Alt+1. Khi mở, màn hình hiện các chuyến bay khởi hành từ hôm nay.
 
@@ -7225,9 +7245,9 @@ Kết quả đạt được. So với mục tiêu đặt ra ở Chương 1, nhó
 
 Hạn chế. Trong phạm vi đồ án, phần mềm và việc kiểm thử còn các hạn chế sau:
 
--   Các phép đo hiệu quả được thực hiện trên máy phát triển của nhóm, máy chủ ứng dụng, cơ sở dữ liệu và trình duyệt cùng nằm trên một máy; nhóm chưa đo trên máy Windows 10 cấu hình tối thiểu ở mục 1.2.3, chưa đo qua mạng nội bộ của một phòng vé thật và chưa chạy giao diện trên Chrome, Edge trong Windows (CN05). Các yêu cầu CN01, CN03, CN04 chưa có cách kiểm trong phạm vi đồ án.
+-   Các phép đo hiệu quả được thực hiện trên máy phát triển của nhóm, máy chủ ứng dụng, cơ sở dữ liệu và trình duyệt cùng nằm trên một máy; nhóm chưa đo trên máy Windows 10 cấu hình tối thiểu ở mục 1.2.3, chưa đo qua mạng nội bộ của một phòng vé thật và chưa chạy giao diện trên Chrome, Edge trong Windows (CN05). Các yêu cầu CN01, CN03, CN04 chưa có cách kiểm trong phạm vi đồ án; CN03, CN04 mới có ước lượng ở mục 5.3.6.
 
--   Các chỉ tiêu tiện dụng cần người dùng thật (số phút hướng dẫn, tỉ lệ nhập sai) chưa được đo; tra cứu chuyến bay khi dùng đủ bốn tiêu chí cần 5 thao tác, nhiều hơn mức 3 thao tác của TD04.
+-   Các chỉ tiêu tiện dụng cần người dùng thật (số phút hướng dẫn, thời gian thao tác, tỉ lệ nhập sai) chưa được đo; thời gian thao tác và tỉ lệ nhập sai mới có ước lượng ở mục 5.3.5.
 
 -   Việc sao lưu dữ liệu hằng ngày dựa vào tác vụ định kỳ của Windows và lệnh của SQL Server (mục 6.1.6); lịch sao lưu tự động mới được hướng dẫn, chưa chạy thử trên Windows, và phần mềm chưa có chức năng sao lưu, phục hồi ngay trên giao diện.
 
@@ -7237,7 +7257,7 @@ Hạn chế. Trong phạm vi đồ án, phần mềm và việc kiểm thử cò
 
 Hướng phát triển. Từ các hạn chế trên, nhóm đề xuất các hướng phát triển tiếp theo:
 
--   Triển khai thử tại một phòng vé, đo lại các yêu cầu hiệu quả và tiện dụng với người dùng thật rồi điều chỉnh màn hình tra cứu để giảm số thao tác.
+-   Triển khai thử tại một phòng vé, đo lại các yêu cầu hiệu quả và tiện dụng với người dùng thật rồi điều chỉnh các màn hình theo kết quả đo.
 
 -   Phân trang kết quả tra cứu ngay từ máy chủ và gộp việc hủy phiếu quá hạn thành một lần cập nhật để giữ thời gian đáp ứng ổn định khi dữ liệu lớn hơn nhiều lần.
 
@@ -7257,21 +7277,19 @@ Tiếng Việt
 
 Tiếng Anh
 
-[3] Booch, G., Rumbaugh, J., Jacobson, I. (2005), The Unified Modeling Language User Guide, 2nd Edition, Addison-Wesley, Upper Saddle River, NJ.
+[3] Barchard, K.A., Pace, L.A. (2011), "Preventing human error: The impact of data entry methods on data accuracy and statistical results", Computers in Human Behavior, 27(5), pp. 1834-1839.
 
-[4] Elmasri, R., Navathe, S.B. (2016), Fundamentals of Database Systems, 7th Edition, Pearson, Hoboken, NJ.
+[4] Booch, G., Rumbaugh, J., Jacobson, I. (2005), The Unified Modeling Language User Guide, 2nd Edition, Addison-Wesley, Upper Saddle River, NJ.
 
-[5] Meta Platforms (2026), "React Reference Overview", React, https://react.dev/reference/react, truy cập ngày 12/11/2026.
+[5] Card, S.K., Moran, T.P., Newell, A. (1980), "The keystroke-level model for user performance time with interactive systems", Communications of the ACM, 23(7), pp. 396-410.
 
-[6] Microsoft (2026), "ASP.NET Core documentation", Microsoft Learn, https://learn.microsoft.com/aspnet/core/, truy cập ngày 11/11/2026.
+[6] Elmasri, R., Navathe, S.B. (2016), Fundamentals of Database Systems, 7th Edition, Pearson, Hoboken, NJ.
 
-[7] Microsoft (2026), "Compute capacity limits by edition of SQL Server", Microsoft Learn, https://learn.microsoft.com/sql/sql-server/compute-capacity-limits-by-edition-of-sql-server, truy cập ngày 11/11/2026.
+[7] Microsoft (2026), "ASP.NET Core documentation", Microsoft Learn, https://learn.microsoft.com/aspnet/core/, truy cập ngày 11/11/2026.
 
-[8] Microsoft (2026), "Data types (Transact-SQL)", Microsoft Learn, https://learn.microsoft.com/sql/t-sql/data-types/data-types-transact-sql, truy cập ngày 11/11/2026.
+[8] Microsoft (2026), "Compute capacity limits by edition of SQL Server", Microsoft Learn, https://learn.microsoft.com/sql/sql-server/compute-capacity-limits-by-edition-of-sql-server, truy cập ngày 11/11/2026.
 
-[9] Microsoft (2026), "Getting started: Installation", Playwright, https://playwright.dev/docs/intro, truy cập ngày 12/11/2026.
-
-[10] Sommerville, I. (2016), Software Engineering, 10th Edition, Pearson, Boston.
+[9] Sommerville, I. (2016), Software Engineering, 10th Edition, Pearson, Boston.
 
 BẢNG PHÂN CÔNG CÔNG VIỆC
 
