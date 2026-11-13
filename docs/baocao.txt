@@ -144,179 +144,179 @@ CHƯƠNG 2. ĐẶC TẢ VÀ PHÂN TÍCH YÊU CẦU 35
 
 2.4.3. UC03 Quản lý chuyến bay 60
 
-2.4.4. UC04 Quản lý bán vé 72
+2.4.4. UC04 Quản lý bán vé 73
 
-2.4.5. UC05 Quản lý đặt vé 86
+2.4.5. UC05 Quản lý đặt vé 88
 
-2.4.6. UC06 Tự động hủy phiếu đặt chỗ 98
+2.4.6. UC06 Tự động hủy phiếu đặt chỗ 102
 
-2.4.7. UC07 Lập báo cáo doanh thu 104
+2.4.7. UC07 Lập báo cáo doanh thu 107
 
-2.4.8. UC08 Thay đổi quy định 110
+2.4.8. UC08 Thay đổi quy định 114
 
-2.4.9. Tổng hợp các lớp phân tích 117
+2.4.9. Tổng hợp các lớp phân tích 122
 
-2.5. Xây dựng biểu đồ thực thể liên kết (ERD) 123
+2.5. Xây dựng biểu đồ thực thể liên kết (ERD) 127
 
-2.5.1. Các thực thể và mối kết hợp 123
+2.5.1. Các thực thể và mối kết hợp 127
 
-2.5.2. Biểu đồ ERD 124
+2.5.2. Biểu đồ ERD 129
 
-CHƯƠNG 3. THIẾT KẾ HỆ THỐNG 126
+CHƯƠNG 3. THIẾT KẾ HỆ THỐNG 131
 
-3.1. Kiến trúc hệ thống 126
+3.1. Kiến trúc hệ thống 131
 
-3.1.1. Lựa chọn kiến trúc 126
+3.1.1. Lựa chọn kiến trúc 131
 
-3.1.2. Các thành phần trong hệ thống 129
+3.1.2. Các thành phần trong hệ thống 134
 
-3.1.3. Công nghệ và công cụ sử dụng 132
+3.1.3. Công nghệ và công cụ sử dụng 137
 
-3.2. Thiết kế dữ liệu 134
+3.2. Thiết kế dữ liệu 139
 
-3.2.1. Thuật toán thiết kế dữ liệu 135
+3.2.1. Thuật toán thiết kế dữ liệu 140
 
-3.2.2. Bước 1: Xét yêu cầu Nhận lịch chuyến bay (NV01) 138
+3.2.2. Bước 1: Xét yêu cầu Nhận lịch chuyến bay (NV01) 143
 
-3.2.3. Bước 2: Xét yêu cầu Bán vé (NV02) 143
+3.2.3. Bước 2: Xét yêu cầu Bán vé (NV02) 148
 
-3.2.4. Bước 3: Xét yêu cầu Ghi nhận đặt vé (NV03) 148
+3.2.4. Bước 3: Xét yêu cầu Ghi nhận đặt vé (NV03) 153
 
-3.2.5. Bước 4: Xét yêu cầu Tra cứu chuyến bay (NV04) 151
+3.2.5. Bước 4: Xét yêu cầu Tra cứu chuyến bay (NV04) 156
 
-3.2.6. Bước 5: Xét yêu cầu Lập báo cáo (NV05) 153
+3.2.6. Bước 5: Xét yêu cầu Lập báo cáo (NV05) 158
 
-3.2.7. Bước 6: Xét yêu cầu Thay đổi quy định (NV06) 154
+3.2.7. Bước 6: Xét yêu cầu Thay đổi quy định (NV06) 159
 
-3.2.8. Bước 7: Xét yêu cầu Đăng nhập và Phân quyền 157
+3.2.8. Bước 7: Xét yêu cầu Đăng nhập và Phân quyền 162
 
-3.2.9. Kiểm tra sơ đồ logic theo ba tính chất 158
+3.2.9. Kiểm tra sơ đồ logic theo ba tính chất 163
 
-3.2.10. Sơ đồ logic hoàn chỉnh 163
+3.2.10. Sơ đồ logic hoàn chỉnh 168
 
-3.2.11. Danh sách các bảng dữ liệu 164
+3.2.11. Danh sách các bảng dữ liệu 169
 
-3.2.12. Mô tả từng bảng dữ liệu 165
+3.2.12. Mô tả từng bảng dữ liệu 170
 
-3.3. Thiết kế lớp 174
+3.3. Thiết kế lớp 179
 
-3.3.1. Thiết kế chi tiết lớp 177
+3.3.1. Thiết kế chi tiết lớp 182
 
-3.3.2. Sơ đồ lớp chi tiết 194
+3.3.2. Sơ đồ lớp chi tiết 199
 
-3.4. Thiết kế giao diện 218
+3.4. Thiết kế giao diện 223
 
-3.4.1. Sơ đồ liên kết các màn hình 219
+3.4.1. Sơ đồ liên kết các màn hình 224
 
-3.4.2. Danh sách các màn hình 221
+3.4.2. Danh sách các màn hình 226
 
-3.4.3. Mô tả các màn hình 224
+3.4.3. Mô tả các màn hình 229
 
-CHƯƠNG 4. CÀI ĐẶT CHƯƠNG TRÌNH 298
+CHƯƠNG 4. CÀI ĐẶT CHƯƠNG TRÌNH 303
 
-4.1. Môi trường và công cụ cài đặt 298
+4.1. Môi trường và công cụ cài đặt 303
 
-4.1.1. Môi trường phát triển và chạy thử 298
+4.1.1. Môi trường phát triển và chạy thử 303
 
-4.1.2. Thư viện và công cụ đã dùng 299
+4.1.2. Thư viện và công cụ đã dùng 304
 
-4.2. Tổ chức mã nguồn 302
+4.2. Tổ chức mã nguồn 307
 
-4.2.1. Cấu trúc thư mục 302
+4.2.1. Cấu trúc thư mục 307
 
-4.2.2. Ánh xạ từ thiết kế sang mã 303
+4.2.2. Ánh xạ từ thiết kế sang mã 308
 
-4.2.3. Thống kê mã nguồn 306
+4.2.3. Thống kê mã nguồn 311
 
-4.2.4. Một số điểm cài đặt đáng chú ý 308
+4.2.4. Một số điểm cài đặt đáng chú ý 313
 
-4.3. Kết quả cài đặt các chức năng 313
+4.3. Kết quả cài đặt các chức năng 318
 
-4.3.1. Đăng nhập và phân quyền 313
+4.3.1. Đăng nhập và phân quyền 318
 
-4.3.2. Quản lý chuyến bay 317
+4.3.2. Quản lý chuyến bay 322
 
-4.3.3. Bán vé 322
+4.3.3. Bán vé 327
 
-4.3.4. Đặt vé và tự động hủy phiếu 326
+4.3.4. Đặt vé và tự động hủy phiếu 331
 
-4.3.5. Báo cáo doanh thu 329
+4.3.5. Báo cáo doanh thu 334
 
-4.3.6. Thay đổi quy định 333
+4.3.6. Thay đổi quy định 338
 
-4.4. Mức độ hoàn thành 335
+4.4. Mức độ hoàn thành 340
 
-CHƯƠNG 5. KIỂM THỬ 340
+CHƯƠNG 5. KIỂM THỬ 345
 
-5.1. Phạm vi và môi trường kiểm thử 340
+5.1. Phạm vi và môi trường kiểm thử 345
 
-5.1.1. Các mức kiểm thử và công cụ 340
+5.1.1. Các mức kiểm thử và công cụ 345
 
-5.1.2. Môi trường và dữ liệu kiểm thử 342
+5.1.2. Môi trường và dữ liệu kiểm thử 347
 
-5.1.3. Tiêu chí đạt 344
+5.1.3. Tiêu chí đạt 349
 
-5.2. Kiểm thử chức năng 345
+5.2. Kiểm thử chức năng 350
 
-5.2.1. Kiểm thử tầng xử lý nghiệp vụ và truy xuất dữ liệu 345
+5.2.1. Kiểm thử tầng xử lý nghiệp vụ và truy xuất dữ liệu 350
 
-5.2.2. Kiểm thử phần giao tiếp (API) 351
+5.2.2. Kiểm thử phần giao tiếp (API) 356
 
-5.2.3. Kiểm thử giao diện theo use case 356
+5.2.3. Kiểm thử giao diện theo use case 361
 
-5.2.4. Đối chiếu yêu cầu với ca kiểm thử 371
+5.2.4. Đối chiếu yêu cầu với ca kiểm thử 376
 
-5.2.5. Nhận xét 376
+5.2.5. Nhận xét 381
 
-5.3. Kiểm thử yêu cầu phi chức năng 377
+5.3. Kiểm thử yêu cầu phi chức năng 382
 
-5.3.1. Môi trường và dữ liệu đo 378
+5.3.1. Môi trường và dữ liệu đo 383
 
-5.3.2. Hiệu quả 381
+5.3.2. Hiệu quả 386
 
-5.3.3. Tương thích 385
+5.3.3. Tương thích 390
 
-5.3.4. Bảo mật và an toàn 387
+5.3.4. Bảo mật và an toàn 392
 
-5.3.5. Tiện dụng 390
+5.3.5. Tiện dụng 395
 
-5.3.6. Công nghệ 400
+5.3.6. Công nghệ 405
 
-5.4. Tổng hợp kết quả kiểm thử 403
+5.4. Tổng hợp kết quả kiểm thử 408
 
-CHƯƠNG 6. HƯỚNG DẪN CÀI ĐẶT VÀ SỬ DỤNG 408
+CHƯƠNG 6. HƯỚNG DẪN CÀI ĐẶT VÀ SỬ DỤNG 413
 
-6.1. Hướng dẫn cài đặt 408
+6.1. Hướng dẫn cài đặt 413
 
-6.1.1. Yêu cầu hệ thống 409
+6.1.1. Yêu cầu hệ thống 414
 
-6.1.2. Cài đặt cơ sở dữ liệu 410
+6.1.2. Cài đặt cơ sở dữ liệu 415
 
-6.1.3. Cài đặt và chạy máy chủ ứng dụng 411
+6.1.3. Cài đặt và chạy máy chủ ứng dụng 416
 
-6.1.4. Cho các máy nhân viên trong mạng nội bộ truy cập 413
+6.1.4. Cho các máy nhân viên trong mạng nội bộ truy cập 418
 
-6.1.5. Tài khoản ban đầu và việc cần làm ngay sau khi cài 413
+6.1.5. Tài khoản ban đầu và việc cần làm ngay sau khi cài 418
 
-6.1.6. Sao lưu và phục hồi dữ liệu 414
+6.1.6. Sao lưu và phục hồi dữ liệu 419
 
-6.1.7. Nạp lại dữ liệu mẫu và một số lỗi thường gặp khi cài đặt 416
+6.1.7. Nạp lại dữ liệu mẫu và một số lỗi thường gặp khi cài đặt 421
 
-6.2. Hướng dẫn sử dụng 418
+6.2. Hướng dẫn sử dụng 423
 
-6.2.1. Đăng nhập, đăng xuất và bố cục chung của màn hình 418
+6.2.1. Đăng nhập, đăng xuất và bố cục chung của màn hình 423
 
-6.2.2. Hướng dẫn dành cho Nhân viên bán vé 426
+6.2.2. Hướng dẫn dành cho Nhân viên bán vé 431
 
-6.2.3. Hướng dẫn dành cho Quản lý 438
+6.2.3. Hướng dẫn dành cho Quản lý 443
 
-6.2.4. Ý nghĩa các thông báo thường gặp 454
+6.2.4. Ý nghĩa các thông báo thường gặp 459
 
-KẾT LUẬN 459
+KẾT LUẬN 464
 
-TÀI LIỆU THAM KHẢO 462
+TÀI LIỆU THAM KHẢO 467
 
-BẢNG PHÂN CÔNG CÔNG VIỆC 463
+BẢNG PHÂN CÔNG CÔNG VIỆC 468
 
 DANH MỤC CHỮ VIẾT TẮT
 
@@ -462,213 +462,213 @@ Bảng 2.4. Đặc tả use case UC02 Phân quyền 51
 
 Bảng 2.5. Đặc tả use case UC03 Quản lý chuyến bay 60
 
-Bảng 2.6. Đặc tả use case UC04 Quản lý bán vé 72
+Bảng 2.6. Đặc tả use case UC04 Quản lý bán vé 73
 
-Bảng 2.7. Đặc tả use case UC05 Quản lý đặt vé 86
+Bảng 2.7. Đặc tả use case UC05 Quản lý đặt vé 88
 
-Bảng 2.8. Đặc tả use case UC06 Tự động hủy phiếu đặt chỗ 98
+Bảng 2.8. Đặc tả use case UC06 Tự động hủy phiếu đặt chỗ 102
 
-Bảng 2.9. Đặc tả use case UC07 Lập báo cáo doanh thu 104
+Bảng 2.9. Đặc tả use case UC07 Lập báo cáo doanh thu 107
 
-Bảng 2.10. Đặc tả use case UC08 Thay đổi quy định 110
+Bảng 2.10. Đặc tả use case UC08 Thay đổi quy định 115
 
-Bảng 2.11. Danh sách các lớp phân tích 117
+Bảng 2.11. Danh sách các lớp phân tích 122
 
-Bảng 2.12. Danh sách mối kết hợp 123
+Bảng 2.12. Danh sách mối kết hợp 128
 
-Bảng 3.1. Mô tả các thành phần trong hệ thống 130
+Bảng 3.1. Mô tả các thành phần trong hệ thống 135
 
-Bảng 3.2. Công nghệ và công cụ sử dụng 133
+Bảng 3.2. Công nghệ và công cụ sử dụng 138
 
-Bảng 3.3. Biểu mẫu 1 và quy định 1 138
+Bảng 3.3. Biểu mẫu 1 và quy định 1 143
 
-Bảng 3.4. Biểu mẫu 2 và quy định 2 143
+Bảng 3.4. Biểu mẫu 2 và quy định 2 148
 
-Bảng 3.5. Biểu mẫu 3 và quy định 3 148
+Bảng 3.5. Biểu mẫu 3 và quy định 3 153
 
-Bảng 3.6. Biểu mẫu 4 151
+Bảng 3.6. Biểu mẫu 4 156
 
-Bảng 3.7. Biểu mẫu 5.1 153
+Bảng 3.7. Biểu mẫu 5.1 158
 
-Bảng 3.8. Biểu mẫu 5.2 153
+Bảng 3.8. Biểu mẫu 5.2 158
 
-Bảng 3.9. Nơi lưu các giá trị thay đổi được theo QĐ6 155
+Bảng 3.9. Nơi lưu các giá trị thay đổi được theo QĐ6 160
 
-Bảng 3.10. Đối chiếu thông tin trên biểu mẫu với nơi lưu 158
+Bảng 3.10. Đối chiếu thông tin trên biểu mẫu với nơi lưu 163
 
-Bảng 3.11. Danh sách các bảng dữ liệu trong sơ đồ 164
+Bảng 3.11. Danh sách các bảng dữ liệu trong sơ đồ 169
 
-Bảng 3.12. Mô tả bảng SANBAY 166
+Bảng 3.12. Mô tả bảng SANBAY 171
 
-Bảng 3.13. Mô tả bảng CHUYENBAY 166
+Bảng 3.13. Mô tả bảng CHUYENBAY 171
 
-Bảng 3.14. Mô tả bảng CHITIETTRUNGGIAN 167
+Bảng 3.14. Mô tả bảng CHITIETTRUNGGIAN 172
 
-Bảng 3.15. Mô tả bảng HANGVE 168
+Bảng 3.15. Mô tả bảng HANGVE 173
 
-Bảng 3.16. Mô tả bảng GHETHEOHANG 168
+Bảng 3.16. Mô tả bảng GHETHEOHANG 173
 
-Bảng 3.17. Mô tả bảng HANHKHACH 169
+Bảng 3.17. Mô tả bảng HANHKHACH 174
 
-Bảng 3.18. Mô tả bảng VE 170
+Bảng 3.18. Mô tả bảng VE 175
 
-Bảng 3.19. Mô tả bảng PHIEUDATCHO 171
+Bảng 3.19. Mô tả bảng PHIEUDATCHO 176
 
-Bảng 3.20. Mô tả bảng THAMSOQUYDINH 173
+Bảng 3.20. Mô tả bảng THAMSOQUYDINH 178
 
-Bảng 3.21. Mô tả bảng TAIKHOAN 173
+Bảng 3.21. Mô tả bảng TAIKHOAN 178
 
-Bảng 3.22. Phân loại các lớp của phần mềm 175
+Bảng 3.22. Phân loại các lớp của phần mềm 180
 
-Bảng 3.23. Đổi kiểu dữ liệu từ SQL Server sang C# 177
+Bảng 3.23. Đổi kiểu dữ liệu từ SQL Server sang C# 182
 
-Bảng 3.24. Danh sách các lớp DTO 180
+Bảng 3.24. Danh sách các lớp DTO 185
 
-Bảng 3.25. Nơi hiện thực các phương thức của lớp thực thể 183
+Bảng 3.25. Nơi hiện thực các phương thức của lớp thực thể 188
 
-Bảng 3.26. Các lớp truy xuất dữ liệu và phương thức 186
+Bảng 3.26. Các lớp truy xuất dữ liệu và phương thức 191
 
-Bảng 3.27. Các lớp tiện ích và lớp hỗ trợ 190
+Bảng 3.27. Các lớp tiện ích và lớp hỗ trợ 195
 
-Bảng 3.28. Các lớp của phần giao tiếp 193
+Bảng 3.28. Các lớp của phần giao tiếp 198
 
-Bảng 3.29. Danh sách các màn hình 221
+Bảng 3.29. Danh sách các màn hình 226
 
-Bảng 3.30. Mô tả các đối tượng trên màn hình đăng nhập 225
+Bảng 3.30. Mô tả các đối tượng trên màn hình đăng nhập 230
 
-Bảng 3.31. Danh sách biến cố và xử lý trên màn hình đăng nhập 225
+Bảng 3.31. Danh sách biến cố và xử lý trên màn hình đăng nhập 230
 
-Bảng 3.32. Mô tả các đối tượng trên màn hình chính 229
+Bảng 3.32. Mô tả các đối tượng trên màn hình chính 234
 
-Bảng 3.33. Danh sách biến cố và xử lý trên màn hình chính 232
+Bảng 3.33. Danh sách biến cố và xử lý trên màn hình chính 237
 
-Bảng 3.34. Mô tả các đối tượng trên màn hình phân quyền 235
+Bảng 3.34. Mô tả các đối tượng trên màn hình phân quyền 240
 
-Bảng 3.35. Danh sách biến cố và xử lý trên màn hình phân quyền 236
+Bảng 3.35. Danh sách biến cố và xử lý trên màn hình phân quyền 241
 
-Bảng 3.36. Mô tả các đối tượng trên màn hình thêm, sửa tài khoản 239
+Bảng 3.36. Mô tả các đối tượng trên màn hình thêm, sửa tài khoản 244
 
-Bảng 3.37. Danh sách biến cố và xử lý trên màn hình thêm, sửa tài khoản 241
+Bảng 3.37. Danh sách biến cố và xử lý trên màn hình thêm, sửa tài khoản 246
 
-Bảng 3.38. Mô tả các đối tượng trên màn hình danh sách chuyến bay 244
+Bảng 3.38. Mô tả các đối tượng trên màn hình danh sách chuyến bay 249
 
-Bảng 3.39. Danh sách biến cố và xử lý trên màn hình danh sách chuyến bay 247
+Bảng 3.39. Danh sách biến cố và xử lý trên màn hình danh sách chuyến bay 252
 
-Bảng 3.40. Mô tả các đối tượng trên màn hình thêm, sửa chuyến bay 251
+Bảng 3.40. Mô tả các đối tượng trên màn hình thêm, sửa chuyến bay 256
 
-Bảng 3.41. Danh sách biến cố và xử lý trên màn hình thêm, sửa chuyến bay 253
+Bảng 3.41. Danh sách biến cố và xử lý trên màn hình thêm, sửa chuyến bay 258
 
-Bảng 3.42. Mô tả các đối tượng trên màn hình danh sách vé 256
+Bảng 3.42. Mô tả các đối tượng trên màn hình danh sách vé 261
 
-Bảng 3.43. Danh sách biến cố và xử lý trên màn hình danh sách vé 257
+Bảng 3.43. Danh sách biến cố và xử lý trên màn hình danh sách vé 262
 
-Bảng 3.44. Mô tả các đối tượng trên màn hình bán vé 261
+Bảng 3.44. Mô tả các đối tượng trên màn hình bán vé 266
 
-Bảng 3.45. Danh sách biến cố và xử lý trên màn hình bán vé 264
+Bảng 3.45. Danh sách biến cố và xử lý trên màn hình bán vé 269
 
-Bảng 3.46. Mô tả các đối tượng trên màn hình danh sách phiếu đặt chỗ 268
+Bảng 3.46. Mô tả các đối tượng trên màn hình danh sách phiếu đặt chỗ 273
 
-Bảng 3.47. Danh sách biến cố và xử lý trên màn hình danh sách phiếu đặt chỗ 270
+Bảng 3.47. Danh sách biến cố và xử lý trên màn hình danh sách phiếu đặt chỗ 275
 
-Bảng 3.48. Mô tả các đối tượng trên màn hình đặt vé 274
+Bảng 3.48. Mô tả các đối tượng trên màn hình đặt vé 279
 
-Bảng 3.49. Danh sách biến cố và xử lý trên màn hình đặt vé 276
+Bảng 3.49. Danh sách biến cố và xử lý trên màn hình đặt vé 281
 
-Bảng 3.50. Mô tả các đối tượng trên màn hình lập báo cáo doanh thu 280
+Bảng 3.50. Mô tả các đối tượng trên màn hình lập báo cáo doanh thu 285
 
-Bảng 3.51. Danh sách biến cố và xử lý trên màn hình lập báo cáo doanh thu 282
+Bảng 3.51. Danh sách biến cố và xử lý trên màn hình lập báo cáo doanh thu 287
 
-Bảng 3.52. Mô tả các đối tượng trên màn hình danh sách quy định 284
+Bảng 3.52. Mô tả các đối tượng trên màn hình danh sách quy định 289
 
-Bảng 3.53. Danh sách biến cố và xử lý trên màn hình danh sách quy định 286
+Bảng 3.53. Danh sách biến cố và xử lý trên màn hình danh sách quy định 291
 
-Bảng 3.54. Mô tả các đối tượng trên màn hình cập nhật quy định 289
+Bảng 3.54. Mô tả các đối tượng trên màn hình cập nhật quy định 294
 
-Bảng 3.55. Danh sách biến cố và xử lý trên màn hình cập nhật quy định 291
+Bảng 3.55. Danh sách biến cố và xử lý trên màn hình cập nhật quy định 296
 
-Bảng 3.56. Mô tả các đối tượng trên màn hình thông báo 295
+Bảng 3.56. Mô tả các đối tượng trên màn hình thông báo 300
 
-Bảng 3.57. Danh sách biến cố và xử lý trên màn hình thông báo 296
+Bảng 3.57. Danh sách biến cố và xử lý trên màn hình thông báo 301
 
-Bảng 4.1. Thư viện và công cụ đã dùng khi cài đặt 299
+Bảng 4.1. Thư viện và công cụ đã dùng khi cài đặt 304
 
-Bảng 4.2. Ánh xạ từ thiết kế sang mã nguồn 303
+Bảng 4.2. Ánh xạ từ thiết kế sang mã nguồn 308
 
-Bảng 4.3. Thống kê mã nguồn theo tầng 306
+Bảng 4.3. Thống kê mã nguồn theo tầng 311
 
-Bảng 4.4. Mức độ hoàn thành các chức năng 335
+Bảng 4.4. Mức độ hoàn thành các chức năng 340
 
-Bảng 5.1. Các mức kiểm thử và công cụ 341
+Bảng 5.1. Các mức kiểm thử và công cụ 346
 
-Bảng 5.2. Môi trường kiểm thử 342
+Bảng 5.2. Môi trường kiểm thử 347
 
-Bảng 5.3. Tổng hợp kiểm thử tầng xử lý nghiệp vụ và truy xuất dữ liệu 345
+Bảng 5.3. Tổng hợp kiểm thử tầng xử lý nghiệp vụ và truy xuất dữ liệu 350
 
-Bảng 5.4. Một số ca kiểm thử tiêu biểu ở tầng xử lý 348
+Bảng 5.4. Một số ca kiểm thử tiêu biểu ở tầng xử lý 353
 
-Bảng 5.5. Các ca kiểm thử phần giao tiếp trong lớp KiemThuGiaoTiep 352
+Bảng 5.5. Các ca kiểm thử phần giao tiếp trong lớp KiemThuGiaoTiep 357
 
-Bảng 5.6. Các nhóm bước của script kiểm tra nhanh phần giao tiếp 354
+Bảng 5.6. Các nhóm bước của script kiểm tra nhanh phần giao tiếp 359
 
-Bảng 5.7. Các ca kiểm thử giao diện của UC01 Đăng nhập 357
+Bảng 5.7. Các ca kiểm thử giao diện của UC01 Đăng nhập 362
 
-Bảng 5.8. Các ca kiểm thử giao diện của UC02 Phân quyền 358
+Bảng 5.8. Các ca kiểm thử giao diện của UC02 Phân quyền 363
 
-Bảng 5.9. Các ca kiểm thử giao diện của UC03 Quản lý chuyến bay 360
+Bảng 5.9. Các ca kiểm thử giao diện của UC03 Quản lý chuyến bay 365
 
-Bảng 5.10. Các ca kiểm thử giao diện của UC04 Quản lý bán vé 363
+Bảng 5.10. Các ca kiểm thử giao diện của UC04 Quản lý bán vé 368
 
-Bảng 5.11. Các ca kiểm thử giao diện của UC05 Quản lý đặt vé 365
+Bảng 5.11. Các ca kiểm thử giao diện của UC05 Quản lý đặt vé 370
 
-Bảng 5.12. Các ca kiểm thử giao diện của UC07 Lập báo cáo doanh thu 366
+Bảng 5.12. Các ca kiểm thử giao diện của UC07 Lập báo cáo doanh thu 371
 
-Bảng 5.13. Các ca kiểm thử giao diện của UC08 Thay đổi quy định 368
+Bảng 5.13. Các ca kiểm thử giao diện của UC08 Thay đổi quy định 373
 
-Bảng 5.14. Các ca kiểm thử giao diện của các chức năng chung 370
+Bảng 5.14. Các ca kiểm thử giao diện của các chức năng chung 375
 
-Bảng 5.15. Đối chiếu yêu cầu nghiệp vụ, quy định, biểu mẫu với ca kiểm thử 371
+Bảng 5.15. Đối chiếu yêu cầu nghiệp vụ, quy định, biểu mẫu với ca kiểm thử 376
 
-Bảng 5.16. Đối chiếu các yêu cầu tiến hóa, bảo mật, tương thích, an toàn với ca kiểm thử 373
+Bảng 5.16. Đối chiếu các yêu cầu tiến hóa, bảo mật, tương thích, an toàn với ca kiểm thử 378
 
-Bảng 5.17. Tổng hợp kết quả kiểm thử chức năng 376
+Bảng 5.17. Tổng hợp kết quả kiểm thử chức năng 381
 
-Bảng 5.18. Cấu hình máy đo so với cấu hình triển khai ở mục 1.2.3 378
+Bảng 5.18. Cấu hình máy đo so với cấu hình triển khai ở mục 1.2.3 383
 
-Bảng 5.19. Dữ liệu đo so với mức dung lượng lưu trữ ở Bảng 1.11 379
+Bảng 5.19. Dữ liệu đo so với mức dung lượng lưu trữ ở Bảng 1.11 384
 
-Bảng 5.20. Kết quả đo các yêu cầu hiệu quả trên dữ liệu lớn 381
+Bảng 5.20. Kết quả đo các yêu cầu hiệu quả trên dữ liệu lớn 386
 
-Bảng 5.21. Kết quả đo HQ04: hủy 1.000 phiếu đến hạn trong một lần kiểm tra 383
+Bảng 5.21. Kết quả đo HQ04: hủy 1.000 phiếu đến hạn trong một lần kiểm tra 388
 
-Bảng 5.22. Kết quả kiểm tra 20 yêu cầu gửi cùng lúc vào hạng vé còn 5 ghế 385
+Bảng 5.22. Kết quả kiểm tra 20 yêu cầu gửi cùng lúc vào hạng vé còn 5 ghế 390
 
-Bảng 5.23. Kết quả kiểm tra các yêu cầu tương thích và môi trường chạy 386
+Bảng 5.23. Kết quả kiểm tra các yêu cầu tương thích và môi trường chạy 391
 
-Bảng 5.24. Kết quả kiểm tra các yêu cầu bảo mật 387
+Bảng 5.24. Kết quả kiểm tra các yêu cầu bảo mật 392
 
-Bảng 5.25. Kết quả kiểm tra các yêu cầu an toàn 389
+Bảng 5.25. Kết quả kiểm tra các yêu cầu an toàn 394
 
-Bảng 5.26. Số thao tác để có kết quả tra cứu và báo cáo 391
+Bảng 5.26. Số thao tác để có kết quả tra cứu và báo cáo 396
 
-Bảng 5.27. Kết quả đánh giá các yêu cầu tiện dụng 394
+Bảng 5.27. Kết quả đánh giá các yêu cầu tiện dụng 399
 
-Bảng 5.28. Kết quả kiểm tra phím tắt 398
+Bảng 5.28. Kết quả kiểm tra phím tắt 403
 
-Bảng 5.29. Kết quả đánh giá các yêu cầu công nghệ 401
+Bảng 5.29. Kết quả đánh giá các yêu cầu công nghệ 406
 
-Bảng 5.30. Tổng hợp kết quả kiểm thử theo nhóm yêu cầu 403
+Bảng 5.30. Tổng hợp kết quả kiểm thử theo nhóm yêu cầu 408
 
-Bảng 5.31. Các lỗi đã phát hiện trong quá trình kiểm thử và đã sửa 405
+Bảng 5.31. Các lỗi đã phát hiện trong quá trình kiểm thử và đã sửa 410
 
-Bảng 6.1. Yêu cầu phần cứng và phần mềm 409
+Bảng 6.1. Yêu cầu phần cứng và phần mềm 414
 
-Bảng 6.2. Các tài khoản ban đầu 413
+Bảng 6.2. Các tài khoản ban đầu 418
 
-Bảng 6.3. Một số lỗi thường gặp khi cài đặt và cách xử lý 417
+Bảng 6.3. Một số lỗi thường gặp khi cài đặt và cách xử lý 422
 
-Bảng 6.4. Các phím tắt của phần mềm 424
+Bảng 6.4. Các phím tắt của phần mềm 429
 
-Bảng 6.5. Các thông báo thường gặp và cách xử lý 456
+Bảng 6.5. Các thông báo thường gặp và cách xử lý 461
 
 DANH MỤC HÌNH
 
@@ -718,285 +718,285 @@ Hình 2.16.3. Biểu đồ tuần tự của UC03.4 Tra cứu chuyến bay 68
 
 Hình 2.16.4. Biểu đồ tuần tự của UC03.1 Thêm chuyến bay (nhập lịch chuyến bay từ tập tin Excel) 69
 
-Hình 2.17. Biểu đồ cộng tác của UC03.1 Thêm chuyến bay 70
+Hình 2.17. Biểu đồ cộng tác của UC03.1 Thêm chuyến bay 71
 
 Hình 2.18. Biểu đồ lớp phân tích của UC03 Quản lý chuyến bay 72
 
-Hình 2.19. Biểu đồ hoạt động của UC04 Quản lý bán vé 77
+Hình 2.19. Biểu đồ hoạt động của UC04 Quản lý bán vé 78
 
-Hình 2.20.1. Biểu đồ tuần tự của UC04.1 Bán vé trực tiếp 79
+Hình 2.20.1. Biểu đồ tuần tự của UC04.1 Bán vé trực tiếp 80
 
-Hình 2.20.2. Biểu đồ tuần tự của UC04.2 Bán vé từ phiếu đặt chỗ 80
+Hình 2.20.2. Biểu đồ tuần tự của UC04.2 Bán vé từ phiếu đặt chỗ 82
 
-Hình 2.20.3. Biểu đồ tuần tự của UC04.3, UC04.4, UC04.5 Tra cứu, sửa, hủy vé 82
+Hình 2.20.3. Biểu đồ tuần tự của UC04.3, UC04.4, UC04.5 Tra cứu, sửa, hủy vé 84
 
-Hình 2.21.1. Biểu đồ cộng tác của UC04.1 Bán vé trực tiếp 84
+Hình 2.21.1. Biểu đồ cộng tác của UC04.1 Bán vé trực tiếp 86
 
-Hình 2.21.2. Biểu đồ cộng tác của UC04.2 Bán vé từ phiếu đặt chỗ 85
+Hình 2.21.2. Biểu đồ cộng tác của UC04.2 Bán vé từ phiếu đặt chỗ 87
 
-Hình 2.22. Biểu đồ lớp phân tích của UC04 Quản lý bán vé 86
+Hình 2.22. Biểu đồ lớp phân tích của UC04 Quản lý bán vé 88
 
-Hình 2.23. Biểu đồ hoạt động của UC05 Quản lý đặt vé 91
+Hình 2.23. Biểu đồ hoạt động của UC05 Quản lý đặt vé 94
 
-Hình 2.24.1. Biểu đồ tuần tự của UC05.1 Lập phiếu đặt chỗ 93
+Hình 2.24.1. Biểu đồ tuần tự của UC05.1 Lập phiếu đặt chỗ 96
 
-Hình 2.24.2. Biểu đồ tuần tự của UC05.2, UC05.3, UC05.4 Tra cứu, sửa, hủy phiếu đặt chỗ 94
+Hình 2.24.2. Biểu đồ tuần tự của UC05.2, UC05.3, UC05.4 Tra cứu, sửa, hủy phiếu đặt chỗ 98
 
-Hình 2.24.3. Biểu đồ tuần tự của UC05.5 Xóa phiếu đặt chỗ đã hủy 95
+Hình 2.24.3. Biểu đồ tuần tự của UC05.5 Xóa phiếu đặt chỗ đã hủy 99
 
-Hình 2.25. Biểu đồ cộng tác của UC05.1 Lập phiếu đặt chỗ 96
+Hình 2.25. Biểu đồ cộng tác của UC05.1 Lập phiếu đặt chỗ 100
 
-Hình 2.26. Biểu đồ lớp phân tích của UC05 Quản lý đặt vé 98
+Hình 2.26. Biểu đồ lớp phân tích của UC05 Quản lý đặt vé 101
 
-Hình 2.27. Biểu đồ hoạt động của UC06 Tự động hủy phiếu đặt chỗ 101
+Hình 2.27. Biểu đồ hoạt động của UC06 Tự động hủy phiếu đặt chỗ 104
 
-Hình 2.28. Biểu đồ tuần tự của UC06 Tự động hủy phiếu đặt chỗ 102
+Hình 2.28. Biểu đồ tuần tự của UC06 Tự động hủy phiếu đặt chỗ 105
 
-Hình 2.29. Biểu đồ cộng tác của UC06 Tự động hủy phiếu đặt chỗ 103
+Hình 2.29. Biểu đồ cộng tác của UC06 Tự động hủy phiếu đặt chỗ 106
 
-Hình 2.30. Biểu đồ lớp phân tích của UC06 Tự động hủy phiếu đặt chỗ 104
+Hình 2.30. Biểu đồ lớp phân tích của UC06 Tự động hủy phiếu đặt chỗ 107
 
-Hình 2.31. Biểu đồ hoạt động của UC07 Lập báo cáo doanh thu 106
+Hình 2.31. Biểu đồ hoạt động của UC07 Lập báo cáo doanh thu 109
 
-Hình 2.32. Biểu đồ tuần tự của UC07 Lập báo cáo doanh thu 107
+Hình 2.32. Biểu đồ tuần tự của UC07 Lập báo cáo doanh thu 111
 
-Hình 2.33. Biểu đồ cộng tác của UC07 Lập báo cáo doanh thu 108
+Hình 2.33. Biểu đồ cộng tác của UC07 Lập báo cáo doanh thu 112
 
-Hình 2.34. Biểu đồ lớp phân tích của UC07 Lập báo cáo doanh thu 109
+Hình 2.34. Biểu đồ lớp phân tích của UC07 Lập báo cáo doanh thu 114
 
-Hình 2.35. Biểu đồ hoạt động của UC08 Thay đổi quy định 112
+Hình 2.35. Biểu đồ hoạt động của UC08 Thay đổi quy định 117
 
-Hình 2.36. Biểu đồ tuần tự của UC08 Thay đổi quy định 114
+Hình 2.36. Biểu đồ tuần tự của UC08 Thay đổi quy định 119
 
-Hình 2.37. Biểu đồ cộng tác của UC08 Thay đổi quy định 115
+Hình 2.37. Biểu đồ cộng tác của UC08 Thay đổi quy định 120
 
-Hình 2.38. Biểu đồ lớp phân tích của UC08 Thay đổi quy định 116
+Hình 2.38. Biểu đồ lớp phân tích của UC08 Thay đổi quy định 121
 
-Hình 2.39. Biểu đồ lớp thực thể 122
+Hình 2.39. Biểu đồ lớp thực thể 127
 
-Hình 2.40. Biểu đồ thực thể liên kết của hệ thống 125
+Hình 2.40. Biểu đồ thực thể liên kết của hệ thống 130
 
-Hình 3.1. Kiến trúc ba lớp của hệ thống 130
+Hình 3.1. Kiến trúc ba lớp của hệ thống 135
 
-Hình 3.2. Sơ đồ logic bước 1, thiết kế với tính đúng đắn 139
+Hình 3.2. Sơ đồ logic bước 1, thiết kế với tính đúng đắn 144
 
-Hình 3.3. Sơ đồ logic bước 1, thiết kế với tính tiến hóa 141
+Hình 3.3. Sơ đồ logic bước 1, thiết kế với tính tiến hóa 146
 
-Hình 3.4. Sơ đồ logic bước 1, thiết kế với tính hiệu quả 142
+Hình 3.4. Sơ đồ logic bước 1, thiết kế với tính hiệu quả 147
 
-Hình 3.5. Sơ đồ logic bước 2, thiết kế với tính đúng đắn 144
+Hình 3.5. Sơ đồ logic bước 2, thiết kế với tính đúng đắn 149
 
-Hình 3.6. Sơ đồ logic bước 2, thiết kế với tính tiến hóa 145
+Hình 3.6. Sơ đồ logic bước 2, thiết kế với tính tiến hóa 150
 
-Hình 3.7. Sơ đồ logic bước 2, thiết kế với tính hiệu quả 147
+Hình 3.7. Sơ đồ logic bước 2, thiết kế với tính hiệu quả 152
 
-Hình 3.8. Sơ đồ logic bước 3, thiết kế với tính đúng đắn 149
+Hình 3.8. Sơ đồ logic bước 3, thiết kế với tính đúng đắn 154
 
-Hình 3.9. Sơ đồ logic bước 3, thiết kế với tính tiến hóa 150
+Hình 3.9. Sơ đồ logic bước 3, thiết kế với tính tiến hóa 155
 
-Hình 3.10. Các hộp quy định có thể chọn và nơi lưu của từng quy định 155
+Hình 3.10. Các hộp quy định có thể chọn và nơi lưu của từng quy định 160
 
-Hình 3.11. Sơ đồ logic bước 6, các bảng THAMSOQUYDINH, HANGVE, SANBAY 156
+Hình 3.11. Sơ đồ logic bước 6, các bảng THAMSOQUYDINH, HANGVE, SANBAY 161
 
-Hình 3.12. Sơ đồ logic bước 7, bảng TAIKHOAN 157
+Hình 3.12. Sơ đồ logic bước 7, bảng TAIKHOAN 162
 
-Hình 3.13. Sơ đồ logic hoàn chỉnh của hệ thống 164
+Hình 3.13. Sơ đồ logic hoàn chỉnh của hệ thống 169
 
-Hình 3.14. Các lớp DTO SanBay, ChuyenBay, ChiTietTrungGian, HangVe, GheTheoHang 179
+Hình 3.14. Các lớp DTO SanBay, ChuyenBay, ChiTietTrungGian, HangVe, GheTheoHang 184
 
-Hình 3.15. Các lớp DTO HanhKhach, Ve, TaiKhoan, PhieuDatCho, ThamSoQuyDinh và các lớp TieuChiTim, ThongTinBan, ThongTinHang 180
+Hình 3.15. Các lớp DTO HanhKhach, Ve, TaiKhoan, PhieuDatCho, ThamSoQuyDinh và các lớp TieuChiTim, ThongTinBan, ThongTinHang 185
 
-Hình 3.16. Sơ đồ lớp chi tiết chức năng Đăng nhập 197
+Hình 3.16. Sơ đồ lớp chi tiết chức năng Đăng nhập 202
 
-Hình 3.17. Sơ đồ lớp chi tiết chức năng Phân quyền 199
+Hình 3.17. Sơ đồ lớp chi tiết chức năng Phân quyền 204
 
-Hình 3.18. Sơ đồ lớp chi tiết chức năng Quản lý chuyến bay: thêm, sửa, xóa chuyến bay 202
+Hình 3.18. Sơ đồ lớp chi tiết chức năng Quản lý chuyến bay: thêm, sửa, xóa chuyến bay 207
 
-Hình 3.19. Sơ đồ lớp chi tiết chức năng Quản lý chuyến bay: tra cứu chuyến bay 204
+Hình 3.19. Sơ đồ lớp chi tiết chức năng Quản lý chuyến bay: tra cứu chuyến bay 209
 
-Hình 3.20. Sơ đồ lớp chi tiết chức năng Quản lý bán vé: bán vé 206
+Hình 3.20. Sơ đồ lớp chi tiết chức năng Quản lý bán vé: bán vé 211
 
-Hình 3.21. Sơ đồ lớp chi tiết chức năng Quản lý bán vé: tra cứu, sửa, hủy vé 207
+Hình 3.21. Sơ đồ lớp chi tiết chức năng Quản lý bán vé: tra cứu, sửa, hủy vé 212
 
-Hình 3.22. Sơ đồ lớp chi tiết chức năng Quản lý đặt vé: lập phiếu đặt chỗ 209
+Hình 3.22. Sơ đồ lớp chi tiết chức năng Quản lý đặt vé: lập phiếu đặt chỗ 214
 
-Hình 3.23. Sơ đồ lớp chi tiết chức năng Quản lý đặt vé: tra cứu, sửa, hủy phiếu và xóa phiếu đã hủy 211
+Hình 3.23. Sơ đồ lớp chi tiết chức năng Quản lý đặt vé: tra cứu, sửa, hủy phiếu và xóa phiếu đã hủy 216
 
-Hình 3.24. Sơ đồ lớp chi tiết chức năng Tự động hủy phiếu đặt chỗ 213
+Hình 3.24. Sơ đồ lớp chi tiết chức năng Tự động hủy phiếu đặt chỗ 218
 
-Hình 3.25. Sơ đồ lớp chi tiết chức năng Lập báo cáo doanh thu 215
+Hình 3.25. Sơ đồ lớp chi tiết chức năng Lập báo cáo doanh thu 220
 
-Hình 3.26. Sơ đồ lớp chi tiết chức năng Thay đổi quy định 217
+Hình 3.26. Sơ đồ lớp chi tiết chức năng Thay đổi quy định 222
 
-Hình 3.27. Sơ đồ liên kết các màn hình 220
+Hình 3.27. Sơ đồ liên kết các màn hình 225
 
-Hình 3.28. Màn hình đăng nhập 224
+Hình 3.28. Màn hình đăng nhập 229
 
-Hình 3.29. Màn hình chính của Quản lý 227
+Hình 3.29. Màn hình chính của Quản lý 232
 
-Hình 3.30. Màn hình chính của Nhân viên bán vé, bảng thông báo đang mở 228
+Hình 3.30. Màn hình chính của Nhân viên bán vé, bảng thông báo đang mở 233
 
-Hình 3.31. Màn hình phân quyền 235
+Hình 3.31. Màn hình phân quyền 240
 
-Hình 3.32. Màn hình thêm tài khoản 238
+Hình 3.32. Màn hình thêm tài khoản 243
 
-Hình 3.33. Màn hình sửa tài khoản đang đăng nhập 239
+Hình 3.33. Màn hình sửa tài khoản đang đăng nhập 244
 
-Hình 3.34. Màn hình danh sách chuyến bay 243
+Hình 3.34. Màn hình danh sách chuyến bay 248
 
-Hình 3.35. Hộp thoại nhập lịch chuyến bay từ Excel 244
+Hình 3.35. Hộp thoại nhập lịch chuyến bay từ Excel 249
 
-Hình 3.36. Màn hình thêm chuyến bay 250
+Hình 3.36. Màn hình thêm chuyến bay 255
 
-Hình 3.37. Màn hình danh sách vé 255
+Hình 3.37. Màn hình danh sách vé 260
 
-Hình 3.38. Màn hình bán vé, cách bán trực tiếp 260
+Hình 3.38. Màn hình bán vé, cách bán trực tiếp 265
 
-Hình 3.39. Màn hình bán vé, cách bán từ phiếu đặt chỗ 261
+Hình 3.39. Màn hình bán vé, cách bán từ phiếu đặt chỗ 266
 
-Hình 3.40. Màn hình danh sách phiếu đặt chỗ 268
+Hình 3.40. Màn hình danh sách phiếu đặt chỗ 273
 
-Hình 3.41. Màn hình đặt vé, chế độ lập phiếu 273
+Hình 3.41. Màn hình đặt vé, chế độ lập phiếu 278
 
-Hình 3.42. Màn hình đặt vé, chế độ sửa phiếu 274
+Hình 3.42. Màn hình đặt vé, chế độ sửa phiếu 279
 
-Hình 3.43. Màn hình lập báo cáo doanh thu, báo cáo tháng 279
+Hình 3.43. Màn hình lập báo cáo doanh thu, báo cáo tháng 284
 
-Hình 3.44. Màn hình lập báo cáo doanh thu, báo cáo năm 280
+Hình 3.44. Màn hình lập báo cáo doanh thu, báo cáo năm 285
 
-Hình 3.45. Màn hình danh sách quy định 284
+Hình 3.45. Màn hình danh sách quy định 289
 
-Hình 3.46. Màn hình cập nhật quy định, dạng cập nhật tham số 288
+Hình 3.46. Màn hình cập nhật quy định, dạng cập nhật tham số 293
 
-Hình 3.47. Màn hình cập nhật quy định, dạng thêm sân bay 288
+Hình 3.47. Màn hình cập nhật quy định, dạng thêm sân bay 293
 
-Hình 3.48. Màn hình cập nhật quy định, dạng thêm hạng vé 289
+Hình 3.48. Màn hình cập nhật quy định, dạng thêm hạng vé 294
 
-Hình 3.49. Màn hình thông báo, hỏi xác nhận 293
+Hình 3.49. Màn hình thông báo, hỏi xác nhận 298
 
-Hình 3.50. Màn hình thông báo, báo lỗi 294
+Hình 3.50. Màn hình thông báo, báo lỗi 299
 
-Hình 3.51. Màn hình thông báo, báo thành công và thông báo nổi 295
+Hình 3.51. Màn hình thông báo, báo thành công và thông báo nổi 300
 
-Hình 4.1. Lỗi nghiệp vụ được hiển thị trong hộp thoại thông báo khi xóa chuyến bay đã có vé 311
+Hình 4.1. Lỗi nghiệp vụ được hiển thị trong hộp thoại thông báo khi xóa chuyến bay đã có vé 316
 
-Hình 4.2. Trạng thái rỗng dùng chung khi tra cứu không có kết quả 312
+Hình 4.2. Trạng thái rỗng dùng chung khi tra cứu không có kết quả 317
 
-Hình 4.3. Màn hình chính của Nhân viên bán vé chỉ hiện các chức năng được phép 314
+Hình 4.3. Màn hình chính của Nhân viên bán vé chỉ hiện các chức năng được phép 319
 
-Hình 4.4. Nhân viên bán vé mở đường dẫn của Quản lý thì bị chặn 315
+Hình 4.4. Nhân viên bán vé mở đường dẫn của Quản lý thì bị chặn 320
 
-Hình 4.5. Hỏi xác nhận trước khi khóa tài khoản banve04 316
+Hình 4.5. Hỏi xác nhận trước khi khóa tài khoản banve04 321
 
-Hình 4.6. Tài khoản banve04 ở trạng thái Đã khóa sau khi khóa 317
+Hình 4.6. Tài khoản banve04 ở trạng thái Đã khóa sau khi khóa 322
 
-Hình 4.7. Thêm chuyến bay CB247 vi phạm thời gian bay tối thiểu của QĐ1 318
+Hình 4.7. Thêm chuyến bay CB247 vi phạm thời gian bay tối thiểu của QĐ1 323
 
-Hình 4.8. Thời gian dừng 25 phút tại DAD vi phạm QĐ1 319
+Hình 4.8. Thời gian dừng 25 phút tại DAD vi phạm QĐ1 324
 
-Hình 4.9. Chuyến bay CB246 sau khi thêm thành công, tra cứu theo BM4 320
+Hình 4.9. Chuyến bay CB246 sau khi thêm thành công, tra cứu theo BM4 325
 
-Hình 4.10. Kết quả nhập lịch chuyến bay từ tập tin Excel 321
+Hình 4.10. Kết quả nhập lịch chuyến bay từ tập tin Excel 326
 
-Hình 4.11. Nội dung tập tin Excel danh sách chuyến bay 322
+Hình 4.11. Nội dung tập tin Excel danh sách chuyến bay 327
 
-Hình 4.12. Hạng vé hết chỗ bị khóa trên màn hình bán vé 323
+Hình 4.12. Hạng vé hết chỗ bị khóa trên màn hình bán vé 328
 
-Hình 4.13. Không bán vé cho chuyến bay đã khởi hành 324
+Hình 4.13. Không bán vé cho chuyến bay đã khởi hành 329
 
-Hình 4.14. Hỏi xác nhận trước khi bán vé 324
+Hình 4.14. Hỏi xác nhận trước khi bán vé 329
 
-Hình 4.15. Bán vé thành công, hiện mã vé VE00002810 325
+Hình 4.15. Bán vé thành công, hiện mã vé VE00002810 330
 
-Hình 4.16. Vé VE00002810 ở tình trạng Đã hủy sau khi hủy vé 326
+Hình 4.16. Vé VE00002810 ở tình trạng Đã hủy sau khi hủy vé 331
 
-Hình 4.17. Không đặt được vé vì quá thời hạn đặt vé của QĐ3 327
+Hình 4.17. Không đặt được vé vì quá thời hạn đặt vé của QĐ3 332
 
-Hình 4.18. Đặt vé thành công, hiện mã phiếu và hạn thanh toán 327
+Hình 4.18. Đặt vé thành công, hiện mã phiếu và hạn thanh toán 332
 
-Hình 4.19. Phiếu PD00000287 ở tình trạng Đã hủy 328
+Hình 4.19. Phiếu PD00000287 ở tình trạng Đã hủy 333
 
-Hình 4.20. Hỏi xác nhận xóa hẳn các phiếu đã hủy trước ngày 13/10/2026 329
+Hình 4.20. Hỏi xác nhận xóa hẳn các phiếu đã hủy trước ngày 13/10/2026 334
 
-Hình 4.21. Báo cáo tháng 3/2025 không có chuyến bay nào 330
+Hình 4.21. Báo cáo tháng 3/2025 không có chuyến bay nào 335
 
-Hình 4.22. Trang đầu tập tin PDF báo cáo doanh thu tháng 11/2026 331
+Hình 4.22. Trang đầu tập tin PDF báo cáo doanh thu tháng 11/2026 336
 
-Hình 4.23. Nội dung tập tin Excel báo cáo doanh thu tháng 11/2026 332
+Hình 4.23. Nội dung tập tin Excel báo cáo doanh thu tháng 11/2026 337
 
-Hình 4.24. Đổi thời gian bay tối thiểu từ 30 phút thành 45 phút 333
+Hình 4.24. Đổi thời gian bay tối thiểu từ 30 phút thành 45 phút 338
 
-Hình 4.25. Tham số mới 45 phút có hiệu lực ngay ở màn hình thêm chuyến bay 334
+Hình 4.25. Tham số mới 45 phút có hiệu lực ngay ở màn hình thêm chuyến bay 339
 
-Hình 4.26. Không xóa được sân bay đang được chuyến bay sử dụng 335
+Hình 4.26. Không xóa được sân bay đang được chuyến bay sử dụng 340
 
-Hình 5.1. Chọn sân bay từ danh sách ở biểu mẫu thêm chuyến bay (TD01) 392
+Hình 5.1. Chọn sân bay từ danh sách ở biểu mẫu thêm chuyến bay (TD01) 397
 
-Hình 5.2. Giá tiền tự tính và thông báo lỗi tại ô ở màn hình bán vé (TD02) 393
+Hình 5.2. Giá tiền tự tính và thông báo lỗi tại ô ở màn hình bán vé (TD02) 398
 
-Hình 5.3. Tra cứu chuyến bay theo sân bay đi và sân bay đến sau 3 thao tác (TD04) 394
+Hình 5.3. Tra cứu chuyến bay theo sân bay đi và sân bay đến sau 3 thao tác (TD04) 399
 
-Hình 6.1. Màn hình Đăng nhập 419
+Hình 6.1. Màn hình Đăng nhập 424
 
-Hình 6.2. Thông báo sai tên đăng nhập hoặc mật khẩu 419
+Hình 6.2. Thông báo sai tên đăng nhập hoặc mật khẩu 424
 
-Hình 6.3. Thông báo tài khoản đã bị khóa 420
+Hình 6.3. Thông báo tài khoản đã bị khóa 425
 
-Hình 6.4. Phần đầu trang chính của Quản lý 421
+Hình 6.4. Phần đầu trang chính của Quản lý 426
 
-Hình 6.5. Trang chính của Nhân viên bán vé 422
+Hình 6.5. Trang chính của Nhân viên bán vé 427
 
-Hình 6.6. Chuông thông báo đang mở 423
+Hình 6.6. Chuông thông báo đang mở 428
 
-Hình 6.7. Trang Trợ giúp 424
+Hình 6.7. Trang Trợ giúp 429
 
-Hình 6.8. Ô chọn ngày đang mở bảng lịch 426
+Hình 6.8. Ô chọn ngày đang mở bảng lịch 431
 
-Hình 6.9. Màn hình Danh sách chuyến bay 428
+Hình 6.9. Màn hình Danh sách chuyến bay 433
 
-Hình 6.10. Màn hình xem chi tiết chuyến bay 429
+Hình 6.10. Màn hình xem chi tiết chuyến bay 434
 
-Hình 6.11. Màn hình Bán vé ở chế độ bán trực tiếp 430
+Hình 6.11. Màn hình Bán vé ở chế độ bán trực tiếp 435
 
-Hình 6.12. Bán vé từ phiếu đặt chỗ 432
+Hình 6.12. Bán vé từ phiếu đặt chỗ 437
 
-Hình 6.13. Màn hình Danh sách vé 433
+Hình 6.13. Màn hình Danh sách vé 438
 
-Hình 6.14. Màn hình Đặt vé 435
+Hình 6.14. Màn hình Đặt vé 440
 
-Hình 6.15. Màn hình Danh sách phiếu đặt chỗ 437
+Hình 6.15. Màn hình Danh sách phiếu đặt chỗ 442
 
-Hình 6.16. Màn hình Sửa phiếu đặt chỗ 438
+Hình 6.16. Màn hình Sửa phiếu đặt chỗ 443
 
-Hình 6.17. Màn hình Thêm chuyến bay 440
+Hình 6.17. Màn hình Thêm chuyến bay 445
 
-Hình 6.18. Ô Ngày giờ khởi hành đang mở bảng lịch và giờ 441
+Hình 6.18. Ô Ngày giờ khởi hành đang mở bảng lịch và giờ 446
 
-Hình 6.19. Màn hình Sửa chuyến bay 443
+Hình 6.19. Màn hình Sửa chuyến bay 448
 
-Hình 6.20. Báo cáo doanh thu tháng 445
+Hình 6.20. Báo cáo doanh thu tháng 450
 
-Hình 6.21. Báo cáo doanh thu năm 446
+Hình 6.21. Báo cáo doanh thu năm 451
 
-Hình 6.22. Màn hình Thay đổi quy định 447
+Hình 6.22. Màn hình Thay đổi quy định 452
 
-Hình 6.23. Hộp thoại Cập nhật quy định 448
+Hình 6.23. Hộp thoại Cập nhật quy định 453
 
-Hình 6.24. Hộp thoại Thêm sân bay 449
+Hình 6.24. Hộp thoại Thêm sân bay 454
 
-Hình 6.25. Hộp thoại Thêm hạng vé 450
+Hình 6.25. Hộp thoại Thêm hạng vé 455
 
-Hình 6.26. Màn hình Phân quyền 451
+Hình 6.26. Màn hình Phân quyền 456
 
-Hình 6.27. Hộp thoại Thêm tài khoản 452
+Hình 6.27. Hộp thoại Thêm tài khoản 457
 
-Hình 6.28. Hộp thoại Sửa tài khoản 453
+Hình 6.28. Hộp thoại Sửa tài khoản 458
 
-Hình 6.29. Thông báo đã xóa phiếu đặt chỗ đã hủy 454
+Hình 6.29. Thông báo đã xóa phiếu đặt chỗ đã hủy 459
 
-Hình 6.30. Hộp thoại hỏi xác nhận khi hủy thao tác bán vé đang nhập dở 455
+Hình 6.30. Hộp thoại hỏi xác nhận khi hủy thao tác bán vé đang nhập dở 460
 
-Hình 6.31. Hộp thoại báo lỗi khi xóa hạng vé đang được sử dụng 455
+Hình 6.31. Hộp thoại báo lỗi khi xóa hạng vé đang được sử dụng 460
 
 CHƯƠNG 1. TỔNG QUAN ĐỀ TÀI
 
@@ -2117,19 +2117,19 @@ Biểu đồ tuần tự của UC03 được tách thành bốn hình theo thao 
 
 Hình 2.16.1. Biểu đồ tuần tự của UC03.1 Thêm chuyến bay
 
-Hình 2.16.2 (UC03.2 Sửa chuyến bay và UC03.3 Xóa chuyến bay) bắt đầu từ màn hình danh sách MH_DanhSachChuyenBay, khung alt ngoài cùng tách hai thao tác. Ở nhánh Sửa, màn hình MH_ThemSuaChuyenBay được mở bằng moFormSua(maCB) với thông tin hiện tại của chuyến bay (thông điệp 2 đến 6). Khi Quản lý lưu, XL_ChuyenBay đọc tham số QĐ1 (9, 10), lấy số vé Đã bán và số phiếu Chờ thanh toán của từng hạng (11, 12) rồi kiểm tra hợp lệ (13): thông tin mới phải thỏa QĐ1, các điều kiện của lịch chuyến bay hợp lệ ở giả định 12 và số ghế mới của mỗi hạng không được nhỏ hơn số vé Đã bán cộng số phiếu Chờ thanh toán của hạng đó, để không vé hay phiếu nào bị mất chỗ. Khi hợp lệ, chuyến bay được cập nhật (14 đến 17); khi không hợp lệ, màn hình thông báo điều kiện bị vi phạm (18, 19). Ở nhánh Xóa, sau khi Quản lý chọn Xóa và xác nhận, XL_ChuyenBay kiểm tra chuyến bay đã có vé hoặc phiếu đặt chỗ chưa (22, 23); chỉ khi chưa có thì chuyến bay mới bị xóa (24 đến 27), ngược lại hệ thống không cho xóa theo yêu cầu an toàn AT02 (28, 29).
+Hình 2.16.2 (UC03.2 Sửa chuyến bay và UC03.3 Xóa chuyến bay) bắt đầu từ màn hình danh sách MH_DanhSachChuyenBay, khung alt ngoài cùng tách hai thao tác. Ở nhánh Sửa, màn hình MH_ThemSuaChuyenBay được mở bằng moFormSua(maCB) (thông điệp 1, 2); XL_ChuyenBay đọc thông tin chuyến bay cùng số ghế từng hạng, các sân bay trung gian và số vé Đã bán cộng số phiếu Chờ thanh toán của từng hạng (3 đến 8), rồi lấy danh sách SanBay, HangVe để nạp các ô chọn (9 đến 14). Khi Quản lý lưu, XL_ChuyenBay kiểm tra các điều kiện của lịch chuyến bay hợp lệ ở giả định 12 (18), đọc tham số QĐ1 (19, 20) và kiểm tra QĐ1 (21). Khung critical (vùng tới hạn) cho biết các thông điệp bên trong được thực hiện trong một giao dịch, không xen với thao tác của máy khác. Trong khung này, XL_ChuyenBay khóa số ghế của chuyến bay bằng layTheoChuyenBay(maCB, khoaDong) của GheTheoHang (22, 23), đếm lại số vé Đã bán cộng số phiếu Chờ thanh toán của từng hạng (24, 25) và chỉ cập nhật chuyến bay khi số ghế mới của mỗi hạng không nhỏ hơn số đó (26 đến 29), để không vé hay phiếu nào bị mất chỗ, kể cả khi một máy khác vừa bán vé cho chuyến bay này; ngược lại hệ thống báo lỗi số ghế (30, 31). Khi thông tin không hợp lệ hoặc vi phạm QĐ1, màn hình thông báo điều kiện bị vi phạm (32, 33). Ở nhánh Xóa, sau khi Quản lý chọn Xóa và xác nhận (34, 35), XL_ChuyenBay cũng khóa số ghế của chuyến bay (36, 37) để không có vé, phiếu mới được lập trong lúc xóa, rồi kiểm tra chuyến bay đã có vé hoặc phiếu đặt chỗ chưa (38, 39); chỉ khi chưa có thì chuyến bay mới bị xóa (40 đến 43), ngược lại hệ thống không cho xóa theo yêu cầu an toàn AT02 (44, 45).
 
 []
 
 Hình 2.16.2. Biểu đồ tuần tự của UC03.2, UC03.3 Sửa, xóa chuyến bay
 
-Trong Hình 2.16.3 (UC03.4 Tra cứu chuyến bay), với mỗi chuyến bay tìm được, XL_ChuyenBay gọi tinhSoGheDat(maCB) của ChuyenBay; ChuyenBay đếm số vé Đã bán và số phiếu đặt chỗ Chờ thanh toán của mình rồi trả về số ghế đặt (thông điệp 5 đến 10). Sau đó XL_ChuyenBay gọi tongSoGheTrong(maCB) để lấy số ghế trống của cả chuyến bay (11, 12), tức tổng số ghế trống của các hạng vé, đúng với cột Số ghế trống trên BM4; phương thức laySoGheTrong(maCB, maHang) chỉ dùng khi cần số ghế trống của một hạng vé, như lúc bán vé và đặt chỗ. Tổng số ghế đặt và số ghế trống luôn bằng tổng số ghế của chuyến bay, theo công thức (1.5) và (1.6) ở mục 1.3.2. Khung opt thể hiện thao tác xuất danh sách ra tập tin Excel, chỉ thực hiện khi người dùng chọn Xuất Excel (15 đến 18); khi không có chuyến bay thỏa tiêu chí, màn hình thông báo không tìm thấy chuyến bay (19, 20). Tác nhân trong hình là Nhân viên bán vé vì đây là thao tác duy nhất của UC03 mà Nhân viên bán vé được thực hiện; Quản lý thực hiện theo cùng trình tự.
+Trong Hình 2.16.3 (UC03.4 Tra cứu chuyến bay), XL_ChuyenBay chuyển tiêu chí cho ChuyenBay bằng timChuyenBay(tieuChi); ChuyenBay trả về danh sách chuyến bay kèm số ghế trống và số ghế đặt của từng chuyến bay (thông điệp 1 đến 4). Số ghế đặt là số vé Đã bán cộng số phiếu Chờ thanh toán, số ghế trống là tổng số ghế trống của các hạng vé, đúng với hai cột trên BM4 và công thức (1.5), (1.6) ở mục 1.3.2. Hai số này được đếm cho mọi chuyến bay trong cùng một lần tìm, không phải hỏi riêng từng chuyến bay, để danh sách dài vẫn có kết quả nhanh (HQ05). Khung opt thể hiện thao tác xuất danh sách ra tập tin Excel, chỉ thực hiện khi người dùng chọn Xuất Excel: XL_ChuyenBay tìm lại theo cùng tiêu chí và lấy thời điểm hiện tại từ Đồng hồ hệ thống làm ngày xuất ghi trên tập tin (7 đến 14). Khi không có chuyến bay thỏa tiêu chí, màn hình thông báo không tìm thấy chuyến bay (15, 16). Tác nhân trong hình là Nhân viên bán vé vì đây là thao tác duy nhất của UC03 mà Nhân viên bán vé được thực hiện; Quản lý thực hiện theo cùng trình tự.
 
 []
 
 Hình 2.16.3. Biểu đồ tuần tự của UC03.4 Tra cứu chuyến bay
 
-Hình 2.16.4 (nhập lịch chuyến bay từ tập tin Excel, luồng thay thế T1a của UC03.1) bắt đầu từ màn hình danh sách MH_DanhSachChuyenBay. Khi Quản lý chọn Nhập Excel và chọn tập tin, màn hình gọi nhapExcel(tapTin) của XL_ChuyenBay (1, 2). XL_ChuyenBay đọc tham số QĐ1 một lần (3, 4), sau đó trong khung loop xét từng dòng của tập tin: kiểm tra mã chuyến bay chưa tồn tại (5, 6) và tự kiểm tra QĐ1 cùng các điều kiện của lịch chuyến bay hợp lệ (7) giống hệt khi thêm từng chuyến bay. Khung opt cho biết chỉ dòng hợp lệ mới được lưu vào ChuyenBay (8, 9); dòng không hợp lệ được ghi lại kèm lý do. Cuối cùng XL_ChuyenBay trả về số chuyến bay đã thêm và danh sách dòng lỗi để màn hình thông báo cho Quản lý (10, 11).
+Hình 2.16.4 (nhập lịch chuyến bay từ tập tin Excel, luồng thay thế T1a của UC03.1) bắt đầu từ màn hình danh sách MH_DanhSachChuyenBay. Khi Quản lý chọn Nhập Excel và chọn tập tin, màn hình gọi nhapTuExcel(tapTin) của XL_ChuyenBay; XL_ChuyenBay đọc hai trang ChuyenBay, TrungGian của tập tin bằng docExcel(tapTin, tenTrang) (thông điệp 1 đến 3). Nếu tập tin đúng mẫu, XL_ChuyenBay lấy danh sách HangVe để biết mỗi cột số ghế ứng với hạng vé nào (4, 5), sau đó trong khung loop xét từng dòng của trang ChuyenBay. Dòng đọc được đủ thông tin được thêm bằng chính phương thức themChuyenBay của XL_ChuyenBay (6), nên được kiểm tra theo cùng các điều kiện như khi thêm từng chuyến bay ở Hình 2.16.1: các điều kiện của lịch chuyến bay hợp lệ (7), mã chuyến bay chưa tồn tại (8, 9) và QĐ1 với tham số vừa đọc từ ThamSoQuyDinh (10 đến 12); chỉ dòng hợp lệ mới được lưu vào ChuyenBay (13, 14). Dòng sai định dạng hoặc không hợp lệ được ghi lại kèm lý do. Cuối cùng XL_ChuyenBay trả về số chuyến bay đã thêm và danh sách dòng lỗi để màn hình thông báo cho Quản lý (15, 16); tập tin không đúng mẫu thì không dòng nào được nhập (17, 18).
 
 []
 
@@ -2145,7 +2145,7 @@ Hình 2.17. Biểu đồ cộng tác của UC03.1 Thêm chuyến bay
 
 2.4.3.5. Biểu đồ lớp phân tích
 
-Hình 2.18 có hai lớp biên: MH_DanhSachChuyenBay là màn hình danh sách chuyến bay với các ô tiêu chí tìm kiếm (sân bay đi, sân bay đến, khoảng ngày khởi hành, mã chuyến bay), bảng kết quả tblChuyenBay theo BM4 và các nút Thêm, Sửa, Xóa, Nhập Excel, Xuất Excel (bốn nút Thêm, Sửa, Xóa, Nhập Excel chỉ hiện với Quản lý); MH_ThemSuaChuyenBay là màn hình thêm, sửa chuyến bay, cho chọn sân bay đi, sân bay đến từ danh sách, nhập số ghế theo từng hạng vé và các sân bay trung gian trên hai bảng tblSoGheTheoHang, tblSanBayTrungGian. Lớp điều khiển XL_ChuyenBay gom xử lý của bốn use case con: lấy danh sách SanBay để hiển thị; đọc tham số QĐ1 từ ThamSoQuyDinh để kiểm tra khi thêm, sửa; thêm, sửa, xóa và tìm ChuyenBay; đọc lịch chuyến bay từ tập tin Excel bằng nhapExcel(tapTin) và kiểm tra từng dòng như khi thêm. XL_ChuyenBay lấy danh sách HangVe để nạp các hạng vé vào bảng tblSoGheTheoHang; số ghế theo hạng và các sân bay trung gian được lưu cùng ChuyenBay. Khi tra cứu, ChuyenBay đếm số vé Đã bán trong Ve và số phiếu Chờ thanh toán trong PhieuDatCho để tính số ghế đặt và số ghế trống.
+Hình 2.18 có hai lớp biên: MH_DanhSachChuyenBay là màn hình danh sách chuyến bay với các ô tiêu chí tìm kiếm (sân bay đi, sân bay đến, khoảng ngày khởi hành, mã chuyến bay), bảng kết quả tblChuyenBay theo BM4 và các nút Thêm, Sửa, Xóa, Nhập Excel, Xuất Excel (bốn nút Thêm, Sửa, Xóa, Nhập Excel chỉ hiện với Quản lý); MH_ThemSuaChuyenBay là màn hình thêm, sửa chuyến bay, cho chọn sân bay đi, sân bay đến từ danh sách, nhập số ghế theo từng hạng vé và các sân bay trung gian trên hai bảng tblSoGheTheoHang, tblSanBayTrungGian. Lớp điều khiển XL_ChuyenBay gom xử lý của bốn use case con: lấy danh sách SanBay, HangVe để hiển thị; đọc tham số QĐ1 từ ThamSoQuyDinh để kiểm tra khi thêm, sửa; thêm, sửa, xóa và tìm ChuyenBay; đọc lịch chuyến bay từ tập tin Excel bằng nhapTuExcel(tapTin) và kiểm tra từng dòng như khi thêm. Danh sách HangVe còn dùng để nạp các hạng vé vào bảng tblSoGheTheoHang và để biết các cột số ghế của tập tin Excel; số ghế theo hạng và các sân bay trung gian được lưu cùng ChuyenBay. Khi sửa, xóa chuyến bay, XL_ChuyenBay khóa số ghế của chuyến bay qua GheTheoHang trước khi đếm vé, phiếu. Khi tra cứu, ChuyenBay trả về số ghế đặt và số ghế trống của từng chuyến bay ngay trong kết quả tìm.
 
 []
 
@@ -2188,19 +2188,19 @@ Bảng 2.6. Đặc tả use case UC04 Quản lý bán vé
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                       | B1. Nhân viên chọn Bán vé; hệ thống mở màn hình bán vé; nhân viên chọn chuyến bay.                                                                                                                                                                                                                                                                                                                             |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
-|                       | B2. Hệ thống lấy thời điểm hiện tại từ Đồng hồ hệ thống, kiểm tra chuyến bay chưa khởi hành (giả định 13) và kiểm tra tổng số ghế trống của chuyến bay (tổng số ghế trống của các hạng vé).                                                                                                                                                                                                                    |
+|                       | B2. Hệ thống lấy thời điểm hiện tại từ Đồng hồ hệ thống, kiểm tra chuyến bay chưa khởi hành (giả định 13) và kiểm tra tổng số ghế trống của chuyến bay (tổng số ghế trống của các hạng vé); nếu được bán, hệ thống hiển thị số ghế trống và giá tiền của từng hạng vé.                                                                                                                                         |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                       | B3. Nhân viên nhập họ tên hành khách, CCCD/hộ chiếu, điện thoại.                                                                                                                                                                                                                                                                                                                                               |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                       | B4. Nhân viên chọn hạng vé.                                                                                                                                                                                                                                                                                                                                                                                    |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
-|                       | B5. Hệ thống kiểm tra số ghế trống của hạng vé trên chuyến bay theo công thức (1.2) (QĐ2).                                                                                                                                                                                                                                                                                                                     |
+|                       | B5. Hệ thống chỉ cho chọn hạng vé còn ghế trống trên chuyến bay theo công thức (1.2) (QĐ2).                                                                                                                                                                                                                                                                                                                    |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                       | B6. Hệ thống tính giá tiền theo công thức (1.1) và hiển thị.                                                                                                                                                                                                                                                                                                                                                   |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                       | B7. Nhân viên xác nhận bán vé.                                                                                                                                                                                                                                                                                                                                                                                 |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
-|                       | B8. Hệ thống lấy thời điểm hiện tại từ Đồng hồ hệ thống làm ngày bán, lưu thông tin hành khách (nếu hành khách chưa có trong hệ thống), lưu vé với mã vé mới, tình trạng Đã bán.                                                                                                                                                                                                                               |
+|                       | B8. Hệ thống kiểm tra lại chuyến bay chưa khởi hành và hạng vé còn ghế trống, lấy thời điểm hiện tại từ Đồng hồ hệ thống làm ngày bán, lưu thông tin hành khách (nếu hành khách chưa có trong hệ thống), lưu vé với mã vé mới, tình trạng Đã bán.                                                                                                                                                              |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                       | B9. Hệ thống thông báo bán vé thành công kèm mã vé.                                                                                                                                                                                                                                                                                                                                                            |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -2212,7 +2212,7 @@ Bảng 2.6. Đặc tả use case UC04 Quản lý bán vé
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                       | P3. Nhân viên chọn phiếu và xác nhận bán vé.                                                                                                                                                                                                                                                                                                                                                                   |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
-|                       | P4. Hệ thống lập vé từ thông tin của phiếu với ngày bán là thời điểm hiện tại, tình trạng Đã bán, lưu mã phiếu vào vé, chuyển phiếu sang tình trạng Đã hủy và thông báo bán vé thành công kèm mã vé.                                                                                                                                                                                                           |
+|                       | P4. Hệ thống kiểm tra lại phiếu còn hạn, lập vé từ thông tin của phiếu với ngày bán là thời điểm hiện tại, tình trạng Đã bán, lưu mã phiếu vào vé, chuyển phiếu sang tình trạng Đã hủy và thông báo bán vé thành công kèm mã vé; nếu phiếu vừa hết hạn hoặc vừa bị hủy thì hệ thống thông báo và quay lại bước P2.                                                                                             |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                       | Tra cứu vé (UC04.3):                                                                                                                                                                                                                                                                                                                                                                                           |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -2248,7 +2248,7 @@ Bảng 2.6. Đặc tả use case UC04 Quản lý bán vé
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                       | B3a, S2b. Họ tên để trống hoặc giấy tờ, điện thoại sai định dạng (căn cước không đủ 12 chữ số, hộ chiếu không gồm 6 đến 20 ký tự chữ in hoa và chữ số, điện thoại không gồm 8 đến 15 chữ số; giả định 9, 10): hệ thống thông báo ô bị sai và quay lại bước B3 (bước S2 khi sửa vé).                                                                                                                            |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
-|                       | B5a. Hạng vé đã hết chỗ: hệ thống thông báo hạng vé đã hết chỗ và quay lại bước B4 để nhân viên chọn hạng vé khác của chuyến bay.                                                                                                                                                                                                                                                                              |
+|                       | B5a. Hạng vé đã hết chỗ: nhân viên không chọn được hạng vé đó; nếu hạng vé vừa hết chỗ khi lưu ở bước B8, hệ thống thông báo hạng vé đã hết chỗ và quay lại bước B4 để nhân viên chọn hạng vé khác của chuyến bay.                                                                                                                                                                                             |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
 |                       | P2a. Không tìm thấy phiếu Chờ thanh toán còn hạn (CCCD/hộ chiếu hoặc mã phiếu đặt không đúng, phiếu đã quá 24 giờ, đã đến mốc hủy theo QĐ3 hoặc đã bị hủy): hệ thống thông báo không có phiếu đặt chỗ còn hạn và luồng kết thúc; nếu hành khách vẫn muốn mua, nhân viên thực hiện bán vé trực tiếp.                                                                                                            |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -2273,19 +2273,19 @@ Hình 2.19. Biểu đồ hoạt động của UC04 Quản lý bán vé
 
 2.4.4.3. Biểu đồ tuần tự
 
-Biểu đồ tuần tự của UC04 được tách thành ba hình: hai hình cho hai dạng bán vé, vì hai dạng có các đối tượng tham gia và trình tự xử lý khác nhau, và một hình cho các thao tác tra cứu, sửa, hủy vé. Trong Hình 2.20.1 (UC04.1 Bán vé trực tiếp), khung loop thứ nhất bao các bước chọn chuyến bay và kiểm tra: XL_BanVe lấy thời điểm hiện tại từ Đồng hồ hệ thống (thông điệp 3, 4) và ngày khởi hành của chuyến bay (5, 6) để kiểm tra chuyến bay chưa khởi hành (giả định 13), rồi lấy tổng số ghế trống bằng tongSoGheTrong(maCB) của ChuyenBay (7, 8). Khi chuyến bay đã khởi hành hoặc đã hết chỗ, tức tất cả các hạng vé đều hết ghế (khung opt), màn hình thông báo để nhân viên chọn chuyến bay khác (9, 10); vòng lặp kết thúc khi chọn được chuyến bay chưa khởi hành và còn chỗ. Khung loop thứ hai bao các bước chọn hạng vé và kiểm tra số ghế trống của hạng bằng laySoGheTrong(maCB, maHang) (12 đến 17), lặp lại cho đến khi chọn được hạng vé còn chỗ. Sau đó XL_BanVe lấy giá vé từ ChuyenBay và gọi tinhGiaTien(maHang, giaVe) của HangVe để tính giá tiền (18 đến 22). Khi nhân viên xác nhận, XL_BanVe tìm hoặc thêm HanhKhach theo loại và số giấy tờ (CCCD/hộ chiếu) (25, 26), lấy thời điểm hiện tại từ Đồng hồ hệ thống (27, 28) làm ngày bán và tạo Ve (29, 30); XL_BanVe chuyển mã vé do Ve cấp cho MH_BanVe để màn hình thông báo bán vé thành công kèm mã vé, nhân viên báo lại cho hành khách (31, 32).
+Biểu đồ tuần tự của UC04 được tách thành ba hình: hai hình cho hai dạng bán vé, vì hai dạng có các đối tượng tham gia và trình tự xử lý khác nhau, và một hình cho các thao tác tra cứu, sửa, hủy vé. Trong Hình 2.20.1 (UC04.1 Bán vé trực tiếp), khung loop thứ nhất bao các bước chọn chuyến bay: mỗi lần nhân viên chọn một chuyến bay, màn hình gửi một thông điệp layThongTinBan(maCB) (thông điệp 1, 2). XL_BanVe đọc thông tin chuyến bay, danh sách HangVe và các hạng vé chuyến bay có ghế trong GheTheoHang (3 đến 8), rồi trong khung loop bên trong lấy số ghế trống của từng hạng bằng laySoGheTrong(maCB, maHang) và tính giá tiền của hạng bằng tinhGiaTien(giaVe) của HangVe (9 đến 12). Sau đó XL_BanVe tự gọi kiemTraChuyenBay(maCB) (13): lấy ngày khởi hành của chuyến bay và thời điểm hiện tại từ Đồng hồ hệ thống để kiểm tra chuyến bay chưa khởi hành (giả định 13), rồi lấy tổng số ghế trống bằng tongSoGheTrong(maCB) (14 đến 19). Kết quả trả về màn hình gồm chuyến bay có được bán không kèm lý do, số ghế trống và giá tiền của từng hạng (20). Khi chuyến bay đã khởi hành hoặc đã hết chỗ, tức tất cả các hạng vé đều hết ghế, màn hình thông báo để nhân viên chọn chuyến bay khác (21); ngược lại màn hình hiển thị các hạng vé kèm số ghế trống, hạng đã hết chỗ không chọn được (22). Vì giá tiền và số ghế trống của mọi hạng đã có sẵn, khi nhân viên chọn hạng vé, màn hình hiển thị giá tiền mà không gửi thêm thông điệp nào (24, 25). Khi nhân viên chọn Lưu và xác nhận, màn hình gửi banVe(maCB, maHang, thongTinHanhKhach), không gửi giá tiền (26, 27). XL_BanVe tự kiểm tra thông tin hành khách theo giả định 9, 10 (28) và lấy hạng vé (29, 30). Khung critical cho thấy các bước còn lại chạy trong một giao dịch: XL_BanVe khóa số ghế của hạng và đếm lại số ghế trống bằng laySoGheTrong(maCB, maHang, khoaDong) (31, 32), đọc lại ngày khởi hành, giá vé (33, 34) và thời điểm hiện tại (35, 36). Chỉ khi chuyến bay vẫn chưa khởi hành và hạng vẫn còn chỗ, XL_BanVe mới tìm hoặc thêm HanhKhach theo loại và số giấy tờ (CCCD/hộ chiếu) (37, 38), tính giá tiền (39, 40) và tạo Ve với ngày bán là thời điểm hiện tại (41, 42); mã vé do Ve cấp được chuyển cho MH_BanVe để màn hình thông báo bán vé thành công, nhân viên báo lại cho hành khách (43, 44). Nếu trong lúc nhân viên nhập thông tin, chuyến bay vừa khởi hành hoặc một máy khác vừa bán hết chỗ của hạng, hệ thống không bán và thông báo lý do (45, 46); nhờ khóa số ghế, hai máy bán cùng lúc không thể bán quá số ghế của hạng.
 
 []
 
 Hình 2.20.1. Biểu đồ tuần tự của UC04.1 Bán vé trực tiếp
 
-Trong Hình 2.20.2 (UC04.2 Bán vé từ phiếu đặt chỗ), nhân viên chọn bán từ phiếu đặt chỗ và nhập CCCD/hộ chiếu hoặc mã phiếu đặt; tiêu chí này được chuyển cho XL_BanVe qua thông điệp timPhieuDat(tieuChi), trong đó tieuChi là loại và số giấy tờ hoặc mã phiếu đặt (thông điệp 1, 2). XL_BanVe lấy thời điểm hiện tại từ Đồng hồ hệ thống (3, 4) và thời gian hủy đặt vé từ ThamSoQuyDinh (5, 6) để chỉ tìm các phiếu còn hạn, vì phiếu có thể đã bị hủy, đã quá 24 giờ hoặc đã đến mốc hủy theo QĐ3 nhưng chưa đến lượt kiểm tra định kỳ của UC06. Khung alt thứ nhất tách hai cách tìm phiếu: theo CCCD/hộ chiếu thì XL_BanVe tìm HanhKhach theo loại và số giấy tờ trước rồi lấy các phiếu còn hạn của hành khách đó bằng layPhieuConHan(maHanhKhach, thoiDiemHienTai, thoiGianHuyDatVe) (7 đến 10); theo mã phiếu đặt thì tìm thẳng trong PhieuDatCho bằng timPhieuConHan(maPhieuDat, thoiDiemHienTai, thoiGianHuyDatVe) (11, 12). Khung alt thứ hai tách trường hợp có phiếu còn hạn và trường hợp không có phiếu (24, 25). Khi có phiếu, vé được tạo từ thông tin của phiếu, lưu kèm mã phiếu và ngày bán (16 đến 19), rồi phiếu bị hủy bằng huy(maPhieuDat) (20, 21); số ghế trống không đổi (giả định 5).
+Trong Hình 2.20.2 (UC04.2 Bán vé từ phiếu đặt chỗ), nhân viên chọn bán từ phiếu đặt chỗ và nhập CCCD/hộ chiếu hoặc mã phiếu đặt; màn hình gửi timPhieuDat(loaiGiayTo, soGiayTo, maPhieuDat) cho XL_BanVe (thông điệp 1, 2). XL_BanVe lấy thời điểm hiện tại từ Đồng hồ hệ thống (3, 4) và thời gian hủy đặt vé từ ThamSoQuyDinh (5, 6) để chỉ tìm các phiếu còn hạn, vì phiếu có thể đã bị hủy, đã quá 24 giờ hoặc đã đến mốc hủy theo QĐ3 nhưng chưa đến lượt kiểm tra định kỳ của UC06. Khung alt thứ nhất tách hai cách tìm phiếu: theo mã phiếu đặt thì tìm thẳng trong PhieuDatCho bằng timPhieuConHan(maPhieuDat, thoiDiemHienTai, thoiGianHuyDatVe) (7, 8); theo CCCD/hộ chiếu thì XL_BanVe tìm HanhKhach theo loại và số giấy tờ rồi lấy các phiếu còn hạn của hành khách đó bằng layPhieuConHan(maHanhKhach, thoiDiemHienTai, thoiGianHuyDatVe) (9 đến 12); nếu nhân viên không chọn loại giấy tờ thì việc tìm được lặp cho cả căn cước và hộ chiếu. Với mỗi phiếu tìm được, XL_BanVe đọc tuyến bay, ngày giờ khởi hành từ ChuyenBay và tính hạn thanh toán bằng hanThanhToan(ngayGioKhoiHanh, thoiGianHuyDatVe) của PhieuDatCho (13 đến 16) để màn hình hiển thị. Khung alt thứ hai tách trường hợp có phiếu còn hạn và trường hợp không có phiếu (39, 40). Khi nhân viên chọn một phiếu và xác nhận (19, 20), khung critical cho thấy XL_BanVe đọc lại phiếu có khóa bằng layThongTinPhieu(maPhieuDat, khoaDong) (21, 22), lấy ngày khởi hành, thời điểm hiện tại và thời gian hủy đặt vé (23 đến 28) rồi kiểm tra lại phiếu còn hạn bằng conHan (29, 30), vì phiếu có thể vừa bị UC06 tự hủy hoặc vừa được máy khác bán trong lúc nhân viên thao tác. Nếu phiếu còn hạn, vé được tạo từ thông tin của phiếu, lưu kèm mã phiếu và ngày bán (31, 32), rồi phiếu bị hủy bằng huy(maPhieuDat) (33, 34); số ghế trống không đổi (giả định 5). Nếu phiếu không còn hạn, màn hình thông báo và nạp lại danh sách phiếu (37, 38).
 
 []
 
 Hình 2.20.2. Biểu đồ tuần tự của UC04.2 Bán vé từ phiếu đặt chỗ
 
-Hình 2.20.3 (UC04.3 Tra cứu vé, UC04.4 Sửa vé, UC04.5 Hủy vé) bắt đầu bằng thao tác tìm vé trên màn hình danh sách MH_DanhSachVe (thông điệp 1 đến 6), vì nhân viên phải tìm và chọn vé trước khi sửa hoặc hủy. Khung alt tách hai thao tác. Khi sửa (7 đến 20), màn hình MH_BanVe được mở ở chế độ sửa; XL_BanVe đọc vé bằng layVe(maVe) để biết mã hành khách của vé (11, 12), rồi tìm HanhKhach theo loại và số giấy tờ mới (13, 14) để kiểm tra giấy tờ này chưa thuộc hành khách khác. Nếu giấy tờ chưa có ai dùng hoặc là của chính hành khách của vé, XL_BanVe cập nhật họ tên, loại và số giấy tờ, điện thoại trong HanhKhach (15 đến 18), các thông tin chuyến bay, hạng vé, giá tiền của vé không thay đổi; nếu đã thuộc hành khách khác, hệ thống không lưu và thông báo (19, 20). Khi hủy (21 đến 36), XL_BanVe đọc vé bằng layVe(maVe) để biết chuyến bay và hạng vé (23, 24), lấy thời điểm hiện tại từ Đồng hồ hệ thống (25, 26) và ngày khởi hành của chuyến bay (27, 28). Khung alt bên trong cho thấy vé chỉ được hủy khi chuyến bay chưa khởi hành: Ve chuyển sang tình trạng Đã hủy bằng huy(maVe) và XL_BanVe lấy lại số ghế trống của hạng vé bằng laySoGheTrong(maCB, maHang) (29 đến 34); khi chuyến bay đã khởi hành, hệ thống không cho hủy (35, 36).
+Hình 2.20.3 (UC04.3 Tra cứu vé, UC04.4 Sửa vé, UC04.5 Hủy vé) bắt đầu bằng thao tác tìm vé trên màn hình danh sách MH_DanhSachVe (thông điệp 1 đến 8), vì nhân viên phải tìm và chọn vé trước khi sửa hoặc hủy; khi không nhập tiêu chí nào, XL_BanVe lấy thời điểm hiện tại từ Đồng hồ hệ thống để tìm các vé bán trong ngày (khung opt, 3, 4). Khung alt tách hai thao tác. Khi sửa (9 đến 27), màn hình MH_BanVe được mở ở chế độ sửa và đọc vé theo mã vé bằng timVe (10 đến 14). Khi nhân viên lưu, XL_BanVe tự kiểm tra thông tin hành khách mới (17); trong khung critical, XL_BanVe đọc vé có khóa bằng layVe(maVe, khoaDong) để biết mã hành khách và tình trạng của vé (18, 19), rồi tìm HanhKhach theo loại và số giấy tờ mới (20, 21) để kiểm tra giấy tờ này chưa thuộc hành khách khác. Nếu vé vẫn Đã bán và giấy tờ chưa có ai dùng hoặc là của chính hành khách của vé, XL_BanVe cập nhật họ tên, loại và số giấy tờ, điện thoại trong HanhKhach (22 đến 25), các thông tin chuyến bay, hạng vé, giá tiền của vé không thay đổi; nếu vé vừa bị hủy ở máy khác hoặc giấy tờ đã thuộc hành khách khác, hệ thống không lưu và thông báo (26, 27). Khi hủy (28 đến 41), XL_BanVe đọc vé có khóa (30, 31), lấy ngày khởi hành của chuyến bay (32, 33) và thời điểm hiện tại từ Đồng hồ hệ thống (34, 35). Khung alt bên trong cho thấy vé chỉ được hủy khi vé còn Đã bán và chuyến bay chưa khởi hành: Ve chuyển sang tình trạng Đã hủy bằng huy(maVe) (36 đến 39); số ghế trống của hạng tự tăng vì được tính từ số vé Đã bán, không phải cập nhật riêng. Ngược lại hệ thống không cho hủy và thông báo lý do (40, 41).
 
 []
 
@@ -2293,13 +2293,13 @@ Hình 2.20.3. Biểu đồ tuần tự của UC04.3, UC04.4, UC04.5 Tra cứu, s
 
 2.4.4.4. Biểu đồ cộng tác
 
-Tương ứng với hai biểu đồ tuần tự bán vé, nhóm vẽ hai biểu đồ cộng tác: Hình 2.21.1 cho UC04.1 Bán vé trực tiếp và Hình 2.21.2 cho UC04.2 Bán vé từ phiếu đặt chỗ. Trong hai hình, lớp biên là MH_BanVe, lớp điều khiển là XL_BanVe, các lớp thực thể là ChuyenBay, HangVe, HanhKhach, Ve, PhieuDatCho và ThamSoQuyDinh. Các thao tác tra cứu, sửa và hủy vé có trình tự ngắn, đã thể hiện đủ ở Hình 2.20.3, nên không vẽ thêm biểu đồ cộng tác.
+Tương ứng với hai biểu đồ tuần tự bán vé, nhóm vẽ hai biểu đồ cộng tác: Hình 2.21.1 cho UC04.1 Bán vé trực tiếp và Hình 2.21.2 cho UC04.2 Bán vé từ phiếu đặt chỗ. Trong hai hình, lớp biên là MH_BanVe, lớp điều khiển là XL_BanVe, các lớp thực thể là ChuyenBay, GheTheoHang, HangVe, HanhKhach, Ve, PhieuDatCho và ThamSoQuyDinh. Các thao tác tra cứu, sửa và hủy vé có trình tự ngắn, đã thể hiện đủ ở Hình 2.20.3, nên không vẽ thêm biểu đồ cộng tác.
 
 Cách đánh số trên hai biểu đồ được giữ đúng như trong biểu đồ tuần tự tương ứng để tiện đối chiếu:
 
-Hình 2.21.1 đánh số từ 1 đến 32 theo Hình 2.20.1. Dấu * sau số thứ tự, từ 1* đến 10* và từ 12* đến 17*, đánh dấu các thông điệp nằm trong hai khung loop, được lặp lại cho đến khi chọn được chuyến bay chưa khởi hành, còn chỗ và hạng vé còn chỗ. Phần trong ngoặc vuông đứng trước thông điệp, ví dụ [hạng vé hết chỗ], là điều kiện để thông điệp đó được gửi. Liên kết giữa XL_BanVe và Đồng hồ hệ thống mang bốn thông điệp: 3* và 4* để kiểm tra chuyến bay chưa khởi hành, 27 và 28 để lấy ngày bán.
+Hình 2.21.1 đánh số từ 1 đến 46 theo Hình 2.20.1. Dấu * sau số thứ tự, từ 1* đến 22*, đánh dấu các thông điệp nằm trong khung loop chọn chuyến bay, được lặp lại cho đến khi chọn được chuyến bay chưa khởi hành và còn chỗ; trong đó các thông điệp 9* đến 12* còn được lặp cho từng hạng vé của chuyến bay. Phần trong ngoặc vuông đứng trước thông điệp, ví dụ [chuyến bay đã khởi hành hoặc hết chỗ], là điều kiện để thông điệp đó được gửi. Liên kết giữa XL_BanVe và ChuyenBay mang nhiều thông điệp nhất: đọc thông tin chuyến bay, số ghế trống của từng hạng, ngày khởi hành và tổng số ghế trống khi chọn chuyến bay, đếm lại số ghế trống có khóa và đọc lại chuyến bay khi bán (31 đến 34). Liên kết giữa XL_BanVe và Đồng hồ hệ thống mang bốn thông điệp: 16* và 17* để kiểm tra chuyến bay chưa khởi hành khi chọn, 35 và 36 để kiểm tra lại và lấy ngày bán.
 
-Hình 2.21.2 đánh số từ 1 đến 25 theo Hình 2.20.2. Các điều kiện [nhập CCCD/hộ chiếu], [nhập mã phiếu đặt], [có phiếu còn hạn] và [không có phiếu còn hạn] ứng với các nhánh của hai khung alt. Liên kết với Đồng hồ hệ thống mang hai thông điệp 3 và 4, liên kết với ThamSoQuyDinh mang hai thông điệp 5 và 6, dùng để kiểm tra phiếu còn hạn. Biểu đồ không có liên kết đến ChuyenBay và HangVe vì khi bán từ phiếu, hệ thống không kiểm tra lại chỗ trống và không tính lại giá tiền (giả định 5).
+Hình 2.21.2 đánh số từ 1 đến 40 theo Hình 2.20.2. Các điều kiện [nhập mã phiếu đặt], [nhập CCCD/hộ chiếu], [có phiếu còn hạn], [không có phiếu còn hạn], [phiếu còn hạn] và [phiếu không còn hạn] ứng với các nhánh của các khung alt; dấu * đánh dấu các thông điệp trong khung loop (9* đến 16*). Liên kết với Đồng hồ hệ thống và liên kết với ThamSoQuyDinh mỗi liên kết mang hai lượt thông điệp: khi tìm phiếu (3 đến 6) và khi kiểm tra lại phiếu còn hạn lúc bán (25 đến 28). Liên kết với ChuyenBay chỉ dùng để đọc ngày giờ khởi hành, phục vụ tính hạn thanh toán và kiểm tra phiếu còn hạn. Biểu đồ không có liên kết đến HangVe vì khi bán từ phiếu, hệ thống không tính lại giá tiền và không kiểm tra lại chỗ trống (giả định 5).
 
 []
 
@@ -2311,7 +2311,7 @@ Hình 2.21.2. Biểu đồ cộng tác của UC04.2 Bán vé từ phiếu đặt
 
 2.4.4.5. Biểu đồ lớp phân tích
 
-Hình 2.22 có hai lớp biên: MH_DanhSachVe là màn hình danh sách vé với các ô tìm kiếm (mã vé, CCCD/hộ chiếu, chuyến bay, khoảng ngày bán), bảng danh sách vé tblVe và các nút Bán vé, Sửa, Hủy vé; MH_BanVe là màn hình bán vé, dùng cho cả hai dạng bán vé (phần chọn chuyến bay, nhập hành khách, chọn hạng vé trên rdoHangVe cho bán trực tiếp; ô tìm phiếu, bảng danh sách phiếu tblPhieuDat và nút btnBanTuPhieu cho bán từ phiếu đặt chỗ) và cho thao tác sửa vé. Mũi tên từ MH_DanhSachVe tới MH_BanVe cho biết màn hình danh sách mở màn hình bán vé, sửa vé. XL_BanVe liên kết với sáu lớp thực thể: ChuyenBay (lấy ngày khởi hành để kiểm tra chuyến bay chưa khởi hành, kiểm tra số ghế trống, lấy giá vé, tính lại số ghế trống sau khi bán hoặc hủy vé), HangVe (tính giá tiền), HanhKhach (tìm, thêm, kiểm tra trùng giấy tờ hoặc cập nhật hành khách), Ve (lưu, tìm, lấy thông tin và hủy vé), PhieuDatCho (tìm phiếu còn hạn, lấy thông tin phiếu, hủy phiếu) và ThamSoQuyDinh (lấy thời gian hủy đặt vé để xét phiếu còn hạn theo QĐ3). Đồng hồ hệ thống là tác nhân nên không xuất hiện trong biểu đồ lớp.
+Hình 2.22 có hai lớp biên: MH_DanhSachVe là màn hình danh sách vé với các ô tìm kiếm (mã vé, CCCD/hộ chiếu, chuyến bay, khoảng ngày bán), bảng danh sách vé tblVe và các nút Bán vé, Sửa, Hủy vé; MH_BanVe là màn hình bán vé, dùng cho cả hai dạng bán vé (phần chọn chuyến bay, nhập hành khách, chọn hạng vé trên rdoHangVe cho bán trực tiếp; ô tìm phiếu, bảng danh sách phiếu tblPhieuDat và nút btnBanTuPhieu cho bán từ phiếu đặt chỗ) và cho thao tác sửa vé. Mũi tên từ MH_DanhSachVe tới MH_BanVe cho biết màn hình danh sách mở màn hình bán vé, sửa vé. XL_BanVe liên kết với bảy lớp thực thể: ChuyenBay (đọc thông tin, ngày khởi hành, số ghế trống của từng hạng và tổng số ghế trống; đếm lại số ghế trống có khóa khi bán), GheTheoHang (lấy các hạng vé chuyến bay có ghế), HangVe (lấy danh sách và từng hạng vé, tính giá tiền), HanhKhach (tìm, thêm, kiểm tra trùng giấy tờ hoặc cập nhật hành khách), Ve (lưu, tìm, đọc có khóa và hủy vé), PhieuDatCho (tìm phiếu còn hạn, đọc phiếu có khóa, kiểm tra phiếu còn hạn, tính hạn thanh toán, hủy phiếu) và ThamSoQuyDinh (lấy thời gian hủy đặt vé để xét phiếu còn hạn theo QĐ3). Đồng hồ hệ thống là tác nhân nên không xuất hiện trong biểu đồ lớp.
 
 []
 
@@ -2354,19 +2354,19 @@ Bảng 2.7. Đặc tả use case UC05 Quản lý đặt vé
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                       | L1. Nhân viên chọn Đặt vé; hệ thống mở màn hình đặt vé; nhân viên chọn chuyến bay.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                       | L2. Hệ thống lấy thời điểm hiện tại từ Đồng hồ hệ thống, kiểm tra thời hạn đặt vé theo QĐ3 (ngày khởi hành cách ngày hiện tại không ít hơn thời gian chậm nhất khi đặt vé, mặc định 1 ngày) và kiểm tra tổng số ghế trống của chuyến bay.                                                                                                                                                                                                                                                                                                                           |
+|                       | L2. Hệ thống lấy thời điểm hiện tại từ Đồng hồ hệ thống, kiểm tra thời hạn đặt vé theo QĐ3 (ngày khởi hành cách ngày hiện tại không ít hơn thời gian chậm nhất khi đặt vé, mặc định 1 ngày) và kiểm tra tổng số ghế trống của chuyến bay; nếu được đặt, hệ thống hiển thị số ghế trống, giá tiền của từng hạng vé và hạn thanh toán dự kiến.                                                                                                                                                                                                                        |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                       | L3. Nhân viên nhập họ tên hành khách, CCCD/hộ chiếu, điện thoại.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                       | L4. Nhân viên chọn hạng vé.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                       | L5. Hệ thống kiểm tra số ghế trống của hạng vé theo công thức (1.2).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                       | L5. Hệ thống chỉ cho chọn hạng vé còn ghế trống theo công thức (1.2).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                       | L6. Hệ thống tính giá tiền theo công thức (1.1) và hiển thị.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                       | L7. Nhân viên xác nhận đặt vé.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                       | L8. Hệ thống lưu thông tin hành khách (nếu hành khách chưa có trong hệ thống), lưu phiếu đặt chỗ với mã phiếu đặt mới, tình trạng Chờ thanh toán và thời điểm đặt là thời điểm hiện tại đã lấy ở bước L2.                                                                                                                                                                                                                                                                                                                                                           |
+|                       | L8. Hệ thống kiểm tra lại thời hạn đặt vé và hạng vé còn ghế trống, lưu thông tin hành khách (nếu hành khách chưa có trong hệ thống), lưu phiếu đặt chỗ với mã phiếu đặt mới, tình trạng Chờ thanh toán và thời điểm đặt là thời điểm hiện tại lúc lưu.                                                                                                                                                                                                                                                                                                             |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                       | L9. Hệ thống thông báo đặt vé thành công, mã phiếu đặt và hạn thanh toán, là thời điểm sớm hơn giữa 24 giờ kể từ lúc đặt và mốc hủy đặt vé theo QĐ3 (giả định 7).                                                                                                                                                                                                                                                                                                                                                                                                   |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -2412,7 +2412,7 @@ Bảng 2.7. Đặc tả use case UC05 Quản lý đặt vé
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                       | L3a, S2b. Họ tên để trống hoặc giấy tờ, điện thoại sai định dạng (căn cước không đủ 12 chữ số, hộ chiếu không gồm 6 đến 20 ký tự chữ in hoa và chữ số, điện thoại không gồm 8 đến 15 chữ số; giả định 9, 10): hệ thống thông báo ô bị sai và quay lại bước L3 (bước S2 khi sửa phiếu).                                                                                                                                                                                                                                                                              |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|                       | L5a. Hạng vé đã hết chỗ: hệ thống thông báo hạng vé đã hết chỗ và quay lại bước L4 để nhân viên chọn hạng vé khác của chuyến bay.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|                       | L5a. Hạng vé đã hết chỗ: nhân viên không chọn được hạng vé đó; nếu hạng vé vừa hết chỗ khi lưu ở bước L8, hệ thống thông báo hạng vé đã hết chỗ và quay lại bước L4 để nhân viên chọn hạng vé khác của chuyến bay.                                                                                                                                                                                                                                                                                                                                                  |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                       | K2a. Không có phiếu thỏa tiêu chí: hệ thống thông báo không tìm thấy phiếu đặt chỗ và quay lại bước 2.                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -2435,13 +2435,13 @@ Hình 2.23. Biểu đồ hoạt động của UC05 Quản lý đặt vé
 
 Biểu đồ tuần tự của UC05 được tách thành ba hình: Hình 2.24.1 cho thao tác lập phiếu đặt chỗ, Hình 2.24.2 cho các thao tác tra cứu, sửa, hủy phiếu của nhân viên và Hình 2.24.3 cho thao tác xóa phiếu đã hủy, chỉ dành cho Quản lý.
 
-Trong Hình 2.24.1, khung loop thứ nhất bao các bước chọn chuyến bay và kiểm tra: XL_DatVe lấy thời điểm hiện tại từ Đồng hồ hệ thống (thông điệp 3, 4), đọc hai tham số của QĐ3 từ ThamSoQuyDinh là thời gian chậm nhất khi đặt vé (5, 6) và thời gian hủy đặt vé (7, 8), lấy ngày khởi hành (9, 10) và tổng số ghế trống (11, 12) từ ChuyenBay để kiểm tra QĐ3 và còn chỗ; khi quá thời hạn đặt hoặc chuyến bay đã hết chỗ (khung opt), màn hình thông báo để nhân viên chọn chuyến bay khác (13, 14). Khung loop thứ hai bao các bước chọn hạng vé và kiểm tra chỗ trống bằng laySoGheTrong(maCB, maHang) của ChuyenBay (16 đến 21), lặp lại cho đến khi chọn được hạng vé còn chỗ. Giá tiền được tính bằng tinhGiaTien(maHang, giaVe) của HangVe (22 đến 26). Khi nhân viên xác nhận, XL_DatVe tìm hoặc thêm HanhKhach theo loại và số giấy tờ (29, 30), lưu phiếu với tình trạng Chờ thanh toán kèm thời điểm đặt (chính là thời điểm hiện tại đã lấy ở thông điệp 4) (31, 32). XL_DatVe chuyển mã phiếu đặt do PhieuDatCho cấp cùng hạn thanh toán cho MH_DatVe để màn hình thông báo cho nhân viên báo lại hành khách (33, 34); hạn thanh toán là thời điểm sớm hơn giữa 24 giờ kể từ lúc đặt và mốc hủy đặt vé theo QĐ3, được XL_DatVe tính từ thời điểm đặt, ngày khởi hành và thời gian hủy đặt vé đã đọc (giả định 7).
+Trong Hình 2.24.1, khung loop thứ nhất bao các bước chọn chuyến bay: mỗi lần nhân viên chọn một chuyến bay, màn hình gửi layThongTinDat(maCB) (thông điệp 1, 2). Giống khi bán vé, XL_DatVe đọc thông tin chuyến bay, danh sách hạng vé và các hạng chuyến bay có ghế (3 đến 8), lấy số ghế trống và giá tiền của từng hạng (9 đến 12), rồi tự gọi kiemTraChuyenBay(maCB) (13). Trong kiemTraChuyenBay, XL_DatVe lấy ngày khởi hành và thời điểm hiện tại (14 đến 17), kiểm tra thời hạn đặt vé bằng kiemTraThoiHanDatVe (18) với thời gian chậm nhất khi đặt vé của QĐ3 đọc từ ThamSoQuyDinh (19, 20), và lấy tổng số ghế trống (21, 22). Khi chuyến bay còn hạn đặt và còn chỗ (khung opt), XL_DatVe tính trước hạn thanh toán dự kiến nếu lập phiếu ngay lúc đó bằng hanThanhToan(ngayGioKhoiHanh, thoiGianHuyDatVe) của PhieuDatCho, với thời gian hủy đặt vé đọc từ ThamSoQuyDinh (23 đến 28). Khi quá thời hạn đặt hoặc chuyến bay đã hết chỗ, màn hình thông báo để nhân viên chọn chuyến bay khác (30); ngược lại màn hình hiển thị các hạng vé kèm số ghế trống và hạn thanh toán dự kiến (31). Chọn hạng vé không gửi thêm thông điệp (33, 34). Khi nhân viên chọn Lưu và xác nhận, màn hình gửi datVe(maCB, maHang, thongTinHanhKhach) (35, 36); sau khi kiểm tra thông tin hành khách và lấy hạng vé (37 đến 39), khung critical cho thấy XL_DatVe khóa số ghế của hạng và đếm lại số ghế trống (40, 41), đọc lại ngày khởi hành, giá vé và thời điểm hiện tại (42 đến 45) rồi kiểm tra lại thời hạn đặt vé (46 đến 48). Chỉ khi còn hạn đặt và hạng còn chỗ, XL_DatVe mới tìm hoặc thêm HanhKhach (49, 50), tính giá tiền (51, 52), lưu phiếu với tình trạng Chờ thanh toán và thời điểm đặt là thời điểm hiện tại (53, 54), rồi tính hạn thanh toán (55 đến 58); mã phiếu đặt và hạn thanh toán được chuyển cho MH_DatVe để màn hình thông báo cho nhân viên báo lại hành khách (59, 60). Hạn thanh toán là thời điểm sớm hơn giữa 24 giờ kể từ lúc đặt và mốc hủy đặt vé theo QĐ3 (giả định 7). Nếu trong lúc nhân viên nhập thông tin, chuyến bay vừa quá thời hạn đặt hoặc hạng vừa hết chỗ, hệ thống không lập phiếu và thông báo lý do (61, 62).
 
 []
 
 Hình 2.24.1. Biểu đồ tuần tự của UC05.1 Lập phiếu đặt chỗ
 
-Hình 2.24.2 (UC05.2 Tra cứu phiếu đặt chỗ, UC05.3 Sửa phiếu đặt chỗ, UC05.4 Hủy phiếu đặt chỗ) có cấu trúc giống Hình 2.20.3: nhân viên tìm phiếu trên màn hình danh sách MH_DanhSachPhieuDat (thông điệp 1 đến 6) rồi chọn Sửa hoặc Hủy phiếu trong khung alt. Khi sửa (7 đến 20), XL_DatVe đọc phiếu bằng layThongTinPhieu(maPhieuDat) để biết mã hành khách của phiếu (11, 12), rồi tìm HanhKhach theo loại và số giấy tờ mới (13, 14) để kiểm tra giấy tờ này chưa thuộc hành khách khác, sau đó chỉ cập nhật họ tên, loại và số giấy tờ, điện thoại trong HanhKhach (15 đến 18); nếu giấy tờ đã thuộc hành khách khác, hệ thống không lưu và thông báo (19, 20). Khi hủy (21 đến 30), XL_DatVe đọc phiếu bằng layThongTinPhieu(maPhieuDat) để biết chuyến bay và hạng vé (23, 24), PhieuDatCho chuyển sang tình trạng Đã hủy bằng huy(maPhieuDat) (25, 26) và XL_DatVe lấy lại số ghế trống của hạng vé bằng laySoGheTrong(maCB, maHang) (27, 28). Khác với hủy vé, hủy phiếu không cần kiểm tra ngày khởi hành, vì phiếu Chờ thanh toán của chuyến bay đến hạn hủy đã được UC06 tự động hủy; nhân viên chỉ chọn được các phiếu đang Chờ thanh toán.
+Hình 2.24.2 (UC05.2 Tra cứu phiếu đặt chỗ, UC05.3 Sửa phiếu đặt chỗ, UC05.4 Hủy phiếu đặt chỗ) có cấu trúc giống Hình 2.20.3: nhân viên tìm phiếu trên màn hình danh sách MH_DanhSachPhieuDat (thông điệp 1 đến 10); XL_DatVe đọc thời gian hủy đặt vé từ ThamSoQuyDinh và tính hạn thanh toán của từng phiếu bằng hanThanhToan để hiển thị cùng kết quả (5 đến 8). Khung alt tách hai thao tác Sửa và Hủy phiếu. Khi sửa (11 đến 29), màn hình MH_DatVe đọc phiếu theo mã bằng timPhieuDat (12 đến 16); khi nhân viên lưu, XL_DatVe kiểm tra thông tin hành khách mới (19), rồi trong khung critical đọc phiếu có khóa bằng layThongTinPhieu(maPhieuDat, khoaDong) để biết mã hành khách và tình trạng của phiếu (20, 21) và tìm HanhKhach theo loại và số giấy tờ mới (22, 23). Nếu phiếu vẫn Chờ thanh toán và giấy tờ chưa thuộc hành khách khác, XL_DatVe chỉ cập nhật họ tên, loại và số giấy tờ, điện thoại trong HanhKhach (24 đến 27); nếu phiếu vừa bị hủy hoặc giấy tờ đã thuộc hành khách khác, hệ thống không lưu và thông báo (28, 29). Khi hủy (30 đến 39), XL_DatVe đọc phiếu bằng layThongTinPhieu(maPhieuDat) để biết tình trạng (32, 33); nếu phiếu còn Chờ thanh toán, PhieuDatCho chuyển sang tình trạng Đã hủy bằng huy(maPhieuDat) (34 đến 37) và số ghế trống của hạng tự tăng vì được tính từ số phiếu Chờ thanh toán; nếu phiếu đã bị hủy trước đó, hệ thống thông báo (38, 39). Khác với hủy vé, hủy phiếu không cần kiểm tra ngày khởi hành, vì phiếu Chờ thanh toán của chuyến bay đến hạn hủy đã được UC06 tự động hủy; nhân viên chỉ chọn được các phiếu đang Chờ thanh toán.
 
 []
 
@@ -2455,7 +2455,7 @@ Hình 2.24.3. Biểu đồ tuần tự của UC05.5 Xóa phiếu đặt chỗ đ
 
 2.4.5.4. Biểu đồ cộng tác
 
-Trong các use case con của UC05, biểu đồ cộng tác được vẽ cho luồng tiêu biểu UC05.1 Lập phiếu đặt chỗ, đánh số theo Hình 2.24.1 (Hình 2.25). Dấu * sau số thứ tự, từ 1* đến 14* và từ 16* đến 21*, đánh dấu các thông điệp trong hai khung loop, được lặp lại cho đến khi chọn được chuyến bay còn hạn đặt và còn chỗ, và hạng vé còn chỗ. Khi kiểm tra chuyến bay, XL_DatVe lấy thời điểm hiện tại từ Đồng hồ hệ thống (3*, 4*), đọc thời gian chậm nhất khi đặt vé và thời gian hủy đặt vé từ ThamSoQuyDinh (5* đến 8*) rồi lấy ngày khởi hành và tổng số ghế trống từ ChuyenBay (9* đến 12*). Liên kết giữa XL_DatVe và ChuyenBay còn mang các thông điệp kiểm tra chỗ trống của hạng (18*, 19*) và lấy giá vé (22, 23); HangVe tính giá tiền (24, 25). Khi nhân viên xác nhận (27, 28), XL_DatVe tìm hoặc thêm HanhKhach theo loại và số giấy tờ (29, 30) và tạo PhieuDatCho ở tình trạng Chờ thanh toán (31, 32); thông điệp cuối báo cho nhân viên mã phiếu đặt và hạn thanh toán (33, 34). Các thao tác tra cứu, sửa, hủy phiếu và xóa phiếu đã hủy có trình tự ngắn, đã thể hiện ở Hình 2.24.2 và Hình 2.24.3, nên không vẽ thêm biểu đồ cộng tác.
+Trong các use case con của UC05, biểu đồ cộng tác được vẽ cho luồng tiêu biểu UC05.1 Lập phiếu đặt chỗ, đánh số từ 1 đến 62 theo Hình 2.24.1 (Hình 2.25). Dấu * sau số thứ tự, từ 1* đến 31*, đánh dấu các thông điệp trong khung loop chọn chuyến bay, được lặp lại cho đến khi chọn được chuyến bay còn hạn đặt và còn chỗ. Khi chọn chuyến bay, XL_DatVe đọc thông tin chuyến bay, số ghế trống của từng hạng, ngày khởi hành và tổng số ghế trống từ ChuyenBay, các hạng có ghế từ GheTheoHang, danh sách hạng vé và giá tiền từ HangVe, thời gian chậm nhất khi đặt vé và thời gian hủy đặt vé từ ThamSoQuyDinh, rồi tính hạn thanh toán dự kiến bằng PhieuDatCho (3* đến 28*). Khi nhân viên xác nhận (35, 36), XL_DatVe khóa và đếm lại số ghế trống của hạng (40, 41), kiểm tra lại thời hạn đặt vé (44 đến 48), tìm hoặc thêm HanhKhach (49, 50) và tạo PhieuDatCho ở tình trạng Chờ thanh toán (53, 54); thông điệp 60 báo cho nhân viên mã phiếu đặt và hạn thanh toán. Các thao tác tra cứu, sửa, hủy phiếu và xóa phiếu đã hủy có trình tự ngắn, đã thể hiện ở Hình 2.24.2 và Hình 2.24.3, nên không vẽ thêm biểu đồ cộng tác.
 
 []
 
@@ -2463,7 +2463,7 @@ Hình 2.25. Biểu đồ cộng tác của UC05.1 Lập phiếu đặt chỗ
 
 2.4.5.5. Biểu đồ lớp phân tích
 
-Hình 2.26 có hai lớp biên: MH_DanhSachPhieuDat là màn hình danh sách phiếu đặt chỗ với các ô tìm kiếm (mã phiếu đặt, CCCD/hộ chiếu, chuyến bay, tình trạng), bảng danh sách phiếu tblPhieuDat, các nút Đặt vé, Sửa, Hủy phiếu và ô chọn mốc thời gian dtpMocXoa cùng nút Xóa phiếu đã hủy (hai đối tượng này chỉ hiện với Quản lý); MH_DatVe là màn hình đặt vé, dùng cho cả thao tác lập phiếu và sửa phiếu. XL_DatVe đọc thời gian chậm nhất khi đặt vé và thời gian hủy đặt vé từ ThamSoQuyDinh, lấy ngày khởi hành và số ghế trống từ ChuyenBay để kiểm tra QĐ3 và còn chỗ, tính giá tiền bằng HangVe, tìm, thêm, kiểm tra trùng giấy tờ hoặc cập nhật HanhKhach, lưu, tìm, lấy thông tin và hủy PhieuDatCho, đếm và xóa hẳn các phiếu Đã hủy trước mốc thời gian bằng demPhieuDaHuy(mocThoiGian), xoaPhieuDaHuy(mocThoiGian); khi hủy phiếu, số ghế trống của hạng vé được ChuyenBay tính lại từ dữ liệu bằng laySoGheTrong(maCB, maHang).
+Hình 2.26 có hai lớp biên: MH_DanhSachPhieuDat là màn hình danh sách phiếu đặt chỗ với các ô tìm kiếm (mã phiếu đặt, CCCD/hộ chiếu, chuyến bay, tình trạng), bảng danh sách phiếu tblPhieuDat, các nút Đặt vé, Sửa, Hủy phiếu và ô chọn mốc thời gian dtpMocXoa cùng nút Xóa phiếu đã hủy (hai đối tượng này chỉ hiện với Quản lý); MH_DatVe là màn hình đặt vé, dùng cho cả thao tác lập phiếu và sửa phiếu. XL_DatVe đọc thời gian chậm nhất khi đặt vé và thời gian hủy đặt vé từ ThamSoQuyDinh; đọc thông tin, ngày khởi hành, số ghế trống của từng hạng và tổng số ghế trống từ ChuyenBay, đếm lại số ghế trống có khóa khi lập phiếu; lấy các hạng có ghế từ GheTheoHang; lấy hạng vé và tính giá tiền bằng HangVe; tìm, thêm, kiểm tra trùng giấy tờ hoặc cập nhật HanhKhach; lưu, tìm, đọc có khóa, tính hạn thanh toán và hủy PhieuDatCho; đếm và xóa hẳn các phiếu Đã hủy trước mốc thời gian bằng demPhieuDaHuy(mocThoiGian), xoaPhieuDaHuy(mocThoiGian). Số ghế trống không được lưu mà được tính từ số vé và số phiếu, nên khi hủy phiếu không phải cập nhật số ghế.
 
 []
 
@@ -2601,7 +2601,7 @@ Hình 2.31. Biểu đồ hoạt động của UC07 Lập báo cáo doanh thu
 
 2.4.7.3. Biểu đồ tuần tự
 
-Hình 2.32 dùng khung alt (alternative, lựa chọn) để tách luồng báo cáo tháng (thông điệp 1 đến 6) và luồng báo cáo năm (thông điệp 7 đến 12); bên trong mỗi luồng có khung loop (vòng lặp) để tổng hợp theo từng chuyến bay hoặc từng tháng. Ở báo cáo tháng, mọi chuyến bay khởi hành trong tháng đều được liệt kê; chuyến bay chưa có vé Đã bán vẫn có một dòng với số vé 0 và doanh thu 0. Khung alt thứ hai tách trường hợp có chuyến bay khởi hành trong kỳ, khi XL_BaoCao tính tỉ lệ theo công thức (1.3), (1.4) và trả dữ liệu báo cáo để hiển thị (13 đến 15), và trường hợp không có chuyến bay nào khởi hành trong kỳ, khi màn hình hiển thị báo cáo rỗng và thông báo không có dữ liệu (20, 21). Thao tác xuất báo cáo ra tập tin Excel hoặc PDF không bắt buộc nên được đặt trong khung opt (optional, tùy chọn) (16 đến 19).
+Hình 2.32 dùng khung alt (alternative, lựa chọn) để tách luồng báo cáo tháng (thông điệp 1 đến 8) và luồng báo cáo năm (thông điệp 9 đến 16). Ở báo cáo tháng, XL_BaoCao kiểm tra tháng, năm hợp lệ (3), lấy các chuyến bay khởi hành trong tháng (4, 5) rồi gọi tongHopVe(thang, nam) của Ve một lần để nhận số vé Đã bán và doanh thu của mọi chuyến bay khởi hành trong tháng (6, 7); mọi chuyến bay khởi hành trong tháng đều được liệt kê, chuyến bay chưa có vé Đã bán vẫn có một dòng với số vé 0 và doanh thu 0. Khung loop (vòng lặp) cho biết tỉ lệ được tính cho từng chuyến bay bằng tinhTiLe(doanhThu, tongDoanhThu) theo công thức (1.3) (8). Ở báo cáo năm, XL_BaoCao lặp qua từng tháng để đếm số chuyến bay khởi hành và tính doanh thu tháng (12 đến 15), rồi tính tỉ lệ của từng tháng theo công thức (1.4) (16). Khung alt thứ hai tách trường hợp có chuyến bay khởi hành trong kỳ, khi dữ liệu báo cáo được hiển thị (17, 18), và trường hợp không có chuyến bay nào khởi hành trong kỳ, khi màn hình hiển thị báo cáo rỗng và thông báo không có dữ liệu (29, 30). Thao tác xuất báo cáo ra tập tin Excel hoặc PDF không bắt buộc nên được đặt trong khung opt (optional, tùy chọn) (19 đến 28): màn hình gọi xuatTapTinThang(thang, nam, dinhDang) hoặc xuatTapTinNam(nam, dinhDang) tùy loại báo cáo; XL_BaoCao lập lại báo cáo, lấy thời điểm hiện tại từ Đồng hồ hệ thống làm ngày lập ghi trên tập tin (24, 25) rồi tạo tập tin theo định dạng đã chọn bằng xuatTapTin(bang, tieuDe, dongPhu, dinhDang) (26).
 
 []
 
@@ -2609,7 +2609,7 @@ Hình 2.32. Biểu đồ tuần tự của UC07 Lập báo cáo doanh thu
 
 2.4.7.4. Biểu đồ cộng tác
 
-Hình 2.33 là biểu đồ cộng tác tương ứng với Hình 2.32, vẽ cả hai loại báo cáo trên cùng một hình vì hai loại dùng chung các đối tượng. Điều kiện [báo cáo tháng] đứng trước các thông điệp 1, 2 và điều kiện [báo cáo năm] đứng trước các thông điệp 7, 8. Với báo cáo tháng, XL_BaoCao lấy các chuyến bay khởi hành trong tháng từ ChuyenBay (3, 4) rồi tổng hợp số vé Đã bán và doanh thu của từng chuyến bay từ Ve (5*, 6*). Với báo cáo năm, XL_BaoCao lặp qua từng tháng để đếm số chuyến bay (9*, 10*) và tính doanh thu tháng (11*, 12*); dấu * đánh dấu các thông điệp trong khung loop. Thông điệp tự gọi 13 tinhTiLe(dsDoanhThu) chỉ xảy ra khi [có chuyến bay khởi hành trong kỳ]; khi đó báo cáo được hiển thị (14, 15) và Quản lý có thể xuất tập tin Excel hoặc PDF (16 đến 19). Nếu [không có chuyến bay khởi hành trong kỳ], màn hình hiển thị báo cáo rỗng và thông báo không có dữ liệu (20, 21).
+Hình 2.33 là biểu đồ cộng tác tương ứng với Hình 2.32, vẽ cả hai loại báo cáo trên cùng một hình vì hai loại dùng chung các đối tượng. Điều kiện [báo cáo tháng (BM5.1)] đứng trước các thông điệp 1 đến 8 và điều kiện [báo cáo năm (BM5.2)] đứng trước các thông điệp 9 đến 16. Với báo cáo tháng, XL_BaoCao lấy các chuyến bay khởi hành trong tháng từ ChuyenBay (4, 5) và tổng hợp số vé Đã bán, doanh thu của mọi chuyến bay trong một lần gọi tongHopVe(thang, nam) của Ve (6, 7). Với báo cáo năm, XL_BaoCao lặp qua từng tháng để đếm số chuyến bay (12*, 13*) và tính doanh thu tháng (14*, 15*); dấu * đánh dấu các thông điệp trong khung loop. Thông điệp tự gọi tinhTiLe(doanhThu, tongDoanhThu) được gửi cho từng dòng của báo cáo (8*, 16*). Khi [có chuyến bay khởi hành trong kỳ], báo cáo được hiển thị (17, 18) và Quản lý có thể xuất tập tin Excel hoặc PDF (19 đến 28); liên kết giữa XL_BaoCao và Đồng hồ hệ thống mang hai thông điệp 24, 25 để lấy ngày lập ghi trên tập tin. Nếu [không có chuyến bay khởi hành trong kỳ], màn hình hiển thị báo cáo rỗng và thông báo không có dữ liệu (29, 30).
 
 []
 
@@ -2617,7 +2617,7 @@ Hình 2.33. Biểu đồ cộng tác của UC07 Lập báo cáo doanh thu
 
 2.4.7.5. Biểu đồ lớp phân tích
 
-Hình 2.34 gồm màn hình MH_BaoCao (chọn loại báo cáo trên tabLoaiBaoCao, chọn tháng, năm và xuất tập tin bằng hai nút btnXuatExcel, btnXuatPdf), lớp điều khiển XL_BaoCao và hai lớp thực thể ChuyenBay, Ve. XL_BaoCao lấy các chuyến bay khởi hành trong tháng hoặc đếm số chuyến bay theo từng tháng, tổng hợp số vé và doanh thu từ Ve, tính tỉ lệ theo công thức (1.3), (1.4) và xuất tập tin khi Quản lý chọn.
+Hình 2.34 gồm màn hình MH_BaoCao (chọn loại báo cáo trên tabLoaiBaoCao, chọn tháng, năm và xuất tập tin bằng hai nút btnXuatExcel, btnXuatPdf), lớp điều khiển XL_BaoCao và hai lớp thực thể ChuyenBay, Ve. XL_BaoCao kiểm tra kỳ báo cáo bằng kiemTraKy, lấy các chuyến bay khởi hành trong tháng hoặc đếm số chuyến bay theo từng tháng, tổng hợp số vé và doanh thu từ Ve bằng tongHopVe(thang, nam) hoặc tongDoanhThu(thang, nam), tính tỉ lệ của từng dòng bằng tinhTiLe(doanhThu, tongDoanhThu) theo công thức (1.3), (1.4) và xuất tập tin khi Quản lý chọn bằng xuatTapTinThang hoặc xuatTapTinNam; hai phương thức này cùng dùng xuatTapTin để tạo tập tin Excel hoặc PDF. Đồng hồ hệ thống là tác nhân nên không xuất hiện trong biểu đồ lớp.
 
 []
 
@@ -2753,7 +2753,7 @@ Hình 2.39 trình bày các lớp thực thể cùng thuộc tính, phương th�
 
 -   ChuyenBay liên kết với SanBay qua ba quan hệ: nơi đi của, nơi đến của và dừng tại. Quan hệ dừng tại là quan hệ nhiều nhiều, có lớp liên kết ChiTietTrungGian lưu thứ tự dừng, thời gian dừng và ghi chú của từng sân bay trung gian.
 
--   Số ghế không được lưu thành hai thuộc tính cố định cho hạng 1 và hạng 2 mà được đưa vào lớp liên kết GheTheoHang giữa ChuyenBay và HangVe, chỉ gồm số lượng ghế. Khi số hạng vé thay đổi theo QĐ6, chỉ cần thêm hoặc bớt đối tượng GheTheoHang, cấu trúc các lớp giữ nguyên.
+-   Số ghế không được lưu thành hai thuộc tính cố định cho hạng 1 và hạng 2 mà được đưa vào lớp liên kết GheTheoHang giữa ChuyenBay và HangVe, gồm số lượng ghế và phương thức layTheoChuyenBay(maCB, khoaDong) trả về số ghế từng hạng của một chuyến bay, có khóa khi sửa, xóa chuyến bay. Khi số hạng vé thay đổi theo QĐ6, chỉ cần thêm hoặc bớt đối tượng GheTheoHang, cấu trúc các lớp giữ nguyên.
 
 -   Giới hạn số sân bay trung gian tối đa không được thể hiện bằng bản số cố định trên biểu đồ mà được kiểm tra theo thuộc tính soSanBayTrungGianToiDa của ThamSoQuyDinh, nên thay đổi được theo QĐ6.
 
@@ -2761,7 +2761,7 @@ Ve và PhieuDatCho có quan hệ được lập từ với bản số 0..1 ở c
 
 Họ tên, CCCD/hộ chiếu (giả định 9) và điện thoại (giả định 10) trên BM2, BM3 là thông tin của hành khách nên chỉ được lưu trong HanhKhach. Ve và PhieuDatCho không lặp lại các thuộc tính này mà lấy qua quan hệ với HanhKhach, nhờ vậy một hành khách mua nhiều vé hoặc đặt nhiều chỗ không phải lưu lại CCCD/hộ chiếu nhiều lần. Khi tìm phiếu theo CCCD/hộ chiếu, hệ thống tìm HanhKhach trước rồi đi theo quan hệ với PhieuDatCho; khi tìm theo mã phiếu thì dùng thuộc tính maPhieuDat.
 
-ChuyenBay có hai phương thức lấy số ghế trống: laySoGheTrong(maHang) trả về số ghế trống của một hạng vé, dùng khi bán vé và đặt chỗ; tongSoGheTrong() trả về tổng số ghế trống của cả chuyến bay, dùng khi tra cứu theo BM4 và khi chọn chuyến bay lúc bán vé, đặt chỗ; hai phương thức này tính từ số lượng ghế, số vé và số phiếu nên lớp ChuyenBay không có thuộc tính số ghế trống. Giá tiền vé do HangVe tính bằng tinhGiaTien(giaVe), số ghế đặt do ChuyenBay tính bằng tinhSoGheDat(). PhieuDatCho có phương thức conHan(thoiDiem, thoiGianHuyDatVe) cho biết phiếu còn ở tình trạng Chờ thanh toán, chưa quá 24 giờ và chưa đến mốc hủy đặt vé theo QĐ3 tính đến thời điểm thoiDiem hay không, dùng khi bán vé từ phiếu đặt chỗ. Ve có thuộc tính tinhTrang (Đã bán, Đã hủy) và phương thức huy() chuyển vé sang Đã hủy khi hủy vé; vé đã hủy không được tính vào số ghế đặt và doanh thu. Phương thức của các lớp thực thể trên Hình 2.39 được tổng hợp từ các biểu đồ tuần tự ở mục 2.4.1 đến 2.4.8, nên mỗi thông điệp gửi đến một đối tượng thực thể đều có phương thức tương ứng trong lớp của đối tượng đó; ví dụ timTaiKhoan(tenDN), layNhomQuyen(), khoa() và moKhoa() của TaiKhoan lấy từ Hình 2.8 và Hình 2.12, timHanhKhach(loaiGiayTo, soGiayTo) của HanhKhach được dùng cả khi tìm phiếu theo giấy tờ (Hình 2.20.2) và khi kiểm tra giấy tờ mới chưa thuộc hành khách khác lúc sửa vé, sửa phiếu (Hình 2.20.3, Hình 2.24.2).
+ChuyenBay có hai phương thức lấy số ghế trống: laySoGheTrong(maHang, khoaDong) trả về số ghế trống của một hạng vé, dùng khi bán vé và đặt chỗ, tham số khoaDong cho biết có khóa số ghế của hạng trong lúc bán, đặt hay không; tongSoGheTrong() trả về tổng số ghế trống của cả chuyến bay, dùng khi chọn chuyến bay lúc bán vé, đặt chỗ; hai phương thức này tính từ số lượng ghế, số vé và số phiếu nên lớp ChuyenBay không có thuộc tính số ghế trống. Khi tra cứu theo BM4, timChuyenBay trả về số ghế trống và số ghế đặt của từng chuyến bay cùng kết quả tìm. Giá tiền vé do HangVe tính bằng tinhGiaTien(giaVe). PhieuDatCho có phương thức hanThanhToan(ngayGioKhoiHanh, thoiGianHuyDatVe) trả về hạn thanh toán của phiếu và conHan(thoiDiem, ngayGioKhoiHanh, thoiGianHuyDatVe) cho biết phiếu còn ở tình trạng Chờ thanh toán, chưa quá 24 giờ và chưa đến mốc hủy đặt vé theo QĐ3 tính đến thời điểm thoiDiem hay không, dùng khi bán vé từ phiếu đặt chỗ. Ve có thuộc tính tinhTrang (Đã bán, Đã hủy) và phương thức huy() chuyển vé sang Đã hủy khi hủy vé; vé đã hủy không được tính vào số ghế đặt và doanh thu. Phương thức của các lớp thực thể trên Hình 2.39 được tổng hợp từ các biểu đồ tuần tự ở mục 2.4.1 đến 2.4.8, nên mỗi thông điệp gửi đến một đối tượng thực thể đều có phương thức tương ứng trong lớp của đối tượng đó; ví dụ timTaiKhoan(tenDN), layNhomQuyen(), khoa() và moKhoa() của TaiKhoan lấy từ Hình 2.8 và Hình 2.12, timHanhKhach(loaiGiayTo, soGiayTo) của HanhKhach được dùng cả khi tìm phiếu theo giấy tờ (Hình 2.20.2) và khi kiểm tra giấy tờ mới chưa thuộc hành khách khác lúc sửa vé, sửa phiếu (Hình 2.20.3, Hình 2.24.2).
 
 []
 
@@ -2852,7 +2852,7 @@ Bảng 3.1. Mô tả các thành phần trong hệ thống
 
   3     Tầng truy xuất dữ liệu (DAL)         Mỗi bảng có một lớp DAL_ (DAL_SanBay, DAL_ChuyenBay, DAL_ChiTietTrungGian, DAL_HangVe, DAL_GheTheoHang, DAL_HanhKhach, DAL_Ve, DAL_PhieuDatCho, DAL_ThamSoQuyDinh, DAL_TaiKhoan) với các phương thức đọc, thêm, sửa, xóa bằng câu lệnh SQL có tham số. Lớp KetNoiCSDL quản lý chuỗi kết nối và giao dịch. Đây là nơi duy nhất chứa câu lệnh SQL.
 
-  4     Các lớp DTO                          Mười lớp ứng với mười lớp thực thể được lưu trong cơ sở dữ liệu ở Hình 2.39 (SanBay, ChuyenBay, ChiTietTrungGian, HangVe, GheTheoHang, HanhKhach, Ve, PhieuDatCho, ThamSoQuyDinh, TaiKhoan) và lớp TieuChiTim, mang thuộc tính để truyền dữ liệu giữa các tầng. Phương thức chỉ tính từ thuộc tính của chính đối tượng được giữ trong lớp DTO (tinhGiaTien của HangVe; conHan, hanThanhToan của PhieuDatCho); các phương thức đọc, đếm dữ liệu như laySoGheTrong, tongSoGheTrong, tinhSoGheDat được hiện thực trong lớp DAL_ tương ứng (mục 3.3.1.2).
+  4     Các lớp DTO                          Mười lớp ứng với mười lớp thực thể được lưu trong cơ sở dữ liệu ở Hình 2.39 (SanBay, ChuyenBay, ChiTietTrungGian, HangVe, GheTheoHang, HanhKhach, Ve, PhieuDatCho, ThamSoQuyDinh, TaiKhoan) và lớp TieuChiTim, mang thuộc tính để truyền dữ liệu giữa các tầng. Phương thức chỉ tính từ thuộc tính của chính đối tượng được giữ trong lớp DTO (tinhGiaTien của HangVe; conHan, hanThanhToan của PhieuDatCho); các phương thức đọc, đếm dữ liệu như laySoGheTrong, tongSoGheTrong được hiện thực trong lớp DAL_ tương ứng (mục 3.3.1.2).
 
   5     Cơ sở dữ liệu SQL Server             Cơ sở dữ liệu QLBANVECHUYENBAY gồm 10 bảng thiết kế ở mục 3.2, với các ràng buộc khóa chính, khóa ngoại, miền giá trị và các chỉ mục phục vụ tra cứu, báo cáo.
 
@@ -3655,7 +3655,7 @@ Hai lớp có thêm phương thức tính toán chỉ dựa trên thuộc tính 
 
 -   HangVe.tinhGiaTien(giaVe) trả về giá tiền vé theo công thức (1.1), bằng giá vé của chuyến bay nhân TiLeDonGia của hạng vé, làm tròn đến đồng.
 
--   PhieuDatCho.mocHuyDatVe(ngayGioKhoiHanh, thoiGianHuyDatVe) là phương thức tĩnh trả về mốc hủy đặt vé theo QĐ3, tức đầu ngày cách ngày khởi hành thoiGianHuyDatVe ngày (giả định 6). PhieuDatCho.hanThanhToan(ngayGioKhoiHanh, thoiGianHuyDatVe) trả về hạn thanh toán của phiếu, là thời điểm sớm hơn giữa ThoiDiemDat cộng 24 giờ và mốc hủy đặt vé (giả định 7). PhieuDatCho.conHan(thoiDiem, ngayGioKhoiHanh, thoiGianHuyDatVe) cho biết phiếu còn TinhTrang Chờ thanh toán và thoiDiem chưa đến hạn thanh toán. Lớp DTO không giữ liên kết tới ChuyenBay nên ngày giờ khởi hành được truyền vào làm tham số, đây là điểm khác duy nhất so với chữ ký conHan(thoiDiem, thoiGianHuyDatVe) ở Hình 2.39.
+-   PhieuDatCho.mocHuyDatVe(ngayGioKhoiHanh, thoiGianHuyDatVe) là phương thức tĩnh trả về mốc hủy đặt vé theo QĐ3, tức đầu ngày cách ngày khởi hành thoiGianHuyDatVe ngày (giả định 6). PhieuDatCho.hanThanhToan(ngayGioKhoiHanh, thoiGianHuyDatVe) trả về hạn thanh toán của phiếu, là thời điểm sớm hơn giữa ThoiDiemDat cộng 24 giờ và mốc hủy đặt vé (giả định 7). PhieuDatCho.conHan(thoiDiem, ngayGioKhoiHanh, thoiGianHuyDatVe) cho biết phiếu còn TinhTrang Chờ thanh toán và thoiDiem chưa đến hạn thanh toán. Lớp DTO không giữ liên kết tới ChuyenBay nên ngày giờ khởi hành được truyền vào làm tham số, đúng như chữ ký của conHan và hanThanhToan ở Hình 2.39.
 
 Ngoài mười lớp ứng với mười bảng, nhóm thêm ba lớp không ứng với bảng nào. Lớp TieuChiTim gom các tiêu chí tìm kiếm (tham số tieuChi của các thông điệp timKiem, timVe, timPhieuDat, timPhieu ở Chương 2): MaSanBayDi, MaSanBayDen, TuNgay, DenNgay (khoảng ngày khởi hành của chuyến bay hoặc ngày bán của vé), MaChuyenBay, MaSo (mã vé hoặc mã phiếu đặt), SoGiayTo, TinhTrang; thuộc tính nào để trống (null) thì không lọc theo thuộc tính đó. Lớp ThongTinBan là kết quả kiểm tra một chuyến bay khi nhân viên chọn chuyến bay để bán vé hoặc đặt vé: DuocPhep cho biết chuyến bay có bán, đặt được không, MaLoi, ThongBao là lý do khi không được, TongSoGheTrong, HanThanhToanDuKien (hạn thanh toán nếu lập phiếu ngay lúc đó) và danh sách Hang gồm các đối tượng ThongTinHang, mỗi đối tượng là số ghế trống theo công thức (1.2) và giá tiền theo công thức (1.1) của một hạng vé. Các lớp DTO được trình bày trong Hình 3.14, Hình 3.15 và tóm tắt trong Bảng 3.24.
 
@@ -3705,7 +3705,7 @@ Bảng 3.24. Danh sách các lớp DTO
 
 -   Phương thức chỉ tính từ thuộc tính của chính đối tượng được giữ lại trong lớp DTO (tinhGiaTien của HangVe, conHan và hanThanhToan của PhieuDatCho).
 
--   Thông điệp lớp điều khiển tự gửi cho chính nó (kiemTraTaiKhoan, kiemTraHopLe, kiemTraQuyDinhNhanLich, kiemTraTaiKhoanDangDangNhap, tinhTiLe) trở thành phương thức private của lớp XL_ tương ứng.
+-   Thông điệp lớp điều khiển tự gửi cho chính nó (kiemTraTaiKhoan, kiemTraHopLe, kiemTraQuyDinhNhanLich, kiemTraThoiHanDatVe, kiemTraTaiKhoanDangDangNhap, kiemTraKy, tinhTiLe, xuatTapTin) trở thành phương thức private của lớp XL_ tương ứng.
 
 Số ghế trống của một hạng vé, tổng số ghế trống và số ghế đặt của chuyến bay không được lưu (mục 3.2) nên ba phương thức laySoGheTrong, tongSoGheTrong, tinhSoGheDat của DAL_ChuyenBay tính lần lượt theo công thức (1.2), (1.6), (1.5) từ số lượng ghế (DAL_GheTheoHang.laySoLuongGhe), số vé Đã bán (DAL_Ve.demVeDaBan) và số phiếu Chờ thanh toán (DAL_PhieuDatCho.demPhieuChoThanhToan). Riêng khi tra cứu nhiều chuyến bay, DAL_ChuyenBay.timChuyenBay đếm số ghế đặt và số ghế trống của mọi chuyến bay ngay trong một câu truy vấn để danh sách dài vẫn trả kết quả nhanh (HQ05). Lớp XL_ dùng các kết quả này để kiểm tra còn chỗ; khi bán vé hoặc lập phiếu, việc đếm lại và ghi được thực hiện trong cùng một giao dịch có khóa dòng số ghế như đã nêu ở mục 3.1.1.
 
@@ -3713,43 +3713,45 @@ Các thông điệp có nhiều tham số là thuộc tính của cùng một đ
 
 Bảng 3.25. Nơi hiện thực các phương thức của lớp thực thể
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  STT   Lớp ở Chương 2                  Phương thức ở Chương 2 (thông điệp ở biểu đồ tuần tự hoặc phương thức ở Hình 2.39)                                                                                                                                                  Nơi hiện thực
-  ----- ------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------
-  1     SanBay                          layDanhSachSanBay, laySanBay, them, sua, xoa                                                                                                                                                                                        DAL_SanBay, cùng tên
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  STT   Lớp ở Chương 2       Phương thức ở Chương 2 (thông điệp ở biểu đồ tuần tự hoặc phương thức ở Hình 2.39)                                                                                                                                        Nơi hiện thực
+  ----- -------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------
+  1     SanBay               layDanhSachSanBay, laySanBay, them, sua, xoa                                                                                                                                                                              DAL_SanBay, cùng tên
 
-  2     ChuyenBay                       kiemTraMaChuyenBay, themChuyenBay, layThongTin, laySoGheDaBanVaDat, capNhat, kiemTraCoVeHoacPhieu, xoa, layGiaVe, layNgayKhoiHanh, layChuyenBayDenHanHuy, layChuyenBayKhoiHanhTrongThang, demChuyenBayKhoiHanh, kiemTraDangSuDung   DAL_ChuyenBay, cùng tên; kiemTraCoVeHoacPhieu hỏi DAL_Ve.kiemTraCoVe và DAL_PhieuDatCho.kiemTraCoPhieu
+  2     ChuyenBay            kiemTraMaChuyenBay, themChuyenBay, layThongTin, laySoGheDaBanVaDat, capNhat, kiemTraCoVeHoacPhieu, xoa, layNgayKhoiHanh, layChuyenBayDenHanHuy, layChuyenBayKhoiHanhTrongThang, demChuyenBayKhoiHanh, kiemTraDangSuDung   DAL_ChuyenBay, cùng tên; kiemTraCoVeHoacPhieu hỏi DAL_Ve.kiemTraCoVe và DAL_PhieuDatCho.kiemTraCoPhieu
 
-  3     ChuyenBay                       timChuyenBay                                                                                                                                                                                                                        DAL_ChuyenBay.timChuyenBay, trả về DataTable đã gộp số ghế đặt và số ghế trống
+  3     ChuyenBay            timChuyenBay                                                                                                                                                                                                              DAL_ChuyenBay.timChuyenBay, trả về DataTable đã gộp số ghế đặt và số ghế trống của từng chuyến bay
 
-  4     ChuyenBay                       laySoGheTrong, tongSoGheTrong, tinhSoGheDat                                                                                                                                                                                         DAL_ChuyenBay, đếm qua DAL_GheTheoHang, DAL_Ve, DAL_PhieuDatCho
+  4     ChuyenBay            laySoGheTrong(maCB, maHang, khoaDong), tongSoGheTrong                                                                                                                                                                     DAL_ChuyenBay, đếm qua DAL_GheTheoHang, DAL_Ve, DAL_PhieuDatCho; khoaDong là tham số có giá trị mặc định false
 
-  5     ChiTietTrungGian, GheTheoHang   Không có thông điệp riêng; được lưu, đọc cùng chuyến bay                                                                                                                                                                            DAL_ChiTietTrungGian, DAL_GheTheoHang, do DAL_ChuyenBay gọi
+  5     ChiTietTrungGian     Không có thông điệp riêng; được lưu, đọc cùng chuyến bay                                                                                                                                                                  DAL_ChiTietTrungGian, do DAL_ChuyenBay gọi
 
-  6     HangVe                          layDanhSachHangVe, them, suaTen, xoa                                                                                                                                                                                                DAL_HangVe, cùng tên
+  6     GheTheoHang          layTheoChuyenBay(maCB, khoaDong)                                                                                                                                                                                          DAL_GheTheoHang.layTheoChuyenBay; việc lưu số ghế cùng chuyến bay do DAL_ChuyenBay gọi DAL_GheTheoHang
 
-  7     HangVe                          tinhGiaTien(maHang, giaVe)                                                                                                                                                                                                          DTO HangVe: tinhGiaTien(giaVe), đối tượng lấy bằng DAL_HangVe.layHangVe(maHang)
+  7     HangVe               layDanhSachHangVe, layHangVe, them, suaTen, xoa                                                                                                                                                                           DAL_HangVe, cùng tên
 
-  8     HanhKhach                       timHanhKhach, timHoacThemHanhKhach, capNhat                                                                                                                                                                                         DAL_HanhKhach, cùng tên
+  8     HangVe               tinhGiaTien(giaVe)                                                                                                                                                                                                        DTO HangVe: tinhGiaTien(giaVe), gọi trên đối tượng hạng vé đã đọc bằng DAL_HangVe.layHangVe hoặc layDanhSachHangVe
 
-  9     Ve                              themVe, timVe, layVe, huy, demVeDaBan, tongDoanhThu                                                                                                                                                                                 DAL_Ve, cùng tên
+  9     HanhKhach            timHanhKhach, timHoacThemHanhKhach, capNhat                                                                                                                                                                               DAL_HanhKhach, cùng tên
 
-  10    Ve                              tongHopVe(maCB)                                                                                                                                                                                                                     DAL_Ve.tongHopVe(thang, nam), một lần gọi trả về số vé và doanh thu của mọi chuyến bay khởi hành trong tháng
+  10    Ve                   themVe, timVe, layVe, huy, demVeDaBan, tongDoanhThu                                                                                                                                                                       DAL_Ve, cùng tên
 
-  11    PhieuDatCho                     themPhieuDat, timPhieu, layPhieuConHan, timPhieuConHan, layThongTinPhieu, huy, layPhieuQuaHan, layPhieuChoThanhToan, demPhieuChoThanhToan, demPhieuDaHuy, xoaPhieuDaHuy                                                             DAL_PhieuDatCho, cùng tên
+  11    Ve                   tongHopVe(thang, nam)                                                                                                                                                                                                     DAL_Ve.tongHopVe(thang, nam), một lần gọi trả về số vé và doanh thu của mọi chuyến bay khởi hành trong tháng
 
-  12    PhieuDatCho                     conHan                                                                                                                                                                                                                              DTO PhieuDatCho: conHan, hanThanhToan, mocHuyDatVe
+  12    PhieuDatCho          themPhieuDat, timPhieu, layPhieuConHan, timPhieuConHan, layThongTinPhieu, huy, layPhieuQuaHan, layPhieuChoThanhToan, demPhieuChoThanhToan, demPhieuDaHuy, xoaPhieuDaHuy                                                   DAL_PhieuDatCho, cùng tên
 
-  13    ThamSoQuyDinh                   layThamSoQuyDinh, layThamSoNhanLich, layThoiGianDatVeChamNhat, layThoiGianHuyDatVe, thayDoiQuyDinh                                                                                                                                  DAL_ThamSoQuyDinh, cùng tên
+  13    PhieuDatCho          conHan, hanThanhToan                                                                                                                                                                                                      DTO PhieuDatCho: conHan, hanThanhToan, cùng phương thức tĩnh mocHuyDatVe dùng chung cho hai phương thức này
 
-  14    TaiKhoan                        timTaiKhoan, layNhomQuyen, layDanhSach, kiemTraTrungTen, them, capNhat, khoa, moKhoa                                                                                                                                                DAL_TaiKhoan, cùng tên
+  14    ThamSoQuyDinh        layThamSoQuyDinh, layThamSoNhanLich, layThoiGianDatVeChamNhat, layThoiGianHuyDatVe, thayDoiQuyDinh                                                                                                                        DAL_ThamSoQuyDinh, cùng tên
 
-  15    NhatKy (Hình 2.39)              ghiNhatKy                                                                                                                                                                                                                           TienIch_NhatKy.ghiNhatKy
+  15    TaiKhoan             timTaiKhoan, layNhomQuyen, layDanhSach, kiemTraTrungTen, them, capNhat, khoa, moKhoa                                                                                                                                      DAL_TaiKhoan, cùng tên
 
-  16    Đồng hồ hệ thống                layThoiDiemHienTai                                                                                                                                                                                                                  DongHoHeThong.layThoiDiemHienTai; ở UC06, vai trò tác nhân Đồng hồ hệ thống (gửi kichHoatDinhKy kèm thời điểm hiện tại) do lớp BoDinhThoi đảm nhận
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  16    NhatKy (Hình 2.39)   ghiNhatKy                                                                                                                                                                                                                 TienIch_NhatKy.ghiNhatKy
 
-Với các lớp điều khiển, phần lớn thông điệp ở Chương 2 trở thành phương thức cùng tên của lớp XL_. Các chỗ mã tách hoặc đổi tên gồm: thông điệp layThongTinChuyenBay(maCB) ở Hình 2.16.2 được hiện thực bằng XL_ChuyenBay.layThongTin; nhapExcel(tapTin) ở Hình 2.16.4 được hiện thực bằng ChuyenBayController.nhapExcel nhận tập tin và XL_ChuyenBay.nhapTuExcel đọc nội dung; xuatTapTin(duLieuBaoCao, dinhDang) ở Hình 2.32 được hiện thực bằng hai phương thức xuatTapTinThang, xuatTapTinNam của XL_BaoCao; tinhTiLe(dsDoanhThu) trở thành tinhTiLe(doanhThu, tongDoanhThu) gọi cho từng dòng. Hai thông điệp kiemTraChuyenBay(maCB), kiemTraChoTrong(maCB, maHang) ở Hình 2.20.1 và Hình 2.24.1 vẫn là phương thức của XL_BanVe, XL_DatVe với đúng chữ ký đó, nhưng màn hình gửi một yêu cầu duy nhất khi chọn chuyến bay và nhận kết quả của cả hai bước cho mọi hạng vé qua layThongTinBan (XL_BanVe) hoặc layThongTinDat (XL_DatVe).
+  17    Đồng hồ hệ thống     layThoiDiemHienTai                                                                                                                                                                                                        DongHoHeThong.layThoiDiemHienTai; ở UC06, vai trò tác nhân Đồng hồ hệ thống (gửi kichHoatDinhKy kèm thời điểm hiện tại) do lớp BoDinhThoi đảm nhận
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Với các lớp điều khiển, mỗi thông điệp gửi tới lớp điều khiển ở Chương 2 trở thành phương thức cùng tên của lớp XL_; các thông điệp kiemTraHopLe, kiemTraThoiHanDatVe, kiemTraKy, tinhTiLe và xuatTapTin mà lớp điều khiển tự gửi cho chính nó trở thành phương thức private, còn chuanHoaVaKiemTra và docExcel được đặt ở hai lớp hỗ trợ KiemTraHanhKhach và TienIch_TapTin vì nhiều lớp XL_ cùng dùng. Ngoài các phương thức xuất hiện ở Chương 2, XL_BanVe và XL_DatVe còn giữ phương thức kiemTraChoTrong(maCB, maHang) kiểm tra một hạng vé và tính giá tiền của hạng đó; màn hình không dùng phương thức này vì layThongTinBan, layThongTinDat đã trả về số ghế trống và giá tiền của mọi hạng, phương thức chỉ được dùng trong kiểm thử tầng xử lý.
 
 3.3.1.3. Các lớp truy xuất dữ liệu
 
@@ -3863,15 +3865,15 @@ Hình 3.17. Sơ đồ lớp chi tiết chức năng Phân quyền
 
 3.3.2.3. Chức năng Quản lý chuyến bay (UC03)
 
-Hình 3.18 là sơ đồ lớp chi tiết cho thêm, sửa, xóa chuyến bay và nhập lịch chuyến bay từ tập tin (UC03.1 đến UC03.3), ứng với Hình 2.16.1, 2.16.2 và 2.16.4. MH_DanhSachChuyenBay mở MH_ThemSuaChuyenBay; danh sách sân bay và hạng vé để chọn trong cboSanBayDi, cboSanBayDen và bảng tblSoGheTheoHang được lấy bằng phương thức layQuyDinh của QuyDinhController (Bảng 3.28), vì danh sách này dùng chung với UC08. Khi mở màn hình ở chế độ sửa, màn hình gọi ChuyenBayController.layChiTiet; phương thức này gọi XL_ChuyenBay.layThongTin (thông điệp layThongTinChuyenBay ở Hình 2.16.2) và taiDuLieu để ghép tên sân bay, hạng vé. XL_ChuyenBay.layThongTin gọi DAL_ChuyenBay.layThongTin; phương thức này đọc dòng của bảng CHUYENBAY rồi gọi DAL_GheTheoHang.layTheoChuyenBay và DAL_ChiTietTrungGian.layTheoChuyenBay, trả kèm số ghế từng hạng và các sân bay trung gian qua hai tham số out; XL_ChuyenBay trả thêm số vé Đã bán cộng số phiếu Chờ thanh toán của từng hạng (laySoGheDaBanVaDat) để màn hình hiển thị số ghế trống.
+Hình 3.18 là sơ đồ lớp chi tiết cho thêm, sửa, xóa chuyến bay và nhập lịch chuyến bay từ tập tin (UC03.1 đến UC03.3), ứng với Hình 2.16.1, 2.16.2 và 2.16.4. MH_DanhSachChuyenBay mở MH_ThemSuaChuyenBay; danh sách sân bay và hạng vé để chọn trong cboSanBayDi, cboSanBayDen và bảng tblSoGheTheoHang được lấy bằng phương thức layQuyDinh của QuyDinhController (Bảng 3.28), vì danh sách này dùng chung với UC08. Khi mở màn hình ở chế độ sửa, màn hình gọi ChuyenBayController.layChiTiet; phương thức này gọi XL_ChuyenBay.layThongTin và taiDuLieu (thông điệp 3 và 9 ở Hình 2.16.2) để ghép tên sân bay, hạng vé. XL_ChuyenBay.layThongTin gọi DAL_ChuyenBay.layThongTin; phương thức này đọc dòng của bảng CHUYENBAY rồi gọi DAL_GheTheoHang.layTheoChuyenBay và DAL_ChiTietTrungGian.layTheoChuyenBay, trả kèm số ghế từng hạng và các sân bay trung gian qua hai tham số out; XL_ChuyenBay trả thêm số vé Đã bán cộng số phiếu Chờ thanh toán của từng hạng (laySoGheDaBanVaDat) để màn hình hiển thị số ghế trống.
 
-Khi lưu chuyến bay mới, ChuyenBayController.them dùng phương thức private taoChuyenBay đổi thân yêu cầu thành một đối tượng ChuyenBay, danh sách GheTheoHang và danh sách ChiTietTrungGian rồi gọi XL_ChuyenBay.themChuyenBay. XL_ChuyenBay chuẩn hóa dữ liệu bằng chuanHoa, kiểm tra từng ô theo giả định 12 bằng kiemTraHopLe (ngày giờ khởi hành phải sau thời điểm hiện tại lấy từ DongHoHeThong), kiểm tra mã bằng kiemTraMaChuyenBay và kiểm tra QĐ1 bằng kiemTraQuyDinhNhanLich; phương thức này tự đọc tham số bằng layThamSoNhanLich ở mỗi lần kiểm tra (HQ07). Sau đó XL_ChuyenBay mở giao dịch và gọi DAL_ChuyenBay.themChuyenBay; phương thức này ghi CHUYENBAY rồi gọi DAL_GheTheoHang.them và DAL_ChiTietTrungGian.them. Khi sửa (ChuyenBayController.sua), suaChuyenBay kiểm tra như khi thêm trừ điều kiện ngày giờ khởi hành sau thời điểm hiện tại, rồi trong một giao dịch khóa các dòng số ghế bằng DAL_GheTheoHang.layTheoChuyenBay(maCB, khoaDong: true), so số ghế mới của từng hạng với laySoGheDaBanVaDat và gọi DAL_ChuyenBay.capNhat. Khi xóa (ChuyenBayController.xoa), xoaChuyenBay cũng khóa các dòng số ghế, chỉ gọi DAL_ChuyenBay.xoa nếu kiemTraCoVeHoacPhieu trả về false. Khi nhập lịch, màn hình tải tập tin mẫu bằng taiTapTinMau (XL_ChuyenBay.taoTapTinMau tạo tập tin nhiều trang tính bằng TienIch_TapTin.taoExcel) và gửi tập tin .xlsx lên ChuyenBayController.nhapExcel; thông điệp nhapExcel(tapTin) ở Hình 2.16.4 được hiện thực bằng phương thức này cùng XL_ChuyenBay.nhapTuExcel. XL_ChuyenBay.nhapTuExcel đọc hai trang tính ChuyenBay, TrungGian bằng TienIch_TapTin.docExcel, mỗi dòng được kiểm tra và lưu như khi thêm bằng themChuyenBay; kết quả trả về là số chuyến bay đã thêm và danh sách dòng lỗi kèm lý do.
+Khi lưu chuyến bay mới, ChuyenBayController.them dùng phương thức private taoChuyenBay đổi thân yêu cầu thành một đối tượng ChuyenBay, danh sách GheTheoHang và danh sách ChiTietTrungGian rồi gọi XL_ChuyenBay.themChuyenBay. XL_ChuyenBay chuẩn hóa dữ liệu bằng chuanHoa, kiểm tra từng ô theo giả định 12 bằng kiemTraHopLe (ngày giờ khởi hành phải sau thời điểm hiện tại lấy từ DongHoHeThong), kiểm tra mã bằng kiemTraMaChuyenBay và kiểm tra QĐ1 bằng kiemTraQuyDinhNhanLich; phương thức này tự đọc tham số bằng layThamSoNhanLich ở mỗi lần kiểm tra (HQ07). Sau đó XL_ChuyenBay mở giao dịch và gọi DAL_ChuyenBay.themChuyenBay; phương thức này ghi CHUYENBAY rồi gọi DAL_GheTheoHang.them và DAL_ChiTietTrungGian.them. Khi sửa (ChuyenBayController.sua), suaChuyenBay kiểm tra như khi thêm trừ điều kiện ngày giờ khởi hành sau thời điểm hiện tại, rồi trong một giao dịch khóa các dòng số ghế bằng DAL_GheTheoHang.layTheoChuyenBay(maCB, khoaDong: true), so số ghế mới của từng hạng với laySoGheDaBanVaDat và gọi DAL_ChuyenBay.capNhat. Khi xóa (ChuyenBayController.xoa), xoaChuyenBay cũng khóa các dòng số ghế, chỉ gọi DAL_ChuyenBay.xoa nếu kiemTraCoVeHoacPhieu trả về false. Khi nhập lịch, màn hình tải tập tin mẫu bằng taiTapTinMau (XL_ChuyenBay.taoTapTinMau tạo tập tin nhiều trang tính bằng TienIch_TapTin.taoExcel) và gửi tập tin .xlsx lên ChuyenBayController.nhapExcel; phương thức này gọi XL_ChuyenBay.nhapTuExcel (thông điệp nhapTuExcel(tapTin) ở Hình 2.16.4). XL_ChuyenBay.nhapTuExcel đọc hai trang tính ChuyenBay, TrungGian bằng TienIch_TapTin.docExcel, mỗi dòng được kiểm tra và lưu như khi thêm bằng themChuyenBay; kết quả trả về là số chuyến bay đã thêm và danh sách dòng lỗi kèm lý do.
 
 []
 
 Hình 3.18. Sơ đồ lớp chi tiết chức năng Quản lý chuyến bay: thêm, sửa, xóa chuyến bay
 
-Hình 3.19 là sơ đồ lớp chi tiết cho tra cứu chuyến bay (UC03.4), ứng với Hình 2.16.3. ChuyenBayController.traCuu nhận các tiêu chí do màn hình gửi lên, gói thành một đối tượng TieuChiTim bằng phương thức private taoTieuChi rồi gọi XL_ChuyenBay.timKiem. XL_ChuyenBay chuẩn hóa tiêu chí và gọi DAL_ChuyenBay.timChuyenBay; phương thức này trả về bảng kết quả theo các cột của BM4, trong đó số ghế đặt theo công thức (1.5) và số ghế trống theo công thức (1.6) được đếm ngay trong câu truy vấn. Như vậy hai thông điệp tinhSoGheDat, tongSoGheTrong ở Hình 2.16.3 vẫn là phương thức của DAL_ChuyenBay (Bảng 3.26) nhưng khi tra cứu nhiều chuyến bay thì không gọi riêng cho từng chuyến bay. Khi chọn btnXuatExcel, màn hình gửi lại các tiêu chí đang tra cứu tới ChuyenBayController.xuatExcel; XL_ChuyenBay.xuatExcel tra cứu lại theo tiêu chí và tạo nội dung tập tin bằng TienIch_TapTin.taoExcel kèm tiêu đề và ngày xuất lấy từ DongHoHeThong, để trình duyệt tải về. Thông điệp xuatExcel(danhSachChuyenBay) ở Hình 2.16.3 vì vậy nhận tiêu chí thay cho danh sách. Ngoài ra, phương thức sapKhoiHanh của ChuyenBayController (gọi XL_ChuyenBay.laySapKhoiHanh) cho MH_Chinh hiển thị các chuyến bay sắp khởi hành.
+Hình 3.19 là sơ đồ lớp chi tiết cho tra cứu chuyến bay (UC03.4), ứng với Hình 2.16.3. ChuyenBayController.traCuu nhận các tiêu chí do màn hình gửi lên, gói thành một đối tượng TieuChiTim bằng phương thức private taoTieuChi rồi gọi XL_ChuyenBay.timKiem. XL_ChuyenBay chuẩn hóa tiêu chí và gọi DAL_ChuyenBay.timChuyenBay; phương thức này trả về bảng kết quả theo các cột của BM4, trong đó số ghế đặt theo công thức (1.5) và số ghế trống theo công thức (1.6) được đếm ngay trong câu truy vấn. Đúng như Hình 2.16.3, số ghế của từng chuyến bay không được hỏi riêng cho từng chuyến bay. Khi chọn btnXuatExcel, màn hình gửi lại các tiêu chí đang tra cứu tới ChuyenBayController.xuatExcel; XL_ChuyenBay.xuatExcel tra cứu lại theo tiêu chí và tạo nội dung tập tin bằng TienIch_TapTin.taoExcel kèm tiêu đề và ngày xuất lấy từ DongHoHeThong, để trình duyệt tải về. Ngoài ra, phương thức sapKhoiHanh của ChuyenBayController (gọi XL_ChuyenBay.laySapKhoiHanh) cho MH_Chinh hiển thị các chuyến bay sắp khởi hành.
 
 []
 
@@ -3879,15 +3881,15 @@ Hình 3.19. Sơ đồ lớp chi tiết chức năng Quản lý chuyến bay: tra
 
 3.3.2.4. Chức năng Quản lý bán vé (UC04)
 
-Hình 3.20 là sơ đồ lớp chi tiết cho bán vé trực tiếp và bán vé từ phiếu đặt chỗ (UC04.1, UC04.2), ứng với Hình 2.20.1, 2.20.2. Khi nhân viên chọn chuyến bay, MH_BanVe gọi VeController.layThongTinBan; phương thức này gọi XL_BanVe.layThongTinBan. XL_BanVe đọc chuyến bay bằng DAL_ChuyenBay.layThongTin, tính số ghế trống (laySoGheTrong) và giá tiền (layHangVe rồi tinhGiaTien) của từng hạng vé bằng phương thức internal layThongTinHang, rồi gọi kiemTraChuyenBay: so ngày khởi hành (layNgayKhoiHanh) với thời điểm hiện tại của DongHoHeThong và kiểm tra tổng số ghế trống (tongSoGheTrong). Kết quả là một đối tượng ThongTinBan; MH_BanVe gọi hienThiGiaTien khi nhân viên chọn hạng vé trên rdoHangVe (hạng đã hết chỗ bị tắt) mà không phải gửi thêm yêu cầu. Phương thức kiemTraChoTrong vẫn có trong XL_BanVe với đúng chữ ký ở Hình 2.20.1 và cho cùng kết quả với phần của một hạng vé trong ThongTinBan. Để tạo danh sách hạng vé, layThongTinHang còn dùng DAL_HangVe.layDanhSachHangVe và DAL_GheTheoHang.layTheoChuyenBay; lớp DAL_GheTheoHang không được vẽ trên Hình 3.20 để hình gọn.
+Hình 3.20 là sơ đồ lớp chi tiết cho bán vé trực tiếp và bán vé từ phiếu đặt chỗ (UC04.1, UC04.2), ứng với Hình 2.20.1, 2.20.2. Khi nhân viên chọn chuyến bay, MH_BanVe gọi VeController.layThongTinBan; phương thức này gọi XL_BanVe.layThongTinBan. XL_BanVe đọc chuyến bay bằng DAL_ChuyenBay.layThongTin, tính số ghế trống (laySoGheTrong) và giá tiền (layHangVe rồi tinhGiaTien) của từng hạng vé bằng phương thức internal layThongTinHang, rồi gọi kiemTraChuyenBay: so ngày khởi hành (layNgayKhoiHanh) với thời điểm hiện tại của DongHoHeThong và kiểm tra tổng số ghế trống (tongSoGheTrong). Kết quả là một đối tượng ThongTinBan; MH_BanVe gọi hienThiGiaTien khi nhân viên chọn hạng vé trên rdoHangVe (hạng đã hết chỗ bị tắt) mà không phải gửi thêm yêu cầu. Phương thức kiemTraChoTrong vẫn có trong XL_BanVe, cho cùng kết quả với phần của một hạng vé trong ThongTinBan và chỉ được dùng trong kiểm thử (mục 3.3.1.2). Để tạo danh sách hạng vé, layThongTinHang còn dùng DAL_HangVe.layDanhSachHangVe và DAL_GheTheoHang.layTheoChuyenBay; lớp DAL_GheTheoHang không được vẽ trên Hình 3.20 để hình gọn.
 
-Khi nhân viên xác nhận bán vé, VeController.banVe đổi thông tin hành khách thành đối tượng HanhKhach rồi gọi XL_BanVe.banVe(maCB, maHang, hanhKhach). XL_BanVe kiểm tra thông tin hành khách bằng KiemTraHanhKhach.chuanHoaVaKiemTra (giả định 9, 10) và đọc hạng vé bằng layHangVe; trong một giao dịch, nó khóa dòng số ghế và đếm lại bằng laySoGheTrong(maCB, maHang, khoaDong: true), kiểm tra chuyến bay chưa khởi hành, gọi timHoacThemHanhKhach, tạo đối tượng Ve với GiaTien tính bằng tinhGiaTien, NgayBan là thời điểm hiện tại, TinhTrang Đã bán và gọi themVe. Khác với Hình 2.20.1, màn hình không gửi giá tiền: giá được tính lại trên máy chủ; việc khóa dòng số ghế và đếm lại trước khi ghi được thêm ở bước thiết kế để hai máy bán cùng lúc không bán quá số ghế. Khi bán từ phiếu, VeController.timPhieuConHan gọi timPhieuDat(loaiGiayTo, soGiayTo, maPhieuDat): XL_BanVe đọc thời gian hủy đặt vé bằng layThoiGianHuyDatVe, tìm theo mã phiếu (timPhieuConHan) hoặc theo giấy tờ (timHanhKhach rồi layPhieuConHan; loại giấy tờ để trống thì tìm ở cả Căn cước và Hộ chiếu), rồi ghép tên sân bay (DAL_SanBay.layDanhSachSanBay, không vẽ trên hình), tên hạng vé, họ tên (layHanhKhach) và hạn thanh toán thành bảng kết quả. Tham số tieuChi của thông điệp timPhieuDat ở Hình 2.20.2 vì vậy được tách thành ba tham số. VeController.banVeTuPhieu gọi banVeTuPhieu(maPhieuDat): trong một giao dịch, XL_BanVe đọc lại phiếu bằng layThongTinPhieu(maPhieuDat, khoaDong: true) và kiểm tra conHan của DTO vì phiếu có thể vừa bị UC06 hủy (bước kiểm tra lại này được thêm ở bước thiết kế để bảo đảm giả định 5; Hình 2.20.2 chỉ đọc phiếu bằng layThongTinPhieu), rồi thêm vé với GiaTien và MaPhieuDat của phiếu và gọi huy cho phiếu.
+Khi nhân viên xác nhận bán vé, VeController.banVe đổi thông tin hành khách thành đối tượng HanhKhach rồi gọi XL_BanVe.banVe(maCB, maHang, hanhKhach). XL_BanVe kiểm tra thông tin hành khách bằng KiemTraHanhKhach.chuanHoaVaKiemTra (giả định 9, 10) và đọc hạng vé bằng layHangVe; trong một giao dịch, nó khóa dòng số ghế và đếm lại bằng laySoGheTrong(maCB, maHang, khoaDong: true), kiểm tra chuyến bay chưa khởi hành, gọi timHoacThemHanhKhach, tạo đối tượng Ve với GiaTien tính bằng tinhGiaTien, NgayBan là thời điểm hiện tại, TinhTrang Đã bán và gọi themVe. Như Hình 2.20.1, màn hình không gửi giá tiền mà giá được tính lại trên máy chủ, và khung critical của hình được hiện thực bằng thucHienTrongGiaoDich của KetNoiCSDL cùng tham số khoaDong của laySoGheTrong, để hai máy bán cùng lúc không bán quá số ghế. Khi bán từ phiếu, VeController.timPhieuConHan gọi timPhieuDat(loaiGiayTo, soGiayTo, maPhieuDat): XL_BanVe đọc thời gian hủy đặt vé bằng layThoiGianHuyDatVe, tìm theo mã phiếu (timPhieuConHan) hoặc theo giấy tờ (timHanhKhach rồi layPhieuConHan; loại giấy tờ để trống thì tìm ở cả Căn cước và Hộ chiếu), rồi ghép tên sân bay (DAL_SanBay.layDanhSachSanBay, không vẽ trên hình), tên hạng vé, họ tên (layHanhKhach) và hạn thanh toán thành bảng kết quả. VeController.banVeTuPhieu gọi banVeTuPhieu(maPhieuDat): trong một giao dịch, XL_BanVe đọc lại phiếu bằng layThongTinPhieu(maPhieuDat, khoaDong: true) và kiểm tra conHan của DTO vì phiếu có thể vừa bị UC06 hủy (khung critical ở Hình 2.20.2), rồi thêm vé với GiaTien và MaPhieuDat của phiếu và gọi huy cho phiếu.
 
 []
 
 Hình 3.20. Sơ đồ lớp chi tiết chức năng Quản lý bán vé: bán vé
 
-Hình 3.21 là sơ đồ lớp chi tiết cho tra cứu, sửa và hủy vé (UC04.3 đến UC04.5), ứng với Hình 2.20.3. VeController.traCuu gói các tiêu chí thành đối tượng TieuChiTim và gọi XL_BanVe.timVe; khi không có tiêu chí nào, timVe lấy các vé bán trong ngày hiện tại. DAL_Ve.timVe trả về bảng kết quả gồm cả họ tên, giấy tờ của hành khách. VeController.suaHanhKhach gọi suaVe(maVe, thongTinMoi): XL_BanVe kiểm tra thông tin mới, rồi trong một giao dịch đọc vé bằng layVe để biết mã hành khách, dùng timHanhKhach(loaiGiayTo, soGiayTo) để kiểm tra giấy tờ mới chưa thuộc hành khách khác và gọi DAL_HanhKhach.capNhat. Năm tham số của thông điệp suaVe ở Hình 2.20.3 được gói thành mã vé và một đối tượng HanhKhach. VeController.huy gọi huyVe: trong một giao dịch, XL_BanVe đọc vé, chỉ cho hủy khi vé còn Đã bán và chuyến bay chưa khởi hành (so layNgayKhoiHanh với DongHoHeThong), rồi gọi DAL_Ve.huy để chuyển TinhTrang sang Đã hủy. Phương thức không trả về giá trị; màn hình thông báo hủy vé thành công rồi tải lại danh sách, số ghế trống mới được tính khi màn hình đọc lại, nên XL_BanVe không gọi laySoGheTrong sau khi hủy như thông điệp cuối ở Hình 2.20.3.
+Hình 3.21 là sơ đồ lớp chi tiết cho tra cứu, sửa và hủy vé (UC04.3 đến UC04.5), ứng với Hình 2.20.3. VeController.traCuu gói các tiêu chí thành đối tượng TieuChiTim và gọi XL_BanVe.timVe; khi không có tiêu chí nào, timVe lấy các vé bán trong ngày hiện tại. DAL_Ve.timVe trả về bảng kết quả gồm cả họ tên, giấy tờ của hành khách. VeController.suaHanhKhach gọi suaVe(maVe, thongTinMoi): XL_BanVe kiểm tra thông tin mới, rồi trong một giao dịch đọc vé bằng layVe để biết mã hành khách, dùng timHanhKhach(loaiGiayTo, soGiayTo) để kiểm tra giấy tờ mới chưa thuộc hành khách khác và gọi DAL_HanhKhach.capNhat. VeController.huy gọi huyVe: trong một giao dịch, XL_BanVe đọc vé, chỉ cho hủy khi vé còn Đã bán và chuyến bay chưa khởi hành (so layNgayKhoiHanh với DongHoHeThong), rồi gọi DAL_Ve.huy để chuyển TinhTrang sang Đã hủy. Phương thức không trả về giá trị; màn hình thông báo hủy vé thành công rồi tải lại danh sách, số ghế trống mới được tính khi màn hình đọc lại.
 
 []
 
@@ -3895,13 +3897,13 @@ Hình 3.21. Sơ đồ lớp chi tiết chức năng Quản lý bán vé: tra c�
 
 3.3.2.5. Chức năng Quản lý đặt vé (UC05)
 
-Hình 3.22 là sơ đồ lớp chi tiết cho lập phiếu đặt chỗ (UC05.1), ứng với Hình 2.24.1. Khi nhân viên chọn chuyến bay, MH_DatVe gọi VeController.layThongTinBan với mục đích đặt vé; phương thức này gọi XL_DatVe.layThongTinDat. Ngoài số ghế trống và giá tiền từng hạng như khi bán vé, layThongTinDat gọi kiemTraChuyenBay; phương thức này kiểm tra thời hạn đặt vé theo QĐ3 bằng phương thức private kiemTraThoiHanDatVe (đọc layThoiGianDatVeChamNhat) và tổng số ghế trống. layThongTinDat còn đọc layThoiGianHuyDatVe để tính hạn thanh toán dự kiến bằng hanThanhToan của DTO. PhieuDatController.datVe gọi XL_DatVe.datVe(maCB, maHang, hanhKhach, out hanThanhToan): trong một giao dịch, XL_DatVe khóa dòng số ghế và đếm lại bằng laySoGheTrong, kiểm tra lại thời hạn đặt vé, gọi timHoacThemHanhKhach, tạo đối tượng PhieuDatCho với ThoiDiemDat là thời điểm hiện tại, TinhTrang Chờ thanh toán, gọi themPhieuDat để nhận mã phiếu, rồi tính hạn thanh toán bằng hanThanhToan và trả về qua tham số out để màn hình thông báo. Tương tự UC04, giá tiền được tính lại trên máy chủ, việc khóa dòng số ghế và đếm lại trước khi ghi được thêm ở bước thiết kế, layThongTinDat dùng thêm DAL_GheTheoHang.layTheoChuyenBay (không vẽ trên hình), và thời gian hủy đặt vé được đọc trong layThongTinDat, datVe thay vì trong kiemTraChuyenBay như ở Hình 2.24.1.
+Hình 3.22 là sơ đồ lớp chi tiết cho lập phiếu đặt chỗ (UC05.1), ứng với Hình 2.24.1. Khi nhân viên chọn chuyến bay, MH_DatVe gọi VeController.layThongTinBan với mục đích đặt vé; phương thức này gọi XL_DatVe.layThongTinDat. Ngoài số ghế trống và giá tiền từng hạng như khi bán vé, layThongTinDat gọi kiemTraChuyenBay; phương thức này kiểm tra thời hạn đặt vé theo QĐ3 bằng phương thức private kiemTraThoiHanDatVe (đọc layThoiGianDatVeChamNhat) và tổng số ghế trống. layThongTinDat còn đọc layThoiGianHuyDatVe để tính hạn thanh toán dự kiến bằng hanThanhToan của DTO. PhieuDatController.datVe gọi XL_DatVe.datVe(maCB, maHang, hanhKhach, out hanThanhToan): trong một giao dịch, XL_DatVe khóa dòng số ghế và đếm lại bằng laySoGheTrong, kiểm tra lại thời hạn đặt vé, gọi timHoacThemHanhKhach, tạo đối tượng PhieuDatCho với ThoiDiemDat là thời điểm hiện tại, TinhTrang Chờ thanh toán, gọi themPhieuDat để nhận mã phiếu, rồi tính hạn thanh toán bằng hanThanhToan và trả về qua tham số out để màn hình thông báo. Như Hình 2.24.1, giá tiền được tính lại trên máy chủ, việc khóa dòng số ghế và đếm lại trước khi ghi chạy trong một giao dịch (khung critical của hình), và thời gian hủy đặt vé được đọc trong layThongTinDat, datVe để tính hạn thanh toán; layThongTinDat dùng thêm DAL_GheTheoHang.layTheoChuyenBay (không vẽ trên hình).
 
 []
 
 Hình 3.22. Sơ đồ lớp chi tiết chức năng Quản lý đặt vé: lập phiếu đặt chỗ
 
-Hình 3.23 là sơ đồ lớp chi tiết cho tra cứu, sửa, hủy phiếu và xóa phiếu đã hủy (UC05.2 đến UC05.5), ứng với Hình 2.24.2, 2.24.3. PhieuDatController.traCuu gói tiêu chí thành TieuChiTim và gọi XL_DatVe.timPhieuDat; sau khi DAL_PhieuDatCho.timPhieu trả về bảng kết quả, phương thức private themCotHanThanhToan thêm cột hạn thanh toán của từng phiếu (đọc layThoiGianHuyDatVe). Sửa và hủy phiếu làm tương tự như với vé: suaPhieuDat đọc phiếu bằng layThongTinPhieu để biết hành khách và chỉ sửa phiếu còn Chờ thanh toán; huyPhieuDat gọi huy, nếu huy trả về 0 thì phiếu đã bị hủy trước đó. Như ở UC04, XL_DatVe không gọi laySoGheTrong sau khi hủy phiếu. Với thao tác xóa phiếu đã hủy chỉ dành cho Quản lý, PhieuDatController.demDaHuy gọi demPhieuDaHuy(mocThoiGian) để biết số phiếu sẽ bị xóa và màn hình hỏi xác nhận; sau khi Quản lý đồng ý, PhieuDatController.xoaDaHuy gọi xoaPhieuDaHuy(mocThoiGian) để xóa và trả về số phiếu đã xóa. Ngoài ra, phương thức sapHetHan của PhieuDatController (gọi XL_DatVe.laySapHetHan, đọc bằng DAL_PhieuDatCho.timPhieuSapHetHan) cho MH_Chinh hiển thị các phiếu sắp hết hạn thanh toán.
+Hình 3.23 là sơ đồ lớp chi tiết cho tra cứu, sửa, hủy phiếu và xóa phiếu đã hủy (UC05.2 đến UC05.5), ứng với Hình 2.24.2, 2.24.3. PhieuDatController.traCuu gói tiêu chí thành TieuChiTim và gọi XL_DatVe.timPhieuDat; sau khi DAL_PhieuDatCho.timPhieu trả về bảng kết quả, phương thức private themCotHanThanhToan thêm cột hạn thanh toán của từng phiếu (đọc layThoiGianHuyDatVe). Sửa và hủy phiếu làm tương tự như với vé: suaPhieuDat đọc phiếu bằng layThongTinPhieu để biết hành khách và chỉ sửa phiếu còn Chờ thanh toán; huyPhieuDat gọi huy, nếu huy trả về 0 thì phiếu đã bị hủy trước đó. Với thao tác xóa phiếu đã hủy chỉ dành cho Quản lý, PhieuDatController.demDaHuy gọi demPhieuDaHuy(mocThoiGian) để biết số phiếu sẽ bị xóa và màn hình hỏi xác nhận; sau khi Quản lý đồng ý, PhieuDatController.xoaDaHuy gọi xoaPhieuDaHuy(mocThoiGian) để xóa và trả về số phiếu đã xóa. Ngoài ra, phương thức sapHetHan của PhieuDatController (gọi XL_DatVe.laySapHetHan, đọc bằng DAL_PhieuDatCho.timPhieuSapHetHan) cho MH_Chinh hiển thị các phiếu sắp hết hạn thanh toán.
 
 []
 
@@ -3917,7 +3919,7 @@ Hình 3.24. Sơ đồ lớp chi tiết chức năng Tự động hủy phiếu �
 
 3.3.2.7. Chức năng Lập báo cáo doanh thu (UC07)
 
-Hình 3.25 là sơ đồ lớp chi tiết của chức năng Lập báo cáo doanh thu, ứng với Hình 2.32. Với báo cáo tháng, BaoCaoController.baoCaoThang kiểm tra đã chọn tháng, năm rồi gọi XL_BaoCao.lapBaoCaoThang. XL_BaoCao lấy các chuyến bay khởi hành trong tháng bằng layChuyenBayKhoiHanhTrongThang và gọi DAL_Ve.tongHopVe(thang, nam) một lần để nhận số vé Đã bán và doanh thu của mọi chuyến bay trong tháng; thông điệp tongHopVe(maCB) gửi cho từng chuyến bay ở Hình 2.32 vì vậy được gom theo tháng. Chuyến bay chưa có vé được ghi 0; tỉ lệ của từng dòng được tính bằng phương thức private tinhTiLe(doanhThu, tongDoanhThu) theo công thức (1.3), tổng doanh thu bằng 0 thì mọi tỉ lệ là 0%. Tổng số vé và tổng doanh thu được trả thêm qua hai tham số out. Với báo cáo năm, baoCaoNam gọi lapBaoCaoNam; phương thức này gọi demChuyenBayKhoiHanh và tongDoanhThu cho từng tháng rồi tính tỉ lệ theo công thức (1.4). Khi xuất tập tin, xuatBaoCaoThang, xuatBaoCaoNam của BaoCaoController gọi xuatTapTinThang, xuatTapTinNam của XL_BaoCao (thông điệp xuatTapTin ở Hình 2.32); hai phương thức này lập lại báo cáo, thêm tiêu đề, kỳ báo cáo và ngày lập lấy từ DongHoHeThong, rồi gọi phương thức private xuatTapTin để chọn TienIch_TapTin.taoExcel hoặc taoPdf theo nút người dùng chọn (btnXuatExcel hoặc btnXuatPdf).
+Hình 3.25 là sơ đồ lớp chi tiết của chức năng Lập báo cáo doanh thu, ứng với Hình 2.32. Với báo cáo tháng, BaoCaoController.baoCaoThang kiểm tra đã chọn tháng, năm rồi gọi XL_BaoCao.lapBaoCaoThang. XL_BaoCao lấy các chuyến bay khởi hành trong tháng bằng layChuyenBayKhoiHanhTrongThang và gọi DAL_Ve.tongHopVe(thang, nam) một lần để nhận số vé Đã bán và doanh thu của mọi chuyến bay trong tháng; thông điệp này là tongHopVe(thang, nam) ở Hình 2.32. Chuyến bay chưa có vé được ghi 0; tỉ lệ của từng dòng được tính bằng phương thức private tinhTiLe(doanhThu, tongDoanhThu) theo công thức (1.3), tổng doanh thu bằng 0 thì mọi tỉ lệ là 0%. Tổng số vé và tổng doanh thu được trả thêm qua hai tham số out. Với báo cáo năm, baoCaoNam gọi lapBaoCaoNam; phương thức này gọi demChuyenBayKhoiHanh và tongDoanhThu cho từng tháng rồi tính tỉ lệ theo công thức (1.4). Khi xuất tập tin, xuatBaoCaoThang, xuatBaoCaoNam của BaoCaoController gọi xuatTapTinThang, xuatTapTinNam của XL_BaoCao (hai thông điệp cùng tên ở Hình 2.32); hai phương thức này lập lại báo cáo, thêm tiêu đề, kỳ báo cáo và ngày lập lấy từ DongHoHeThong, rồi gọi phương thức private xuatTapTin để chọn TienIch_TapTin.taoExcel hoặc taoPdf theo nút người dùng chọn (btnXuatExcel hoặc btnXuatPdf).
 
 []
 
