@@ -43,6 +43,7 @@ Phím tắt chung: F1 mở Trợ giúp, Alt+1 Chuyến bay, Alt+2 Bán vé, Alt+
 | `api/QuanLyBanVe.KiemThu/` | Kiểm thử xUnit, tự tạo cơ sở dữ liệu thử `QLBANVE_KIEMTHU` |
 | `api/kiemtra_nhanh.sh` | Gọi thử các luồng chính của máy chủ đang chạy bằng curl |
 | `db/` | `01_tao_csdl.sql` tạo cơ sở dữ liệu, `02_du_lieu_mau.sql` nạp dữ liệu mẫu |
+| `cai_dat.ps1`, `cai_dat.cmd` | Cài đặt và chạy bằng một lệnh trên Windows |
 | `web/src/` | Mã nguồn giao diện; đường dẫn các trang khai báo ở `web/src/dinh_tuyen.ts` và `web/src/App.tsx` |
 | `web/kiem_thu_e2e/` | Kiểm thử giao diện đầu cuối (Playwright), cấu hình ở `web/playwright.config.ts` |
 | `docs/` | Báo cáo (`baocao.txt`), hợp đồng API (`API.md`), hệ thống thiết kế giao diện, logo |
@@ -57,6 +58,8 @@ Các lệnh dưới đây chạy trong PowerShell, đứng ở thư mục gốc 
    - Node.js 22 (kèm npm).
 
    Kiểm tra: `sqlcmd -?`, `dotnet --version` (10.x), `node --version` (v22.x).
+
+   Sau khi cài xong ba phần mềm trên, có thể làm các bước 2 đến 6 bằng một lệnh (xem mục "Cài nhanh bằng một lệnh" bên dưới) hoặc làm tay từng bước.
 
 2. Tạo cơ sở dữ liệu và nạp dữ liệu mẫu (dùng tài khoản Windows đang đăng nhập, người cài SQL Server Express có quyền quản trị):
 
@@ -96,6 +99,27 @@ Các lệnh dưới đây chạy trong PowerShell, đứng ở thư mục gốc 
    Lần chạy đầu, khi bảng `TAIKHOAN` còn rỗng, máy chủ tự tạo các tài khoản mặc định. Máy chủ chạy dịch vụ tự hủy phiếu quá hạn (UC06) ngay khi khởi động và sau mỗi 15 phút. Giữ cửa sổ này mở trong suốt thời gian dùng; Ctrl+C để dừng.
 
 6. Mở trình duyệt tại `http://localhost:5080`.
+
+### Cài nhanh bằng một lệnh
+
+Script `cai_dat.ps1` làm thay các bước 2 đến 6: kiểm tra đã có `sqlcmd`, .NET SDK 10, Node.js 22; tạo cơ sở dữ liệu và nạp dữ liệu mẫu nếu máy chưa có `QLBANVECHUYENBAY`; dựng giao diện; chạy máy chủ và mở trình duyệt tại `http://localhost:5080`. Chạy qua `cai_dat.cmd` để không phải đổi chính sách thực thi script của PowerShell:
+
+```powershell
+.\cai_dat.cmd
+```
+
+| Tham số | Tác dụng |
+|---|---|
+| (không có) | Cơ sở dữ liệu đã có thì giữ nguyên, chỉ dựng lại giao diện và chạy máy chủ |
+| `-NapLaiDuLieu` | Xóa `QLBANVECHUYENBAY` hiện có, tạo lại và nạp lại dữ liệu mẫu (mất dữ liệu đã nhập) |
+| `-MayChuSql "localhost"` | Dùng khi SQL Server không mang tên phiên bản `SQLEXPRESS`; chuỗi kết nối của lần chạy này đổi theo |
+| `-KhongChay` | Chỉ cài đặt, không chạy máy chủ |
+
+Ví dụ nạp lại dữ liệu mẫu trước buổi demo:
+
+```powershell
+.\cai_dat.cmd -NapLaiDuLieu
+```
 
 ### Cho máy khác trong mạng nội bộ truy cập
 
