@@ -46,8 +46,9 @@ function GoiLenh([string]$ten, [string[]]$thamSo) {
 }
 
 # Chay sqlcmd bang tai khoan Windows dang dang nhap; tra ve cac dong ket qua.
+# Dung ma trang -f 65001 de sqlcmd doc va ghi dung cac ky tu tieng Viet UTF-8 trong tap tin .sql.
 function ChaySql([string[]]$thamSo) {
-    $ketQua = GoiLenh "sqlcmd" (@("-S", $MayChuSql, "-E", "-C", "-b") + $thamSo)
+    $ketQua = GoiLenh "sqlcmd" (@("-S", $MayChuSql, "-E", "-C", "-b", "-f", "65001") + $thamSo)
     if ($LASTEXITCODE -ne 0) {
         $ketQua | ForEach-Object { Write-Host $_ }
         Dung "sqlcmd bao loi (ma $LASTEXITCODE)."
@@ -68,6 +69,18 @@ if ($banDotnet -notmatch '^10\.') { Dung "Can .NET SDK 10, may dang co ban $banD
 $banNode = "$(GoiLenh 'node' @('--version') | Select-Object -Last 1)".Trim()
 if ($banNode -notmatch '^v(\d+)\.' -or [int]$Matches[1] -lt 22) { Dung "Can Node.js 22 tro len, may dang co ban $banNode." }
 
+# Neu dung tham so mac dinh localhost\SQLEXPRESS ma khong ket noi duoc, thu localhost (phien ban mac dinh MSSQLSERVER)
+if (-not $PSBoundParameters.ContainsKey('MayChuSql')) {
+    GoiLenh "sqlcmd" @("-S", $MayChuSql, "-E", "-C", "-b", "-l", "3", "-Q", "SELECT 1") | Out-Null
+    if ($LASTEXITCODE -ne 0) {
+        GoiLenh "sqlcmd" @("-S", "localhost", "-E", "-C", "-b", "-l", "3", "-Q", "SELECT 1") | Out-Null
+        if ($LASTEXITCODE -eq 0) {
+            $MayChuSql = "localhost"
+            Write-Host "Da tu dong ket noi may chu SQL Server tai '$MayChuSql'." -ForegroundColor Yellow
+        }
+    }
+}
+
 GoiLenh "sqlcmd" @("-S", $MayChuSql, "-E", "-C", "-b", "-l", "15", "-Q", "SELECT 1") | Out-Null
 if ($LASTEXITCODE -ne 0) {
     Dung "Khong ket noi duoc SQL Server '$MayChuSql' bang tai khoan Windows hien tai. Kiem tra dich vu SQL Server dang chay; neu ten phien ban khac thi them tham so -MayChuSql."
@@ -78,7 +91,16 @@ $daCo = (ChaySql @("-h", "-1", "-W", "-Q", "SET NOCOUNT ON; SELECT COUNT(*) FROM
     Where-Object { $_ -match '^\s*\d+\s*$' } | Select-Object -First 1)
 $daCo = [int]("$daCo".Trim())
 
-if ($daCo -eq 0 -or $NapLaiDuLieu) {
+$duLieuHopLe = $false
+if ($daCo -gt 0 -and -not $NapLaiDuLieu) {
+    $soHk = (ChaySql @("-d", $tenCsdl, "-h", "-1", "-W", "-Q", "SET NOCOUNT ON; IF OBJECT_ID('HANHKHACH') IS NOT NULL SELECT COUNT(*) FROM HANHKHACH ELSE SELECT 0") |
+        Where-Object { $_ -match '^\s*\d+\s*$' } | Select-Object -First 1)
+    if ([int]("$soHk".Trim()) -gt 0) {
+        $duLieuHopLe = $true
+    }
+}
+
+if ($daCo -eq 0 -or $NapLaiDuLieu -or -not $duLieuHopLe) {
     Buoc 1 "Tao co so du lieu $tenCsdl"
     ChaySql @("-i", (Join-Path $goc "db\01_tao_csdl.sql")) | Out-Null
     Buoc 2 "Nap du lieu mau"

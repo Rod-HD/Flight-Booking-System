@@ -65,8 +65,8 @@ Các lệnh dưới đây chạy trong PowerShell, đứng ở thư mục gốc 
 
    ```powershell
    cd db
-   sqlcmd -S localhost\SQLEXPRESS -E -C -b -i 01_tao_csdl.sql
-   sqlcmd -S localhost\SQLEXPRESS -E -C -b -i 02_du_lieu_mau.sql
+   sqlcmd -S localhost\SQLEXPRESS -E -C -b -f 65001 -i 01_tao_csdl.sql
+   sqlcmd -S localhost\SQLEXPRESS -E -C -b -f 65001 -i 02_du_lieu_mau.sql
    cd ..
    ```
 

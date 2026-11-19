@@ -3,7 +3,7 @@
 -- thì ngày đó cũng đóng vai trò "hôm nay" của lịch và các kịch bản minh họa vẫn đúng.
 -- Chạy sau 01_tao_csdl.sql. Chạy lại được nhiều lần: dữ liệu nghiệp vụ cũ bị xóa rồi nạp lại.
 -- Bảng TAIKHOAN không nạp ở đây: máy chủ tự tạo tài khoản ban đầu khi khởi động nếu bảng còn rỗng.
--- Cách chạy: sqlcmd -S localhost\SQLEXPRESS -E -C -b -i 02_du_lieu_mau.sql
+-- Cách chạy: sqlcmd -S localhost\SQLEXPRESS -E -C -b -f 65001 -i 02_du_lieu_mau.sql
 
 USE QLBANVECHUYENBAY;
 GO
