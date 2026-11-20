@@ -1,7 +1,7 @@
 // Báo cáo doanh thu (MH_BaoCao, UC07): báo cáo tháng theo chuyến bay (BM5.1), báo cáo năm theo tháng (BM5.2), xuất Excel, PDF
 import { useState } from 'react';
 import { useQueryClient } from '@tanstack/react-query';
-import { BarChart3, CalendarDays, CalendarRange, FileSpreadsheet, FileText, Plane, Ticket, TrendingUp, Wallet } from 'lucide-react';
+import { BarChart3, CalendarDays, CalendarRange, FileSpreadsheet, FileText, Plane, Ticket, TrendingUp, Wallet, X } from 'lucide-react';
 import { apiBaoCao, khoaTruyVan } from '@/api/dich_vu';
 import { luuTapTin, thongBaoLoi } from '@/api/may_khach';
 import type { BaoCaoNam, BaoCaoThang, DinhDangXuat } from '@/kieu/api';
@@ -108,7 +108,7 @@ export function TrangBaoCao() {
           <Nut bienThe="phu" muiTen={false} iconTrai={<FileText size={18} />} disabled={!coDuLieu} dangXuLy={dangXuat === 'pdf'} onClick={() => xuat('pdf')}>
             Xuất PDF
           </Nut>
-          <Nut bienThe="lang" muiTen={false} den="/">
+          <Nut bienThe="lang" muiTen={false} iconTrai={<X size={18} />} den="/">
             Đóng
           </Nut>
         </>
