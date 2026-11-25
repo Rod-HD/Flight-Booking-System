@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { keepPreviousData, useQuery, useQueryClient } from '@tanstack/react-query';
-import { Hash, Pencil, PlaneTakeoff, Plus, RotateCcw, Search } from 'lucide-react';
+import { Hash, Pencil, PlaneTakeoff, Plus, RotateCcw, Search, X } from 'lucide-react';
 import { apiPhieuDat, khoaTruyVan, SO_KET_QUA_TOI_DA } from '@/api/dich_vu';
 import { thongBaoLoi } from '@/api/may_khach';
 import type { PhieuDat, TieuChiTimPhieu, TinhTrangPhieu } from '@/kieu/api';
@@ -152,7 +152,7 @@ export function TrangDanhSachPhieuDat() {
           <Nut iconTrai={<Plus size={18} strokeWidth={2.6} />} den="/dat-ve" title="Đặt vé (Ctrl+N)">
             Đặt vé
           </Nut>
-          <Nut bienThe="lang" muiTen={false} den="/">
+          <Nut bienThe="lang" muiTen={false} iconTrai={<X size={18} />} den="/">
             Đóng
           </Nut>
         </>
