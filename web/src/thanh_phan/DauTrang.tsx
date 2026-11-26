@@ -18,9 +18,10 @@ export function DauTrang({ trongSuot }: { trongSuot: boolean }) {
 
   return (
     <header className={s.dauTrang}>
-      <div className={`${s.thanh} ${trongSuot ? s.trongSuot : ''}`}>
+      {/* chữ trắng ở mọi trang; nền đỏ để thanh tách khỏi nền trắng bên dưới, trừ lúc nằm trên dải đỏ của trang chính */}
+      <div className={`${s.thanh} ${s.trongSuot} ${trongSuot ? '' : s.nenDo}`}>
         <div className={s.trong}>
-          <Logo den="/" haiDong trang={trongSuot} />
+          <Logo den="/" haiDong trang />
           <span className={s.vachDung} aria-hidden />
           <nav aria-label="Menu chính" style={{ flex: 1, minWidth: 0, height: '100%' }}>
             <ul className={s.menu}>

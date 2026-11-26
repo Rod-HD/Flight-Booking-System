@@ -60,21 +60,21 @@ CREATE INDEX IX_CHUYENBAY_NgayGioKhoiHanh ON CHUYENBAY (NgayGioKhoiHanh);
 CREATE INDEX IX_CHUYENBAY_SanBayDi_SanBayDen ON CHUYENBAY (MaSanBayDi, MaSanBayDen);
 GO
 
--- 3. CHITIETTRUNGGIAN: các sân bay trung gian theo thứ tự dừng
-CREATE TABLE CHITIETTRUNGGIAN (
+-- 3. CHITIETSANBAYTRUNGGIAN: các sân bay trung gian theo thứ tự dừng
+CREATE TABLE CHITIETSANBAYTRUNGGIAN (
     MaChuyenBay   varchar(10)   NOT NULL,
     ThuTu         tinyint       NOT NULL,
     MaSanBay      char(3)       NOT NULL,
     ThoiGianDung  int           NOT NULL,
     GhiChu        nvarchar(200) NULL,
-    CONSTRAINT PK_CHITIETTRUNGGIAN PRIMARY KEY (MaChuyenBay, ThuTu),
-    CONSTRAINT FK_CHITIETTRUNGGIAN_ChuyenBay FOREIGN KEY (MaChuyenBay) REFERENCES CHUYENBAY (MaChuyenBay),
-    CONSTRAINT FK_CHITIETTRUNGGIAN_SanBay    FOREIGN KEY (MaSanBay)    REFERENCES SANBAY (MaSanBay),
+    CONSTRAINT PK_CHITIETSANBAYTRUNGGIAN PRIMARY KEY (MaChuyenBay, ThuTu),
+    CONSTRAINT FK_CHITIETSANBAYTRUNGGIAN_ChuyenBay FOREIGN KEY (MaChuyenBay) REFERENCES CHUYENBAY (MaChuyenBay),
+    CONSTRAINT FK_CHITIETSANBAYTRUNGGIAN_SanBay    FOREIGN KEY (MaSanBay)    REFERENCES SANBAY (MaSanBay),
     -- một sân bay không dừng hai lần trong cùng chuyến bay
-    CONSTRAINT UQ_CHITIETTRUNGGIAN_SanBay UNIQUE (MaChuyenBay, MaSanBay),
-    CONSTRAINT CK_CHITIETTRUNGGIAN_ThuTu CHECK (ThuTu >= 1),
+    CONSTRAINT UQ_CHITIETSANBAYTRUNGGIAN_SanBay UNIQUE (MaChuyenBay, MaSanBay),
+    CONSTRAINT CK_CHITIETSANBAYTRUNGGIAN_ThuTu CHECK (ThuTu >= 1),
     -- khoảng thời gian dừng (QĐ1) kiểm tra ở tầng xử lý vì phụ thuộc tham số
-    CONSTRAINT CK_CHITIETTRUNGGIAN_ThoiGianDung CHECK (ThoiGianDung >= 0)
+    CONSTRAINT CK_CHITIETSANBAYTRUNGGIAN_ThoiGianDung CHECK (ThoiGianDung >= 0)
 );
 GO
 

@@ -36,7 +36,7 @@ public static class DangKyDichVu
 
         dichVu.AddScoped<DAL_SanBay>();
         dichVu.AddScoped<DAL_ChuyenBay>();
-        dichVu.AddScoped<DAL_ChiTietTrungGian>();
+        dichVu.AddScoped<DAL_ChiTietSanBayTrungGian>();
         dichVu.AddScoped<DAL_HangVe>();
         dichVu.AddScoped<DAL_GheTheoHang>();
         dichVu.AddScoped<DAL_HanhKhach>();

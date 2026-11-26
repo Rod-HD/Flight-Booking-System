@@ -44,7 +44,7 @@ foreach ($m in $ma) {
 }
 Ghi (Sql-Dong @"
 SELECT CONCAT('CSDL|',MaChuyenBay,'|',GiaVe,'|',CONVERT(varchar(16),NgayGioKhoiHanh,120),'|',ThoiGianBay) FROM CHUYENBAY WHERE MaChuyenBay IN ('$($ma -join "','")');
-SELECT CONCAT('TRUNGGIAN|',MaChuyenBay,'|',ThuTu,'|',MaSanBay,'|',ThoiGianDung,'|',GhiChu) FROM CHITIETTRUNGGIAN WHERE MaChuyenBay IN ('$($ma -join "','")') ORDER BY MaChuyenBay,ThuTu;
+SELECT CONCAT('TRUNGGIAN|',MaChuyenBay,'|',ThuTu,'|',MaSanBay,'|',ThoiGianDung,'|',GhiChu) FROM CHITIETSANBAYTRUNGGIAN WHERE MaChuyenBay IN ('$($ma -join "','")') ORDER BY MaChuyenBay,ThuTu;
 SELECT CONCAT('GHE|',MaChuyenBay,'|',MaHangVe,'|',SoLuongGhe) FROM GHETHEOHANG WHERE MaChuyenBay IN ('$($ma -join "','")') ORDER BY MaChuyenBay,MaHangVe;
 "@ | Out-String)
 

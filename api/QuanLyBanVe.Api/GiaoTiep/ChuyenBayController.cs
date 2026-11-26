@@ -69,7 +69,7 @@ public class ChuyenBayController : ControllerBase
     [HttpGet("{ma}")]
     public IActionResult layChiTiet(string ma)
     {
-        ChuyenBay cb = xlChuyenBay.layThongTin(ma, out List<GheTheoHang> dsGhe, out List<ChiTietTrungGian> dsTrungGian,
+        ChuyenBay cb = xlChuyenBay.layThongTin(ma, out List<GheTheoHang> dsGhe, out List<ChiTietSanBayTrungGian> dsTrungGian,
             out Dictionary<string, int> soDaBanVaDat);
         xlChuyenBay.taiDuLieu(out List<SanBay> dsSanBay, out List<HangVe> dsHangVe);
         Dictionary<string, string> tenSanBay = dsSanBay.ToDictionary(sb => sb.MaSanBay, sb => sb.TenSanBay);
@@ -115,7 +115,7 @@ public class ChuyenBayController : ControllerBase
     [Authorize(Roles = VaiTro.QUAN_LY)]
     public IActionResult them([FromBody] YeuCauChuyenBay yeuCau)
     {
-        ChuyenBay cb = taoChuyenBay(yeuCau, out List<GheTheoHang> dsGhe, out List<ChiTietTrungGian> dsTrungGian);
+        ChuyenBay cb = taoChuyenBay(yeuCau, out List<GheTheoHang> dsGhe, out List<ChiTietSanBayTrungGian> dsTrungGian);
         xlChuyenBay.themChuyenBay(cb, dsGhe, dsTrungGian);
         return StatusCode(StatusCodes.Status201Created, new { maChuyenBay = cb.MaChuyenBay });
     }
@@ -124,7 +124,7 @@ public class ChuyenBayController : ControllerBase
     [Authorize(Roles = VaiTro.QUAN_LY)]
     public IActionResult sua(string ma, [FromBody] YeuCauChuyenBay yeuCau)
     {
-        ChuyenBay cb = taoChuyenBay(yeuCau, out List<GheTheoHang> dsGhe, out List<ChiTietTrungGian> dsTrungGian);
+        ChuyenBay cb = taoChuyenBay(yeuCau, out List<GheTheoHang> dsGhe, out List<ChiTietSanBayTrungGian> dsTrungGian);
         xlChuyenBay.suaChuyenBay(ma, cb, dsGhe, dsTrungGian);
         return NoContent();
     }
@@ -149,8 +149,8 @@ public class ChuyenBayController : ControllerBase
         };
     }
 
-    /// <summary>Đổi thân yêu cầu thành ChuyenBay, danh sách GheTheoHang và danh sách ChiTietTrungGian.</summary>
-    private static ChuyenBay taoChuyenBay(YeuCauChuyenBay yeuCau, out List<GheTheoHang> dsGhe, out List<ChiTietTrungGian> dsTrungGian)
+    /// <summary>Đổi thân yêu cầu thành ChuyenBay, danh sách GheTheoHang và danh sách ChiTietSanBayTrungGian.</summary>
+    private static ChuyenBay taoChuyenBay(YeuCauChuyenBay yeuCau, out List<GheTheoHang> dsGhe, out List<ChiTietSanBayTrungGian> dsTrungGian)
     {
         var cb = new ChuyenBay(yeuCau.MaChuyenBay ?? "", yeuCau.GiaVe ?? 0, yeuCau.MaSanBayDi ?? "", yeuCau.MaSanBayDen ?? "",
             yeuCau.NgayGioKhoiHanh ?? default, yeuCau.ThoiGianBay ?? 0);
@@ -158,7 +158,7 @@ public class ChuyenBayController : ControllerBase
             .Select(g => new GheTheoHang(cb.MaChuyenBay, g.MaHangVe ?? "", g.SoLuongGhe ?? 0))
             .ToList();
         dsTrungGian = (yeuCau.TrungGian ?? new List<YeuCauTrungGian>())
-            .Select(t => new ChiTietTrungGian(cb.MaChuyenBay, (byte)Math.Clamp(t.ThuTu ?? 0, 0, 255), t.MaSanBay ?? "",
+            .Select(t => new ChiTietSanBayTrungGian(cb.MaChuyenBay, (byte)Math.Clamp(t.ThuTu ?? 0, 0, 255), t.MaSanBay ?? "",
                 t.ThoiGianDung ?? -1, t.GhiChu))
             .ToList();
         return cb;

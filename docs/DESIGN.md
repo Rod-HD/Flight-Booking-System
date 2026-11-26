@@ -1,13 +1,13 @@
-# Hệ thống thiết kế giao diện: Quản lý bán vé chuyến bay (Nhóm 12)
+# Hệ thống thiết kế giao diện: Đại lý vé máy bay Cánh Én (Nhóm 12)
 
 Internal web app for an airline ticket office (two roles: Quản lý = manager/admin, Nhân viên bán vé = ticket agent).
 Visual language is modelled on the look and feel of https://newweb.vietjetair.com/vi (bright red + warm yellow, big rounded cards,
 3D glossy red icons, pill buttons, soft floating shadows, lively hover motion). The product has ITS OWN name and logo:
-wordmark "Quản lý bán vé chuyến bay" next to a white paper-plane glyph inside a red rounded square. Do not use any third-party logo or mascot.
+wordmark "Đại lý vé máy bay Cánh Én" next to a white paper-plane glyph inside a red rounded square. Do not use any third-party logo or mascot.
 All UI text is Vietnamese with full diacritics.
 
 ## Brand
-- Product name (always shown with the logo, top-left of every screen): **Quản lý bán vé chuyến bay**
+- Product name (always shown with the logo, top-left of every screen): **Đại lý vé máy bay Cánh Én**
 - Personality: energetic, friendly, fast, trustworthy. Lots of white space, red as the hero colour, yellow only for the primary call to action.
 
 ## Colour tokens

@@ -76,7 +76,7 @@ public class XL_ChuyenBay
     }
 
     /// <summary>Thông tin một chuyến bay kèm số ghế từng hạng, các sân bay trung gian và số ghế đã bán, đã đặt của từng hạng.</summary>
-    public ChuyenBay layThongTin(string maCB, out List<GheTheoHang> dsGhe, out List<ChiTietTrungGian> dsTrungGian,
+    public ChuyenBay layThongTin(string maCB, out List<GheTheoHang> dsGhe, out List<ChiTietSanBayTrungGian> dsTrungGian,
         out Dictionary<string, int> soDaBanVaDat)
     {
         maCB = chuanHoaMa(maCB) ?? "";
@@ -86,7 +86,7 @@ public class XL_ChuyenBay
     }
 
     /// <summary>UC03.1: thêm chuyến bay mới (nhận lịch chuyến bay theo BM1).</summary>
-    public void themChuyenBay(ChuyenBay cb, List<GheTheoHang> dsGhe, List<ChiTietTrungGian> dsTrungGian)
+    public void themChuyenBay(ChuyenBay cb, List<GheTheoHang> dsGhe, List<ChiTietSanBayTrungGian> dsTrungGian)
     {
         chuanHoa(cb, dsGhe, dsTrungGian);
         Dictionary<string, string> loi = kiemTraHopLe(cb, dsGhe, dsTrungGian, laThemMoi: true);
@@ -109,10 +109,10 @@ public class XL_ChuyenBay
     }
 
     /// <summary>UC03.2: sửa chuyến bay (trừ mã chuyến bay).</summary>
-    public void suaChuyenBay(string maCB, ChuyenBay cb, List<GheTheoHang> dsGhe, List<ChiTietTrungGian> dsTrungGian)
+    public void suaChuyenBay(string maCB, ChuyenBay cb, List<GheTheoHang> dsGhe, List<ChiTietSanBayTrungGian> dsTrungGian)
     {
         maCB = chuanHoaMa(maCB) ?? "";
-        ChuyenBay cu = dalChuyenBay.layThongTin(maCB, out _, out List<ChiTietTrungGian> trungGianCu) ?? throw khongCoChuyenBay();
+        ChuyenBay cu = dalChuyenBay.layThongTin(maCB, out _, out List<ChiTietSanBayTrungGian> trungGianCu) ?? throw khongCoChuyenBay();
         // chuyến đã bay không sửa được để số liệu báo cáo của tháng đã qua không đổi
         if (cu.NgayGioKhoiHanh <= dongHo.layThoiDiemHienTai())
             throw LoiNghiepVu.viPham(MaLoi.CHUYEN_BAY_DA_KHOI_HANH, "Không thể sửa chuyến bay đã khởi hành.");
@@ -331,7 +331,7 @@ public class XL_ChuyenBay
                     loiDong.Add("Số lượng ghế của mỗi hạng phải là số nguyên không âm.");
             }
 
-            var dsTrungGian = new List<ChiTietTrungGian>();
+            var dsTrungGian = new List<ChiTietSanBayTrungGian>();
             if (trungGianTheoMa.TryGetValue(cb.MaChuyenBay, out var cacDiemDung))
             {
                 foreach (var (dongTrungGian, chiTiet, loi) in cacDiemDung)
@@ -367,10 +367,10 @@ public class XL_ChuyenBay
     }
 
     /// <summary>Đọc trang TrungGian, gom các sân bay trung gian theo mã chuyến bay.</summary>
-    private static Dictionary<string, List<(int Dong, ChiTietTrungGian? ChiTiet, string? Loi)>> docTrangTrungGian(
+    private static Dictionary<string, List<(int Dong, ChiTietSanBayTrungGian? ChiTiet, string? Loi)>> docTrangTrungGian(
         DataTable? bang, List<(int Dong, string LyDo)> dongLoi)
     {
-        var ketQua = new Dictionary<string, List<(int, ChiTietTrungGian?, string?)>>();
+        var ketQua = new Dictionary<string, List<(int, ChiTietSanBayTrungGian?, string?)>>();
         if (bang == null) return ketQua;
         foreach (DataRow dong in bang.Rows)
         {
@@ -388,7 +388,7 @@ public class XL_ChuyenBay
             }
 
             string? loi = null;
-            ChiTietTrungGian? chiTiet = null;
+            ChiTietSanBayTrungGian? chiTiet = null;
             if (!docSoNguyen(dong[2], out long thuTu) || thuTu < 1 || thuTu > byte.MaxValue)
                 loi = "thứ tự dừng phải là số nguyên từ 1.";
             else if (!docSoNguyen(dong[4], out long thoiGianDung) || thoiGianDung < 0 || thoiGianDung > int.MaxValue)
@@ -396,11 +396,11 @@ public class XL_ChuyenBay
             else
             {
                 string ghiChu = bang.Columns.Count > 5 ? docChuoi(dong[5]) : "";
-                chiTiet = new ChiTietTrungGian(maCB, (byte)thuTu, docChuoi(dong[3]).ToUpperInvariant(),
+                chiTiet = new ChiTietSanBayTrungGian(maCB, (byte)thuTu, docChuoi(dong[3]).ToUpperInvariant(),
                     (int)thoiGianDung, ghiChu.Length == 0 ? null : ghiChu);
             }
 
-            if (!ketQua.TryGetValue(maCB, out var ds)) ketQua[maCB] = ds = new List<(int, ChiTietTrungGian?, string?)>();
+            if (!ketQua.TryGetValue(maCB, out var ds)) ketQua[maCB] = ds = new List<(int, ChiTietSanBayTrungGian?, string?)>();
             ds.Add((soDong, chiTiet, loi));
         }
         return ketQua;
@@ -409,7 +409,7 @@ public class XL_ChuyenBay
     // Kiểm tra lịch chuyến bay
 
     /// <summary>Bỏ khoảng trắng, đổi mã sang chữ in hoa, đánh lại thứ tự dừng 1, 2, ... theo thứ tự đã nhập.</summary>
-    private static void chuanHoa(ChuyenBay cb, List<GheTheoHang> dsGhe, List<ChiTietTrungGian> dsTrungGian)
+    private static void chuanHoa(ChuyenBay cb, List<GheTheoHang> dsGhe, List<ChiTietSanBayTrungGian> dsTrungGian)
     {
         cb.MaChuyenBay = chuanHoaMa(cb.MaChuyenBay) ?? "";
         cb.MaSanBayDi = chuanHoaMa(cb.MaSanBayDi) ?? "";
@@ -420,7 +420,7 @@ public class XL_ChuyenBay
             ghe.MaHangVe = chuanHoaMa(ghe.MaHangVe) ?? "";
         }
 
-        List<ChiTietTrungGian> theoThuTu = dsTrungGian
+        List<ChiTietSanBayTrungGian> theoThuTu = dsTrungGian
             .Select((chiTiet, viTri) => (chiTiet, viTri))
             .OrderBy(cap => cap.chiTiet.ThuTu == 0 ? int.MaxValue : cap.chiTiet.ThuTu)
             .ThenBy(cap => cap.viTri)
@@ -430,7 +430,7 @@ public class XL_ChuyenBay
         dsTrungGian.AddRange(theoThuTu);
         for (int i = 0; i < dsTrungGian.Count; i++)
         {
-            ChiTietTrungGian chiTiet = dsTrungGian[i];
+            ChiTietSanBayTrungGian chiTiet = dsTrungGian[i];
             chiTiet.MaChuyenBay = cb.MaChuyenBay;
             chiTiet.ThuTu = (byte)Math.Min(i + 1, byte.MaxValue);
             chiTiet.MaSanBay = chuanHoaMa(chiTiet.MaSanBay) ?? "";
@@ -443,7 +443,7 @@ public class XL_ChuyenBay
     /// Trả về lỗi theo từng ô; rỗng nếu hợp lệ.
     /// </summary>
     private Dictionary<string, string> kiemTraHopLe(ChuyenBay cb, List<GheTheoHang> dsGhe,
-        List<ChiTietTrungGian> dsTrungGian, bool laThemMoi)
+        List<ChiTietSanBayTrungGian> dsTrungGian, bool laThemMoi)
     {
         var loi = new Dictionary<string, string>();
         taiDuLieu(out List<SanBay> dsSanBay, out List<HangVe> dsHangVe);
@@ -521,7 +521,7 @@ public class XL_ChuyenBay
     /// Kiểm tra QĐ1 theo tham số hiện hành, đọc từ CSDL ở mỗi lần kiểm tra: thời gian bay tối thiểu,
     /// số sân bay trung gian tối đa, thời gian dừng tối thiểu và tối đa.
     /// </summary>
-    private void kiemTraQuyDinhNhanLich(ChuyenBay cb, List<ChiTietTrungGian> dsTrungGian,
+    private void kiemTraQuyDinhNhanLich(ChuyenBay cb, List<ChiTietSanBayTrungGian> dsTrungGian,
         bool xetThoiGianBay = true, bool xetTrungGian = true)
     {
         if (!xetThoiGianBay && !xetTrungGian) return;

@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import s from './Logo.module.css';
 
-export const TEN_PHAN_MEM = 'Quản lý bán vé chuyến bay';
+export const TEN_PHAN_MEM = 'Đại lý vé máy bay Cánh Én';
 
 export interface ThuocTinhLogo {
   /** chữ trắng khi đặt trên nền đỏ */
@@ -24,8 +24,8 @@ export function Logo({ trang, kichThuoc = 'vua', haiDong, den, className }: Thuo
       <span className={s.chu}>
         {haiDong ? (
           <>
-            <span className={s.hangHai}>Quản lý bán vé</span>
-            <span className={s.hangHai}>chuyến bay</span>
+            <span className={s.hangHai}>Đại lý vé máy bay</span>
+            <span className={s.hangHai}>Cánh Én</span>
           </>
         ) : (
           TEN_PHAN_MEM

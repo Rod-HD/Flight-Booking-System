@@ -65,7 +65,7 @@ public abstract class KiemThuCoSo : IDisposable
         if (gheH1 > 0) dsGhe.Add(new GheTheoHang(ma, "H1", gheH1));
         if (gheH2 > 0) dsGhe.Add(new GheTheoHang(ma, "H2", gheH2));
         lay<KetNoiCSDL>().thucHienTrongGiaoDich(() => lay<DAL_ChuyenBay>().themChuyenBay(
-            new ChuyenBay(ma, giaVe, di, den, ngayGio, 60), dsGhe, new List<ChiTietTrungGian>()));
+            new ChuyenBay(ma, giaVe, di, den, ngayGio, 60), dsGhe, new List<ChiTietSanBayTrungGian>()));
     }
 
     /// <summary>Hành khách hợp lệ thứ n: căn cước 12 chữ số khác nhau theo n.</summary>

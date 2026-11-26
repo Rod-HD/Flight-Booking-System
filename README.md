@@ -323,4 +323,6 @@ SQL Server Express không có dịch vụ lập lịch riêng, nên việc sao l
    sqlcmd -S localhost\SQLEXPRESS -E -C -b -Q "ALTER DATABASE QLBANVECHUYENBAY SET SINGLE_USER WITH ROLLBACK IMMEDIATE; RESTORE DATABASE QLBANVECHUYENBAY FROM DISK = N'D:\SaoLuu\QLBANVECHUYENBAY_20261112.bak' WITH REPLACE; ALTER DATABASE QLBANVECHUYENBAY SET MULTI_USER;"
    ```
 
+   Nếu bản sao lưu tạo trước ngày 26/11/2026 (bảng trung gian còn tên `CHITIETTRUNGGIAN`), chạy thêm `sqlcmd -S localhost\SQLEXPRESS -E -C -b -d QLBANVECHUYENBAY -i db\04_doi_ten_bang_trung_gian.sql` trước khi khởi động lại.
+
    Khởi động lại máy chủ web. Dữ liệu trở về thời điểm sao lưu (mất tối đa dữ liệu của một ngày). Cũng có thể phục hồi bằng SQL Server Management Studio: chuột phải Databases, Restore Database, chọn tập tin `.bak`.

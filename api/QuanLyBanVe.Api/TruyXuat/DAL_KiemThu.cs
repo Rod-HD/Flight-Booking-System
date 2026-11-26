@@ -11,7 +11,7 @@ public class DAL_KiemThu
 {
     private static readonly string[] CAC_BANG =
     {
-        "SANBAY", "CHUYENBAY", "CHITIETTRUNGGIAN", "HANGVE", "GHETHEOHANG",
+        "SANBAY", "CHUYENBAY", "CHITIETSANBAYTRUNGGIAN", "HANGVE", "GHETHEOHANG",
         "HANHKHACH", "PHIEUDATCHO", "VE", "THAMSOQUYDINH", "TAIKHOAN",
     };
 

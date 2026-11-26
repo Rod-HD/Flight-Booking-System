@@ -15,16 +15,16 @@ public class DAL_ChuyenBay
 
     private readonly KetNoiCSDL ketNoi;
     private readonly DAL_GheTheoHang dalGheTheoHang;
-    private readonly DAL_ChiTietTrungGian dalChiTietTrungGian;
+    private readonly DAL_ChiTietSanBayTrungGian dalChiTietSanBayTrungGian;
     private readonly DAL_Ve dalVe;
     private readonly DAL_PhieuDatCho dalPhieuDatCho;
 
-    public DAL_ChuyenBay(KetNoiCSDL ketNoi, DAL_GheTheoHang dalGheTheoHang, DAL_ChiTietTrungGian dalChiTietTrungGian,
+    public DAL_ChuyenBay(KetNoiCSDL ketNoi, DAL_GheTheoHang dalGheTheoHang, DAL_ChiTietSanBayTrungGian dalChiTietSanBayTrungGian,
         DAL_Ve dalVe, DAL_PhieuDatCho dalPhieuDatCho)
     {
         this.ketNoi = ketNoi;
         this.dalGheTheoHang = dalGheTheoHang;
-        this.dalChiTietTrungGian = dalChiTietTrungGian;
+        this.dalChiTietSanBayTrungGian = dalChiTietSanBayTrungGian;
         this.dalVe = dalVe;
         this.dalPhieuDatCho = dalPhieuDatCho;
     }
@@ -43,7 +43,7 @@ public class DAL_ChuyenBay
     }
 
     /// <summary>Ghi CHUYENBAY rồi ghi số ghế từng hạng và các sân bay trung gian; lớp xử lý mở giao dịch trước khi gọi.</summary>
-    public void themChuyenBay(ChuyenBay cb, List<GheTheoHang> dsGhe, List<ChiTietTrungGian> dsTrungGian)
+    public void themChuyenBay(ChuyenBay cb, List<GheTheoHang> dsGhe, List<ChiTietSanBayTrungGian> dsTrungGian)
     {
         ketNoi.thucThi(
             "INSERT INTO CHUYENBAY (MaChuyenBay, GiaVe, MaSanBayDi, MaSanBayDen, NgayGioKhoiHanh, ThoiGianBay) "
@@ -55,7 +55,7 @@ public class DAL_ChuyenBay
             ThamSo.NgayGio("@ngayGio", cb.NgayGioKhoiHanh),
             ThamSo.SoNguyen("@thoiGianBay", cb.ThoiGianBay));
         dalGheTheoHang.them(dsGhe);
-        dalChiTietTrungGian.them(dsTrungGian);
+        dalChiTietSanBayTrungGian.them(dsTrungGian);
     }
 
     /// <summary>Đọc dòng CHUYENBAY; null nếu không có chuyến bay.</summary>
@@ -67,11 +67,11 @@ public class DAL_ChuyenBay
     }
 
     /// <summary>Đọc chuyến bay kèm số ghế từng hạng và các sân bay trung gian.</summary>
-    public ChuyenBay? layThongTin(string maCB, out List<GheTheoHang> dsGhe, out List<ChiTietTrungGian> dsTrungGian)
+    public ChuyenBay? layThongTin(string maCB, out List<GheTheoHang> dsGhe, out List<ChiTietSanBayTrungGian> dsTrungGian)
     {
         ChuyenBay? cb = layThongTin(maCB);
         dsGhe = cb == null ? new List<GheTheoHang>() : dalGheTheoHang.layTheoChuyenBay(maCB);
-        dsTrungGian = cb == null ? new List<ChiTietTrungGian>() : dalChiTietTrungGian.layTheoChuyenBay(maCB);
+        dsTrungGian = cb == null ? new List<ChiTietSanBayTrungGian>() : dalChiTietSanBayTrungGian.layTheoChuyenBay(maCB);
         return cb;
     }
 
@@ -87,7 +87,7 @@ public class DAL_ChuyenBay
         return ketQua;
     }
 
-    public void capNhat(string maCB, ChuyenBay cb, List<GheTheoHang> dsGhe, List<ChiTietTrungGian> dsTrungGian)
+    public void capNhat(string maCB, ChuyenBay cb, List<GheTheoHang> dsGhe, List<ChiTietSanBayTrungGian> dsTrungGian)
     {
         ketNoi.thucThi(
             "UPDATE CHUYENBAY SET GiaVe = @giaVe, MaSanBayDi = @di, MaSanBayDen = @den, "
@@ -99,8 +99,8 @@ public class DAL_ChuyenBay
             ThamSo.NgayGio("@ngayGio", cb.NgayGioKhoiHanh),
             ThamSo.SoNguyen("@thoiGianBay", cb.ThoiGianBay));
         dalGheTheoHang.capNhat(maCB, dsGhe);
-        dalChiTietTrungGian.xoaTheoChuyenBay(maCB);
-        dalChiTietTrungGian.them(dsTrungGian);
+        dalChiTietSanBayTrungGian.xoaTheoChuyenBay(maCB);
+        dalChiTietSanBayTrungGian.them(dsTrungGian);
     }
 
     /// <summary>Chuyến bay đã có vé hoặc phiếu đặt chỗ nào chưa, kể cả vé, phiếu đã hủy (AT02).</summary>
@@ -112,7 +112,7 @@ public class DAL_ChuyenBay
     /// <summary>Xóa chuyến bay cùng số ghế theo hạng và các sân bay trung gian.</summary>
     public void xoa(string maCB)
     {
-        dalChiTietTrungGian.xoaTheoChuyenBay(maCB);
+        dalChiTietSanBayTrungGian.xoaTheoChuyenBay(maCB);
         dalGheTheoHang.xoaTheoChuyenBay(maCB);
         ketNoi.thucThi("DELETE FROM CHUYENBAY WHERE MaChuyenBay = @maCB", ThamSo.Chuoi("@maCB", maCB, 10));
     }
@@ -258,7 +258,7 @@ public class DAL_ChuyenBay
         {
             int soLan = ketNoi.docSoNguyen(
                 "SELECT (SELECT COUNT(*) FROM CHUYENBAY WHERE MaSanBayDi = @ma OR MaSanBayDen = @ma) "
-                + "+ (SELECT COUNT(*) FROM CHITIETTRUNGGIAN WHERE MaSanBay = @ma)",
+                + "+ (SELECT COUNT(*) FROM CHITIETSANBAYTRUNGGIAN WHERE MaSanBay = @ma)",
                 ThamSo.Chuoi("@ma", maSanBay, 3));
             if (soLan > 0) return true;
         }

@@ -27,12 +27,12 @@ public class KiemThuUC03_ChuyenBay : KiemThuCoSo
         return new List<GheTheoHang> { new("", "H1", h1), new("", "H2", h2) };
     }
 
-    private static List<ChiTietTrungGian> trungGian(params (string MaSanBay, int ThoiGianDung)[] ds)
+    private static List<ChiTietSanBayTrungGian> trungGian(params (string MaSanBay, int ThoiGianDung)[] ds)
     {
-        return ds.Select((t, i) => new ChiTietTrungGian("", (byte)(i + 1), t.MaSanBay, t.ThoiGianDung, null)).ToList();
+        return ds.Select((t, i) => new ChiTietSanBayTrungGian("", (byte)(i + 1), t.MaSanBay, t.ThoiGianDung, null)).ToList();
     }
 
-    private static List<ChiTietTrungGian> bayThang() => new();
+    private static List<ChiTietSanBayTrungGian> bayThang() => new();
 
     [Fact(DisplayName = "NV01: thêm chuyến bay hợp lệ lưu đủ CHUYENBAY, số ghế từng hạng và sân bay trung gian")]
     public void ThemChuyenBayHopLe()
@@ -389,7 +389,7 @@ public class KiemThuUC03_ChuyenBay : KiemThuCoSo
         xl.xoaChuyenBay("CB900");
 
         Assert.False(lay<DAL_ChuyenBay>().kiemTraMaChuyenBay("CB900"));
-        Assert.Equal(0, csdl.dem("SELECT COUNT(*) FROM GHETHEOHANG") + csdl.dem("SELECT COUNT(*) FROM CHITIETTRUNGGIAN"));
+        Assert.Equal(0, csdl.dem("SELECT COUNT(*) FROM GHETHEOHANG") + csdl.dem("SELECT COUNT(*) FROM CHITIETSANBAYTRUNGGIAN"));
         Assert.Equal(LoaiLoi.KhongTimThay, batLoi(() => xl.xoaChuyenBay("CB900")).Loai);
     }
 
@@ -721,9 +721,9 @@ public class KiemThuUC03_ChuyenBay : KiemThuCoSo
     [Fact(DisplayName = "CT-02: các nhánh báo lỗi của biểu mẫu chuyến bay ở máy chủ: ngày giờ, hạng vé, sân bay trung gian, thời gian dừng, ghi chú")]
     public void CT02_NhanhBaoLoiBieuMau()
     {
-        string loiO(string truong, ChuyenBay cb, List<GheTheoHang> dsGhe, List<ChiTietTrungGian> dsTrungGian)
+        string loiO(string truong, ChuyenBay cb, List<GheTheoHang> dsGhe, List<ChiTietSanBayTrungGian> dsTrungGian)
             => batLoi(() => xl.themChuyenBay(cb, dsGhe, dsTrungGian)).ChiTiet[truong];
-        List<ChiTietTrungGian> qua255 = Enumerable.Range(0, 256).Select(_ => new ChiTietTrungGian("", 1, "DAD", 15, null)).ToList();
+        List<ChiTietSanBayTrungGian> qua255 = Enumerable.Range(0, 256).Select(_ => new ChiTietSanBayTrungGian("", 1, "DAD", 15, null)).ToList();
 
         Assert.Equal("Ngày giờ khởi hành không hợp lệ.", loiO("ngayGioKhoiHanh", lich(ngayGio: new DateTime(2101, 1, 1)), ghe(), bayThang()));
         Assert.Equal("Có hạng vé không có trong danh sách hạng vé.",
@@ -735,7 +735,7 @@ public class KiemThuUC03_ChuyenBay : KiemThuCoSo
         Assert.Equal("Có sân bay trung gian không có trong danh sách sân bay.", loiO("trungGian", lich(), ghe(), trungGian(("ZZZ", 15))));
         Assert.Equal("Thời gian dừng phải là số nguyên không âm (phút).", loiO("trungGian", lich(), ghe(), trungGian(("DAD", -1))));
         Assert.Equal("Ghi chú của sân bay trung gian tối đa 200 ký tự.", loiO("trungGian", lich(), ghe(),
-            new List<ChiTietTrungGian> { new("", 1, "DAD", 15, new string('a', 201)) }));
+            new List<ChiTietSanBayTrungGian> { new("", 1, "DAD", 15, new string('a', 201)) }));
         Assert.False(coChuyenBay("CB900"));
     }
 

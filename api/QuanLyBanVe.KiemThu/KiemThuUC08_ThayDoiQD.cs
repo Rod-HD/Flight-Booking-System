@@ -123,7 +123,7 @@ public class KiemThuUC08_ThayDoiQD : KiemThuCoSo
     {
         lay<XL_ChuyenBay>().themChuyenBay(new ChuyenBay("CB900", 1_000_000m, "SGN", "HAN", HOM_NAY.AddDays(3), 120),
             new List<GheTheoHang> { new("", "H2", 10) },
-            new List<ChiTietTrungGian> { new("", 1, "DAD", 15, null) });
+            new List<ChiTietSanBayTrungGian> { new("", 1, "DAD", 15, null) });
 
         foreach (string ma in new[] { "SGN", "HAN", "DAD" })
         {

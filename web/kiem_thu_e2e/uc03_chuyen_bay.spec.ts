@@ -75,7 +75,7 @@ test.describe('UC03 Quản lý chuyến bay', () => {
     await expect(page.getByRole('main')).toContainText('1.500.000');
     await xemCsdl(page, `chuyến bay ${ma} đã được lưu`,
       { bang: 'CHUYENBAY', cot: 'MaChuyenBay', giaTri: ma, soDong: 1, dung: { GiaVe: 1500000, MaSanBayDi: 'SGN', MaSanBayDen: 'HAN', ThoiGianBay: 130 } },
-      { bang: 'CHITIETTRUNGGIAN', cot: 'MaChuyenBay', giaTri: ma, soDong: 1, dung: { MaSanBay: 'DAD', ThoiGianDung: 15, GhiChu: 'Đón khách' } },
+      { bang: 'CHITIETSANBAYTRUNGGIAN', cot: 'MaChuyenBay', giaTri: ma, soDong: 1, dung: { MaSanBay: 'DAD', ThoiGianDung: 15, GhiChu: 'Đón khách' } },
       { bang: 'GHETHEOHANG', cot: 'MaChuyenBay', giaTri: ma });
   });
 
@@ -273,7 +273,7 @@ test.describe('UC03 Quản lý chuyến bay', () => {
     expect((await page.request.get(`/api/chuyen-bay/${maSai}`)).status()).toBe(404);
     await xemCsdl(page, `nhập Excel: ${maDung} được lưu, ${maSai} sai QĐ1 nên không lưu`,
       { bang: 'CHUYENBAY', cot: 'MaChuyenBay', giaTri: maDung, soDong: 1, dung: { MaSanBayDi: 'HAN', MaSanBayDen: 'PQC', ThoiGianBay: 130 } },
-      { bang: 'CHITIETTRUNGGIAN', cot: 'MaChuyenBay', giaTri: maDung, soDong: 1, dung: { MaSanBay: 'DAD' } },
+      { bang: 'CHITIETSANBAYTRUNGGIAN', cot: 'MaChuyenBay', giaTri: maDung, soDong: 1, dung: { MaSanBay: 'DAD' } },
       { bang: 'CHUYENBAY', cot: 'MaChuyenBay', giaTri: maSai, soDong: 0 });
   });
 });

@@ -1,4 +1,4 @@
-/* Header 72px: trong suốt trên dải đỏ ở đầu trang chính, cuộn xuống thành thanh trắng bo góc dưới */
+/* Header 72px (thanh luôn mang lớp trongSuot để chữ trắng, lớp nenDo thêm nền đỏ): trong suốt trên dải đỏ ở đầu trang chính, các trang khác và khi cuộn là thanh đỏ bo góc dưới */
 .dauTrang {
   padding: 0 16px;
 }
@@ -8,9 +8,6 @@
   max-width: 1408px;
   margin: 0 auto;
   border-radius: 0 0 24px 24px;
-  background: var(--nen-0);
-  box-shadow: var(--bong-thanh);
-  color: var(--muc-900);
   transition: background-color var(--tg-mau) ease, box-shadow var(--tg-mau) ease, color var(--tg-mau) ease;
 }
 
@@ -18,6 +15,11 @@
   background: transparent;
   box-shadow: none;
   color: #fff;
+}
+
+.nenDo {
+  background: var(--gd-do);
+  box-shadow: var(--bong-thanh);
 }
 
 .trong {
@@ -32,8 +34,6 @@
   flex: none;
   width: 1px;
   height: 32px;
-  background: var(--vien);
-  transition: background-color var(--tg-mau) ease;
 }
 
 .trongSuot .vachDung {
@@ -79,11 +79,6 @@
   transition: transform var(--tg-the) var(--cong-mem), background-color var(--tg-mau) ease;
 }
 
-.muc:hover {
-  color: var(--do-500);
-  background: var(--do-50);
-}
-
 .trongSuot .muc:hover {
   color: var(--do-500);
   background: #fff;
@@ -91,7 +86,6 @@
 
 .dangO {
   font-weight: 700;
-  color: var(--muc-900);
 }
 
 .trongSuot .dangO {
@@ -120,8 +114,6 @@
   padding: 3px;
   border: 1px solid var(--vien);
   border-radius: var(--bo-vien-thuoc);
-  background: var(--nen-1);
-  transition: var(--chuyen-mau);
 }
 
 .trongSuot .cum {

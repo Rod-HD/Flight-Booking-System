@@ -240,7 +240,7 @@ test.describe('Bổ sung UC03 Quản lý chuyến bay', () => {
       }
       await xemCsdl(page, 'dừng ngoài khoảng không lưu, dừng đúng biên lưu được',
         ...tuChoi.map((ma) => ({ bang: 'CHUYENBAY', cot: 'MaChuyenBay', giaTri: ma, soDong: 0 })),
-        ...daLuu.map((x) => ({ bang: 'CHITIETTRUNGGIAN', cot: 'MaChuyenBay', giaTri: x.ma, soDong: 1, dung: { MaSanBay: 'DAD', ThoiGianDung: x.phut } })));
+        ...daLuu.map((x) => ({ bang: 'CHITIETSANBAYTRUNGGIAN', cot: 'MaChuyenBay', giaTri: x.ma, soDong: 1, dung: { MaSanBay: 'DAD', ThoiGianDung: x.phut } })));
     });
 
     test('UC03.14 Lưu được với 0 sân bay trung gian và với đúng số tối đa (QĐ1)', async ({ page }) => {
@@ -260,8 +260,8 @@ test.describe('Bổ sung UC03 Quản lý chuyến bay', () => {
       await luuThanhCong(page, maDu);
       await xemCsdl(page, `chuyến ${maThang} bay thẳng, chuyến ${maDu} có ${cacSanBay.length} sân bay trung gian`,
         { bang: 'CHUYENBAY', cot: 'MaChuyenBay', giaTri: maThang, soDong: 1 },
-        { bang: 'CHITIETTRUNGGIAN', cot: 'MaChuyenBay', giaTri: maThang, soDong: 0 },
-        { bang: 'CHITIETTRUNGGIAN', cot: 'MaChuyenBay', giaTri: maDu, soDong: cacSanBay.length, dung: { ThuTu: 1, MaSanBay: cacSanBay[0] } });
+        { bang: 'CHITIETSANBAYTRUNGGIAN', cot: 'MaChuyenBay', giaTri: maThang, soDong: 0 },
+        { bang: 'CHITIETSANBAYTRUNGGIAN', cot: 'MaChuyenBay', giaTri: maDu, soDong: cacSanBay.length, dung: { ThuTu: 1, MaSanBay: cacSanBay[0] } });
     });
 
     test('UC03.15 Sân bay đến trùng sân bay đi thì báo lỗi, không lưu (giả định 12)', async ({ page }) => {
@@ -583,7 +583,7 @@ test.describe('Bổ sung UC03 Quản lý chuyến bay', () => {
       const ct = await (await page.request.get(`/api/chuyen-bay/${ma}`)).json();
       expect(ct.trungGian.map((t: { ghiChu: string }) => t.ghiChu)).toEqual([ghiChu200, ghiChuScript]);
       await xemCsdl(page, 'ghi chú 200 ký tự và ghi chú có <script> lưu nguyên văn',
-        { bang: 'CHITIETTRUNGGIAN', cot: 'MaChuyenBay', giaTri: ma, soDong: 2, dung: { ThuTu: 1, GhiChu: ghiChu200 } });
+        { bang: 'CHITIETSANBAYTRUNGGIAN', cot: 'MaChuyenBay', giaTri: ma, soDong: 2, dung: { ThuTu: 1, GhiChu: ghiChu200 } });
     });
   });
 
@@ -702,7 +702,7 @@ test.describe('Bổ sung UC03 Quản lý chuyến bay', () => {
       expect(ct.trungGian[0].thoiGianDung).toBe(ts.thoiGianDungToiThieu);
       await xemCsdl(page, `chuyến bay ${cb.maChuyenBay} giữ nguyên thời gian bay và thời gian dừng`,
         { bang: 'CHUYENBAY', cot: 'MaChuyenBay', giaTri: cb.maChuyenBay, soDong: 1, dung: { ThoiGianBay: cb.thoiGianBay } },
-        { bang: 'CHITIETTRUNGGIAN', cot: 'MaChuyenBay', giaTri: cb.maChuyenBay, soDong: 1, dung: { ThoiGianDung: ts.thoiGianDungToiThieu } });
+        { bang: 'CHITIETSANBAYTRUNGGIAN', cot: 'MaChuyenBay', giaTri: cb.maChuyenBay, soDong: 1, dung: { ThoiGianDung: ts.thoiGianDungToiThieu } });
     });
 
     test('UC03.34 Mở chuyến bay không tồn tại thì báo không tìm thấy, không trắng trang', async ({ page }) => {
@@ -1002,7 +1002,7 @@ test.describe('Bổ sung UC03 Quản lý chuyến bay', () => {
       await xemCsdl(page, 'nhập lại không tạo bản sao',
         { bang: 'CHUYENBAY', cot: 'MaChuyenBay', giaTri: maA, soDong: 1 },
         { bang: 'CHUYENBAY', cot: 'MaChuyenBay', giaTri: maB, soDong: 1 },
-        { bang: 'CHITIETTRUNGGIAN', cot: 'MaChuyenBay', giaTri: maA, soDong: 1, dung: { MaSanBay: 'DAD' } });
+        { bang: 'CHITIETSANBAYTRUNGGIAN', cot: 'MaChuyenBay', giaTri: maA, soDong: 1, dung: { MaSanBay: 'DAD' } });
     });
   });
 

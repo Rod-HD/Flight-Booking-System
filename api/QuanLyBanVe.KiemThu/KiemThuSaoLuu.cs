@@ -39,9 +39,9 @@ public class KiemThuSaoLuu : KiemThuCoSo
             ("at01_quanly", "Quanly@123", TaiKhoan.QUAN_LY, false),
             ("at01_nhanvien", "Nhanvien@123", TaiKhoan.NHAN_VIEN, true)
         });
-        csdl.thucThi("INSERT INTO CHITIETTRUNGGIAN VALUES ('CB610', 1, 'DAD', 15, N'Dừng thử phục hồi')");
+        csdl.thucThi("INSERT INTO CHITIETSANBAYTRUNGGIAN VALUES ('CB610', 1, 'DAD', 15, N'Dừng thử phục hồi')");
 
-        string[] cacBang = { "SANBAY", "CHUYENBAY", "CHITIETTRUNGGIAN", "HANGVE", "GHETHEOHANG",
+        string[] cacBang = { "SANBAY", "CHUYENBAY", "CHITIETSANBAYTRUNGGIAN", "HANGVE", "GHETHEOHANG",
             "HANHKHACH", "PHIEUDATCHO", "VE", "THAMSOQUYDINH", "TAIKHOAN" };
         var soDongGoc = cacBang.ToDictionary(b => b, b => csdl.dem($"SELECT COUNT(*) FROM dbo.[{b}]"));
         Assert.All(soDongGoc.Values, soDong => Assert.True(soDong > 0));
