@@ -140,6 +140,10 @@ Chạy bằng HTTP thì mật khẩu và cookie phiên đi qua mạng ở dạng
 
 Khi `Urls` có địa chỉ `https`, máy chủ tự chuyển `http` sang `https`, chỉ gửi cookie phiên qua HTTPS và bật HSTS.
 
+### Đưa lên web cho người khác dùng
+
+Có thể chạy trên Render (máy chủ ứng dụng, qua `Dockerfile` và `render.yaml`) với Azure SQL Database (cơ sở dữ liệu, nạp bằng `db/azure/nap_azure.ps1`), cả hai có gói miễn phí; hoặc chạy trên máy và mở đường hầm Cloudflare để có địa chỉ công khai. Các bước chi tiết ở [docs/DEPLOY.md](docs/DEPLOY.md).
+
 ## Bảo mật
 
 - **Mật khẩu:** tối thiểu 10 ký tự, không được trùng mật khẩu mặc định của ba tài khoản ban đầu. Lưu dạng băm PBKDF2.

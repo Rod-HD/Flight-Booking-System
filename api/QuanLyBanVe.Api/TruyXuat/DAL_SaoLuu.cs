@@ -11,6 +11,8 @@ public class DAL_SaoLuu
     // 3201: không mở được tập tin (thư mục không có hoặc SQL Server không được ghi); 262: tài khoản thiếu quyền BACKUP
     private const int LOI_TAP_TIN = 3201;
     private const int LOI_QUYEN = 262;
+    // 40510: câu lệnh không được hỗ trợ ở phiên bản này (Azure SQL Database không cho BACKUP DATABASE ra tập tin)
+    private const int LOI_KHONG_HO_TRO = 40510;
 
     private readonly KetNoiCSDL ketNoi;
 
@@ -19,10 +21,10 @@ public class DAL_SaoLuu
         this.ketNoi = ketNoi;
     }
 
-    /// <summary>Thư mục sao lưu mặc định của phiên bản SQL Server.</summary>
-    public string layThuMucMacDinh()
+    /// <summary>Thư mục sao lưu mặc định của phiên bản SQL Server; null với cơ sở dữ liệu trên đám mây (Azure SQL Database).</summary>
+    public string? layThuMucMacDinh()
     {
-        return (string)ketNoi.docGiaTri("SELECT CAST(SERVERPROPERTY('InstanceDefaultBackupPath') AS nvarchar(260))")!;
+        return ketNoi.docGiaTri("SELECT CAST(SERVERPROPERTY('InstanceDefaultBackupPath') AS nvarchar(260))") as string;
     }
 
     public string layTenCSDL()
@@ -47,8 +49,9 @@ public class DAL_SaoLuu
         {
             lenh.ExecuteNonQuery();
         }
-        catch (SqlException loi) when (loi.Errors.Cast<SqlError>().Any(e => e.Number is LOI_TAP_TIN or LOI_QUYEN))
+        catch (SqlException loi) when (loi.Errors.Cast<SqlError>().Any(e => e.Number is LOI_TAP_TIN or LOI_QUYEN or LOI_KHONG_HO_TRO))
         {
+            if (loi.Errors.Cast<SqlError>().Any(e => e.Number == LOI_KHONG_HO_TRO)) throw new LoiKhongHoTroSaoLuu(loi);
             throw new LoiSaoLuu(loi.Errors.Cast<SqlError>().Any(e => e.Number == LOI_QUYEN), loi);
         }
     }
@@ -62,5 +65,13 @@ public class LoiSaoLuu : Exception
     public LoiSaoLuu(bool thieuQuyen, Exception loiGoc) : base("Không sao lưu được cơ sở dữ liệu.", loiGoc)
     {
         ThieuQuyen = thieuQuyen;
+    }
+}
+
+/// <summary>Cơ sở dữ liệu không cho sao lưu ra tập tin (Azure SQL Database tự sao lưu theo chính sách của nhà cung cấp).</summary>
+public class LoiKhongHoTroSaoLuu : Exception
+{
+    public LoiKhongHoTroSaoLuu(Exception? loiGoc = null) : base("Cơ sở dữ liệu không hỗ trợ sao lưu ra tập tin.", loiGoc)
+    {
     }
 }

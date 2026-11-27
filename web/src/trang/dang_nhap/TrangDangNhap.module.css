@@ -229,7 +229,9 @@
 .the {
   width: 100%;
   max-width: 420px;
-  padding: 36px 36px 28px;
+  --dem-t: 36px;
+  --dem-x: 36px;
+  padding: var(--dem-t) var(--dem-x) 28px;
   border-radius: 24px;
   background: var(--nen-0);
   box-shadow: 0 24px 56px rgba(31, 42, 51, 0.14), 0 2px 6px rgba(31, 42, 51, 0.04);
@@ -241,6 +243,15 @@
     opacity: 0;
     transform: translateY(16px);
   }
+}
+
+/* phần đầu khung đăng nhập: dải hồng tách khỏi các ô nhập, như tiêu đề hộp thoại */
+.dauThe {
+  margin: calc(-1 * var(--dem-t)) calc(-1 * var(--dem-x)) 0;
+  padding: var(--dem-t) var(--dem-x) 22px;
+  border-bottom: 1px solid var(--do-100);
+  border-radius: 24px 24px 0 0;
+  background: var(--do-50);
 }
 
 .oKhoa {
@@ -452,7 +463,7 @@
     line-height: 48px;
   }
   .cacThe {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     max-width: 360px;
   }
   .theKinh:not([aria-current='true']) {
@@ -462,9 +473,23 @@
 
 @media (max-width: 900px) {
   .luoi {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .trai {
     display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .phai {
+    padding: 16px;
+  }
+  .the {
+    --dem-t: 24px;
+    --dem-x: 20px;
+    padding: 24px 20px;
+  }
+  .tieuDeThe {
+    font-size: 26px;
   }
 }

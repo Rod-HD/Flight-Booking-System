@@ -178,7 +178,9 @@
 }
 
 .theDs {
-  padding: 22px 22px 18px;
+  --dem-t: 22px;
+  --dem-x: 22px;
+  padding: var(--dem-t) var(--dem-x) 18px;
   border-radius: var(--bo-the);
   border: 1px solid var(--vien);
   background: var(--nen-0);
@@ -194,7 +196,11 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 16px;
+  margin: calc(-1 * var(--dem-t)) calc(-1 * var(--dem-x)) 16px;
+  padding: var(--dem-t) var(--dem-x) 16px;
+  border-bottom: 1px solid var(--do-100);
+  border-radius: calc(var(--bo-the) - 1px) calc(var(--bo-the) - 1px) 0 0;
+  background: var(--do-50);
 }
 
 .dauDsTrai {
@@ -394,15 +400,26 @@ tr[aria-selected='true'] .ma {
 
 @media (max-width: 1100px) {
   .luoiThe {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .haiCot {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
 @media (max-width: 640px) {
   .luoiThe {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .theDs {
+    --dem-t: 16px;
+    --dem-x: 16px;
+    padding: 16px;
+  }
+  .dauDs {
+    flex-wrap: wrap;
   }
 }

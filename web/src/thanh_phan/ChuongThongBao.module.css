@@ -89,7 +89,8 @@
   justify-content: space-between;
   gap: 12px;
   padding: 16px 18px 12px;
-  border-bottom: 1px solid var(--vien);
+  border-bottom: 1px solid var(--do-100);
+  background: var(--do-50);
 }
 
 .dau b {
@@ -180,4 +181,17 @@
   padding: 28px 16px;
   color: var(--muc-500);
   font-size: 14px;
+}
+
+/* điện thoại: bảng thông báo trải theo bề ngang màn hình, neo theo phần đầu trang */
+@media (max-width: 720px) {
+  .goc {
+    position: static;
+  }
+  .bang {
+    left: 12px;
+    right: 12px;
+    width: auto;
+    max-width: none;
+  }
 }

@@ -128,3 +128,12 @@
   border-radius: 3px;
   background: #fff;
 }
+
+/* điện thoại: dải tab dài thì cuộn ngang thay vì tràn khỏi trang */
+@media (max-width: 720px) {
+  .tab {
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+}

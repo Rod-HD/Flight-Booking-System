@@ -31,6 +31,7 @@
   position: relative;
   width: min(100%, var(--rong-hop-thoai, 480px));
   max-height: calc(100vh - 48px);
+  max-height: calc(100dvh - 48px);
   overflow: auto;
   padding: 28px;
   border-radius: var(--bo-the);
@@ -167,4 +168,17 @@
 .choChu {
   font-weight: 600;
   color: var(--muc-900);
+}
+
+@media (max-width: 720px) {
+  .nen {
+    padding: 12px;
+  }
+  .the {
+    padding: 20px;
+  }
+  .dau {
+    margin: -20px -20px 0;
+    padding: 18px 52px 16px 20px;
+  }
 }

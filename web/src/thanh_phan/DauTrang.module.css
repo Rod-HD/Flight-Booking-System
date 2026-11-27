@@ -1,4 +1,4 @@
-/* Header 72px (thanh luôn mang lớp trongSuot để chữ trắng, lớp nenDo thêm nền đỏ): trong suốt trên dải đỏ ở đầu trang chính, các trang khác và khi cuộn là thanh đỏ bo góc dưới */
+/* Header 72px (lớp trongSuot cho chữ trắng, lớp nenDo cho nền đỏ): thanh đỏ bo góc dưới ở mọi trang */
 .dauTrang {
   padding: 0 16px;
 }
@@ -40,6 +40,12 @@
   background: rgba(255, 255, 255, 0.4);
 }
 
+.nav {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -66,20 +72,9 @@
   transition: var(--chuyen-mau);
 }
 
-.muc::after {
-  content: '';
-  position: absolute;
-  left: 12px;
-  right: 12px;
-  bottom: -16px;
-  height: 3px;
-  border-radius: 3px;
-  background: var(--do-500);
-  transform: scaleX(0);
-  transition: transform var(--tg-the) var(--cong-mem), background-color var(--tg-mau) ease;
-}
-
-.trongSuot .muc:hover {
+/* mục đang mở: tô trắng cả ô như khi di chuột vào, dễ thấy hơn một gạch chân */
+.trongSuot .muc:hover,
+.trongSuot .muc.dangO {
   color: var(--do-500);
   background: #fff;
 }
@@ -88,16 +83,8 @@
   font-weight: 700;
 }
 
-.trongSuot .dangO {
-  color: #fff;
-}
-
-.dangO::after {
-  transform: scaleX(1);
-}
-
-.trongSuot .dangO::after {
-  background: #fff;
+.muc.dangO {
+  box-shadow: var(--bong-nhe);
 }
 
 .phai {
@@ -234,6 +221,58 @@
   }
   .chuDangXuat,
   .chuTroGiup {
+    display: none;
+  }
+}
+
+/* máy tính bảng, điện thoại: menu xuống hàng thứ hai (cuộn ngang nếu thiếu chỗ); cụm phải gọn lại */
+@media (max-width: 1024px) {
+  .dauTrang {
+    padding: 0;
+  }
+  .thanh {
+    height: auto;
+    border-radius: 0 0 16px 16px;
+  }
+  .trong {
+    flex-wrap: wrap;
+    row-gap: 4px;
+    column-gap: 8px;
+    padding: 8px 12px 0;
+  }
+  .vachDung,
+  .nguoi {
+    display: none;
+  }
+  .phai {
+    margin-left: auto;
+    gap: 6px;
+  }
+  .nav {
+    order: 3;
+    flex-basis: 100%;
+    height: 48px;
+  }
+  .muc {
+    height: 36px;
+    padding: 0 10px;
+    font-size: 15px;
+  }
+  .nutCum {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* backdrop-filter tạo khối chứa mới, giữ bảng thông báo trong cụm; bỏ để bảng neo theo cả thanh */
+  .trongSuot .cum {
+    backdrop-filter: none;
+  }
+}
+
+@media (max-width: 480px) {
+  /* chỉ giữ biểu tượng logo; tên phần mềm vẫn có ở nhãn đọc màn hình */
+  .logo > span:last-child {
     display: none;
   }
 }

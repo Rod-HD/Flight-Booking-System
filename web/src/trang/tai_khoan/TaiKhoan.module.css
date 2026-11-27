@@ -420,6 +420,18 @@ tr:hover .tenNguoi b {
 
 @media (max-width: 1000px) {
   .thongKe {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .thanhTren {
+    flex-wrap: wrap;
+  }
+  .oTim {
+    width: 100%;
+  }
+  .haiThe {
+    grid-template-columns: minmax(0, 1fr);
   }
 }

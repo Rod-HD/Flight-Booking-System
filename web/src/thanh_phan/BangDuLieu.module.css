@@ -163,8 +163,21 @@
   text-align: center;
 }
 
-@media (max-width: 960px) {
+/* dưới 1200 px bảng có thể rộng hơn khung: cho cuộn ngang; tiêu đề dính theo vùng cuộn nên đặt top về 0 */
+@media (max-width: 1199px) {
   .cuon {
     overflow-x: auto;
+  }
+  .cuon .bang th {
+    top: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .bang {
+    font-size: 14px;
+  }
+  .bang th {
+    padding: 0 12px;
   }
 }

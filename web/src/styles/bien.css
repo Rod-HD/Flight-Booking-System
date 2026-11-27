@@ -113,3 +113,19 @@
     --tg-truot: 0ms;
   }
 }
+
+/* máy tính bảng, điện thoại: header hai hàng (đo được 104 px: hàng logo, hàng menu 48 px) */
+@media (max-width: 1024px) {
+  :root {
+    --cao-dau-trang: 104px;
+  }
+}
+
+/* điện thoại: lề trang và cỡ tiêu đề nhỏ lại */
+@media (max-width: 720px) {
+  :root {
+    --le-trang: 16px;
+    --co-h1: 26px;
+    --co-h2: 20px;
+  }
+}

@@ -52,7 +52,7 @@ public class KiemThuSaoLuu : KiemThuCoSo
             """)!;
         byte[] veGoc = tongKiem(CoSoDuLieuThu.TEN_CSDL, "VE", "MaVe");
         byte[] taiKhoanGoc = tongKiem(CoSoDuLieuThu.TEN_CSDL, "TAIKHOAN", "TenDangNhap");
-        string tapTin = Path.Combine(lay<DAL_SaoLuu>().layThuMucMacDinh(),
+        string tapTin = Path.Combine(lay<DAL_SaoLuu>().layThuMucMacDinh()!,
             $"{CoSoDuLieuThu.TEN_CSDL}_phuchoi_{Guid.NewGuid():N}.bak");
 
         using var ketNoi = new SqlConnection(new SqlConnectionStringBuilder(csdl.ChuoiKetNoi)

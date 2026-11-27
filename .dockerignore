@@ -1,0 +1,16 @@
+**/bin/
+**/obj/
+**/node_modules/
+web/dist/
+web/test-results/
+web/playwright-report/
+web/debug.log
+api/QuanLyBanVe.Api/wwwroot/
+api/QuanLyBanVe.Api/phien/
+api/QuanLyBanVe.Api/nhat_ky/
+api/QuanLyBanVe.Api/appsettings.Development.json
+api/QuanLyBanVe.KiemThu/
+**/*.bak
+.git/
+.vs/
+.vscode/

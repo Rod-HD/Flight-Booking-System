@@ -45,7 +45,9 @@
 .the {
   position: sticky;
   top: calc(var(--cao-thanh-tren) + 24px);
-  padding: 24px;
+  --dem-t: 24px;
+  --dem-x: 24px;
+  padding: var(--dem-t) var(--dem-x);
   border-radius: var(--bo-the);
   border: 1px solid var(--vien);
   background: var(--nen-0);
@@ -56,7 +58,11 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 16px;
+  margin: calc(-1 * var(--dem-t)) calc(-1 * var(--dem-x)) 16px;
+  padding: var(--dem-t) var(--dem-x) 16px;
+  border-bottom: 1px solid var(--do-100);
+  border-radius: calc(var(--bo-the) - 1px) calc(var(--bo-the) - 1px) 0 0;
+  background: var(--do-50);
 }
 
 .dauThe h2 {
@@ -142,12 +148,12 @@
 
 @media (max-width: 1080px) {
   .luoi {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .the {
     position: static;
   }
   .luoiQD {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

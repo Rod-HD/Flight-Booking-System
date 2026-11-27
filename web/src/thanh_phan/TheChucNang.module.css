@@ -134,3 +134,10 @@
   line-height: 20px;
   color: var(--muc-500);
 }
+
+@media (max-width: 720px) {
+  .the {
+    padding: 16px;
+    min-height: 0;
+  }
+}

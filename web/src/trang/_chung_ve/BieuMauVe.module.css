@@ -8,7 +8,9 @@
 }
 
 .the {
-  padding: 28px 32px 24px;
+  --dem-t: 28px;
+  --dem-x: 32px;
+  padding: var(--dem-t) var(--dem-x) 24px;
   border: 1px solid var(--vien);
   border-radius: var(--bo-the);
   background: var(--nen-0);
@@ -20,7 +22,11 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 24px;
+  margin: calc(-1 * var(--dem-t)) calc(-1 * var(--dem-x)) 24px;
+  padding: var(--dem-t) var(--dem-x) 20px;
+  border-bottom: 1px solid var(--do-100);
+  border-radius: calc(var(--bo-the) - 1px) calc(var(--bo-the) - 1px) 0 0;
+  background: var(--do-50);
 }
 
 .dauTheTrai {
@@ -437,7 +443,9 @@
 .panel {
   position: sticky;
   top: calc(var(--cao-thanh-tren) + 20px);
-  padding: 24px;
+  --dem-t: 20px;
+  --dem-x: 24px;
+  padding: var(--dem-t) var(--dem-x) 24px;
   border-radius: var(--bo-the);
   background: var(--nen-1);
   border: 1px solid transparent;
@@ -454,7 +462,11 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 16px;
+  margin: calc(-1 * var(--dem-t)) calc(-1 * var(--dem-x)) 16px;
+  padding: var(--dem-t) var(--dem-x) 16px;
+  border-bottom: 1px solid var(--do-100);
+  border-radius: calc(var(--bo-the) - 1px) calc(var(--bo-the) - 1px) 0 0;
+  background: var(--do-50);
 }
 
 .panelTieuDe {
@@ -767,10 +779,15 @@
 }
 
 @media (max-width: 720px) {
+  .loc {
+    flex-wrap: wrap;
+  }
   .luoi {
     grid-template-columns: minmax(0, 1fr);
   }
   .the {
+    --dem-t: 22px;
+    --dem-x: 18px;
     padding: 22px 18px;
   }
   .chanThe {

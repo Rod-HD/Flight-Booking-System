@@ -123,7 +123,7 @@
 
 @media (max-width: 1024px) {
   .luoi {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
@@ -295,6 +295,8 @@
 }
 
 .the {
+  --dem-t: var(--k-4);
+  --dem-x: var(--k-4);
   padding: var(--k-4);
   border-radius: var(--bo-the);
   background: var(--nen-0);
@@ -302,8 +304,12 @@
 }
 
 .tieuDeThe {
-  margin: 0 0 var(--k-3);
   font-size: var(--co-h3);
+  margin: calc(-1 * var(--dem-t)) calc(-1 * var(--dem-x)) var(--k-3);
+  padding: var(--dem-t) var(--dem-x) 14px;
+  border-bottom: 1px solid var(--do-100);
+  border-radius: calc(var(--bo-the) - 1px) calc(var(--bo-the) - 1px) 0 0;
+  background: var(--do-50);
 }
 
 .nhatKy {
@@ -337,4 +343,27 @@
 
 .loiNhac svg {
   flex: none;
+}
+
+@media (max-width: 1024px) {
+  .cotPhai {
+    position: static;
+  }
+}
+
+@media (max-width: 720px) {
+  .thanhDieuKhien {
+    position: static;
+    padding: var(--k-3);
+  }
+  .tocDo {
+    flex-wrap: wrap;
+  }
+  .tocDo input[type='range'] {
+    width: 100%;
+  }
+  .nutPhai {
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
 }

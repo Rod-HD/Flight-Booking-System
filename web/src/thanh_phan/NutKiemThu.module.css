@@ -36,3 +36,10 @@
   outline: none;
   box-shadow: var(--vong-focus);
 }
+
+/* màn cảm ứng không có hover: hiện sẵn nút để chạm được */
+@media (hover: none) {
+  .nut {
+    max-width: 160px;
+  }
+}

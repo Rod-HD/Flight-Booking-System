@@ -30,7 +30,9 @@ export function TheThongTinChuyenBay({ maChuyenBay, tomTat, sanBay, thongTin, ch
   if (!maChuyenBay) {
     return (
       <aside className={s.panel} aria-label="Thông tin chuyến bay">
-        <h2 className={s.panelTieuDe}>Thông tin chuyến bay</h2>
+        <div className={s.panelDau}>
+          <h2 className={s.panelTieuDe}>Thông tin chuyến bay</h2>
+        </div>
         <TrangThaiRong linhVat="tra_cuu" kichThuocHinh={104} tieuDe="Chưa chọn chuyến bay" goiY="Chọn chuyến bay ở ô bên trái, thông tin tuyến bay và số ghế trống theo từng hạng vé sẽ hiện ở đây." />
       </aside>
     );

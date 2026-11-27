@@ -222,7 +222,7 @@ tr[aria-selected='true'] .ma {
 
 @media (max-width: 1000px) {
   .luoi8 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .chuBang {
     left: 28px;
@@ -231,5 +231,58 @@ tr[aria-selected='true'] .ma {
   .loiChao {
     font-size: 34px;
     line-height: 42px;
+  }
+}
+
+/* điện thoại */
+@media (max-width: 720px) {
+  /* băng lối tắt có lề âm 20 px cho bóng đổ, lớn hơn lề trang 16 px */
+  .trang {
+    overflow-x: clip;
+  }
+  .bang,
+  .slide {
+    height: 440px;
+  }
+  .moTaBang {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .nutBang {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  .chuBang {
+    left: 20px;
+    right: 20px;
+    top: 24px;
+  }
+  .loiChao {
+    font-size: 28px;
+  }
+  /* băng vẫn tự chạy và vuốt được; ẩn cụm nút để không đè lên hai nút của băng */
+  .dieuKhienBang {
+    display: none;
+  }
+  .timNhanh {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .nutDoiChieu {
+    left: auto;
+    right: 8px;
+  }
+  .luoi8,
+  .luoi5 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+}
+
+/* dưới 1200 px: cột lưới co được nhỏ hơn bề rộng bảng, bảng tự cuộn ngang bên trong */
+@media (max-width: 1199px) {
+  .luoiBang {
+    grid-template-columns: minmax(0, 1fr);
   }
 }

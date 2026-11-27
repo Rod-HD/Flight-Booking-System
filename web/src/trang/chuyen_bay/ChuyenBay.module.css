@@ -371,7 +371,9 @@ tr:hover .sanBay b {
 
 .the {
   position: relative;
-  padding: 24px 28px 28px;
+  --dem-t: 24px;
+  --dem-x: 28px;
+  padding: var(--dem-t) var(--dem-x) 28px;
   border-radius: var(--bo-the);
   border: 1px solid var(--vien);
   background: var(--nen-0);
@@ -390,7 +392,11 @@ tr:hover .sanBay b {
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 20px;
+  margin: calc(-1 * var(--dem-t)) calc(-1 * var(--dem-x)) 20px;
+  padding: var(--dem-t) var(--dem-x) 18px;
+  border-bottom: 1px solid var(--do-100);
+  border-radius: calc(var(--bo-the) - 1px) calc(var(--bo-the) - 1px) 0 0;
+  background: var(--do-50);
 }
 
 .dauTheTrai {
@@ -1004,7 +1010,9 @@ tr:hover .sanBay b {
 }
 
 .theQuyDinh {
-  padding: 20px 22px;
+  --dem-t: 20px;
+  --dem-x: 22px;
+  padding: var(--dem-t) var(--dem-x);
   border-radius: var(--bo-the);
   border: 1px solid var(--vien);
   background: var(--nen-0);
@@ -1014,8 +1022,12 @@ tr:hover .sanBay b {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 12px;
   font-size: 16px;
+  margin: calc(-1 * var(--dem-t)) calc(-1 * var(--dem-x)) 12px;
+  padding: var(--dem-t) var(--dem-x) 14px;
+  border-bottom: 1px solid var(--do-100);
+  border-radius: calc(var(--bo-the) - 1px) calc(var(--bo-the) - 1px) 0 0;
+  background: var(--do-50);
 }
 
 .theQuyDinh h3 svg {
@@ -1133,7 +1145,7 @@ tr:hover .sanBay b {
 
 @media (max-width: 1100px) {
   .luoi {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .cotPhai {
     position: static;
@@ -1141,8 +1153,33 @@ tr:hover .sanBay b {
 }
 
 @media (max-width: 720px) {
+  .bangNhap:not(.bangTg) {
+    display: block;
+    overflow-x: auto;
+  }
+  .bangNhap:not(.bangTg) th,
+  .bangNhap:not(.bangTg) td {
+    white-space: nowrap;
+  }
+  .the {
+    --dem-t: 18px;
+    --dem-x: 16px;
+    padding: 18px 16px;
+  }
+  .thanhNut {
+    flex-wrap: wrap;
+    border-radius: var(--bo-the);
+    padding: 12px;
+  }
+  .thanhNutChu {
+    display: none;
+  }
+  .thanhNutPhai {
+    flex: 1;
+    justify-content: flex-end;
+  }
   .luoiO {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 

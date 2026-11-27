@@ -70,7 +70,7 @@ export function BoCuc() {
             }}
           />
         )}
-        <DauTrang trongSuot={laTrangChinh && !daCuon} />
+        <DauTrang />
       </div>
       <main key={pathname} className={s.noiDung} id="noi-dung">
         <Outlet />

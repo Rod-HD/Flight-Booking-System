@@ -182,11 +182,13 @@ export function TrangDangNhap() {
 
         <section className={s.phai}>
           <div className={s.the}>
-            <span className={s.oKhoa}>
-              <IconChiaKhoa kichThuoc={52} />
-            </span>
-            <h1 className={s.tieuDeThe}>Đăng nhập</h1>
-            <p className={s.phuThe}>Dành cho Quản lý và Nhân viên bán vé</p>
+            <div className={s.dauThe}>
+              <span className={s.oKhoa}>
+                <IconChiaKhoa kichThuoc={52} />
+              </span>
+              <h1 className={s.tieuDeThe}>Đăng nhập</h1>
+              <p className={s.phuThe}>Dành cho Quản lý và Nhân viên bán vé</p>
+            </div>
 
             <form className={s.form} onSubmit={guiDangNhap} noValidate>
               {loi && (

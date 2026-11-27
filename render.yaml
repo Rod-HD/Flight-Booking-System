@@ -1,0 +1,22 @@
+# Bản thiết kế dịch vụ cho Render (New > Blueprint): một web service chạy bằng Dockerfile ở gốc kho, gói miễn phí.
+# Các biến có sync: false phải nhập tay trên Render khi tạo dịch vụ (không ghi bí mật vào kho). Xem docs/DEPLOY.md.
+services:
+  - type: web
+    name: dai-ly-ve-may-bay-canh-en
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: ConnectionStrings__QLBANVE
+        sync: false
+      # chu kỳ tự hủy phiếu: 60 phút để cơ sở dữ liệu Azure miễn phí còn được tự tạm dừng khi không ai dùng
+      - key: BoDinhThoi__ChuKyPhut
+        value: "60"
+      - key: TaiKhoanBanDau__0__MatKhau
+        sync: false
+      - key: TaiKhoanBanDau__1__MatKhau
+        sync: false
+      - key: TaiKhoanBanDau__2__MatKhau
+        sync: false

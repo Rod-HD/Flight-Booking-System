@@ -22,11 +22,16 @@ public class XL_SaoLuu
     public KetQuaSaoLuu saoLuu(string? thuMuc)
     {
         DateTime thoiDiem = dongHo.layThoiDiemHienTai();
-        string noiLuu = string.IsNullOrWhiteSpace(thuMuc) ? dalSaoLuu.layThuMucMacDinh() : thuMuc.Trim();
+        string? noiLuu = string.IsNullOrWhiteSpace(thuMuc) ? dalSaoLuu.layThuMucMacDinh() : thuMuc.Trim();
+        if (noiLuu is null) throw khongHoTro();
         string tapTin = Path.Combine(noiLuu, $"{dalSaoLuu.layTenCSDL()}_{thoiDiem:yyyyMMdd_HHmmss}_tay.bak");
         try
         {
             dalSaoLuu.saoLuu(tapTin);
+        }
+        catch (LoiKhongHoTroSaoLuu)
+        {
+            throw khongHoTro();
         }
         catch (LoiSaoLuu loi)
         {
@@ -36,6 +41,9 @@ public class XL_SaoLuu
         }
         return new KetQuaSaoLuu(tapTin, thoiDiem);
     }
+
+    private static LoiNghiepVu khongHoTro() => LoiNghiepVu.viPham(MaLoi.KHONG_SAO_LUU_DUOC,
+        "Cơ sở dữ liệu đang dùng không cho sao lưu ra tập tin (ví dụ Azure SQL Database, nơi nhà cung cấp tự sao lưu). Chức năng này dùng với SQL Server cài trên máy.");
 }
 
 public record KetQuaSaoLuu(string TapTin, DateTime ThoiDiem);

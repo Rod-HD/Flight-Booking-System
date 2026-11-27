@@ -120,7 +120,9 @@
   justify-content: space-between;
   gap: 16px;
   padding: 20px 24px;
-  border-bottom: 1px solid var(--vien);
+  border-bottom: 1px solid var(--do-100);
+  border-radius: calc(var(--bo-the) - 1px) calc(var(--bo-the) - 1px) 0 0;
+  background: var(--do-50);
 }
 
 .nhanBieuMau {
@@ -306,5 +308,21 @@
   }
   .vach {
     display: none;
+  }
+}
+
+/* dưới 961 px bảng nằm trong vùng cuộn ngang: tiêu đề dính theo vùng cuộn */
+@media (max-width: 960px) {
+  .cuon .bang th {
+    top: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .boLoc {
+    padding: 16px;
+  }
+  .oLoc {
+    flex: 1 1 100%;
   }
 }
