@@ -93,6 +93,8 @@
   --cao-dau-trang: 72px;
   --cao-thanh-tren: calc(var(--cao-thanh-thong-bao) + var(--cao-dau-trang));
   --cao-o-nhap: 48px;
+  /* băng chào mừng ở trang chính (dải đỏ nền phía sau canh giữa theo băng này) */
+  --cao-bang-chao: 380px;
 
   /* chuyển động */
   --cong-mem: cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -127,5 +129,6 @@
     --le-trang: 16px;
     --co-h1: 26px;
     --co-h2: 20px;
+    --cao-bang-chao: 440px;
   }
 }

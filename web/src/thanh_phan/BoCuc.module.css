@@ -5,14 +5,15 @@
   min-height: 100vh;
 }
 
-/* dải đỏ mờ dần phía sau header ở đầu trang chính */
+/* dải đỏ phía sau băng chào mừng ở trang chính: bắt đầu ngay dưới header (để header tách hẳn trên nền trắng),
+   đỏ nhất ở giữa băng rồi nhạt đều về hai mép; cao bằng băng cộng khoảng hở 12 px trên, dưới (padding đầu .trang) */
 .daiDo {
   position: absolute;
-  top: 0;
+  top: calc(var(--cao-thanh-thong-bao) + var(--cao-dau-trang));
   left: 0;
   right: 0;
-  height: 440px;
-  background: var(--gd-dau-trang);
+  height: calc(var(--cao-bang-chao) + 24px);
+  background: linear-gradient(180deg, rgba(240, 40, 35, 0) 0%, #f02823 50%, rgba(240, 40, 35, 0) 100%);
   pointer-events: none;
 }
 

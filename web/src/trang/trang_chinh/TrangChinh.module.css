@@ -8,7 +8,7 @@
 /* ---- băng chào mừng ---- */
 .bang {
   position: relative;
-  height: 380px;
+  height: var(--cao-bang-chao);
   border-radius: 28px;
   overflow: hidden;
   box-shadow: 0 24px 48px rgba(111, 0, 0, 0.16);
@@ -17,7 +17,7 @@
 
 .slide {
   position: relative;
-  height: 380px;
+  height: var(--cao-bang-chao);
 }
 
 .chuBang {
@@ -239,10 +239,6 @@ tr[aria-selected='true'] .ma {
   /* băng lối tắt có lề âm 20 px cho bóng đổ, lớn hơn lề trang 16 px */
   .trang {
     overflow-x: clip;
-  }
-  .bang,
-  .slide {
-    height: 440px;
   }
   .moTaBang {
     font-size: 15px;
