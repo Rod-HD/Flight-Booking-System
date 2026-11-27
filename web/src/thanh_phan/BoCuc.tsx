@@ -30,11 +30,9 @@ export function BoCuc() {
   const { data: thongBao } = dungThongBao(!anThongBao);
   const coThongBao = !anThongBao && !!thongBao?.length;
 
-  // chiều cao vùng dính trên cùng, bảng và cuộn neo dùng giá trị này
+  // chiều cao thanh thông báo; --cao-thanh-tren (bien.css) cộng thêm chiều cao đầu trang theo khổ màn hình
   useEffect(() => {
-    const goc = document.documentElement.style;
-    goc.setProperty('--cao-thanh-thong-bao', coThongBao ? '44px' : '0px');
-    goc.setProperty('--cao-thanh-tren', coThongBao ? '116px' : '72px');
+    document.documentElement.style.setProperty('--cao-thanh-thong-bao', coThongBao ? '44px' : '0px');
   }, [coThongBao]);
 
   useEffect(() => {
